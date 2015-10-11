@@ -4,7 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -45,3 +47,16 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'refinerycms', git: 'https://github.com/refinery/refinerycms', branch: 'master'
+
+gem 'quiet_assets', group: :development
+
+# Add support for searching inside Refinery's admin interface.
+gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.0']
+
+# Add support for Refinery's custom fork of the visual editor WYMeditor.
+gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
+
+# The default authentication adapter
+gem 'refinerycms-authentication-devise', '~> 1.0'
