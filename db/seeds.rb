@@ -14,12 +14,11 @@ pages_array = [ {
                     :deletable => false,
                     :link_url => "/",
                     :menu_match => "^/$",
-                    :title => "Who are we?",  # default english title
+                    :title => "Qui som?",  # default english title
                     :title_es => "Quienes somos?",
                     :title_ca => "Qui som?",
                     # Image path in next line is copied from the ui when I try to add it manually
-                    :body => "<h3>Qui som?</h3>
-                    		  <p>
+                    :body => "<p>
                     		  	La Fogaina és un petit projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
                     		  	<ul>
                                  <li>Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.</li>
@@ -41,7 +40,7 @@ pages_array = [ {
                         :show_in_menu => false,
                         :deletable => false,
                         :menu_match => "^/404$",
-                        :title => "Page not found",  # default german title
+                        :title => "Pagina no trobada",
                         :title_es => "Página no encontrada",
                         :title_ca => "Pàgina no trobada",
                         :position_body => 0,
@@ -69,8 +68,7 @@ pages_array = [ {
                     :title => "Pa i Cafè",
                     :title_es => "Pa i Cafè",
                     :title_ca => "Pa i Cafè",
-                    :body => "<h3>Pa i Cafè</h3>
-                    		 <p>La Fogaina ha obert un nou espai més accesible per tothom, al poble de les Preses, hem inaugurat <strong>La Fogaina Pa i Cafè</strong>, un lloc on podeu anar a comprar els nostres productes de sempre, o pendre un bon cafè, una bona cervessa artesana, entrepans amb embotits de la Vall d'en Bas, croissants, ... Tots els productes de fleca els fem nosaltres, al nostre obrador i al nostre forn de llenya.</p>
+                    :body => "<p>La Fogaina ha obert un nou espai més accesible per tothom, al poble de les Preses, hem inaugurat <strong>La Fogaina Pa i Cafè</strong>, un lloc on podeu anar a comprar els nostres productes de sempre, o pendre un bon cafè, una bona cervessa artesana, entrepans amb embotits de la Vall d'en Bas, croissants, ... Tots els productes de fleca els fem nosaltres, al nostre obrador i al nostre forn de llenya.</p>
                     		 <p>Hem intentat crear un espai amb caliu, personal, per poder pendre algo tranquilament. També tenim una estanteria-llibreria, amb llibres de consulta i llibres en venda de <a target=\"_blank\" title=\"http://www.takatuka.cat\" href=\"http://www.takatuka.cat\">Takatuka</a> i <a target=\"_blank\" title=\"http://pol-len.cat\" href=\"http://pol-len.cat\">Pol.len Edicions</a>, llibres preciosos.</p>
                     		 <p>Otra cosa peculiar de nuestro local, es que practicamente lo hemos hecho todo nosotros, los muebles de madera y el hierro en forja son artesanos, ademas de apaños de albañileria, fontaneria, electricidad... </p>
                     		 <p>També hem creat un petit raconet pels més petits, perque puguin jugar i divertirse i així els grans podem esmorçar tranquil.lament llegint o xerrant. </p>
@@ -85,8 +83,7 @@ pages_array = [ {
                     :title => "Contacte",  # default german title
                     :title_es => "Contacto",
                     :title_ca => "Contacte",
-                    :body => "<h3>Contacte</h3>
-                              <p>La Fogaina
+                    :body => "<p>La Fogaina
 								 Dissabtes de 9:30 a 13:30
 								 Mas la Plana s/n
 								 El Mallol - Carretera del Veïnat Cirera.
@@ -107,7 +104,6 @@ pages_array = [ {
                     :body_ca => ""
                 }
 ]
-
 
 def finnish_page( page, page_attr )
   page.translations.create!( { :locale => 'es', :title => page_attr[:title_es] } )
