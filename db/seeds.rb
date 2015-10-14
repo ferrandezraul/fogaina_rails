@@ -83,22 +83,14 @@ pages_array = [ {
                     :title => "Contacte",  # default german title
                     :title_es => "Contacto",
                     :title_ca => "Contacte",
-                    :body => "<p>La Fogaina
-								 Dissabtes de 9:30 a 13:30
-								 Mas la Plana s/n
-								 El Mallol - Carretera del Veïnat Cirera.
-								 La Vall d'en Bas.
-								 La Garrotxa - Girona
-								 661380955 - 639264863
-								 fornlafogaina@gmail.com 
-								 (obrador, contacte per restaurants, cooperatives etc)</p>
-							   <p>La Fogaina Pa i Cafè.
-								  De Dimarts a Dissabte, de 8:00 a 13:30 i de 16:00 a 20:00
-								  C/ Sant Sebastià nº52
-								  Les Preses
-								  La Garrotxa - Girona
-								  646879062
-								  cafelafogaina@gmail.com (espai cafe, venda de pa i reposteria, contacte per particulars)</p>                            
+                    :body => "<h3>La Fogaina</h3>
+						  	  <p>Dissabtes de 9:30 a 13:30 </p>
+							  <p>Mas la Plana s/n </br> El Mallol - Carretera del Veïnat Cirera. </br> La Vall d'en Bas. </br> La Garrotxa - Girona </br> 661380955 - 639264863</p>
+							  <p>fornlafogaina@gmail.com </br> (obrador, contacte per restaurants, cooperatives etc)</p>
+ 							  <h3>La Fogaina Pa i Cafè.</h3>
+							  <p>De Dimarts a Dissabte, de 8:00 a 13:30 i de 16:00 a 20:00 </p>
+							  <p>C/ Sant Sebastià nº52 </br> Les Preses</br> La Garrotxa - Girona</br> 646879062</p>
+							  <p>cafelafogaina@gmail.com </br> (espai cafe, venda de pa i reposteria, contacte per particulars)</p>                                                     
                               <p>Enllaç a <a target=\"_blank\" title=\"\" href=\"https://www.google.es/maps?q=forn+la+fogaina&hl=es&ll=42.153414,2.453814&spn=0.009688,0.021136&sll=40.396764,-3.713379&sspn=10.185894,21.643066&t=h&z=16&iwloc=A\">Google Maps</a></p>",
                     :body_es => "",
                     :body_ca => ""
