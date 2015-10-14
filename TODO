@@ -2,6 +2,8 @@
 /////////// TODO  /////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
+Add some basic css to improve the view slighly. (Move side_body parts from pages to a side (in Home move the tweet from la fogaina))
+
 1. Create an extension for events, courses and anything else?
    http://www.refinerycms.com/guides/generate-an-extension-to-use-your-mvcs
 
