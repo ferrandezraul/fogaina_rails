@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <%= render "/refinery/html_tag" %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+	  <%= render "/refinery/head" %>
+
+	  <%# Facebook, Tweeter, LinkedIn and Google+ by Sharethis.com %>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-7a89411c-6803-f267-3b41-8fefd5fa646e", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+  </head>
+
+  <body id="<%= canonical_id @page %>">
+    <%= site_bar -%>
+    <div id="page_container">
+      <header id="header">
+        <%= render "/refinery/header" -%>
+      </header>
+      <section id="page">
+        <%= yield %>
+      </section>
+      <footer>
+        <%= render "/refinery/footer" -%>
+      </footer>
+    </div>
+    <%= render "/refinery/javascripts" %>
+
+  </body>
+
+</html>
