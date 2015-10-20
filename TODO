@@ -3,13 +3,12 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 Check foundation in order to remove the css from layout.css.scss (float: left; )
-and use columns or something else
+and use columns or something else. Therefore use the grid from foundation and the pages from refinery:
+http://foundation.zurb.com/docs/components/grid.html
+http://www.refinerycms.com/guides/using-custom-view-or-layout-templates
 
 1. Create an extension for events, courses and anything else?
    http://www.refinerycms.com/guides/generate-an-extension-to-use-your-mvcs
-
-2. 
-
 
 ///////////////////////////////////////////////////////////////////////////////
 /////////// BEST PRACTISES  ///////////////////////////////////////////////////
