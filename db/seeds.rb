@@ -38,7 +38,7 @@ pages_array = [ {
                     # Add a Tweet from your Tweeter account( Source from https://dev.twitter.com/web/embedded-tweets ) 
                     #               <blockquote class=\"twitter-tweet\" lang=\"en\"><p lang=\"und\" dir=\"\ltr\">Avui merendola  especial a <a href=\"https://twitter.com/lanevateria\">@lanevateria</a> . <a href=\"https://twitter.com/hashtag/boncafe?src=hash\">#boncafe</a> <a href=\"https://twitter.com/hashtag/barista?src=hash\">#barista</a> <a href=\"https://twitter.com/hashtag/croissant?src=hash\">#croissant</a> <a href=\"https://twitter.com/hashtag/olot?src=hash\">#olot</a> @ La Nevateria <a href=\"https://t.co/80KGy04fBT\">https://t.co/80KGy04fBT</a></p>&mdash; Forn La Fogaina (@Fogaina) <a href=\"https://twitter.com/Fogaina/status/654336873951850496\">October 14, 2015</a></blockquote>
                     #               <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>              
-                    :side_body => "<p>Moneda Social<p>
+                    :side_body => "<p><strong>Acceptem moneda social</strong><p>
                                    <img height=\"66\" width=\"183\" data-interchange=\"[%s, (default)]]\">" % image_moneda_social.url,                  
                     #:position_side_body => 0,
                     #:banner => banner_html[:default],
