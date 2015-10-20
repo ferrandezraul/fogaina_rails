@@ -31,9 +31,9 @@ pages_array = [ {
                     		  </p>",
                     :body_es => "",
                     :body_ca => "",
-                    # Added Tweet ( Source from https://dev.twitter.com/web/embedded-tweets ) 
-                    :side_body => "<blockquote class=\"twitter-tweet\" lang=\"en\"><p lang=\"und\" dir=\"\ltr\">Avui merendola  especial a <a href=\"https://twitter.com/lanevateria\">@lanevateria</a> . <a href=\"https://twitter.com/hashtag/boncafe?src=hash\">#boncafe</a> <a href=\"https://twitter.com/hashtag/barista?src=hash\">#barista</a> <a href=\"https://twitter.com/hashtag/croissant?src=hash\">#croissant</a> <a href=\"https://twitter.com/hashtag/olot?src=hash\">#olot</a> @ La Nevateria <a href=\"https://t.co/80KGy04fBT\">https://t.co/80KGy04fBT</a></p>&mdash; Forn La Fogaina (@Fogaina) <a href=\"https://twitter.com/Fogaina/status/654336873951850496\">October 14, 2015</a></blockquote>
-                                   <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+                    # Add a Tweet from your Tweeter account( Source from https://dev.twitter.com/web/embedded-tweets ) 
+                    #:side_body => "<blockquote class=\"twitter-tweet\" lang=\"en\"><p lang=\"und\" dir=\"\ltr\">Avui merendola  especial a <a href=\"https://twitter.com/lanevateria\">@lanevateria</a> . <a href=\"https://twitter.com/hashtag/boncafe?src=hash\">#boncafe</a> <a href=\"https://twitter.com/hashtag/barista?src=hash\">#barista</a> <a href=\"https://twitter.com/hashtag/croissant?src=hash\">#croissant</a> <a href=\"https://twitter.com/hashtag/olot?src=hash\">#olot</a> @ La Nevateria <a href=\"https://t.co/80KGy04fBT\">https://t.co/80KGy04fBT</a></p>&mdash; Forn La Fogaina (@Fogaina) <a href=\"https://twitter.com/Fogaina/status/654336873951850496\">October 14, 2015</a></blockquote>
+                    #               <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
                     #:position_side_body => 0,
                     #:banner => banner_html[:default],
                     #:banner_es => banner_html[:es],
