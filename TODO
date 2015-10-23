@@ -4,8 +4,8 @@
 
 
 http://www.refinerycms.com/guides/menu-presenter
-Continue with _header.html.erb. if I use commented li it works. how to change Refinery::Pages::MenuPresenter
-to create valid li?
+Review how changeg Refinery::Pages::MenuPresenter
+https://gist.github.com/jess/9270729
 
 Use a css template from foundation:
 http://foundation.zurb.com/templates.html

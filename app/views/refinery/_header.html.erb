@@ -1,20 +1,17 @@
-<div class="small-12 medium-4 large-6 columns namelogo">
-  <h1><%= link_to Refinery::Core.site_name, refinery.root_path %></h1>
-</div>
-<div class="small-12 medium-8 large-6 columns">
-  <div class="nav-bar">
-    <ul class="button-group">
-    
-    <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
 
-    <%# <li><a href="#" class="button">About</a></li> %>
-    <%# <li><a href="#" class="button">Work</a></li> %>
-    <%# <li><a href="#" class="button">Contact</a></li> %>    
-
-    </ul>
-  </div>
-</div>
-</div>
+ 	<div class="small-12 columns">
+	    <nav class="top-bar" data-topbar>
+	      <ul class="title-area">
+	        <li class="name">
+	          <h1><%= link_to Refinery::Core.site_name, refinery.root_path %></h1>
+	        </li>
+	        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+	      </ul>
+	      <% menu = FoundationMenu.new(refinery_menu_pages, self) %>
+	      <% menu.max_depth = 1 %>
+	      <%= menu.to_html %>
+	    </nav>
+    </div>
 
 
 
