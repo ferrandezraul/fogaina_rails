@@ -20,7 +20,8 @@
 
   <body id="<%= canonical_id @page %>">
     <%= site_bar -%>
-    <div id="page_container">
+
+    <div id="row page_container">
       <header id="header">
         <%= render "/refinery/header" -%>
       </header>
@@ -31,7 +32,9 @@
         <%= render "/refinery/footer" -%>
       </footer>
     </div>
+
     <%= render "/refinery/javascripts" %>
+    <script src="js/foundation/foundation.clearing.js"></script>
 
   </body>
 
