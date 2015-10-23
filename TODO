@@ -2,10 +2,7 @@
 /////////// TODO  /////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-Give some format to layout.css.scss
-
-Move things from home to the seed data and use <%= raw(@page.content_for(:body)) %> and <%= raw(@page.content_for(:site_body)) %>
-add the images ...
+Give some style to foundation nav by editing foundation_and_overwrites.scss
 
 http://www.refinerycms.com/guides/menu-presenter
 
