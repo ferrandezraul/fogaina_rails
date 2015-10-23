@@ -2,15 +2,15 @@
 /////////// TODO  /////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
+Give some format to layout.css.scss
+
 Move things from home to the seed data and use <%= raw(@page.content_for(:body)) %> and <%= raw(@page.content_for(:site_body)) %>
 add the images ...
 
 http://www.refinerycms.com/guides/menu-presenter
+
 Review how changeg Refinery::Pages::MenuPresenter
 https://gist.github.com/jess/9270729
-
-Use a css template from foundation:
-http://foundation.zurb.com/templates.html
 
 1. Create an extension for events, courses and anything else?
    http://www.refinerycms.com/guides/generate-an-extension-to-use-your-mvcs
