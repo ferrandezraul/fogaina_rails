@@ -22,7 +22,8 @@ pages_array = [ {
                     :title_es => "Quienes somos?",
                     :title_ca => "Qui som?",
                     # Image path in next line is copied from the ui when I try to add it manually
-                    :body => "<p>
+                    :body => "<h4>Qui som?</h4>
+                            <p>
                     		  	La Fogaina és un petit projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
                     		  	<ul>
                                  <li>Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.</li>

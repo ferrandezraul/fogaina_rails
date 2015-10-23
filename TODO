@@ -2,6 +2,8 @@
 /////////// TODO  /////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
+Move things from home to the seed data and use <%= raw(@page.content_for(:body)) %> and <%= raw(@page.content_for(:site_body)) %>
+add the images ...
 
 http://www.refinerycms.com/guides/menu-presenter
 Review how changeg Refinery::Pages::MenuPresenter
