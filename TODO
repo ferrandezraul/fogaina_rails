@@ -2,6 +2,10 @@
 /////////// TODO  /////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
+overwrite layout show as done with layout home (see app/views/refinery/pages/home.html.erb )
+cause there is no proper stylesheet on show pages. the reason is that home layout contains a div.row that 
+uses foundation styles.
+
 Give some style to foundation nav by editing foundation_and_overwrites.scss
 
 http://www.refinerycms.com/guides/menu-presenter
