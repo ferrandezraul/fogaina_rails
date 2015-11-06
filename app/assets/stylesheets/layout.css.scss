@@ -26,21 +26,8 @@ body{
 	float:none;
 }
 
-@media only screen and (min-width: 40.063em) 
-{
-	.button-group{
-		float:right;
-	}
-}
-
 .namelogo{
 	padding:20px 10px 0px 10px;
-}
-
-@media only screen and (min-width: 40.063em) {
-	.namelogo{
-		padding-bottom:20px;
-	}
 }
 
 .namelogo h1{
@@ -50,11 +37,6 @@ body{
 
 .intro-text{
 	color:rgba(255,255,255,1);
-}
-
-@media only screen and (min-width: 64.063em) {
-	.intro-text{padding-top:18%; }
-	.intro-tittle{padding-top:0%; }
 }
 
 .intro-text p{
@@ -99,4 +81,7 @@ footer a:hover{
 	background-image:url(cafeteria2.jpg);
 	max-width:100%;
 	background-repeat: no-repeat;
+	background-color: #d3cebb;
+	padding-top: 10%;	
 }
+
