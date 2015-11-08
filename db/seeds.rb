@@ -13,6 +13,9 @@
 moneda_social_path = "#{Rails.root.join('app/assets/images/monedasociallogo.png')}"
 image_moneda_social= Refinery::Image.create :image => File.new(moneda_social_path)
 
+work_path = "#{Rails.root.join('app/assets/images/work.jpg')}"
+image_work= Refinery::Image.create :image => File.new(work_path)
+
 pages_array = [ {
                     :show_in_menu => true,
                     :deletable => false,
@@ -39,12 +42,11 @@ pages_array = [ {
                     # Add a Tweet from your Tweeter account( Source from https://dev.twitter.com/web/embedded-tweets ) 
                     #               <blockquote class=\"twitter-tweet\" lang=\"en\"><p lang=\"und\" dir=\"\ltr\">Avui merendola  especial a <a href=\"https://twitter.com/lanevateria\">@lanevateria</a> . <a href=\"https://twitter.com/hashtag/boncafe?src=hash\">#boncafe</a> <a href=\"https://twitter.com/hashtag/barista?src=hash\">#barista</a> <a href=\"https://twitter.com/hashtag/croissant?src=hash\">#croissant</a> <a href=\"https://twitter.com/hashtag/olot?src=hash\">#olot</a> @ La Nevateria <a href=\"https://t.co/80KGy04fBT\">https://t.co/80KGy04fBT</a></p>&mdash; Forn La Fogaina (@Fogaina) <a href=\"https://twitter.com/Fogaina/status/654336873951850496\">October 14, 2015</a></blockquote>
                     #               <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>              
-                    :side_body => "<h4>Work</h4>
-                                  <p>Click on each image to view my work!</p>
+                    :side_body => "<h4>Treball</h4>
+                                  <p>Feu clic a cada imatge per veure el nostre treball!</p>
                                   <ul class=\"clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4\" data-clearing>
                                     <li>
-                                      <a href=\"http://placehold.it/550x300\">
-                                      <img data-caption=\"caption here\" src=\"http://placehold.it/550x300\"></a>
+                                      <img data-caption=\"Preparando el pan ...\" src=\"%s\"></a>
                                     </li>
                                     <li>
                                       <a href=\"http://placehold.it/550x300\"><img data-caption=\"caption 2 here...\" src=\"http://placehold.it/550x300\"></a>
@@ -57,7 +59,7 @@ pages_array = [ {
                                     </li>
                                   </ul>
                                    <p><h4>Acceptem moneda social</h4><p>
-                                   <img height=\"66\" width=\"183\" data-interchange=\"[%s, (default)]]\">" % image_moneda_social.url,                  
+                                   <img height=\"66\" width=\"183\" data-interchange=\"[%s, (default)]]\">" % [image_work.url, image_moneda_social.url],                  
                     #:position_side_body => 0,
                     #:banner => banner_html[:default],
                     #:banner_es => banner_html[:es],
