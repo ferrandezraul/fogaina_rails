@@ -16,6 +16,15 @@ image_moneda_social= Refinery::Image.create :image => File.new(moneda_social_pat
 work_path = "#{Rails.root.join('app/assets/images/work.jpg')}"
 image_work= Refinery::Image.create :image => File.new(work_path)
 
+horno_path = "#{Rails.root.join('app/assets/images/horno.jpg')}"
+image_horno = Refinery::Image.create :image => File.new(horno_path)
+
+pa_de_coca_path = "#{Rails.root.join('app/assets/images/padecoca.jpg')}"
+image_pa_de_coca = Refinery::Image.create :image => File.new(pa_de_coca_path)
+
+soques_path = "#{Rails.root.join('app/assets/images/soques.jpg')}"
+image_soques = Refinery::Image.create :image => File.new(soques_path)
+
 pages_array = [ {
                     :show_in_menu => true,
                     :deletable => false,
@@ -46,20 +55,20 @@ pages_array = [ {
                                   <p>Feu clic a cada imatge per veure el nostre treball!</p>
                                   <ul class=\"clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4\" data-clearing>
                                     <li>
-                                      <img data-caption=\"Preparando el pan ...\" src=\"%s\"></a>
+                                      <img data-caption=\"Preparando el pan ...\" src=\"%s\">
                                     </li>
                                     <li>
-                                      <a href=\"http://placehold.it/550x300\"><img data-caption=\"caption 2 here...\" src=\"http://placehold.it/550x300\"></a>
+                                      <img data-caption=\"Nuestro horno ...\" src=\"%s\">
                                     </li>
                                     <li>
-                                      <a href=\"http://placehold.it/550x300\"><img data-caption=\"caption 3 here...\" src=\"http://placehold.it/550x300\"></a>
+                                      <img data-caption=\"Pade coca\" src=\"%s\">
                                     </li>
                                     <li>
-                                      <a href=\"http://placehold.it/550x300\"><img data-caption=\"caption 4 here...\" src=\"http://placehold.it/550x300\"></a>
+                                      <img data-caption=\"Soques recién hechas\" src=\"%s\">
                                     </li>
                                   </ul>
                                    <p><h4>Acceptem moneda social</h4><p>
-                                   <img height=\"66\" width=\"183\" data-interchange=\"[%s, (default)]]\">" % [image_work.url, image_moneda_social.url],                  
+                                   <img height=\"66\" width=\"183\" data-interchange=\"[%s, (default)]]\">" % [image_work.url, image_horno.url, image_pa_de_coca.url, image_soques.url, image_moneda_social.url],                  
                     #:position_side_body => 0,
                     #:banner => banner_html[:default],
                     #:banner_es => banner_html[:es],
