@@ -34,7 +34,8 @@ pages_array = [ {
                     :title_es => "Quienes somos?",
                     :title_ca => "Qui som?",
                     # Image path in next line is copied from the ui when I try to add it manually
-                    :body => "<h4>Qui som?</h4>
+                    :body => "<embed width=\"320\" height=\"266\" src=\"http://www.youtube.com/v/sTon2EsQOvY?version=3&amp;f=user_uploads&amp;c=google-webdrive-0&amp;app=youtube_gdata\" type=\"application/x-shockwave-flash\" allowfullscreen=\"true\" title=\"Adobe Flash Player\">
+                            <h4>Qui som?</h4>
                             <p>
                     		  	La Fogaina és un petit projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
                     		  	<ul>
