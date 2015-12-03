@@ -41,7 +41,7 @@ body{
 
 .intro-text p{
 	font-family:'Shadows Into Light',cursive;
-	font-size:44px;
+	font-size:32px;
 }
 
 .about,.work,.contact{
@@ -80,6 +80,7 @@ footer a:hover{
 .hero{
 	background-image:url(cafeteria2.jpg);
 	max-width:100%;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-color: #d3cebb;
 	padding-top: 10%;	
