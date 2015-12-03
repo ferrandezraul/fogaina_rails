@@ -34,19 +34,21 @@ pages_array = [ {
                     :title_es => "Quienes somos?",
                     :title_ca => "Qui som?",
                     # Image path in next line is copied from the ui when I try to add it manually
-                    :body => "<embed width=\"320\" height=\"266\" src=\"http://www.youtube.com/v/sTon2EsQOvY?version=3&amp;f=user_uploads&amp;c=google-webdrive-0&amp;app=youtube_gdata\" type=\"application/x-shockwave-flash\" allowfullscreen=\"true\" title=\"Adobe Flash Player\">
-                            <h4>Qui som?</h4>
+                    :body => "<h4>Qui som?</h4>
                             <p>
-                    		  	La Fogaina és un petit projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
-                    		  	<ul>
-                                 <li>Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.</li>
-                                 <li>Una manipulació manual i casolana, amb fermentacions llargues. Gràcies a això el pa sembla que estigui especiat. Simplement aconseguim treure tot el sabor als cereals.</li>
-                                 <li>Hem elaborat la nostra Massa Mare, que ens acompanya desde el 2011, sistema arcaic de llevar el pa, com s'ha fet tota la vida. Tots els productes porten massa mare.</li>
-                                 <li>El nostre forn de llenya es de foc directe, d'aquesta manera reduïm el consum d'electricitat i aportem al pa un olor característic.</li>
-                                 <li>Informar sempre a la gent que ens visita del que fem, i com ho fem, sense secrets ni falta d'informació. Ens preocupem pels gustos particulars i aconsellem. Emboliquem i entreguem el pa amb la satisfacció de la feïna ben feta. I també molt important, no pugem els preus per tot aixó.</li>
-                              	</ul>
-							  	Bon Profit!!!
-                    		  </p>",
+                      		  	La Fogaina és un petit projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
+                      		  	<ul>
+                                   <li>Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.</li>
+                                   <li>Una manipulació manual i casolana, amb fermentacions llargues. Gràcies a això el pa sembla que estigui especiat. Simplement aconseguim treure tot el sabor als cereals.</li>
+                                   <li>Hem elaborat la nostra Massa Mare, que ens acompanya desde el 2011, sistema arcaic de llevar el pa, com s'ha fet tota la vida. Tots els productes porten massa mare.</li>
+                                   <li>El nostre forn de llenya es de foc directe, d'aquesta manera reduïm el consum d'electricitat i aportem al pa un olor característic.</li>
+                                   <li>Informar sempre a la gent que ens visita del que fem, i com ho fem, sense secrets ni falta d'informació. Ens preocupem pels gustos particulars i aconsellem. Emboliquem i entreguem el pa amb la satisfacció de la feïna ben feta. I també molt important, no pugem els preus per tot aixó.</li>
+                              </ul>
+  							  	          Bon Profit!!!
+                    		    </p>
+                            <div class=\"flex-video\">
+                                <embed width=\"320\" height=\"266\" src=\"http://www.youtube.com/v/sTon2EsQOvY?version=3&amp;f=user_uploads&amp;c=google-webdrive-0&amp;app=youtube_gdata\" type=\"application/x-shockwave-flash\" allowfullscreen=\"true\" title=\"Adobe Flash Player\">
+                            </div>",
                     :body_es => "",
                     :body_ca => "",     
                     # Add a Tweet from your Tweeter account( Source from https://dev.twitter.com/web/embedded-tweets ) 
