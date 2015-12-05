@@ -7,7 +7,15 @@
 
   <div class="row about">
     <div class="large-12 columns">
-      <%= raw(@page.content_for(:body)) %>
+      <div class="large-4 columns">
+        <h4>Acceptem moneda social</h4>
+        <img height="66" width="183" data-interchange="monedasociallogo.png, (default)]]">    
+        <a class="twitter-timeline" href="https://twitter.com/carmekis" data-widget-id="673208168349044737">Tuits de @carmekis</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      <div class="large-8 columns">
+        <%= raw(@page.content_for(:body)) %>
+      </div>            
     </div>
   </div>
 
@@ -32,7 +40,7 @@
           <%# Add follow button from Tweeter%>
           <%# Source from https://support.twitter.com/articles/20164833# %>
           <a href="https://twitter.com/Fogaina" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @Fogaina</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>          
         </p>        
       </div>
 
@@ -46,6 +54,7 @@
         </div>
         <script src="http://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=640&amp;locationId=5775103&amp;lang=es&amp;border=true&amp;display_version=2"></script>
       </div>
+
     </div>
   </div>
 

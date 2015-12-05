@@ -2,6 +2,9 @@
 /////////// TODO  /////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
+Modify home layout to have two columns (in one column place the moneda social and twitter and in another the text you want )
+Therefore create new page part!
+
 Extend show layout (see app/views/refinery/pages/show.html.erb )
 
 Give some style to foundation nav by editing foundation_and_overwrites.scss
