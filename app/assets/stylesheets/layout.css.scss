@@ -44,12 +44,14 @@ body{
 	font-size:32px;
 }
 
-.content-page{
-	padding:50px 0 0 0;
-	img{
-	  padding:0px 10px 20px 10px;	
-	}
+.side-body img{
+	  padding:0px 10px 20px 10px;
 }
+
+//.main-body img{
+//	width:250px;
+//	height:150px;
+//}
 
 .work-images img:hover{
 	opacity:0.5;-webkit-transition:0.3s ease;
