@@ -48,30 +48,32 @@ pages_array = [ {
                     		    </p>
                             <div class=\"flex-video\">
                                 <embed width=\"320\" height=\"266\" src=\"http://www.youtube.com/v/sTon2EsQOvY?version=3&amp;f=user_uploads&amp;c=google-webdrive-0&amp;app=youtube_gdata\" type=\"application/x-shockwave-flash\" allowfullscreen=\"true\" title=\"Adobe Flash Player\">
-                            </div>",
+                            </div>
+                            <h4>Treball</h4>
+                            <p>Feu clic a cada imatge per veure el nostre treball!</p>
+                            <ul class=\"clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4 work-images\" data-clearing>
+                              <li>
+                                <img data-caption=\"Preparando el pan ...\" src=\"%s\">
+                              </li>
+                              <li>
+                                <img data-caption=\"Nuestro horno ...\" src=\"%s\">
+                              </li>
+                              <li>
+                                <img data-caption=\"Pade coca\" src=\"%s\">
+                              </li>
+                              <li>
+                                <img data-caption=\"Soques recién hechas\" src=\"%s\">
+                              </li>
+                            </ul>" % [image_work.url, image_horno.url, image_pa_de_coca.url, image_soques.url],
                     :body_es => "",
                     :body_ca => "",     
                     # Add a Tweet from your Tweeter account( Source from https://dev.twitter.com/web/embedded-tweets ) 
                     #               <blockquote class=\"twitter-tweet\" lang=\"en\"><p lang=\"und\" dir=\"\ltr\">Avui merendola  especial a <a href=\"https://twitter.com/lanevateria\">@lanevateria</a> . <a href=\"https://twitter.com/hashtag/boncafe?src=hash\">#boncafe</a> <a href=\"https://twitter.com/hashtag/barista?src=hash\">#barista</a> <a href=\"https://twitter.com/hashtag/croissant?src=hash\">#croissant</a> <a href=\"https://twitter.com/hashtag/olot?src=hash\">#olot</a> @ La Nevateria <a href=\"https://t.co/80KGy04fBT\">https://t.co/80KGy04fBT</a></p>&mdash; Forn La Fogaina (@Fogaina) <a href=\"https://twitter.com/Fogaina/status/654336873951850496\">October 14, 2015</a></blockquote>
                     #               <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>              
-                    :side_body => "<h4>Treball</h4>
-                                  <p>Feu clic a cada imatge per veure el nostre treball!</p>
-                                  <ul class=\"clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4\" data-clearing>
-                                    <li>
-                                      <img data-caption=\"Preparando el pan ...\" src=\"%s\">
-                                    </li>
-                                    <li>
-                                      <img data-caption=\"Nuestro horno ...\" src=\"%s\">
-                                    </li>
-                                    <li>
-                                      <img data-caption=\"Pade coca\" src=\"%s\">
-                                    </li>
-                                    <li>
-                                      <img data-caption=\"Soques recién hechas\" src=\"%s\">
-                                    </li>
-                                  </ul>
-                                   <p><h4>Acceptem moneda social</h4><p>
-                                   <img height=\"66\" width=\"183\" data-interchange=\"[%s, (default)]]\">" % [image_work.url, image_horno.url, image_pa_de_coca.url, image_soques.url, image_moneda_social.url],                  
+                    :side_body => "<h4>Acceptem moneda social</h4>
+                                  <img height=\"66\" width=\"183\" data-interchange=\"[%s, (default)]]\">    
+                                  <a class=\"twitter-timeline\" href=\"https://twitter.com/carmekis\" data-widget-id=\"673208168349044737\">Tuits de @carmekis</a>
+                                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");</script>" % image_moneda_social.url,                  
                     #:position_side_body => 0,
                     #:banner => banner_html[:default],
                     #:banner_es => banner_html[:es],

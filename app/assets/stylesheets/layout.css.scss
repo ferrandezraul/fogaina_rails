@@ -44,19 +44,14 @@ body{
 	font-size:32px;
 }
 
-.about,.work,.contact{
+.content-page{
 	padding:50px 0 0 0;
+	img{
+	  padding:0px 10px 20px 10px;	
+	}
 }
 
-.about img{
-	width:250px;
-	height:250px;
-	border-radius:150px;
-	-webkit-border-radius:150px;
-	-moz-border-radius:150px;
-}
-
-.work img:hover{
+.work-images img:hover{
 	opacity:0.5;-webkit-transition:0.3s ease;
 	-moz-transition:0.3s ease;
 	-ms-transition:0.3s ease;
