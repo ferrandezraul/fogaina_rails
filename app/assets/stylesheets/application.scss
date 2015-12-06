@@ -17,3 +17,9 @@
  *= require foundation_and_overrides
 
  */
+
+/* Added downloaded font from app/assets/fonts */
+  @font-face {
+        font-family: "Mountains of Christmas";
+        src: url(MountainsofChristmas-Regular.ttf) format('truetype');
+    }
