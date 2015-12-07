@@ -19,7 +19,13 @@
  */
 
 /* Added downloaded font from app/assets/fonts */
-  @font-face {
-        font-family: "Mountains of Christmas";
-        src: url(MountainsofChristmas-Regular.ttf) format('truetype');
-    }
+@font-face {
+  font-family: "Mountains of Christmas Bold";
+  src: url(MountainsofChristmas-Bold.ttf) format('truetype');
+}
+
+/* Added downloaded font from app/assets/fonts */
+@font-face {
+  font-family: "Mountains of Christmas Regular";
+  src: url(MountainsofChristmas-Regular.ttf) format('truetype');
+}

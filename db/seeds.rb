@@ -124,6 +124,29 @@ pages_array = [ {
                 {
                     :show_in_menu => true,
                     :deletable => true,
+                    :title => "Cursos",
+                    :title_es => "Cursos",
+                    :title_ca => "Cursos",
+                    :body => "Si voleu apuntar-vos a la nostra llista de mail, per estar informats dels cursos que anem programant, envieu un mail a: fornlafogaina@gmail.com, i ens expliqueu el motiu.
+                              Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de l'espai i de l'aprenentatge.
+                              <h4>Curs de Pans Fàcils, ràpids i resultons. 35€ (4hores) Nivell Bàsic</h4>
+                              <p>Aquest curs està destinat a la gent que de tant en tant vol enfornar un pa a casa però no vol complicar-se la vida ni amb estranys ferments ni amb llargues hores d'espera. No podem esperar tenir una peça de gran qualitat com aconseguiríem amb la massa mare o amb fermentacions llargues , però anem a ensenyar algun truc per treure del nostre forn de forma més o menys fàcil i ràpida uns pans la mar de resultons .
+                              Curs per a gent que no té ganes d'aprendre massa sobre panificació ni processos. No cal tenir cap tipus de nivell ni coneixement.</p>
+                              <h4>Curs Bàsic per fer pa amb Massa Mare. 40€ (4:30hores) Nivell Bàsic o Nivell Iniciat</h4>
+                              <p>Aquest és un curs per iniciar-se en la manera de fer pa amb Massa Mare. Cada alumne realitzarà tots els passos del procés de fer pa de la seva pròpia peça . Una sola massa bàsica amb massa mare i sense llevat perquè tinguem temps d'entretenir-nos a cada pas i resoldre tots els dubtes . També parlarem de trucs i consells de l'enfornat ( amb forn elèctric casolà ) mentres enfornem algunes peces. En aquestes intenses 4:30 hores de curs també dedicarem una bona estona a parlar de les qualitats , usos , conservació , creació etc de la Massa Mare.
+                              Un curs pensat per a gent que vol saber i aprendre, fer-se el seu propi pa amb massa mare a casa, i no cal tenir cap tipus de nivell ni coneixement.</p>
+                              <h4>Viva el Centeno, Amunt el Sègol! 45€ (5hores) Nivell Iniciat o Mitjà</h4>
+                              <p>Per petició popular, tornem a portar a la Fogaina el curs monogràfic sobre el Sègol. Anem a gaudir amb tres receptes on ens empastifarem les mans amb pa de motlle 100% sègol integral, una peça que barreja sègol i blat, i unes delicioses galetes de sègol i xocolata. Parlarem també una mica de les característiques tan peculiars d'aquest cereal i el seu comportament en els diferents processos de la panificació. També possibilitats de combinar amb el blat.
+                              Per a aquest curs cal tenir un mínim de coneixement sobre Massa Mare i Fermentació en el pa ( encara que mai hàgim fet un pa de sègol ). Nivell Inicial / Mitjà.</p>
+                              <h4>Experiència Fornada de Pans i Coques amb Forn de llenya. 70€ (+o- 10hores) Nivell indiferent.</h4>
+                              <p>També per petició de clients i amics panarres, organitzem un dia de fornada al forn de llenya del Forn la Fogaina. No es tracta d'un curs, sinó de passar un bon dia ficant les mans a la massa, formant, fornejant, menjant i bevent. Enfornarem grans fogasses de pa de pagès, algun pa integral de motlle i algunes coques de forner. Totes les peces que treiem del forn se les emportaran els alumnes. El menjar i la beguda del migdia està inclosa en el preu.
+                              No cal tenir cap nivell ni coneixement per participar. L'important és passar un bon dia panarra, encara que els que tinguin dubtes i preguntes podreu aprofitar tot el dia per resoldre-les.</p>",
+                    :body_es => "",
+                    :body_ca => ""
+                },
+                {
+                    :show_in_menu => true,
+                    :deletable => true,
                     :title => "Contacte",  # default german title
                     :title_es => "Contacto",
                     :title_ca => "Contacte",
