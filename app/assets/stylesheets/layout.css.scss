@@ -48,9 +48,13 @@ body{
 	  padding:0px 10px 20px 10px;
 }
 
-//.main-body img{
-//	width:250px;
-//	height:150px;
+.work-images li{
+	height:120px;overflow:hidden;
+}
+
+// If I would like to fix the img size
+//.work-images li img{
+//	height:120px;overflow:hidden;
 //}
 
 .work-images img:hover{
@@ -59,10 +63,6 @@ body{
 	-ms-transition:0.3s ease;
 	-o-transition:0.3s ease;
 	transition:0.3s ease;
-}
-
-.work li{
-	height:140px;overflow:hidden;
 }
 
 footer{
