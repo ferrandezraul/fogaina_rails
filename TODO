@@ -1,9 +1,15 @@
 ///////////////////////////////////////////////////////////////////////////////
 /////////// TODO  /////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
-
 Fix javascript widgets not updating when changing pages.
 Small twitter widget on footer fixed. Problem is related with turbolinks gem. See http://stackoverflow.com/questions/20853891/facebook-and-twitter-widgets-disappear-on-navigation-rails 
+
+google maps also dissapear, when changing pages.
+
+All those javascript issues might be related to turbolinks gem.
+There is also a gem called jquery.turbolinks not currently used.
+Dig deeper on using javascript with rails and using turbolinks.
+Example-> show alert when different pages from refinery are loaded.
 
 Create test cases.
 
