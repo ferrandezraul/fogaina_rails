@@ -5,6 +5,10 @@
 Fix javascript widgets not updating when changing pages.
 Small twitter widget on footer fixed. Problem is related with turbolinks gem. See http://stackoverflow.com/questions/20853891/facebook-and-twitter-widgets-disappear-on-navigation-rails 
 
+Fix clearing from foundation. Images are not using clearing properly. Roll out to previos revision to figure out why. 
+
+Create test cases.
+
 Add padding to google maps
 https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map
 Add marker or note to the fogaina
