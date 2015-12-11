@@ -152,33 +152,21 @@ pages_array = [ {
                     :title_ca => "Contacte",
                     :body => "<div class=\"row\">
                                 <div class=\"large-12 columns\">
-                                  <div class=\"large-6 columns\">
+                                  <div class=\"large-4 columns\">
                                     <h3>La Fogaina</h3>
-                                    <p>Dissabtes de 9:30 a 13:30 </p>
+                                    <p>Dissabtes de 9:30h a 13:30h </p>
                                     <p>Mas la Plana s/n </br> El Mallol - Carretera del Veïnat Cirera. </br> La Vall d'en Bas. </br> La Garrotxa - Girona </br> 661380955 - 639264863</p>
                                     <p>fornlafogaina@gmail.com </br> (obrador, contacte per restaurants, cooperatives etc)</p>
-                                  </div>
-                                  <div class=\"large-6 columns\">
-                                    <div id=\"map-fogaina\"></div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class=\"row\">
-                                <div class=\"large-12 columns\">
-                                  <div class=\"large-6 columns\">
                                     <h3>La Fogaina Pa i Cafè.</h3>
-                                    <p>De Dimarts a Dissabte, de 8:00 a 13:30 i de 16:00 a 20:00 </p>
+                                    <p>De Dimarts a Dissabte de 8:00h a 13:30h i de 16:00h a 20:00h</p>
                                     <p>C/ Sant Sebastià nº52 </br> Les Preses</br> La Garrotxa - Girona</br> 646879062</p>
                                     <p>cafelafogaina@gmail.com </br> (espai cafe, venda de pa i reposteria, contacte per particulars)</p>
                                   </div>
-                                  <div class=\"large-6 columns\">
-                                    <div id=\"map-paicafe\"></div>
+                                  <div class=\"large-8 columns\">
+                                    <div id=\"map-fogaina\"></div>
                                   </div>
                                 </div>
-                              </div>
-                                                   
-                            <p>Enllaç a <a target=\"_blank\" title=\"\" href=\"https://www.google.es/maps?q=forn+la+fogaina&hl=es&ll=42.153414,2.453814&spn=0.009688,0.021136&sll=40.396764,-3.713379&sspn=10.185894,21.643066&t=h&z=16&iwloc=A\">Google Maps</a></p>",
+                              </div>",
                     :body_es => "",
                     :body_ca => ""
                 }
