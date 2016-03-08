@@ -62,3 +62,5 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 gem 'refinerycms-authentication-devise', '~> 1.0'
 
 gem 'foundation-rails'
+
+gem 'foundation-icons-sass-rails'
