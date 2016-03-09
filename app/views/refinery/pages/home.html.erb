@@ -1,14 +1,25 @@
 <%#  <%= render '/refinery/content_page' %>
 
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="large-4 columns side-body">
-        <%= raw(@page.content_for(:side_body)) %>
-      </div>
-      <div class="large-8 columns main-body">
-        <%= raw(@page.content_for(:body)) %>
-      </div>            
+
+<div class="row">
+  <div class="large-12 columns">
+    <div class="your-class">
+      <%= image_tag("work.jpg") %>
+      <%= image_tag("obrador.jpg") %>
+      <%= image_tag("soques.jpg") %>
     </div>
   </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <div class="large-4 columns side-body">
+      <%= raw(@page.content_for(:side_body)) %>
+    </div>
+    <div class="large-8 columns main-body">
+      <%= raw(@page.content_for(:body)) %>
+    </div>            
+  </div>
+</div>
 
       

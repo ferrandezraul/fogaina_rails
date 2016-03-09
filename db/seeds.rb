@@ -26,13 +26,13 @@ soques_path = "#{Rails.root.join('app/assets/images/soques.jpg')}"
 image_soques = Refinery::Image.create :image => File.new(soques_path)
 
 pages_array = [ {
-                    :show_in_menu => true,
+                    :show_in_menu => false,
                     :deletable => false,
                     :link_url => "/",
                     :menu_match => "^/$",
-                    :title => "Qui som?",  # default english title
-                    :title_es => "Quienes somos?",
-                    :title_ca => "Qui som?",
+                    :title => "Home",  # default english title
+                    :title_es => "Inicio",
+                    :title_ca => "Inici",
                     # Image path in next line is copied from the ui when I try to add it manually
                     :body => "",
                     :body_es => "",
