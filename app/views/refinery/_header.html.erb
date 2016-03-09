@@ -1,22 +1,21 @@
 
- 	<div class="small-12 columns">
-	    <nav class="top-bar" data-topbar>
-	      <ul class="title-area">
-	        <li class="name">
-	          <h1><%= link_to Refinery::Core.site_name, refinery.root_path %></h1>
-	        </li>
-	        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-	      </ul>
-	      <% menu = FoundationMenu.new(refinery_menu_pages, self) %>
-	      <% menu.max_depth = 1 %>
-	      <%= menu.to_html %>
-	    </nav>
-    </div>
+  <div class="row header">
+    <%= image_tag "cafeteria2.jpg", :alt => "Pa artesà i ecològic a la Garrotxa" %>
+  </div>
 
-
-    <div class="row header">
-      <%= image_tag "cafeteria2.jpg", :alt => "Pa artesà i ecològic a la Garrotxa" %>
-    </div>
+  <div class="small-12 columns">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <%# <h1><%= link_to Refinery::Core.site_name, refinery.root_path %><%# </h1>%>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+      </ul>
+      <% menu = FoundationMenu.new(refinery_menu_pages, self) %>
+      <% menu.max_depth = 1 %>
+      <%= menu.to_html %>
+    </nav>
+  </div>
 
 
 
