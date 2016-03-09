@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.your-class').slick({
+  $('.slick-photos').slick({
     dots: true,
     infinite: true,
     speed: 300,
