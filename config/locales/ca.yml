@@ -21,3 +21,7 @@
 
 ca:
   hello: "Hola mon"
+  language: "Idioma"
+  englishUK: "English"
+  spanish: "Español"
+  catalan: "Català"

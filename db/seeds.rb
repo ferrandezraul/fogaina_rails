@@ -70,9 +70,9 @@ pages_array = [ {
                 {
                     :show_in_menu => true,
                     :deletable => true,
-                    :title => "Vols saber mes",
-                    :title_es => "Cursos",
-                    :title_ca => "Cursos",
+                    :title => "Wanna know more?",
+                    :title_es => "Quieres saber mas?",
+                    :title_ca => "Vols saber més?",
                     :body => "",
                     :body_es => "",
                     :body_ca => ""

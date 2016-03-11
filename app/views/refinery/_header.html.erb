@@ -6,6 +6,21 @@
   <div class="row header">
     <div class="small-12 columns">
       <nav class="top-bar" data-topbar>
+        <section class="top-bar-section">
+          <ul class="left">
+            <!-- In case I would like more items in my top-bar -->
+            <!-- <li class="active"><a href="#">Right Button Active</a></li>  -->
+            <li class="has-dropdown">
+              <a href="#"><%= t('language' ) %></a>
+              <ul class="dropdown">
+                <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
+                <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
+                <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
         <ul class="title-area">
           <li class="name">
             <%# <h1><%= link_to Refinery::Core.site_name, refinery.root_path %><%# </h1>%>

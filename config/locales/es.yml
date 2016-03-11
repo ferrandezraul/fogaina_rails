@@ -21,3 +21,7 @@
 
 es:
   hello: "Hola mundo"
+  language: "Idioma"
+  englishUK: "English"
+  spanish: "Español"
+  catalan: "Català"
