@@ -26,7 +26,7 @@ soques_path = "#{Rails.root.join('app/assets/images/soques.jpg')}"
 image_soques = Refinery::Image.create :image => File.new(soques_path)
 
 pages_array = [ {
-                    :show_in_menu => false,
+                    :show_in_menu => true,
                     :deletable => false,
                     :link_url => "/",
                     :menu_match => "^/$",
@@ -34,9 +34,9 @@ pages_array = [ {
                     :title_es => "Inicio",
                     :title_ca => "Inici",
                     # Image path in next line is copied from the ui when I try to add it manually
-                    :body => "",
-                    :body_es => "",
-                    :body_ca => "",     
+                    :body => "This is the body of home.",
+                    :body_es => "Esto es el body de inicio.",
+                    :body_ca => "Això es el body d'inici",     
                     :side_body => "",                  
                     #:position_side_body => 0,
                     #:banner => banner_html[:default],
@@ -52,20 +52,20 @@ pages_array = [ {
                         :title_es => "Página no encontrada",
                         :title_ca => "Pàgina no trobada",
                         :position_body => 0,
-                        :body => "<h2>Upsss! Sorry, there has been a problem ...</h2><p>The page is not available.</p><p><a href='/'>Back to home</a></p>",
-                        :body_es => "<h2>Upsss! Lo sentimos, ha habido un problema ...</h2><p>La página solicitada no ha sido encontrada.</p><p><a href='/es'>Vuelva a la página de inicio</a></p>",
-                        :body_ca => "<h2>Upsss! Ho sentim, hi ha hagut un problema ...</h2><p>La pàgina sol-licitada no s'ha trobat.</p><p><a href='/ca'>Tornar a la pàgina de inici</a></p>",
+                        :body => "<h3>Upsss! Sorry, there has been a problem ...</h3><p>The page is not available.</p><p><a href='/'>Back to home</a></p>",
+                        :body_es => "<h3>Upsss! Lo sentimos, ha habido un problema ...</h3><p>La página solicitada no ha sido encontrada.</p><p><a href='/es'>Vuelva a la página de inicio</a></p>",
+                        :body_ca => "<h3>Upsss! Ho sentim, hi ha hagut un problema ...</h3><p>La pàgina sol-licitada no s'ha trobat.</p><p><a href='/ca'>Tornar a la pàgina de inici</a></p>",
                     }
                 },
                 {
                     :show_in_menu => true,
                     :deletable => true,
-                    :title => "Pa i Cafè",
-                    :title_es => "Pa i Cafè",
+                    :title => "Bread and Coffee",
+                    :title_es => "Pan i Café",
                     :title_ca => "Pa i Cafè",
-                    :body => "",
-                    :body_es => "",
-                    :body_ca => ""
+                    :body => "This is the body of Bread and coffee.",
+                    :body_es => "Esto es el body de Pan i Cafe.",
+                    :body_ca => "Això es el body de pa i cafe"
                 },
                 {
                     :show_in_menu => true,
