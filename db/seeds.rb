@@ -37,7 +37,9 @@ pages_array = [ {
                     :body => "This is the body of home.",
                     :body_es => "Esto es el body de inicio.",
                     :body_ca => "Això es el body d'inici",     
-                    :side_body => "",                  
+                    :side_body => "This is the side body of home.", 
+                    :side_body_es => "Esto es el side body de inicio.",
+                    :side_body_ca => "Això es el side body d'inici",                  
                     #:position_side_body => 0,
                     #:banner => banner_html[:default],
                     #:banner_es => banner_html[:es],
@@ -65,7 +67,10 @@ pages_array = [ {
                     :title_ca => "Pa i Cafè",
                     :body => "This is the body of Bread and coffee.",
                     :body_es => "Esto es el body de Pan i Cafe.",
-                    :body_ca => "Això es el body de pa i cafe"
+                    :body_ca => "Això es el body de pa i cafe",
+                    :side_body => "This is the side body of Bread and Coffee.", 
+                    :side_body_es => "Esto es el side body de Pan in Cafe.",
+                    :side_body_ca => "Això es el side body de Pa i Cafe", 
                 },
                 {
                     :show_in_menu => true,
@@ -73,9 +78,12 @@ pages_array = [ {
                     :title => "Wanna know more?",
                     :title_es => "Quieres saber mas?",
                     :title_ca => "Vols saber més?",
-                    :body => "",
-                    :body_es => "",
-                    :body_ca => ""
+                    :body => "This is the body of Wanna know more?",
+                    :body_es => "Esto es el body de Quieres saber mas",
+                    :body_ca => "Això es el body de Vols saber mes?",
+                    :side_body => "This is the side body of Wanna know more?", 
+                    :side_body_es => "Esto es el side body de Quieres saber mas?",
+                    :side_body_ca => "Això es el side body de Vols saber mes?", 
                 },
                 {
                     :show_in_menu => true,
