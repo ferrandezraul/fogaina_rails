@@ -47,23 +47,6 @@ body{
 	  padding:0px 10px 20px 10px;
 }
 
-.work-images li{
-	height:120px;overflow:hidden;
-}
-
-// If I would like to fix the img size
-//.work-images li img{
-//	height:120px;overflow:hidden;
-//}
-
-.work-images img:hover{
-	opacity:0.5;-webkit-transition:0.3s ease;
-	-moz-transition:0.3s ease;
-	-ms-transition:0.3s ease;
-	-o-transition:0.3s ease;
-	transition:0.3s ease;
-}
-
 footer{
 	padding:80px 0 10px 0;
 }
