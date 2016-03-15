@@ -13,16 +13,16 @@
 moneda_social_path = "#{Rails.root.join('app/assets/images/monedasociallogo.png')}"
 image_moneda_social= Refinery::Image.create :image => File.new(moneda_social_path)
 
-work_path = "#{Rails.root.join('app/assets/images/work.jpg')}"
+work_path = "#{Rails.root.join('app/assets/images/obrador/work.jpg')}"
 image_work= Refinery::Image.create :image => File.new(work_path)
 
-horno_path = "#{Rails.root.join('app/assets/images/horno.jpg')}"
+horno_path = "#{Rails.root.join('app/assets/images/obrador/horno.jpg')}"
 image_horno = Refinery::Image.create :image => File.new(horno_path)
 
-pa_de_coca_path = "#{Rails.root.join('app/assets/images/padecoca.jpg')}"
+pa_de_coca_path = "#{Rails.root.join('app/assets/images/pan/padecoca.jpg')}"
 image_pa_de_coca = Refinery::Image.create :image => File.new(pa_de_coca_path)
 
-soques_path = "#{Rails.root.join('app/assets/images/soques.jpg')}"
+soques_path = "#{Rails.root.join('app/assets/images/pan/soques.jpg')}"
 image_soques = Refinery::Image.create :image => File.new(soques_path)
 
 pages_array = [ {
