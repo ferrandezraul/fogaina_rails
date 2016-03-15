@@ -5,7 +5,14 @@
 
   <div class="row header">
     <div class="small-12 columns">
-      <a class="locale-change" href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000"><%= t('language') %></a>
+      <a class="locale-change" href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">
+        <% if I18n.locale == :en %>
+          <%= t('englishUK' ) %>
+        <% elsif I18n.locale == :es %>
+          <%= t('spanish' ) %>
+        <% elsif I18n.locale == :ca %>
+          <%= t('catalan' ) %>
+        <% end %></a>
       <ul id="hover1" class="f-dropdown" data-dropdown-content>
         <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
         <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
