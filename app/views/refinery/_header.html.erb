@@ -5,18 +5,12 @@
 
   <div class="row header">
     <div class="small-12 columns">
-      <section class="top-bar-section">
-        <ul class="left">
-          <li class="has-dropdown">
-            <a href="#"><%= t('language' ) %></a>
-            <ul class="dropdown">
-              <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
-              <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
-              <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
+      <a class="locale-change" href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000"><%= t('language') %></a>
+      <ul id="hover1" class="f-dropdown" data-dropdown-content>
+        <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
+        <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
+        <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>
+      </ul>
       <nav class="top-bar" data-topbar>          
         <ul class="title-area">
           <li class="name">
