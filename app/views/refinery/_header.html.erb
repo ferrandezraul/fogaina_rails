@@ -1,8 +1,3 @@
-
-  <div class="row header">
-    <%= image_tag "cafeteria2.jpg", :alt => "Pa artesà i ecològic a la Garrotxa" %>
-  </div>
-
   <div class="row header">
     <div class="small-12 columns">
       <a class="locale-change" href="#" data-dropdown="hover1" data-options="is_hover:true; hover_timeout:5000">
@@ -12,7 +7,23 @@
           <%= t('spanish' ) %>
         <% elsif I18n.locale == :ca %>
           <%= t('catalan' ) %>
-        <% end %></a>
+        <% end %>
+      </a>
+    </div>
+  </div>
+
+  <div class="row header">
+    <%#<%= image_tag "cafeteria/cafeteria2.jpg", :alt => "Pa artesà i ecològic a la Garrotxa" %>
+    <div class="large-2 columns"></div>
+    <div class="header-logo large-8 large-offset-2 columns">
+      <%= image_tag "Logo.png", class: 'header-img' %>
+      <h4 class='header-text'><%= t('pa_eco_garrotxa') %></h4>
+    </div>
+    <div class="large-2 columns"></div>
+  </div>
+
+  <div class="row header">
+    <div class="small-12 columns">
       <ul id="hover1" class="f-dropdown" data-dropdown-content>
         <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
         <li><%= link_to t('spanish' ), {:locale => "es" } %></li>

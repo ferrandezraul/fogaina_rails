@@ -34,7 +34,7 @@ pages_array = [ {
                     :title_es => "Inicio",
                     :title_ca => "Inici",
                     # Image path in next line is copied from the ui when I try to add it manually
-                    :body => "This is the body of home.
+                    :body => "
                     <div class=\"row\">
                       <div class=\"large-2 columns\"></div>
                       <div class=\"slick-photos large-8 large-offset-2 columns\">
@@ -45,7 +45,7 @@ pages_array = [ {
                       </div>
                       <div class=\"large-2 columns\"></div>
                     </div>" % [image_work.url, image_horno.url, image_pa_de_coca.url, image_soques.url],
-                    :body_es => "Esto es el body de inicio.
+                    :body_es => "
                     <div class=\"row\">
                       <div class=\"large-2 columns\"></div>
                       <div class=\"slick-photos large-8 large-offset-2 columns\">
@@ -56,7 +56,7 @@ pages_array = [ {
                       </div>
                       <div class=\"large-2 columns\"></div>
                     </div>" % [image_work.url, image_horno.url, image_pa_de_coca.url, image_soques.url],
-                    :body_ca => "Això es el body d'inici
+                    :body_ca => "
                     <div class=\"row\">
                       <div class=\"large-2 columns\"></div>
                       <div class=\"slick-photos large-8 large-offset-2 columns\">
