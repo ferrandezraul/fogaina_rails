@@ -59,3 +59,6 @@ gem 'refinerycms-authentication-devise', '~> 1.0'
 #  gem 'refinerycms-inquiries', ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-search', ['~> 3.0', '>= 3.0.0']
 #  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
+
+gem 'foundation-rails'
+
