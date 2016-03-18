@@ -1,0 +1,14 @@
+1. Buscar un template que me convenza, o una combinacion de templates. A ser posible de foundation
+http://foundation.zurb.com/templates-f5.html
+http://foundation.zurb.com/templates.html
+
+2. luego adaptar las imagenes con gimp al tamanyo necesitado
+
+3. Crear refinery view templates que sigan un template escogido para tener mas opciones en el administrador de paginas. (home, show, y alguna mas ...)
+4. Crear page parts (como side body) que macheen las partes de los templates escogidos.
+
+5. Crear varios branches con diferentes templates
+
+6. Probar las extensiones de refinery (blog, news, inquiries)
+
+7. Anyadir localization (ya implementado en el master branch)
