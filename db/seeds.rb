@@ -13,14 +13,14 @@
 #moneda_social_path = "#{Rails.root.join('app/assets/images/monedasociallogo.png')}"
 #image_moneda_social= Refinery::Image.create :image => File.new(moneda_social_path)
 
-work_path = "#{Rails.root.join('app/assets/images/fogaina_presentacio_600x450.jpg')}"
-image_work= Refinery::Image.create :image => File.new(work_path)
+oclot_bici_path = "#{Rails.root.join('app/assets/images/fogaina_presentacio_600x450.jpg')}"
+image_oclot_bici= Refinery::Image.create :image => File.new(oclot_bici_path)
 
-horno_path = "#{Rails.root.join('app/assets/images/obrador/horno.jpg')}"
-image_horno = Refinery::Image.create :image => File.new(horno_path)
+cistell_pan_path = "#{Rails.root.join('app/assets/images/pan/cistell.jpg')}"
+image_cistell_pan = Refinery::Image.create :image => File.new(cistell_pan_path)
 
-pa_de_coca_path = "#{Rails.root.join('app/assets/images/pan/padecoca.jpg')}"
-image_pa_de_coca = Refinery::Image.create :image => File.new(pa_de_coca_path)
+cursos_cartell_path = "#{Rails.root.join('app/assets/images/cursos/cursos_cartell.jpg')}"
+image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_path)
 
 soques_path = "#{Rails.root.join('app/assets/images/pan/soques.jpg')}"
 image_soques = Refinery::Image.create :image => File.new(soques_path)
@@ -37,14 +37,11 @@ pages_array = [ {
                     :body => "
                     <div class=\"row\">
                     <div class=\"large-4 columns\">
-                      <img src=\"http://placehold.it/400x300&text=[img]\"/>
-                      <h4>This is a content section.</h4>
+                      <img src=\"%s\">
+                      <h4>Projecte</h4>
                       <p>La Fogaina és un petit projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
 Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.
-Una manipulació manual i casolana, amb fermentacions llargues. Gràcies a això el pa sembla que estigui especiat. Simplement aconseguim treure tot el sabor als cereals.
-Hem elaborat la nostra Massa Mare, que ens acompanya desde el 2011, sistema arcaic de llevar el pa, com s'ha fet tota la vida. Tots els productes porten massa mare.
-El nostre forn de llenya es de foc directe, d'aquesta manera reduïm el consum d'electricitat i aportem al pa un olor característic.
-Informar sempre a la gent que ens visita del que fem, i com ho fem, sense secrets ni falta d'informació. Ens preocupem pels gustos particulars i aconsellem. Emboliquem i entreguem el pa amb la satisfacció de la feïna ben feta. I també molt important, no pugem els preus per tot aixó.</p>
+Una manipulació manual i casolana, amb fermentacions llargues. Gràcies a això el pa sembla que estigui especiat. Simplement aconseguim treure tot el sabor als cereals.</p>
                     </div>
                     <div class=\"large-4 columns\">
                       <img src=\"%s\">
@@ -55,9 +52,10 @@ A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o tru
 </p>
                     </div>
                     <div class=\"large-4 columns\">
-                      <img src=\"http://placehold.it/400x300&text=[img]\"/>
-                      <h4>This is a content section.</h4>
-                      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+                      <img src=\"%s\">
+                      <h4>Cursos</h4>
+                      <p>Si voleu apuntar-vos a la nostra llista de mail, per estar informats dels cursos que anem programant, envieu un mail a: fornlafogaina@gmail.com , i ens expliqueu el motiu.
+Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de l'espai i de l'aprenentatge. Tots el cursos es poden pagar amb moneda social.</p>
                     </div>
                   </div>
                    
@@ -75,7 +73,7 @@ A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o tru
                         </div>
                       </div>
                     </div>
-                  </div>" % image_work.url,
+                  </div>" % [image_cistell_pan.url, image_oclot_bici.url, image_cursos_cartell.url],
                     :body_es => "
                     ",
                     :body_ca => "
