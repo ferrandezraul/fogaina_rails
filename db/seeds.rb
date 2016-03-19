@@ -13,7 +13,7 @@
 #moneda_social_path = "#{Rails.root.join('app/assets/images/monedasociallogo.png')}"
 #image_moneda_social= Refinery::Image.create :image => File.new(moneda_social_path)
 
-work_path = "#{Rails.root.join('app/assets/images/obrador/work.jpg')}"
+work_path = "#{Rails.root.join('app/assets/images/fogaina_presentacio_600x450.jpg')}"
 image_work= Refinery::Image.create :image => File.new(work_path)
 
 horno_path = "#{Rails.root.join('app/assets/images/obrador/horno.jpg')}"
@@ -39,12 +39,20 @@ pages_array = [ {
                     <div class=\"large-4 columns\">
                       <img src=\"http://placehold.it/400x300&text=[img]\"/>
                       <h4>This is a content section.</h4>
-                      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+                      <p>La Fogaina és un petit projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
+Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.
+Una manipulació manual i casolana, amb fermentacions llargues. Gràcies a això el pa sembla que estigui especiat. Simplement aconseguim treure tot el sabor als cereals.
+Hem elaborat la nostra Massa Mare, que ens acompanya desde el 2011, sistema arcaic de llevar el pa, com s'ha fet tota la vida. Tots els productes porten massa mare.
+El nostre forn de llenya es de foc directe, d'aquesta manera reduïm el consum d'electricitat i aportem al pa un olor característic.
+Informar sempre a la gent que ens visita del que fem, i com ho fem, sense secrets ni falta d'informació. Ens preocupem pels gustos particulars i aconsellem. Emboliquem i entreguem el pa amb la satisfacció de la feïna ben feta. I també molt important, no pugem els preus per tot aixó.</p>
                     </div>
                     <div class=\"large-4 columns\">
-                      <img src=\"http://placehold.it/400x300&text=[img]\"/>
-                      <h4>This is a content section.</h4>
-                      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+                      <img src=\"%s\">
+                      <h4>Servei d'entrega</h4>
+                      <p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
+                      Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
+A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646 879 062
+</p>
                     </div>
                     <div class=\"large-4 columns\">
                       <img src=\"http://placehold.it/400x300&text=[img]\"/>
@@ -67,8 +75,7 @@ pages_array = [ {
                         </div>
                       </div>
                     </div>
-                  </div>
-                    ",
+                  </div>" % image_work.url,
                     :body_es => "
                     ",
                     :body_ca => "
