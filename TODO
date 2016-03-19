@@ -4,6 +4,12 @@ o usar los templates de foundation
 http://foundation.zurb.com/templates-f5.html
 http://foundation.zurb.com/templates.html
 
+Template candidates
+http://pixelhint.com/volcano-html5-responsive-zurb-foundation-template/
+http://pixelhint.com/demo/bella/ (no mobile friendly)
+http://pixelhint.com/uno-html5-one-page-website-template/  (1 page/ javascript a tope, no mobile friendly)
+
+
 2. luego adaptar las imagenes con gimp al tamanyo necesitado
 
 3. Crear refinery view templates que sigan un template escogido para tener mas opciones en el administrador de paginas. (home, show, y alguna mas ...)
