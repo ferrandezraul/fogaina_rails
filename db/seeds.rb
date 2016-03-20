@@ -13,8 +13,8 @@
 #moneda_social_path = "#{Rails.root.join('app/assets/images/monedasociallogo.png')}"
 #image_moneda_social= Refinery::Image.create :image => File.new(moneda_social_path)
 
-oclot_bici_path = "#{Rails.root.join('app/assets/images/fogaina_presentacio_600x450.jpg')}"
-image_oclot_bici= Refinery::Image.create :image => File.new(oclot_bici_path)
+espai_path = "#{Rails.root.join('app/assets/images/cafeteria/espai.jpg')}"
+image_espai= Refinery::Image.create :image => File.new(espai_path)
 
 cistell_pan_path = "#{Rails.root.join('app/assets/images/pan/cistell.jpg')}"
 image_cistell_pan = Refinery::Image.create :image => File.new(cistell_pan_path)
@@ -40,12 +40,11 @@ pages_array = [ {
                       <img src=\"%s\">
                       <h4>Projecte</h4>
                       <p>La Fogaina és un petit projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
-Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.
-Una manipulació manual i casolana, amb fermentacions llargues. Gràcies a això el pa sembla que estigui especiat. Simplement aconseguim treure tot el sabor als cereals.</p>
+Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals.</p>
                     </div>
                     <div class=\"large-4 columns\">
                       <img src=\"%s\">
-                      <h4>Servei d'entrega</h4>
+                      <h4>Cafeteria</h4>
                       <p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
                       Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
 A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646 879 062
@@ -62,18 +61,18 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                   <div class=\"row\">
                     <div class=\"large-12 columns\">
                       <div class=\"panel\">
-                        <h4>Get in touch!</h4>
+                        <h4>Pa artesà i ecològic a la Garrotxa!</h4>
                         <div class=\"row\">
                           <div class=\"large-9 columns\">
-                            <p>We'd love to hear from you, you attractive person you.</p>
+                            <p>Vine a veure la nostra cafeteria.</p>
                           </div>
                           <div class=\"large-3 columns\">
-                            <a href=\"#\" class=\"radius button right\">Contact Us</a>
+                            <a href=\"contacte\" class=\"radius button right\">Contacte</a>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>" % [image_cistell_pan.url, image_oclot_bici.url, image_cursos_cartell.url],
+                  </div>" % [image_cistell_pan.url, image_espai.url, image_cursos_cartell.url],
                     :body_es => "
                     ",
                     :body_ca => "
