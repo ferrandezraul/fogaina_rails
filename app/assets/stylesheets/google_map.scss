@@ -1,5 +1,15 @@
+// From http://www.labnol.org/internet/embed-responsive-google-maps/28333/
+
 #map-fogaina {
-  width: 650px;
-  height: 600px;
-  margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+#map-fogaina iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }

@@ -134,12 +134,16 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                     :body => "<div class=\"row\">
                                 <div class=\"large-12 columns\">
                                   <div class=\"large-4 columns\">
-                                    <h3>La Fogaina</h3>
-                                    <p>Dissabtes de 9:30h a 13:30h </p>
-                                    <p>Mas la Plana s/n </br> El Mallol - Carretera del Veïnat Cirera. </br> La Vall d'en Bas. </br> La Garrotxa - Girona </br> 661 38 09 55 - 639 26 48 63</p>
-                                    <h3>La Fogaina Pa i Cafè.</h3>
-                                    <p>De Dimarts a Dissabte de 8:00h a 13:30h i de 16:00h a 20:00h</p>
-                                    <p>C/ Sant Sebastià nº52 </br> Les Preses</br> La Garrotxa - Girona</br> 646 87 90 62</p>
+                                    <div class=\"panel\">
+                                      <h3>La Fogaina</h3>
+                                      <p>Dissabtes de 9:30h a 13:30h </p>
+                                      <p>Mas la Plana s/n </br> El Mallol - Carretera del Veïnat Cirera. </br> La Vall d'en Bas. </br> La Garrotxa - Girona </br> 661 38 09 55 - 639 26 48 63</p>
+                                    </div>
+                                    <div class=\"panel\">
+                                      <h3>La Fogaina Pa i Cafè.</h3>
+                                      <p>De Dimarts a Dissabte de 8:00h a 13:30h i de 16:00h a 20:00h</p>
+                                      <p>C/ Sant Sebastià nº52 </br> Les Preses</br> La Garrotxa - Girona</br> 646 87 90 62</p>
+                                    </div>
                                   </div>
                                   <div class=\"large-8 columns\">
                                     <div id=\"map-fogaina\"></div>
