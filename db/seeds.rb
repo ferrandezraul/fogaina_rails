@@ -35,6 +35,22 @@ pages_array = [ {
                     :title_ca => "Inici",
                     # Image path in next line is copied from the ui when I try to add it manually
                     :body => "
+                    <div class=\"row\">
+                    <div class=\"large-12 columns\">
+                      <div class=\"panel\">
+                        <h4>Organic hand made bread in la Garrotxa!</h4>
+                        <div class=\"row\">
+                          <div class=\"large-9 columns\">
+                            <p>Come and visit our cafeteria.</p>
+                          </div>
+                          <div class=\"large-3 columns\">
+                            <a href=\"contacte\" class=\"radius button right\">Contact</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                     <p>La Fogaina is a project that .... autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
 Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.</p>
                     <div class=\"row\">
@@ -58,24 +74,24 @@ A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o tru
                       <p>Si voleu apuntar-vos a la nostra llista de mail, per estar informats dels cursos que anem programant, envieu un mail a: fornlafogaina@gmail.com , i ens expliqueu el motiu.
 Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de l'espai i de l'aprenentatge. Tots el cursos es poden pagar amb moneda social.</p>
                     </div>
-                  </div>
-                   
-                  <div class=\"row\">
+                  </div>" % [image_cistell_pan.url, image_espai.url, image_cursos_cartell.url],
+                    :body_es => "
+                    <div class=\"row\">
                     <div class=\"large-12 columns\">
                       <div class=\"panel\">
-                        <h4>Organic hand made bread in la Garrotxa!</h4>
+                        <h4>Pan artesano i ecológico en la Garrotxa!</h4>
                         <div class=\"row\">
                           <div class=\"large-9 columns\">
-                            <p>Come and visit our cafeteria.</p>
+                            <p>Ven a ver nuestra cafeteria.</p>
                           </div>
                           <div class=\"large-3 columns\">
-                            <a href=\"contacte\" class=\"radius button right\">Contact</a>
+                            <a href=\"contacte\" class=\"radius button right\">Contacto</a>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>" % [image_cistell_pan.url, image_espai.url, image_cursos_cartell.url],
-                    :body_es => "
+                  </div>
+
                     <p>La Fogaina es un proyecto .... autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
 Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.</p>
                     <div class=\"row\">
@@ -99,24 +115,24 @@ A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o tru
                       <p>Si voleu apuntar-vos a la nostra llista de mail, per estar informats dels cursos que anem programant, envieu un mail a: fornlafogaina@gmail.com , i ens expliqueu el motiu.
 Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de l'espai i de l'aprenentatge. Tots el cursos es poden pagar amb moneda social.</p>
                     </div>
-                  </div>
-                   
-                  <div class=\"row\">
+                  </div>" % [image_cistell_pan.url, image_espai.url, image_cursos_cartell.url],
+                    :body_ca => "
+                    <div class=\"row\">
                     <div class=\"large-12 columns\">
                       <div class=\"panel\">
-                        <h4>Pan artesano i ecológico en la Garrotxa!</h4>
+                        <h4>Pa artesà i ecològic a la Garrotxa!</h4>
                         <div class=\"row\">
                           <div class=\"large-9 columns\">
-                            <p>Ven a ver nuestra cafeteria.</p>
+                            <p>Vine a veure la nostra cafeteria.</p>
                           </div>
                           <div class=\"large-3 columns\">
-                            <a href=\"contacte\" class=\"radius button right\">Contacto</a>
+                            <a href=\"contacte\" class=\"radius button right\">Contacte</a>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>" % [image_cistell_pan.url, image_espai.url, image_cursos_cartell.url],
-                    :body_ca => "
+                  </div>
+
                     <p>La Fogaina es un projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
 Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.</p>
                     <div class=\"row\">
@@ -139,22 +155,6 @@ A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o tru
                       <h4>Cursos</h4>
                       <p>Si voleu apuntar-vos a la nostra llista de mail, per estar informats dels cursos que anem programant, envieu un mail a: fornlafogaina@gmail.com , i ens expliqueu el motiu.
 Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de l'espai i de l'aprenentatge. Tots el cursos es poden pagar amb moneda social.</p>
-                    </div>
-                  </div>
-                   
-                  <div class=\"row\">
-                    <div class=\"large-12 columns\">
-                      <div class=\"panel\">
-                        <h4>Pa artesà i ecològic a la Garrotxa!</h4>
-                        <div class=\"row\">
-                          <div class=\"large-9 columns\">
-                            <p>Vine a veure la nostra cafeteria.</p>
-                          </div>
-                          <div class=\"large-3 columns\">
-                            <a href=\"contacte\" class=\"radius button right\">Contacte</a>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>" % [image_cistell_pan.url, image_espai.url, image_cursos_cartell.url],    
                     :side_body => "", 
@@ -226,13 +226,13 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                                   <div class=\"large-4 columns\">
                                     <div class=\"panel\">
                                       <h3>La Fogaina</h3>
-                                      <p>Dissabtes de 9:30h a 13:30h </p>
-                                      <p>Mas la Plana s/n </br> El Mallol - Carretera del Veïnat Cirera. </br> La Vall d'en Bas. </br> La Garrotxa - Girona </br> 661 38 09 55 - 639 26 48 63</p>
+                                      <p>Saturday from 9:30h until 13:30h </p>
+                                      <p>Mas la Plana s/n, El Mallol <br>Carretera del Veïnat Cirera. La Vall d'en Bas. La Garrotxa, Girona <br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
                                     </div>
                                     <div class=\"panel\">
                                       <h3>La Fogaina Pa i Cafè.</h3>
-                                      <p>De Dimarts a Dissabte de 8:00h a 13:30h i de 16:00h a 20:00h</p>
-                                      <p>C/ Sant Sebastià nº52 </br> Les Preses</br> La Garrotxa - Girona</br> 646 87 90 62</p>
+                                      <p>Tuesday to Saturday from 8:00h until 13:30h and from 16:00h until 20:00h</p>
+                                      <p>C/ Sant Sebastià nº52, Les Preses <br>La Garrotxa, Girona <br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
                                     </div>
                                   </div>
                                   <div class=\"large-8 columns\">
@@ -245,13 +245,13 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                                   <div class=\"large-4 columns\">
                                     <div class=\"panel\">
                                       <h3>La Fogaina</h3>
-                                      <p>Sabados de 9:30h a 13:30h </p>
-                                      <p>Mas la Plana s/n </br> El Mallol - Carretera del Veïnat Cirera. </br> La Vall d'en Bas. </br> La Garrotxa - Girona </br> 661 38 09 55 - 639 26 48 63</p>
+                                      <p>Sábados de 9:30h a 13:30h </p>
+                                      <p>Mas la Plana s/n, El Mallol <br>Carretera del Veïnat Cirera. La Vall d'en Bas. La Garrotxa, Girona <br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
                                     </div>
                                     <div class=\"panel\">
                                       <h3>La Fogaina Pa i Cafè.</h3>
-                                      <p>De Martes a Sabado de 8:00h a 13:30h i de 16:00h a 20:00h</p>
-                                      <p>C/ Sant Sebastià nº52 </br> Les Preses</br> La Garrotxa - Girona</br> 646 87 90 62</p>
+                                      <p>De Martes a Sábado de 8:00h a 13:30h i de 16:00h a 20:00h</p>
+                                      <p>C/ Sant Sebastià nº52, Les Preses <br>La Garrotxa, Girona <br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
                                     </div>
                                   </div>
                                   <div class=\"large-8 columns\">
@@ -259,7 +259,25 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                                   </div>
                                 </div>
                               </div>",
-                    :body_ca => ""
+                    :body_ca => "<div class=\"row\">
+                                <div class=\"large-12 columns\">
+                                  <div class=\"large-4 columns\">
+                                    <div class=\"panel\">
+                                      <h3>La Fogaina</h3>
+                                      <p>Dissabtes de 9:30h a 13:30h </p>
+                                      <p>Mas la Plana s/n, El Mallol <br>Carretera del Veïnat Cirera. La Vall d'en Bas. La Garrotxa, Girona <br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
+                                    </div>
+                                    <div class=\"panel\">
+                                      <h3>La Fogaina Pa i Cafè.</h3>
+                                      <p>De Dimarts a Dissabte de 8:00h a 13:30h i de 16:00h a 20:00h</p>
+                                      <p>C/ Sant Sebastià nº52, Les Preses <br>La Garrotxa, Girona<br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
+                                    </div>
+                                  </div>
+                                  <div class=\"large-8 columns\">
+                                    <div id=\"map-fogaina\"></div>
+                                  </div>
+                                </div>
+                              </div>"
                 }
 ]
 
