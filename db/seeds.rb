@@ -130,7 +130,6 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                         :title => "Courses",
                         :title_es => "Cursos",
                         :title_ca => "Cursos",
-                        :position_body => 0,
                         :body => "<p>Coming soon ...</p><p><a href='/'>Back to home</a></p>",
                         :body_es => "<p>Proximamente ...</p><p><a href='/'>Volver al inicio</a></p>",
                         :body_ca => "<p>Proximament ...</p><p><a href='/'>Tornar a l'inici</a></p>"
@@ -199,7 +198,7 @@ def finnish_page( page, page_attr )
 
     page_children = page.children.create!( :title => children_attr[:title],
                                            :menu_match => children_attr[:menu_match],
-                                           :show_in_menu => children_attr[:menu_match],
+                                           :show_in_menu => children_attr[:show_in_menu],
                                            :deletable => children_attr[:deletable] )
 
     page_children.translations.create!( { :locale => "es", :title => children_attr[:title_es] } )
