@@ -19,10 +19,10 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
-  language: "Language"
+ca:
+  hello: "Hola mon"
+  language: "Idioma"
   englishUK: "English"
   spanish: "Español"
   catalan: "Català"
-  pa_eco_garrotxa: "Organic handmade bread in la Garrotxa"
+  pa_eco_garrotxa: "Pa artesà i ecològic a la Garrotxa"
