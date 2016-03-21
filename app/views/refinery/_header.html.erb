@@ -4,46 +4,53 @@
   </div>
 
   <div class="small-9 columns">
+    <!--    Locale switch    -->
+    <nav class="top-bar" data-topbar role="navigation">   
+      <ul class="title-area">
+        <li class="name">
+          <a href="#" class="logo"></a>
+        </li>
+        <span class="toggle-topbar menu-icon"><a href="#"><span><%=t('language')%></span></a></span>
+      </ul> 
+
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="has-dropdown">
+            <a href="#">
+             <% if I18n.locale == :en %>
+               <%= t('englishUK' ) %>
+             <% elsif I18n.locale == :es %>
+               <%= t('spanish' ) %>
+             <% elsif I18n.locale == :ca %>
+               <%= t('catalan' ) %>
+             <% end %>
+           </a>
+           <ul class="dropdown">
+             <% if I18n.locale == :en %>
+               <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
+               <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>  
+             <% elsif I18n.locale == :es %>
+               <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
+               <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>
+             <% elsif I18n.locale == :ca %>
+               <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
+               <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
+             <% end %>
+           </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+      
 	  <nav class="top-bar" data-topbar role="navigation">          
 	    <!--    Start Logo    -->
 	    <ul class="title-area">
 	      <li class="name">
 	        <a href="#" class="logo"></a>
 	      </li>
-	        <span class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></span>
-	      </li>
+	      <span class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></span>
 	    </ul>  
 	    <!--    End Logo    -->
-
-      <!--    Locale switch    -->
-      <section class="top-bar-section">
-
-      <ul class="right">
-        <li class="has-dropdown">
-          <a href="#">
-           <% if I18n.locale == :en %>
-             <%= t('englishUK' ) %>
-           <% elsif I18n.locale == :es %>
-             <%= t('spanish' ) %>
-           <% elsif I18n.locale == :ca %>
-             <%= t('catalan' ) %>
-           <% end %>
-         </a>
-         <ul class="dropdown">
-           <% if I18n.locale == :en %>
-             <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
-             <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>  
-           <% elsif I18n.locale == :es %>
-             <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
-             <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>
-           <% elsif I18n.locale == :ca %>
-             <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
-             <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
-           <% end %>
-         </ul>
-        </li>
-      </ul>
-    </section>
 
 	    <!--    Start Navigation Menu    -->
 	    <%#  FoundationMenu adds a section tag with css class = large-9 columns  %>
