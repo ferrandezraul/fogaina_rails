@@ -123,7 +123,18 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                     :body_ca => "Això es el body de Vols saber mes?",
                     :side_body => "This is the side body of Wanna know more?", 
                     :side_body_es => "Esto es el side body de Quieres saber mas?",
-                    :side_body_ca => "Això es el side body de Vols saber mes?", 
+                    :side_body_ca => "Això es el side body de Vols saber mes?",
+                    :children =>  {
+                        :show_in_menu => true,
+                        :deletable => true,
+                        :title => "Courses",
+                        :title_es => "Cursos",
+                        :title_ca => "Cursos",
+                        :position_body => 0,
+                        :body => "<p>Coming soon ...</p><p><a href='/'>Back to home</a></p>",
+                        :body_es => "<p>Proximamente ...</p><p><a href='/'>Volver al inicio</a></p>",
+                        :body_ca => "<p>Proximament ...</p><p><a href='/'>Tornar a l'inici</a></p>"
+                    }
                 },
                 {
                     :show_in_menu => true,

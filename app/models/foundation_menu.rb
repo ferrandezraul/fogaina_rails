@@ -10,8 +10,7 @@ class FoundationMenu < Refinery::Pages::MenuPresenter
 
   def render_menu_items(menu_items)
     if menu_items.present?
-      list_tag_css << ' right'
-      content_tag(list_tag, :class => list_tag_css) do
+      content_tag(list_tag, :class => 'right') do
         menu_items.each_with_index.inject(ActiveSupport::SafeBuffer.new) do |buffer, (item, index)|
           buffer << render_menu_item(item, index)
         end
