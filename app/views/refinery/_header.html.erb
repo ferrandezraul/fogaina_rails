@@ -4,59 +4,68 @@
   </div>
 
   <div class="small-9 large-10 columns">
-    <!--    Locale switch    -->
-    <nav class="top-bar" data-topbar role="navigation">   
-      <ul class="title-area">
-        <li class="name">
-          <a href="#" class="logo"></a>
-        </li>
-        <span class="toggle-topbar menu-icon"><a href="#"><span><%=t('language')%></span></a></span>
-      </ul> 
+    <div class="row">
+      <div class="contain-to-grid small-12 columns">
+        <!--    Locale switch    -->
+        <nav class="top-bar" data-topbar role="navigation">   
+          <ul class="title-area">
+            <li class="name">
+              <a href="#" class="logo"></a>
+            </li>
+            <span class="toggle-topbar menu-icon"><a href="#"><span><%=t('language')%></span></a></span>
+          </ul> 
 
-      <section class="top-bar-section">
-        <ul class="right locale-switch">
-          <li class="has-dropdown">
-            <a href="#">
-             <% if I18n.locale == :en %>
-               <%= t('englishUK' ) %>
-             <% elsif I18n.locale == :es %>
-               <%= t('spanish' ) %>
-             <% elsif I18n.locale == :ca %>
-               <%= t('catalan' ) %>
-             <% end %>
-           </a>
-           <ul class="dropdown">
-             <% if I18n.locale == :en %>
-               <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
-               <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>  
-             <% elsif I18n.locale == :es %>
-               <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
-               <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>
-             <% elsif I18n.locale == :ca %>
-               <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
-               <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
-             <% end %>
-           </ul>
-          </li>
-        </ul>
-      </section>
-    </nav>
-      
-	  <nav class="top-bar" data-topbar role="navigation">          
-	    <!--    Start Logo    -->
-	    <ul class="title-area">
-	      <li class="name">
-	        <a href="#" class="logo"></a>
-	      </li>
-	      <span class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></span>
-	    </ul>  
-	    <!--    End Logo    -->
+          <section class="top-bar-section">
+            <ul class="right locale-switch">
+              <li class="has-dropdown">
+                <a href="#">
+                 <% if I18n.locale == :en %>
+                   <%= t('englishUK' ) %>
+                 <% elsif I18n.locale == :es %>
+                   <%= t('spanish' ) %>
+                 <% elsif I18n.locale == :ca %>
+                   <%= t('catalan' ) %>
+                 <% end %>
+               </a>
+               <ul class="dropdown">
+                 <% if I18n.locale == :en %>
+                   <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
+                   <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>  
+                 <% elsif I18n.locale == :es %>
+                   <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
+                   <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>
+                 <% elsif I18n.locale == :ca %>
+                   <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
+                   <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
+                 <% end %>
+               </ul>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+    </div>
 
-	    <!--    Start Navigation Menu    -->
-	    <%#  FoundationMenu adds a section tag with css class = large-9 columns  %>
-	    <%= FoundationMenu.new(refinery_menu_pages, self).to_html %>
-	    <!--    End Navigation Menu    -->
+    <div class="row">
+      <div class="contain-to-grid small-12 columns">
+        <nav class="top-bar" data-topbar role="navigation">          
+          <!--    Start Logo    -->
+          <ul class="title-area">
+            <li class="name">
+              <a href="#" class="logo"></a>
+            </li>
+            <span class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></span>
+          </ul>  
+          <!--    End Logo    -->
 
-	  </nav>
+          <!--    Start Navigation Menu    -->
+          <%#  FoundationMenu adds a section tag with css class = large-9 columns  %>
+          <%= FoundationMenu.new(refinery_menu_pages, self).to_html %>
+          <!--    End Navigation Menu    -->
+
+        </nav>
+      </div>
+    </div>
+    
  </div>
 </div>
