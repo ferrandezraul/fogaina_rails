@@ -44,7 +44,7 @@ pages_array = [ {
                             <p>Come and visit our cafeteria.</p>
                           </div>
                           <div class=\"large-3 columns\">
-                            <a href=\"contacte\" class=\"radius button right\">Contact</a>
+                            <a href=\"contacte\" class=\"radius button right\"><i class=\"fi-marker\"> We are here!</i></a>
                           </div>
                         </div>
                       </div>
@@ -85,7 +85,7 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                             <p>Ven a ver nuestra cafeteria.</p>
                           </div>
                           <div class=\"large-3 columns\">
-                            <a href=\"contacte\" class=\"radius button right\">Contacto</a>
+                            <a href=\"contacte\" class=\"radius button right\"><i class=\"fi-marker\"> Estamos aquí!</i></a>
                           </div>
                         </div>
                       </div>
@@ -126,7 +126,7 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                             <p>Vine a veure la nostra cafeteria.</p>
                           </div>
                           <div class=\"large-3 columns\">
-                            <a href=\"contacte\" class=\"radius button right\">Contacte</a>
+                            <a href=\"contacte\" class=\"radius button right\"><i class=\"fi-marker\"> Estem aquí!</i></a>
                           </div>
                         </div>
                       </div>
