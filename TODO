@@ -1,16 +1,13 @@
-1. Buscar un template que me convenza, o una combinacion de templates. 
-Mirar en http://pixelhint.com/category/freebies/
-o usar los templates de foundation
+1. Templates de foundation
 http://foundation.zurb.com/templates-f5.html
 http://foundation.zurb.com/templates.html
 
-Template candidates
+Other templates
 http://pixelhint.com/volcano-html5-responsive-zurb-foundation-template/
 http://pixelhint.com/demo/bella/ (no mobile friendly)
 http://pixelhint.com/uno-html5-one-page-website-template/  (1 page/ javascript a tope, no mobile friendly)
 
-
-2. luego adaptar las imagenes con gimp al tamanyo necesitado
+2. Adaptar las imagenes con gimp al tamanyo necesitado
 
 3. Crear refinery view templates que sigan un template escogido para tener mas opciones en el administrador de paginas. (home, show, y alguna mas ...)
 4. Crear page parts (como side body) que macheen las partes de los templates escogidos.
@@ -18,9 +15,6 @@ http://pixelhint.com/uno-html5-one-page-website-template/  (1 page/ javascript a
 5. Crear varios branches con diferentes templates
 
 6. Probar las extensiones de refinery (blog, news, inquiries)
-
-7. Anyadir localization (ya implementado en el master branch)
-
 
 
 ////////////////
@@ -31,14 +25,15 @@ Probar algun building block mas de http://zurb.com/building-blocks
 como por ejemplo el event listing
 Probar las extensiones de refinery (blog, news, inquiries) (see railscast video youtube)
 
-Acabar image gallery https://github.com/bisscomm/refinerycms-image-slideshows
-Falta cambiar el nombre del image gallery en el seed data que se llama "My image slideshow" a otro nombre diferente y anyadirle unas fotos por defecto y que el admin no lo pueda borrar.
+////////////////
 
-db/seeds.rb loads Refinery::ImageSlideshows::Engine.load_seed. Check that file!!
-
-Test slider with data and without data.
-Test deleting all slider shows.
+Para acabar image gallery https://github.com/bisscomm/refinerycms-image-slideshows
+El nombre del image gallery que se visualiza en el home es hardcoded "Home Page Slide Show" 
+Por eso deberia impedir que se pueda borrar desde el admin.
 Add more sliders? One with text and another with photos?
+Usar paperclip para obtener el tamanyo de foto deseado?
+
+////////////////
 
 Otros image gallery:
 https://github.com/blueimp/Gallery/blob/master/README.md
