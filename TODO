@@ -31,8 +31,16 @@ Probar algun building block mas de http://zurb.com/building-blocks
 como por ejemplo el event listing
 Probar las extensiones de refinery (blog, news, inquiries) (see railscast video youtube)
 
-Usar un image gallery como por ejemplo 
+Acabar image gallery https://github.com/bisscomm/refinerycms-image-slideshows
+Falta cambiar el nombre del image gallery en el seed data que se llama "My image slideshow" a otro nombre diferente y anyadirle unas fotos por defecto y que el admin no lo pueda borrar.
+
+db/seeds.rb loads Refinery::ImageSlideshows::Engine.load_seed. Check that file!!
+
+Test slider with data and without data.
+Test deleting all slider shows.
+Add more sliders? One with text and another with photos?
+
+Otros image gallery:
 https://github.com/blueimp/Gallery/blob/master/README.md
 http://tympanus.net/codrops/2011/09/20/responsive-image-gallery/
 
-For uploading images to the image gallery you can do a basic form that accepts an image upload. There should be plenty of examples for paperclip out there.

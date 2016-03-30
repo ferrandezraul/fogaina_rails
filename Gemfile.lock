@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/bisscomm/refinerycms-image-slideshows.git
+  revision: 51a5584cd920c33a5884052f5e5b638658c9af43
+  branch: 3-0-stable
+  specs:
+    refinerycms-image_slideshows (3.0.0)
+      acts_as_indexed (~> 0.8.0)
+      globalize (>= 4.0.0, < 5.2)
+      refinerycms-core (~> 3.0.0)
+      refinerycms-images (~> 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -263,6 +274,7 @@ DEPENDENCIES
   refinerycms (~> 3.0)
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.1)
   refinerycms-authentication-devise (~> 1.0)
+  refinerycms-image_slideshows!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
@@ -271,3 +283,6 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+
+BUNDLED WITH
+   1.11.2

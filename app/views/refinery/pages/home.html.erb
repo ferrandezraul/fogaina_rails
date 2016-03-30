@@ -1,15 +1,21 @@
 <div class="row">
   <div class="large-12 columns">
+    <% main_slideshow = Refinery::ImageSlideshows::ImageSlideshow.includes(:image_slides).find_by_title('My image slideshow') %>
     <ul class="example-orbit" data-orbit data-options=";
                                          timer_speed: 5000;
                                          pause_on_hover: false;">
-      <li><%= image_tag "cafeteria/cafeteria1000x400.jpg", :style => "margin: auto" %></li>
-      <li><%= image_tag "reposteria/croi1000x400.jpg", :style => "margin: auto" %></li>
-      <li><%= image_tag "obrador/reposteria1000x400.jpg", :style => "margin: auto" %></li>
-      <%#<li><%= image_tag "cafeteria/cafeteria_exterior1000x400.jpg", :style => "margin: auto" %><%#</li>%>
+      <% main_slideshow.image_slides.each do |image_slide| %>
+        <%= link_to image_slide.link_url do %>
+          <%= image_tag image_slide.image.url, :alt => image_slide.title, 
+                                               :title => image_slide.caption,
+                                               :style => "margin: auto" %>
+        <% end %>  
+      <% end %>  
+
     </ul>
   </div>
 </div>
+
 <hr/>
 
 <div class="row">

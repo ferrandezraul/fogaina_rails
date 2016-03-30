@@ -13,6 +13,9 @@
 #moneda_social_path = "#{Rails.root.join('app/assets/images/monedasociallogo.png')}"
 #image_moneda_social= Refinery::Image.create :image => File.new(moneda_social_path)
 
+# Added by Refinery CMS Image Slides extension
+Refinery::ImageSlideshows::Engine.load_seed
+
 espai_path = "#{Rails.root.join('app/assets/images/cafeteria/espai.jpg')}"
 image_espai= Refinery::Image.create :image => File.new(espai_path)
 
