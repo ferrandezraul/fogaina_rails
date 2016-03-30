@@ -28,6 +28,27 @@ image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_
 soques_path = "#{Rails.root.join('app/assets/images/pan/soques.jpg')}"
 image_soques = Refinery::Image.create :image => File.new(soques_path)
 
+obrador_reposteria_path = "#{Rails.root.join('app/assets/images/obrador/reposteria1000x400.jpg')}"
+image_obrador_reposteria= Refinery::Image.create :image => File.new(obrador_reposteria_path)
+
+slide_image_obrador_reposteria = Refinery::ImageSlideshows::ImageSlide.create!( :title => "Reposteria", :image_id => image_obrador_reposteria.id )
+slide_image_obrador_reposteria.translations.create!( :locale => :ca, :title => "Reposteria" )
+
+cafeteria_path = "#{Rails.root.join('app/assets/images/cafeteria/cafeteria1000x400.jpg')}"
+image_cafeteria= Refinery::Image.create :image => File.new(cafeteria_path)
+
+slide_image_cafeteria = Refinery::ImageSlideshows::ImageSlide.create!( :title => "Cafeteria", :image_id => image_cafeteria.id )
+slide_image_cafeteria.translations.create!( :locale => :ca, :title => "Cafeteria" )
+
+croi_path = "#{Rails.root.join('app/assets/images/reposteria/croi1000x400.jpg')}"
+image_croi= Refinery::Image.create :image => File.new(croi_path)
+
+slide_image_croi = Refinery::ImageSlideshows::ImageSlide.create!( :title => "Croi", :image_id => image_croi.id )
+slide_image_croi.translations.create!( :locale => :ca, :title => "Croi" )
+
+slider = Refinery::ImageSlideshows::ImageSlideshow.create!( :title => "Home Page Slide Show")
+slider.image_slides = [ slide_image_obrador_reposteria, slide_image_cafeteria, slide_image_croi ]
+
 pages_array = [ {
                     :show_in_menu => true,
                     :deletable => false,
