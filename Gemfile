@@ -62,7 +62,7 @@ gem 'refinerycms-authentication-devise', '~> 1.0'
 #  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']
 gem 'refinerycms-image_slideshows', github: 'bisscomm/refinerycms-image-slideshows', branch: '3-0-stable'
 
-gem 'foundation-rails'
+gem 'foundation-rails', '~> 5.5.3.2'
 gem 'foundation-icons-sass-rails'
 
 
