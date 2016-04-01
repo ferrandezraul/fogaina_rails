@@ -62,6 +62,8 @@ gem 'refinerycms-authentication-devise', '~> 1.0'
 #  gem 'refinerycms-page-images', ['~> 3.0', '>= 3.0.0']  # Me:This extension is not properly maintaned
 gem 'refinerycms-image_slideshows', github: 'bisscomm/refinerycms-image-slideshows', branch: '3-0-stable'
 
+# Todo: Add https://github.com/refinery/refinerycms-portfolio combined with some js gallery.
+
 gem 'foundation-rails', '~> 5.5.3.2'
 gem 'foundation-icons-sass-rails'
 
