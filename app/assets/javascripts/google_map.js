@@ -13,8 +13,7 @@ var infoWindowObrador = new google.maps.InfoWindow({
       '<div id="siteNotice">'+
       '</div>'+
       '<h4 id="firstHeading" class="firstHeading">Obrador La Fogaina</h4>'+
-      '<div id="bodyContent">'+
-      '<p>Dissabtes de 9:30h a 13:30h </br>' +
+      '<div id="bodyContent">'+      
       'Mas la Plana s/n, El Mallol - Carretera del Veïnat Cirera. </br>' +
       '</div>'+
       '</div>'
@@ -26,7 +25,6 @@ var infoWindowCafeteria = new google.maps.InfoWindow({
       '</div>'+
       '<h4>La Fogaina Pa i Cafè.</h4>' +
       '<div id="bodyContent">'+
-      '<p>De Dimarts a Dissabte de 8:00h a 13:30h i de 16:00h a 20:00h </br>' +
       'C/ Sant Sebastià nº52, Les Preses</p>' +
       '</div>'+
       '</div>'
