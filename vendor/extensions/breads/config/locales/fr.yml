@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      breads:
+        title: Breads
+    breads:
+      admin:
+        breads:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Bread
+            reorder: Réordonner les Breads
+            reorder_done: Fin de réordonnancement des Breads
+          records:
+            title: Breads
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Bread. Cliquer sur "Créer un(e) nouve(au/l/lle) Bread" pour créer votre premi(er/ère) bread.'
+          bread:
+            view_live_html: Voir ce(t/tte) bread <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) bread
+            delete: Supprimer définitivement ce(t/tte) bread
+      breads:
+        show:
+          other: Autres Breads
+  activerecord:
+    attributes:
+      'refinery/breads/bread':
+        name: Name
+        description: Description
+        photo: Photo

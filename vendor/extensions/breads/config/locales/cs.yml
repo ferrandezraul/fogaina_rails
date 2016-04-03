@@ -1,0 +1,29 @@
+cs:
+  refinery:
+    plugins:
+      breads:
+        title: Breads
+    breads:
+      admin:
+        breads:
+          actions:
+            create_new: Přidat Bread
+            reorder: Řadit Breads
+            reorder_done: Konec řazení Breads
+          records:
+            title: Breads
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Breads. Zvolte "Přidat Bread" pro přidání prvního bread.
+          bread:
+            view_live_html: Zobrazit náhled bread<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit bread
+            delete: Smazat bread
+      breads:
+        show:
+          other: Další Breads
+  activerecord:
+    attributes:
+      'refinery/breads/bread':
+        name: Name
+        description: Description
+        photo: Photo

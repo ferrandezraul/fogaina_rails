@@ -69,3 +69,5 @@ gem 'foundation-icons-sass-rails'
 
 
 
+
+gem 'refinerycms-breads', path: 'vendor/extensions'

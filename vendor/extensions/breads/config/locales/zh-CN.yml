@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      breads:
+        title: Breads
+    breads:
+      admin:
+        breads:
+          actions:
+            create_new: 建立新的 Bread
+            reorder: 对 Breads 重新排序
+            reorder_done: 对 Breads 的重新排序结束
+          records:
+            title: Breads
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Breads yet. Click "Add New Bread" to add your first bread.
+            no_items_yet: 目前没有 Breads . 点击 "Add New Bread" 创建一个bread.
+          bread:
+            view_live_html: 查看 bread 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 bread
+            delete: 永久删除 bread
+      breads:
+        show:
+          other: 其他 Breads
+  activerecord:
+    attributes:
+      'refinery/breads/bread':
+        name: Name
+        description: Description
+        photo: Photo

@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      breads:
+        title: Breads
+    breads:
+      admin:
+        breads:
+          actions:
+            create_new: Aggiungi Nuovo Bread
+            reorder: Riordina Breads
+            reorder_done: Termina il Riordino di Breads
+          records:
+            title: Breads
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Breads. Clicca "Aggiungi Nuovo Bread" per aggiungere il tuo primo bread.
+          bread:
+            view_live_html: Guarda live questo bread <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo bread
+            delete: Rimuovi per sempre questo bread
+      breads:
+        show:
+          other: Altri Breads
+  activerecord:
+    attributes:
+      'refinery/breads/bread':
+        name: Name
+        description: Description
+        photo: Photo

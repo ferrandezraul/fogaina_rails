@@ -385,3 +385,6 @@ pages_array.each { | page_attr |
 
   finnish_page( page, page_attr )
 }
+
+# Added by Refinery CMS Breads extension
+Refinery::Breads::Engine.load_seed

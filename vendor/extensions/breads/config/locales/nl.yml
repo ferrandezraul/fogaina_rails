@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      breads:
+        title: Breads
+    breads:
+      admin:
+        breads:
+          actions:
+            create_new: Nieuwe Bread toevoegen
+            reorder: De volgorde van de Breads wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Bread-volgorde
+          records:
+            title: Breads
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Breads. Druk op 'Nieuwe Bread toevoegen' om de eerste toe te voegen.
+          bread:
+            view_live_html: Deze bread op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze bread
+            delete: Deze bread definitief verwijderen
+      breads:
+        show:
+          other: Andere Breads
+  activerecord:
+    attributes:
+      'refinery/breads/bread':
+        name: Name
+        description: Description
+        photo: Photo

@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      breads:
+        title: Breads
+    breads:
+      admin:
+        breads:
+          actions:
+            create_new: Yeni Ekle Bread
+            reorder: Tekrar sirala Breads
+            reorder_done: Tekrar siralama tamamlandiBreads
+          records:
+            title: Breads
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Breads yok henuz.  Tikla "Yeni Ekle Bread" eklemek senin ilk bread.
+          bread:
+            view_live_html: Bunu canlu bread goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle bread
+            delete: Bunu Sil bread sonsuza dek
+      breads:
+        show:
+          other: Diger Breads
+  activerecord:
+    attributes:
+      'refinery/breads/bread':
+        name: Name
+        description: Description
+        photo: Photo

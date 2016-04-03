@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160330000266) do
+ActiveRecord::Schema.define(version: 20160403184922) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -54,6 +54,27 @@ ActiveRecord::Schema.define(version: 20160330000266) do
 
   add_index "refinery_authentication_devise_users", ["id"], name: "index_refinery_authentication_devise_users_on_id"
   add_index "refinery_authentication_devise_users", ["slug"], name: "index_refinery_authentication_devise_users_on_slug"
+
+  create_table "refinery_bread_translations", force: :cascade do |t|
+    t.integer  "refinery_bread_id", null: false
+    t.string   "locale",            null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.string   "name"
+    t.text     "description"
+  end
+
+  add_index "refinery_bread_translations", ["locale"], name: "index_refinery_bread_translations_on_locale"
+  add_index "refinery_bread_translations", ["refinery_bread_id"], name: "index_refinery_bread_translations_on_refinery_bread_id"
+
+  create_table "refinery_breads", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "photo_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "refinery_image_slide_translations", force: :cascade do |t|
     t.integer  "refinery_image_slide_id", null: false

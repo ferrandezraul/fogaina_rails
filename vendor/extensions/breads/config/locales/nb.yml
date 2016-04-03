@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      breads:
+        title: Breads
+    breads:
+      admin:
+        breads:
+          actions:
+            create_new: Lag en ny Bread
+            reorder: Endre rekkefølgen på Breads
+            reorder_done: Ferdig å endre rekkefølgen Breads
+          records:
+            title: Breads
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Breads enda. Klikk på "Lag en ny Bread" for å legge til din første bread.
+          bread:
+            view_live_html: Vis hvordan denne bread ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne bread
+            delete: Fjern denne bread permanent
+      breads:
+        show:
+          other: Andre Breads
+  activerecord:
+    attributes:
+      'refinery/breads/bread':
+        name: Name
+        description: Description
+        photo: Photo

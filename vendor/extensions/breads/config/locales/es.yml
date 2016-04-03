@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      breads:
+        title: Breads
+#        article: masculino/femenino
+    breads:
+      admin:
+        breads:
+          actions:
+            create_new: Crear nuevo bread
+            reorder: Reordenar breads
+            reorder_done: Reordenación de breads completada
+          records:
+            title: Breads
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay breads todavía. Pulsa en "Crear nuevo Bread" para crear tu primer bread.
+          bread:
+            view_live_html: Ver este bread como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este bread
+            delete: Borrar este bread para siempre
+      breads:
+        show:
+          other: Otros breads
+  activerecord:
+    attributes:
+      'refinery/breads/bread':
+        name: Name
+        description: Description
+        photo: Photo
