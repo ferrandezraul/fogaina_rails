@@ -29,14 +29,14 @@
                </a>
                <ul class="dropdown">
                  <% if I18n.locale == :en %>
-                   <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
-                   <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>  
+                   <li><%= link_to t('spanish' ), refinery.url_for( :locale => "es") %></li>
+                   <li><%= link_to t('catalan' ), refinery.url_for( :locale => "ca") %></li>  
                  <% elsif I18n.locale == :es %>
-                   <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
-                   <li><%= link_to t('catalan' ), {:locale => "ca" } %></li>
+                   <li><%= link_to t('englishUK' ), refinery.url_for( :locale => "en") %></li>
+                   <li><%= link_to t('catalan' ), refinery.url_for( :locale => "ca") %></li>
                  <% elsif I18n.locale == :ca %>
-                   <li><%= link_to t('englishUK' ), {:locale => "en" } %></li>
-                   <li><%= link_to t('spanish' ), {:locale => "es" } %></li>
+                   <li><%= link_to t('englishUK' ), refinery.url_for( :locale => "en") %></li>
+                   <li><%= link_to t('spanish' ), refinery.url_for( :locale => "es") %></li>
                  <% end %>
                </ul>
               </li>
