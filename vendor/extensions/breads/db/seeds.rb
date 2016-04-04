@@ -9,7 +9,7 @@ Refinery::I18n.frontend_locales.each do |lang|
 
   if defined?(Refinery::Page)
     page_bread = Refinery::Page.where(link_url: (url = "/breads")).first_or_create!(
-    title: 'Breads',
+    title: 'Our breads',
     deletable: false,
     menu_match: "^#{url}(\/|\/.+?|)$"
     ) do |page|    
@@ -19,8 +19,8 @@ Refinery::I18n.frontend_locales.each do |lang|
 
     end 
 
-    page_bread.translations.create!( { :locale => 'es', :title => "Panes" } )
-    page_bread.translations.create!( { :locale => 'ca', :title => "Pans" } )
+    page_bread.translations.create!( { :locale => 'es', :title => "Nuestros panes" } )
+    page_bread.translations.create!( { :locale => 'ca', :title => "El nostres pans" } )
 
     #page_part.translations.create!( { :locale => "es", :body => "" } )
     #page_part.translations.create!( { :locale => "ca", :body => "" } )

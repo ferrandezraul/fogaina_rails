@@ -38,6 +38,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'pry'
+  gem 'refinerycms-testing', '~> 3.0.0'
 end
 
 group :development do
@@ -65,9 +66,6 @@ gem 'refinerycms-image_slideshows', github: 'bisscomm/refinerycms-image-slidesho
 # Todo: Add https://github.com/refinery/refinerycms-portfolio combined with some js gallery.
 
 gem 'foundation-rails', '~> 5.5.3.2'
-gem 'foundation-icons-sass-rails'
-
-
-
+gem 'foundation-icons-sass-rails' 
 
 gem 'refinerycms-breads', path: 'vendor/extensions'
