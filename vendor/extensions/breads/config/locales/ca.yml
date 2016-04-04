@@ -1,4 +1,4 @@
-en:
+ca:
   refinery:
     plugins:
       breads:
@@ -15,7 +15,7 @@ en:
             sorry_no_results: Perdona! No s'ha trobat cap resultat.
             no_items_yet: Encara no hi ha cap pa. Fes click a "Afegir un pa nou" per afegir el teu primer pa.
           bread:
-            view_live_html: Veure aquest pa live <br/><em>(opens in a new window)</em>
+            view_live_html: Veure aquest pa live <br/><em>(obre una nova finestra)</em>
             edit: Editar aquest pa
             delete: Esborrar aquest pa per sempre
       breads:
@@ -25,5 +25,5 @@ en:
     attributes:
       'refinery/breads/bread':
         name: Nom
-        description: Descripcio
+        description: Descripció
         photo: Foto
