@@ -388,3 +388,16 @@ pages_array.each { | page_attr |
 
 # Added by Refinery CMS Breads extension
 Refinery::Breads::Engine.load_seed
+
+# Create one single user in order to avoid entering a user in development mode
+if Rails.env.development?
+  admin_user = Refinery::Authentication::Devise::User.create!( :username => 'test',
+                                                :email => "test@test.com", 
+                                                :password => 'test')
+
+  # Add necessary roles
+  # https://groups.google.com/d/msg/refinery-cms/akI74wnviFs/j613apqJdvgJ
+  admin_user.add_role :refinery
+  admin_user.add_role :superuser
+end
+
