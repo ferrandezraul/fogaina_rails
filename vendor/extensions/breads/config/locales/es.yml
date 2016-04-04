@@ -2,7 +2,7 @@ es:
   refinery:
     plugins:
       breads:
-        title: Breads
+        title: Panes
 #        article: masculino/femenino
     breads:
       admin:
