@@ -13,6 +13,18 @@
 #moneda_social_path = "#{Rails.root.join('app/assets/images/monedasociallogo.png')}"
 #image_moneda_social= Refinery::Image.create :image => File.new(moneda_social_path)
 
+# Create one single user in order to avoid entering a user in development mode
+if Rails.env.development?
+  admin_user = Refinery::Authentication::Devise::User.create!( :username => 'test',
+                                                :email => "test@test.com", 
+                                                :password => 'test')
+
+  # Add necessary roles
+  # https://groups.google.com/d/msg/refinery-cms/akI74wnviFs/j613apqJdvgJ
+  admin_user.add_role :refinery
+  admin_user.add_role :superuser
+end
+
 # Added by Refinery CMS Image Slides extension
 Refinery::ImageSlideshows::Engine.load_seed
 
@@ -389,15 +401,22 @@ pages_array.each { | page_attr |
 # Added by Refinery CMS Breads extension
 Refinery::Breads::Engine.load_seed
 
-# Create one single user in order to avoid entering a user in development mode
-if Rails.env.development?
-  admin_user = Refinery::Authentication::Devise::User.create!( :username => 'test',
-                                                :email => "test@test.com", 
-                                                :password => 'test')
+# Create some breads
+soca = Refinery::Breads::Bread.create!( :name => "Soca", :description => "Fantastic pa amb semilles", :locale => "ca" )
+#soca.translations.create!( :locale => "ca", :name => "Soca", :description => "Fantastic pa amb semilles.")
 
-  # Add necessary roles
-  # https://groups.google.com/d/msg/refinery-cms/akI74wnviFs/j613apqJdvgJ
-  admin_user.add_role :refinery
-  admin_user.add_role :superuser
-end
+#Refinery::Breads::Bread::Translation.create!( :refinery_bread_id => soca.id,
+#                                              :locale => "ca",
+#                                              :name => "Soca",
+#                                              :description => "Fantastic pa amb semilles" )
+
+Refinery::Breads::Bread::Translation.create!( :refinery_bread_id => soca.id,
+                                              :locale => "es",
+                                              :name => "Soca",
+                                              :description => "Fantastico pan con semillas" )
+
+Refinery::Breads::Bread::Translation.create!( :refinery_bread_id => soca.id,
+                                              :locale => "en",
+                                              :name => "Soca",
+                                              :description => "Fantastic bread with seeds" )
 
