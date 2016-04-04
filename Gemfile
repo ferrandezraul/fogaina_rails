@@ -39,6 +39,7 @@ group :development, :test do
   gem 'byebug'
   gem 'pry'
   gem 'refinerycms-testing', '~> 3.0.0'
+  gem "awesome_print"
 end
 
 group :development do
