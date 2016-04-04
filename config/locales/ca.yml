@@ -27,3 +27,9 @@ ca:
   catalan: "Català"
   pa_eco_garrotxa: "Pa artesà i ecològic a la Garrotxa"
   follow_us: "Segueix-nos"
+
+# Those translations are missing from external extension refinery_image_slideshows
+  refinery:
+    plugins:
+      refinery_image_slideshows:
+        title: "Presentació d'imatges"
