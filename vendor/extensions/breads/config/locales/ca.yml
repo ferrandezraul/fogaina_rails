@@ -21,6 +21,9 @@ ca:
       breads:
         show:
           other: Altres pans
+          name: Nom
+          description: Descripció
+          photo: Foto
   activerecord:
     attributes:
       'refinery/breads/bread':

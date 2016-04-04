@@ -12,7 +12,7 @@ es:
             reorder: Reordenar breads
             reorder_done: Reordenación de breads completada
           records:
-            title: Breads
+            title: Panes
             sorry_no_results: Lo siento, no hay resultados
             no_items_yet: No hay breads todavía. Pulsa en "Crear nuevo Bread" para crear tu primer bread.
           bread:
@@ -21,10 +21,13 @@ es:
             delete: Borrar este bread para siempre
       breads:
         show:
-          other: Otros breads
+          other: Otros panes
+          name: Nombre
+          description: Descripción
+          photo: Foto
   activerecord:
     attributes:
       'refinery/breads/bread':
-        name: Name
-        description: Description
+        name: Nombre
+        description: Descripción
         photo: Photo
