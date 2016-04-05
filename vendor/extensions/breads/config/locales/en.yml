@@ -21,6 +21,9 @@ en:
       breads:
         show:
           other: Other Breads
+          name: Name
+          description: Description
+          photo: Photo
   activerecord:
     attributes:
       'refinery/breads/bread':
