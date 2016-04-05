@@ -8,11 +8,28 @@
       <%=raw @bread.description %>
     </p>
   </section>
+  <% if @bread.price %>
+    <section>
+      <h4><%= t(".price") %></h4>
+      <p>
+        <%=raw @bread.price.to_s + " €"%>
+      </p>
+    </section>
+  <% end %>
+  <% if @bread.price %>
+    <section>
+      <p>
+        <%=raw @bread.available_days %>
+      </p>
+    </section>
+  <% end %>  
+  
   <section>
     <p>
       <%= image_fu @bread.photo, nil %>
     </p>
   </section>
+  
 <% end %>
 
 <% content_for :side_body do %>

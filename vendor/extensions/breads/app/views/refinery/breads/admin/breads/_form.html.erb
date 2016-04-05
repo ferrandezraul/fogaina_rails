@@ -13,8 +13,14 @@
   <div class='field'>
     <%= render '/refinery/admin/wysiwyg',
                 :f => f,
-                :fields => [:description],
+                :fields => [:description, :available_days],
                 :object => "breads/bread" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :price -%>
+    <%= f.number_field :price, :class => 'text_field', :step => 'any' -%>
+    <%= f.label "€" -%>
   </div>
 
   <div class='field'>

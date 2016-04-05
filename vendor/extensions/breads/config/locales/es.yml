@@ -25,9 +25,13 @@ es:
           name: Nombre
           description: Descripción
           photo: Foto
+          price: Precio
+          available_days: "Dias en los que esta disponible a la venta"
   activerecord:
     attributes:
       'refinery/breads/bread':
         name: Nombre
         description: Descripción
         photo: Photo
+        price: Precio
+        available_days: "Dias en que esta disponible"

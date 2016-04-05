@@ -24,6 +24,8 @@ en:
           name: Name
           description: Description
           photo: Photo
+          price: Price
+          available_days: "Available days"
   activerecord:
     attributes:
       'refinery/breads/bread':

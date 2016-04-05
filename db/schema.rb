@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160403184922) do
+ActiveRecord::Schema.define(version: 20160405142933) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -74,6 +74,8 @@ ActiveRecord::Schema.define(version: 20160403184922) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "price",          precision: 5, scale: 2
+    t.text     "available_days"
   end
 
   create_table "refinery_image_slide_translations", force: :cascade do |t|
