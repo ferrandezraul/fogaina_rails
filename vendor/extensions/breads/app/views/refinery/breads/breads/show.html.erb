@@ -4,19 +4,11 @@
 
 <% content_for :body do %>
   <section>
-    <h1><%= t('.name') %></h1>
-    <p>
-      <%=raw @bread.name %>
-    </p>
-  </section>
-  <section>
-    <h1><%= t('.description') %></h1>
     <p>
       <%=raw @bread.description %>
     </p>
   </section>
   <section>
-    <h1><%= t('.photo') %></h1>
     <p>
       <%= image_fu @bread.photo, nil %>
     </p>

@@ -14,7 +14,7 @@ var infoWindowObrador = new google.maps.InfoWindow({
       '</div>'+
       '<h4 id="firstHeading" class="firstHeading">Obrador La Fogaina</h4>'+
       '<div id="bodyContent">'+      
-      'Mas la Plana s/n, El Mallol - Carretera del Veïnat Cirera. </br>' +
+      'Mas la Plana s/n, El Mallol - Carretera del Veïnat Cirera.' +
       '</div>'+
       '</div>'
   });

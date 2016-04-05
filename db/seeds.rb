@@ -42,11 +42,13 @@ image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_
 soques_path = "#{Rails.root.join('app/assets/images/pan/soques.jpg')}"
 soca_path = "#{Rails.root.join('app/assets/images/pan/soca.jpg')}"
 pa_pages_path = "#{Rails.root.join('app/assets/images/pan/pa_de_pages.jpg')}"
+pa_rustic_path = "#{Rails.root.join('app/assets/images/pan/rustic.jpg')}"
 
 # Images PAN
 image_soques = Refinery::Image.create :image => File.new(soques_path)
 image_soca = Refinery::Image.create :image => File.new(soca_path)
 image_pa_de_pages = Refinery::Image.create :image => File.new(pa_pages_path)
+image_pa_rustic = Refinery::Image.create :image => File.new(pa_rustic_path)
 
 # Path to images in SLIDE SHOW IN HOME PAGE
 obrador_reposteria_path = "#{Rails.root.join('app/assets/images/obrador/reposteria1000x400.jpg')}"
@@ -417,8 +419,9 @@ Refinery::Breads::Engine.load_seed
 panes = [ { :name_ca => "La Soca", 
             :name_es => "La Soca",
             :name_en => "La Soca",  
-            :description_ca => "Pa integral de motlle amb cereals i llavors. Aquest pa és el millor per a fer torrades contundents i acompanyar qualsevol menjar.
-                             Pa de llarga fermentació. El podriem considerar un multicereals, amb una farina de molí de pedra i de primera qualitat (blat del cor, xeixa, montcada,espelta...). Tot això fa un pa gustosíssim. Baix en gluten.",
+            :description_ca => "Pa integral de motlle amb cereals i llavors. Aquest pa és el millor per a fer torrades contundents i acompanyar qualsevol menjar.<br>
+                                Pa de llarga fermentació. El podriem considerar un multicereals, amb una farina de molí de pedra i de primera qualitat (blat del cor, xeixa, montcada,espelta...). Tot això fa un pa gustosíssim. Baix en gluten.<br>
+                                Preu: 4.00€ (1 kg), 3.00€ (750gr)<br>Venda tots els dies.",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
             :photo => image_soca 
@@ -426,10 +429,20 @@ panes = [ { :name_ca => "La Soca",
           { :name_ca => "Pa de pagés", 
             :name_es => "Pan de pagés",
             :name_en => "Pa de pagés",  
-            :description_ca => "Pa rodó amb farina blanca ecològica. Massa mare i una mica de llevat. Es el pa de tota la vida però amb caràcter i molt de gust. Pels que no volen renunciar a fer un pa amb tomàquet o sucar a salses i ous ferrats...",
+            :description_ca => "Pa rodó amb farina blanca ecològica. Massa mare i una mica de llevat. Es el pa de tota la vida però amb caràcter i molt de gust. Pels que no volen renunciar a fer un pa amb tomàquet o sucar a salses i ous ferrats ...<br>
+                                Preu: 2.10€ (600 gr.), 3.20€ (1kg)<br>Venda tots els dies.",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
             :photo => image_pa_de_pages 
+          },
+          { :name_ca => "Rústic", 
+            :name_es => "Rústico",
+            :name_en => "Rustic",  
+            :description_ca => "Pa amb forma de batard, amb farina blanca ecològica, i una mica de farina sègol i blat integral. Massa mare. Es un pa amb una fermentació retardada i molt lenta, que fa que tingui un gust pronunciat a cereals, crosta rústica i molla cremosa. <br>
+                                Preu: 3.00 € (750 gr.)<br>Venda tots els dies.",
+            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
+            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :photo => image_pa_rustic 
           }
         ]
 
@@ -450,37 +463,3 @@ panes.each do |pan_attr|
                                                 :description => pan_attr[:description_en] )
 
 end
-
-# soca = Refinery::Breads::Bread.create!( :name => "La Soca", 
-#                                         :description => "Pa integral de motlle amb cereals i llavors. Aquest pa és el millor per a fer torrades contundents i acompanyar qualsevol menjar.
-# Pa de llarga fermentació. El podriem considerar un multicereals, amb una farina de molí de pedra i de primera qualitat (blat del cor, xeixa, montcada,espelta...). Tot això fa un pa gustosíssim. Baix en gluten.",
-#                                         :locale => "ca",
-#                                         :photo => image_soca )
-
-# Refinery::Breads::Bread::Translation.create!( :refinery_bread_id => soca.id,
-#                                               :locale => "es",
-#                                               :name => "La Soca",
-#                                               :description => "Editar traduccion español en el admin ... Pa integral de motlle amb cereals i llavors. Aquest pa és el millor per a fer torrades contundents i acompanyar qualsevol menjar.
-# Pa de llarga fermentació. El podriem considerar un multicereals, amb una farina de molí de pedra i de primera qualitat (blat del cor, xeixa, montcada,espelta...). Tot això fa un pa gustosíssim. Baix en gluten." )
-
-# Refinery::Breads::Bread::Translation.create!( :refinery_bread_id => soca.id,
-#                                               :locale => "en",
-#                                               :name => "La Soca",
-#                                               :description => "Edit English translation in admin ... Pa integral de motlle amb cereals i llavors. Aquest pa és el millor per a fer torrades contundents i acompanyar qualsevol menjar.
-# Pa de llarga fermentació. El podriem considerar un multicereals, amb una farina de molí de pedra i de primera qualitat (blat del cor, xeixa, montcada,espelta...). Tot això fa un pa gustosíssim. Baix en gluten." )
-
-# # Pa de pages
-# pa_de_pages = Refinery::Breads::Bread.create!( :name => "Pa de pagés", 
-#                                          :description => "Pa rodó amb farina blanca ecològica. Massa mare i una mica de llevat. Es el pa de tota la vida però amb caràcter i molt de gust. Pels que no volen renunciar a fer un pa amb tomàquet o sucar a salses i ous ferrats...",
-#                                          :locale => "ca",
-#                                          :photo => image_pa_de_pages )
-
-# Refinery::Breads::Bread::Translation.create!( :refinery_bread_id => pa_de_pages.id,
-#                                               :locale => "es",
-#                                               :name => "Pan de pagés",
-#                                               :description => "Editar traduccion español en el admin ... PPa rodó amb farina blanca ecològica. Massa mare i una mica de llevat. Es el pa de tota la vida però amb caràcter i molt de gust. Pels que no volen renunciar a fer un pa amb tomàquet o sucar a salses i ous ferrats..." )
-
-# Refinery::Breads::Bread::Translation.create!( :refinery_bread_id => pa_de_pages.id,
-#                                               :locale => "en",
-#                                               :name => "Pa de pagés",
-#                                               :description => "Edit English translation in admin ... Pa rodó amb farina blanca ecològica. Massa mare i una mica de llevat. Es el pa de tota la vida però amb caràcter i molt de gust. Pels que no volen renunciar a fer un pa amb tomàquet o sucar a salses i ous ferrats..." )
