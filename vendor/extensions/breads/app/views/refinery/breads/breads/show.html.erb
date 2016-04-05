@@ -16,10 +16,11 @@
       </p>
     </section>
   <% end %>
-  <% if @bread.price %>
+  <% if @bread.available_days %>
     <section>
+      <h4><%= t(".available_days") %></h4>
       <p>
-        <%=raw @bread.available_days %>
+        <%=raw t( "." + @bread.available_days.to_s ) %>
       </p>
     </section>
   <% end %>  

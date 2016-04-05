@@ -13,14 +13,18 @@
   <div class='field'>
     <%= render '/refinery/admin/wysiwyg',
                 :f => f,
-                :fields => [:description, :available_days],
+                :fields => [:description],
                 :object => "breads/bread" -%>
   </div>
 
   <div class='field'>
-    <%= f.label :price -%>
+    <%= f.label t('.available_days') -%>
+    <%= f.select( :available_days, options_for_select( [ ["", ""], [ t('.every_day'), :every_day ], [ t('.monday'), :monday ], [ t('.tuesday'), :tuesday ], [ t('.wednesday'), :wednesday ], [ t('.thursday'), :thursday ], [ t('.friday'), :friday ], [ t('.saturday'), :saturday ], [ t('.sunday'), :sunday ] ], @bread.available_days )) %>
+  </div>
+
+  <div class='field'>
+    <%= f.label t('.price') -%>
     <%= f.number_field :price, :class => 'text_field', :step => 'any' -%>
-    <%= f.label "€" -%>
   </div>
 
   <div class='field'>

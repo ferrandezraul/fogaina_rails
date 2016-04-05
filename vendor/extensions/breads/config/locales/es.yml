@@ -7,6 +7,17 @@ es:
     breads:
       admin:
         breads:
+          form:
+            price: "Precio en €"
+            available_days: "Dias en que esta disponible"
+            every_day: Todos los dias
+            monday: Lunes
+            tuesday: Martes
+            wednesday: Miércoles
+            thursday: Jueves
+            friday: Viernes
+            saturday: Sábado
+            sunday: Domingo
           actions:
             create_new: Crear nuevo bread
             reorder: Reordenar breads
@@ -27,6 +38,14 @@ es:
           photo: Foto
           price: Precio
           available_days: "Dias en los que esta disponible a la venta"
+          every_day: Todos los dias
+          monday: Lunes
+          tuesday: Martes
+          wednesday: Miércoles
+          thursday: Jueves
+          friday: Viernes
+          saturday: Sábado
+          sunday: Domingo
   activerecord:
     attributes:
       'refinery/breads/bread':

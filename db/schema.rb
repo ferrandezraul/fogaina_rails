@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(version: 20160405142933) do
     t.datetime "updated_at",        null: false
     t.string   "name"
     t.text     "description"
+    t.string   "available_days"
   end
 
   add_index "refinery_bread_translations", ["locale"], name: "index_refinery_bread_translations_on_locale"
@@ -75,7 +76,7 @@ ActiveRecord::Schema.define(version: 20160405142933) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.decimal  "price",          precision: 5, scale: 2
-    t.text     "available_days"
+    t.string   "available_days"
   end
 
   create_table "refinery_image_slide_translations", force: :cascade do |t|
