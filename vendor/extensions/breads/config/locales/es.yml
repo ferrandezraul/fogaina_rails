@@ -9,7 +9,7 @@ es:
         breads:
           form:
             price: "Precio en €"
-            available_days: "Días en que esta disponible"
+            available_days: "Disponibilidad"
             every_day: "Todos los días"
             not_every_day: "No todos los días"
             por_encargo: "Por encargo"
@@ -33,7 +33,7 @@ es:
           description: Descripción
           photo: Foto
           price: Precio
-          available_days: "Días en que esta disponible"
+          available_days: "Disponibilidad"
           every_day: "Todos los días"
           not_every_day: "No todos los días"
           por_encargo: "Por encargo"
@@ -45,4 +45,4 @@ es:
         description: Descripción
         photo: Photo
         price: Precio
-        available_days: "Dias en que esta disponible"
+        available_days: "Disponibilitat"

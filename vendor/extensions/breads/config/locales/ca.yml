@@ -45,4 +45,4 @@ ca:
         description: Descripció
         photo: Foto
         price: Preu
-        available_days: "Dies en que esta disponible"
+        available_days: "Disponibilitat"

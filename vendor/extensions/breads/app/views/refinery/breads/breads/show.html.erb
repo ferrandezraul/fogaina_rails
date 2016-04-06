@@ -16,7 +16,7 @@
       </p>
     </section>
   <% end %>
-  <% if @bread.available_days %>
+  <% if @bread.available_days and !@bread.available_days.empty? %>
     <section>
       <h4><%= t(".available_days") %></h4>
       <p>
