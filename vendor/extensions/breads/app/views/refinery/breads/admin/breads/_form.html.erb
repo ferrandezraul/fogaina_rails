@@ -19,7 +19,14 @@
 
   <div class='field'>
     <%= f.label t('.available_days') -%>
-    <%= f.select( :available_days, options_for_select( [ ["", ""], [ t('.every_day'), :every_day ], [ t('.monday'), :monday ], [ t('.tuesday'), :tuesday ], [ t('.wednesday'), :wednesday ], [ t('.thursday'), :thursday ], [ t('.friday'), :friday ], [ t('.saturday'), :saturday ], [ t('.sunday'), :sunday ] ], @bread.available_days )) %>
+
+    <%= f.select( :available_days, 
+        options_for_select( [ 
+          ["", ""], 
+          [ t('.every_day'), :every_day ], 
+          [ t('.not_every_day'), :not_every_day ], 
+          [ t('.por_encargo'), :por_encargo ]
+        ], @bread.available_days )) %>
   </div>
 
   <div class='field'>

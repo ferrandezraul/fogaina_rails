@@ -8,7 +8,11 @@ en:
         breads:
           form:
             price: "Price in €"
-            available_days: "Available days"
+            available_days: "Availability"
+            every_day: Every day
+            not_every_day: Not every day
+            por_encargo: Only by request
+            weekend: Weekends
           actions:
             create_new: Add New Bread
             reorder: Reorder Breads
@@ -28,15 +32,11 @@ en:
           description: Description
           photo: Photo
           price: Price
-          available_days: "Available days"
+          available_days: "Availability"
           every_day: Every day
-          monday: Monday
-          tuesday: Tuesday
-          wednesday: Wednesday
-          thursday: Thurday
-          friday: Friday
-          saturday: Saturday
-          sunday: Sunday
+          not_every_day: Not every day
+          por_encargo: Only by request
+          weekend: Weekends
   activerecord:
     attributes:
       'refinery/breads/bread':

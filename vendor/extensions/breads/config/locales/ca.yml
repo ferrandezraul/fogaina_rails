@@ -8,15 +8,11 @@ ca:
         breads:
           form:
             price: "Preu en €"
-            available_days: "Dies en que esta disponible"
+            available_days: "Disponibilitat"
             every_day: Tots el dies
-            monday: Dilluns
-            tuesday: Dimarts
-            wednesday: Dimecres
-            thursday: Dijous
-            friday: Divendres
-            saturday: Dissabte
-            sunday: Diumenge
+            not_every_day: No tots el dies
+            por_encargo: Per encàrrec
+            weekend: Caps de setmana
           actions:
             create_new: Afegir un pa nou
             reorder: Reordenar pans
@@ -36,15 +32,12 @@ ca:
           description: Descripció
           photo: Foto
           price: Preu
-          available_days: "Dies en que esta disponible"
+          available_days: "Disponibilitat"
           every_day: Tots el dies
-          monday: Dilluns
-          tuesday: Dimarts
-          wednesday: Dimecres
-          thursday: Dijous
-          friday: Divendres
-          saturday: Dissabte
-          sunday: Diumenge
+          every_day: Tots el dies
+          not_every_day: No tots el dies
+          por_encargo: Per encàrrec
+          weekend: Caps de setmana
   activerecord:
     attributes:
       'refinery/breads/bread':
