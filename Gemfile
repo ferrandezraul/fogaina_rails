@@ -40,6 +40,7 @@ group :development, :test do
   gem 'pry'
   gem 'refinerycms-testing', '~> 3.0.0'
   gem "awesome_print"
+  gem "better_errors"
 end
 
 group :development do
