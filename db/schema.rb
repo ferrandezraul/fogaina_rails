@@ -62,7 +62,6 @@ ActiveRecord::Schema.define(version: 20160405142933) do
     t.datetime "updated_at",        null: false
     t.string   "name"
     t.text     "description"
-    t.string   "available_days"
   end
 
   add_index "refinery_bread_translations", ["locale"], name: "index_refinery_bread_translations_on_locale"
