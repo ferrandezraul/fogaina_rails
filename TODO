@@ -44,15 +44,11 @@ http://tympanus.net/codrops/2011/09/20/responsive-image-gallery/
 
 ////////
 
-Change the seed data from my extension? Titulos, posicion, etc ...
-Make it Deletable in case the user doesn't want it! but it is a new tab!!
-Seed some data, real breads.
-Also, show_in_menu ???
-apply foundation to breads pages and give a nice css format/view
-Check in another branch the news extension
-
+Review rake spec from extension.
 Fix. No se debe poder crear un pan sin traduccion en el titulo, y en la descripcion ?? 
 Anyadir 6 o 7 panes al seed data
-Customizar vista con foundation y css de los panes
+Customizar vista breads con foundation y css de los panes
 En el admin, la pagina panes tiene multiples traducciones que se pueden editar pero no cambian a pesar de ello. Coincide con el numero de panes?
+
+Check in another branch the news extension
 
