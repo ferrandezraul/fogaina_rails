@@ -1,8 +1,10 @@
 module Refinery
   module Breads
     class Bread < Refinery::Core::BaseModel
-      self.table_name = 'refinery_breads'
+      attr_accessor :available_days
+      attr_accessor :price
 
+      self.table_name = 'refinery_breads'
 
       translates :name, :description
 
