@@ -41,6 +41,7 @@ group :development, :test do
   gem 'refinerycms-testing', '~> 3.0.0'
   gem "awesome_print"
   gem "better_errors"
+  gem "launchy"
 end
 
 group :development do
