@@ -423,7 +423,7 @@ panes = [
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
             :available_days => :every_day,
             :price => nil,
-            :photo => image_soca 
+            :photo => image_soca
           },
           { :name_ca => "Pa de pagés", 
             :name_es => "Pan de pagés",
@@ -433,7 +433,7 @@ panes = [
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
             :available_days => :every_day,
             :price => nil,
-            :photo => image_pa_de_pages 
+            :photo => image_pa_de_pages
           },
           { :name_ca => "Rústic", 
             :name_es => "Rústico",
@@ -443,7 +443,7 @@ panes = [
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
             :available_days => :every_day,
             :price => 3,
-            :photo => image_pa_rustic 
+            :photo => image_pa_rustic
           },
           { :name_ca => "Tinosell", 
             :name_es => "Tinosell",
@@ -483,7 +483,7 @@ panes.each do |pan_attr|
                                          :locale => "ca",
                                          :available_days => pan_attr[:available_days],
                                          :price => pan_attr[:price],
-                                         :photo => image_soca )
+                                         :photo => pan_attr[:photo] )
 
   Refinery::Breads::Bread::Translation.create!( :refinery_bread_id => pan.id,
                                                 :locale => "es",
