@@ -1,0 +1,56 @@
+
+<div class='row'>
+
+  <div class='small-4 column'>
+    <section id='side_body'>
+      <div class="inner">  
+        <aside>
+          <h2><%= @page.title %></h2>
+          <ul id="breads">
+            <% @breads.each do |bread| %>
+              <li>
+                <%= link_to bread.name, refinery.breads_bread_path(bread) %>
+              </li>
+            <% end %>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </div>
+
+  <div class='small-8 column'>
+    <section id='body'>
+      <h2>
+        <%= @bread.name %>
+      </h2>
+
+      <section>
+        <p>
+          <%=raw @bread.description %>
+        </p>
+      </section>
+      <% if @bread.price %>
+        <section>
+          <h4><%= t(".price") %></h4>
+          <p>
+            <%=raw @bread.price.to_s + " €"%>
+          </p>
+        </section>
+      <% end %>
+      <% if @bread.available_days and !@bread.available_days.empty? %>
+        <section>
+          <h4><%= t(".available_days") %></h4>
+          <p>
+            <%=raw t( "." + @bread.available_days.to_s ) %>
+          </p>
+        </section>
+      <% end %>  
+
+      <section>
+        <p>
+          <%= image_fu @bread.photo, nil %>
+        </p>
+      </section>
+    </section>
+  </div>
+</div>

@@ -1,4 +1,5 @@
-<% content_for :body do %>
+<section id="body">
+  <h2><%= @page.title %></h2>
   <ul id="breads">
     <% @breads.each do |bread| %>
       <li>
@@ -6,6 +7,4 @@
       </li>
     <% end %>
   </ul>
-<% end %>
-
-<%= render '/refinery/content_page' %>
+</section>
