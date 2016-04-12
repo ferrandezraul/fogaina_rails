@@ -49,6 +49,8 @@ http://www.refinerycms.com/guides/using-custom-view-or-layout-templates
 Try out a layout template for breads extension and check this 
 https://groups.google.com/forum/#!searchin/refinery-cms/custom$20view$20template$20engine/refinery-cms/NMo4O4emPqo/gsFqmgJuHZIJ
 
+
+Fix price and available days
 Add attribute :weight to breads
 Fix. No se debe poder crear un pan sin traduccion en el titulo, y en la descripcion ?? 
 Anyadir 6 o 7 panes al seed data
