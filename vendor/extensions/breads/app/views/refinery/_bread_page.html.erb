@@ -29,22 +29,29 @@
           <%=raw @bread.description %>
         </p>
       </section>
-      <% if @bread.price %>
-        <section>
-          <h4><%= I18n.t(".refinery.plugins.breads.price") %></h4>
-          <p>
-            <%=raw @bread.price.to_s + " €"%>
-          </p>
-        </section>
-      <% end %>
-      <% if @bread.available_days and !@bread.available_days.empty? %>
-        <section>
-          <h4><%= I18n.t(".refinery.plugins.breads.available_days") %></h4>
-          <p>
-            <%=raw I18n.t( ".refinery.plugins.breads." + @bread.available_days.to_s ) %>
-          </p>
-        </section>
-      <% end %>  
+
+        <div class='row'>
+          <% if @bread.price %>
+            <div class='small-6 column'>
+              <section>
+                <h4><%= I18n.t(".refinery.plugins.breads.price") %></h4>
+                <p>
+                  <%=raw @bread.price.to_s + " €"%>
+                </p>
+              </section>
+            </div>
+          <% end %>
+          <% if @bread.available_days and !@bread.available_days.empty? %>      
+            <div class='small-6 column'>
+              <section>
+                <h4><%= I18n.t(".refinery.plugins.breads.available_days") %></h4>
+                <p>
+                  <%=raw I18n.t( ".refinery.plugins.breads." + @bread.available_days.to_s ) %>
+                </p>
+              </section>
+            </div>
+          <% end %>  
+        </div>
 
       <section>
         <p>
