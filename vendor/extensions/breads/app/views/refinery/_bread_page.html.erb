@@ -36,7 +36,7 @@
               <section>
                 <h4><%= I18n.t(".refinery.plugins.breads.price") %></h4>
                 <p>
-                  <%=raw @bread.price.to_s + " €"%>
+                  <%=raw sprintf("%.2f", @bread.price ) + " €"%>
                 </p>
               </section>
             </div>
