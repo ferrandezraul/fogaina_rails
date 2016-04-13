@@ -34,9 +34,11 @@
           <% if @bread.price %>
             <div class='small-6 column'>
               <section>
-                <h4><%= I18n.t(".refinery.plugins.breads.price") %></h4>
                 <p>
-                  <%=raw sprintf("%.2f", @bread.price ) + " €"%>
+                  <strong>
+                    <%= I18n.t(".refinery.plugins.breads.price") + ":" %>
+                    <%=raw sprintf("%.2f", @bread.price ) + " €"%>
+                  </strong>
                 </p>
               </section>
             </div>
@@ -44,9 +46,11 @@
           <% if @bread.available_days and !@bread.available_days.empty? %>      
             <div class='small-6 column'>
               <section>
-                <h4><%= I18n.t(".refinery.plugins.breads.available_days") %></h4>
                 <p>
-                  <%=raw I18n.t( ".refinery.plugins.breads." + @bread.available_days.to_s ) %>
+                  <strong>
+                    <%= I18n.t(".refinery.plugins.breads.available_days") + ":" %>
+                    <%=raw I18n.t( ".refinery.plugins.breads." + @bread.available_days.to_s ) %>
+                  </strong>
                 </p>
               </section>
             </div>
