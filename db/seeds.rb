@@ -38,18 +38,6 @@ image_espai= Refinery::Image.create :image => File.new(espai_path)
 image_cistell_pan = Refinery::Image.create :image => File.new(cistell_pan_path)
 image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_path)
 
-# Path to images PAN
-soques_path = "#{Rails.root.join('app/assets/images/pan/soques.jpg')}"
-soca_path = "#{Rails.root.join('app/assets/images/pan/soca.jpg')}"
-pa_pages_path = "#{Rails.root.join('app/assets/images/pan/pa_de_pages.jpg')}"
-pa_rustic_path = "#{Rails.root.join('app/assets/images/pan/rustic.jpg')}"
-
-# Images PAN
-image_soques = Refinery::Image.create :image => File.new(soques_path)
-image_soca = Refinery::Image.create :image => File.new(soca_path)
-image_pa_de_pages = Refinery::Image.create :image => File.new(pa_pages_path)
-image_pa_rustic = Refinery::Image.create :image => File.new(pa_rustic_path)
-
 # Path to images in SLIDE SHOW IN HOME PAGE
 obrador_reposteria_path = "#{Rails.root.join('app/assets/images/obrador/reposteria1000x400.jpg')}"
 cafeteria_path = "#{Rails.root.join('app/assets/images/cafeteria/cafeteria1000x400.jpg')}"
@@ -409,6 +397,37 @@ pages_array.each { | page_attr |
   finnish_page( page, page_attr )
 }
 
+
+# Path to images PAN
+soques_path = "#{Rails.root.join('app/assets/images/pan/soques.jpg')}"
+soca_path = "#{Rails.root.join('app/assets/images/pan/soca.jpg')}"
+pa_pages_path = "#{Rails.root.join('app/assets/images/pan/pa_de_pages.jpg')}"
+pa_rustic_path = "#{Rails.root.join('app/assets/images/pan/rustic.jpg')}"
+pa_croscat_espelta_path = "#{Rails.root.join('app/assets/images/pan/croscat_espelta.jpg')}"
+coca_forner_path = "#{Rails.root.join('app/assets/images/pan/coca_forner.jpg')}"
+pa_de_coca_path = "#{Rails.root.join('app/assets/images/pan/pa_de_coca.jpg')}"
+pa_brot_negre_path = "#{Rails.root.join('app/assets/images/pan/brot_negre.jpg')}"
+pa_bembo_path = "#{Rails.root.join('app/assets/images/pan/bembo.jpg')}"
+pa_sense_gluten_path = "#{Rails.root.join('app/assets/images/pan/pa_sense_gluten.jpg')}"
+pa_segol_path = "#{Rails.root.join('app/assets/images/pan/segol.jpg')}"
+pa_baguette_path = "#{Rails.root.join('app/assets/images/pan/baguette.jpg')}"
+pa_de_farro_path = "#{Rails.root.join('app/assets/images/pan/pa_de_farro.jpg')}"
+
+# Images PAN
+image_soques = Refinery::Image.create :image => File.new(soques_path)
+image_soca = Refinery::Image.create :image => File.new(soca_path)
+image_pa_de_pages = Refinery::Image.create :image => File.new(pa_pages_path)
+image_pa_rustic = Refinery::Image.create :image => File.new(pa_rustic_path)
+image_pa_croscat_espelta = Refinery::Image.create :image => File.new(pa_croscat_espelta_path)
+image_coca_forner = Refinery::Image.create :image => File.new(coca_forner_path)
+image_pa_de_coca = Refinery::Image.create :image => File.new(pa_de_coca_path)
+image_brot_negre = Refinery::Image.create :image => File.new(pa_brot_negre_path)
+image_pa_bembo = Refinery::Image.create :image => File.new(pa_bembo_path)
+image_pa_sense_gluten = Refinery::Image.create :image => File.new(pa_sense_gluten_path)
+image_pa_segol = Refinery::Image.create :image => File.new(pa_segol_path)
+image_pa_baguette = Refinery::Image.create :image => File.new(pa_baguette_path)
+image_pa_de_farro = Refinery::Image.create :image => File.new(pa_de_farro_path)
+
 # Added by Refinery CMS Breads extension
 Refinery::Breads::Engine.load_seed
 
@@ -463,7 +482,7 @@ panes = [
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
             :available_days => :every_day,
             :price => 4.30,
-            :photo => nil 
+            :photo => image_pa_croscat_espelta 
           },
           { :name_ca => "Coca de forner", 
             :name_es => "Coca de forner",
@@ -473,7 +492,84 @@ panes = [
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
             :available_days => :every_day,
             :price => 3.10,
-            :photo => nil 
+            :photo => image_coca_forner 
+          },
+          { :name_ca => "Pa de coca", 
+            :name_es => "Pa de coca",
+            :name_en => "Pa de coca",  
+            :description_ca => "Aqui trobareu el millor amic per fer unes torrades amb pa amb tomàquet 
+                                iniigual.lables. Cuït amb flama directa.",
+            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
+            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :available_days => :every_day,
+            :price => 2.60,
+            :photo => image_pa_de_coca 
+          },
+          { :name_ca => "Brot Negre", 
+            :name_es => "Brot Negre",
+            :name_en => "Brot Negre",  
+            :description_ca => "Pa de segle de motlle petit. 100%  de ségol integral. Molt molt aromàtic. 
+                                Es pot combinar amb aliments de gustos forts i contrastats. Però si ets un amant del segle, te'l menjaràs sol!!
+                                El sègol es un cereal del qual obtenim una farina mol baixa en gluten. ",
+            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
+            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :available_days => nil,
+            :price => nil,
+            :photo => image_brot_negre 
+          },
+          { :name_ca => "Bembó", 
+            :name_es => "Bembó",
+            :name_en => "Bembó",  
+            :description_ca => "Pa de motllo blanc típic per fer 'bikinis' o torrades dolces. Un pa molt tendre, suau però amb una miga més sabrosa que les industrials, gracies a l'elaboració amb massa mare. Porta sucre moré panela, mantega i llet ecològica.",
+            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
+            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :available_days => :not_every_day,
+            :price => 4,
+            :photo => image_pa_bembo 
+          },
+          { :name_ca => "Pa sense gluten", 
+            :name_es => "Pan sin gluten",
+            :name_en => "Bread gluten-free",  
+            :description_ca => "Davant de tanta demanda ens animem a fer aquest pa sense gluten (*pot contenir traces, no apte per celíacs), amb farines ecológiques i moltes a la pedra de Fajol (blat sarraí), Arrós Integral i Cigró. També amb midó de tapioca i Maicena Ecológica. Per donar més sabor li possem llavors de chia, llí i sésam. El format es en motllo i intentem, encara que no te gluten, aconseguir una textura i estructura suau i esponjosa. Un pa molt saludable per tothom.",
+            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
+            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :available_days => :por_encargo,
+            :price => 6,
+            :photo => image_pa_sense_gluten 
+          },
+          { :name_ca => "Ségol - Blat amb panses i nous", 
+            :name_es => "Ségol - Blat amb panses i nous",
+            :name_en => "Ségol - Blat amb panses i nous",  
+            :description_ca => "Un pa de farina semi integral de blat, amb molta molta massa mare de ségol. 
+                                Acompanyat amb panses i nous en quantitat. Un pa molt aromàtic i de bona conservació. Un plaer acompanyant tant formatges i fumats com mermelades.",
+            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
+            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :available_days => :weekend,
+            :price => 3.80,
+            :photo => image_pa_segol 
+          },
+          { :name_ca => "Baguette", 
+            :name_es => "Baguette",
+            :name_en => "Baguette",  
+            :description_ca => "Baguettes amb formula de tradició francesa, amb farines de blat moltes a la pedra, massa mare i llevat. Fermentacions llargues i cuita al forn de llenya.
+                                Per fi gaudim de les barres a la Fogaina.",
+            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
+            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :available_days => :not_every_day,
+            :price => 1.70,
+            :photo => image_pa_baguette 
+          },
+          { :name_ca => "Pa de Farro", 
+            :name_es => "Pa de Farro",
+            :name_en => "Pa de Farro",  
+            :description_ca => "El Farro (blat de moro) es un producte típic de la Vall d'en Bas, una vall fertil pel 
+                                cultiu d'aquest cereal. Malauradament avui dia es dificil de trobar Farro de varietats locals i ecológic, per desgracia els trangénics van guanyant terreny. Ara mateix estem utilitzant Farro de la Vall de Bianya de varietat local.
+                                Es un pa suau i fi, un punt dolcet, una miga amb un color crema grogenc que fa contrast amb una crosta deliciosa de color daurat. Tasteu!!",
+            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
+            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :available_days => :por_encargo,
+            :price => 2.70,
+            :photo => image_pa_de_farro 
           }
         ]
 
