@@ -1,3 +1,7 @@
+/// Postgresql database ////
+Followed http://www.tunnelsup.com/setting-up-postgres-on-mac-osx on mac osx
+database user "raul", database name --> see config/database.yml
+
 1. Templates de foundation
 http://foundation.zurb.com/templates-f5.html
 http://foundation.zurb.com/templates.html
