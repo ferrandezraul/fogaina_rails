@@ -3,6 +3,12 @@ es:
     plugins:
       breads:
         title: Panes
+        price: Precio
+        available_days: "Disponibilidad"
+        every_day: "Todos los días"
+        not_every_day: "No todos los días"
+        por_encargo: "Por encargo"
+        weekend: "Fin de semana"
 #        article: masculino/femenino
     breads:
       admin:

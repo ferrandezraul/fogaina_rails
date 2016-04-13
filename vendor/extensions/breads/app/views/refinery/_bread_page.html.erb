@@ -31,7 +31,7 @@
       </section>
       <% if @bread.price %>
         <section>
-          <h4><%= t(".price") %></h4>
+          <h4><%= I18n.t(".refinery.plugins.breads.price") %></h4>
           <p>
             <%=raw @bread.price.to_s + " €"%>
           </p>
@@ -39,9 +39,9 @@
       <% end %>
       <% if @bread.available_days and !@bread.available_days.empty? %>
         <section>
-          <h4><%= t(".available_days") %></h4>
+          <h4><%= I18n.t(".refinery.plugins.breads.available_days") %></h4>
           <p>
-            <%=raw t( "." + @bread.available_days.to_s ) %>
+            <%=raw I18n.t( ".refinery.plugins.breads." + @bread.available_days.to_s ) %>
           </p>
         </section>
       <% end %>  

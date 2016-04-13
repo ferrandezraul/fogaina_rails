@@ -3,6 +3,12 @@ en:
     plugins:
       breads:
         title: Breads
+        price: Price
+        available_days: "Availability"
+        every_day: Every day
+        not_every_day: Not every day
+        por_encargo: Only by request
+        weekend: Weekends
     breads:
       admin:
         breads:

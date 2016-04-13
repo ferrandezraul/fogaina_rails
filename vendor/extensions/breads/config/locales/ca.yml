@@ -3,6 +3,12 @@ ca:
     plugins:
       breads:
         title: Pans
+        price: Preu
+        available_days: "Disponibilitat"
+        every_day: Tots el dies
+        not_every_day: No tots el dies
+        por_encargo: Per encàrrec
+        weekend: Caps de setmana
     breads:
       admin:
         breads:
