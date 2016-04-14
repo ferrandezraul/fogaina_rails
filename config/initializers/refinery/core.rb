@@ -49,7 +49,7 @@ Refinery::Core.configure do |config|
 
   # Specify a different backend path than the default of "refinery".
   # Make sure you clear the `tmp/cache` directory after changing this setting.
-  # config.backend_route = "refinery"
+  config.backend_route = "fogaina"
 
   # Specify a different Refinery::Core::Engine mount path than the default of "/".
   # Make sure you clear the `tmp/cache` directory after changing this setting.
