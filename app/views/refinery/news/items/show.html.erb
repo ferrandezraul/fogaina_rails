@@ -1,14 +1,16 @@
 <% content_for :body_content_title, @item.title %>
 <% content_for :body do %>
   <article class="news_item">
-    <p>
-      <small><%= t('.published') %> <%= l(@item.publish_date, :format => :long) %></small>
-    </p>
-    <% if @item.source.present? %>
-      <p>
-        <small><%= t('.source') %> <%= @item.source %></small>
-      </p>
-    <% end %>
+    <div class='row'>
+      <div class='small-2 column'>
+        <small><%= t('.published') %> <%= l(@item.publish_date, :format => :short) %></small>
+      </div>
+      <div class='small-10 column'>
+        <% if @item.source.present? %>
+          <small><%= t('.source') %> <%= @item.source %></small>
+        <% end %>
+      </div>
+    </div>
     <%= @item.body.html_safe %>
     <p>
       <%= link_to t('.back_to_index'), refinery.news_items_path %>
