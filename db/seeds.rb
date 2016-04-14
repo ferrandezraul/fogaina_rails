@@ -230,19 +230,6 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                 {
                     :show_in_menu => true,
                     :deletable => true,
-                    :title => "Media",
-                    :title_es => "Media",
-                    :title_ca => "Media",
-                    :body => "<p>This is the body of Media.</p>",
-                    :body_es => "<p>Esto es el body de Media.</p>",
-                    :body_ca => "<p>Això es el body de Media</p>",
-                    :side_body => "<p>This is the side body of Media.</p>", 
-                    :side_body_es => "<p>Esto es el side body de Media.</p>",
-                    :side_body_ca => "<p>Això es el side body de Media</p>", 
-                },
-                {
-                    :show_in_menu => true,
-                    :deletable => true,
                     :title => "Wanna know more?",
                     :title_es => "Quieres saber mas?",
                     :title_ca => "Vols saber més?",
@@ -592,3 +579,16 @@ panes.each do |pan_attr|
                                                 :description => pan_attr[:description_en] )
 
 end
+# Added by Refinery CMS News engine
+Refinery::News::Engine.load_seed
+
+
+news_page = Refinery::Page.find_by(:menu_match => "^/news.*$")
+
+raise "Error, there should be a news page! See seeds.rb" if news_page == nil
+
+news_page.update!( title: "Notícies" )
+
+news_page.translations.create!( { :locale => "en", :title => "News" } )
+news_page.translations.create!( { :locale => "es", :title => "Noticias" } )
+news_page.translations.create!( { :locale => "ca", :title => "Notícies" } )

@@ -9,6 +9,18 @@ GIT
       refinerycms-core (~> 3.0.0)
       refinerycms-images (~> 3.0.0)
 
+GIT
+  remote: https://github.com/refinery/refinerycms-news
+  revision: 781c7fde3876cc5940d95cd1ca9d815446bcd0da
+  branch: master
+  specs:
+    refinerycms-news (3.0.0)
+      acts_as_indexed (~> 0.8.0)
+      friendly_id (~> 5.1.0)
+      globalize (>= 4.0.0, < 5.2)
+      refinerycms-core (~> 3.0.0)
+      refinerycms-settings (~> 3.0.0)
+
 PATH
   remote: vendor/extensions
   specs:
@@ -237,6 +249,9 @@ GEM
       dragonfly (~> 1.0.0)
       globalize (>= 4.0.0, < 5.2)
       refinerycms-core (= 3.0.2)
+    refinerycms-settings (3.0.0)
+      friendly_id (~> 5.0, >= 5.0.1)
+      refinerycms-core (~> 3.0, >= 3.0.0)
     refinerycms-testing (3.0.2)
       capybara (~> 2.4.3)
       database_cleaner (~> 1.3.0)
@@ -333,6 +348,7 @@ DEPENDENCIES
   refinerycms-authentication-devise (~> 1.0)
   refinerycms-breads!
   refinerycms-image_slideshows!
+  refinerycms-news!
   refinerycms-testing (~> 3.0.0)
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)

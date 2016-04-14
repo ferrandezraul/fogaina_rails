@@ -33,3 +33,49 @@ ca:
     plugins:
       refinery_image_slideshows:
         title: "Presentació d'imatges"
+      refinerycms_news:
+        title: News
+        description: Provides a simple news section
+    news:
+      admin:
+        items:
+          item:
+            view_live_html: "Veure aquesta notícia<br/><em>(s'obre en una nova finestra)</em>"
+            edit: "Editar aquesta notícia"
+            delete: "Esborrar aquesta notícia"
+            published: Publicat
+          index:
+            create: "Afegir una notícia"
+            item: Notícies
+            no_items_yet: 'No hi ha notícies. Feu clic a "Afegir una notícia" per afegir el seu primer article de premsa.'
+      shared:
+        items:
+          read_more: Llegeix més
+          created_at: 'Creat el %{when}'
+        archives: Archius
+      items:
+        show:
+          back_to_index: "Tornar a totes les notícies"
+          published: Publicat
+          source: Publicat per
+        recent_posts:
+          recent_posts: Notícies recents
+        index:
+          published: Publicat
+          read_more: Llegeix més
+          no_items_yet: No hi ha cap notícia.
+          source: Publicat per
+        archive:
+          news_item_archive_for: 'Archive for %{date}'
+          no_news_item_articles_posted: 'There are no news articles posted for %{date}. Stay tuned.'
+  activerecord:
+    attributes:
+      'refinery/news/item':
+        title: Title
+        body: Body
+        publish_date: Data de publicació
+        expiration_date: Data de caducitat
+        source: Font de la notícia (Publicat per ...)
+    models:
+      'refinery/news/item': News Item
+
