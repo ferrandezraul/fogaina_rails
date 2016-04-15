@@ -1,3 +1,4 @@
+
 <% if @item %>
   <% content_for :body_content_title, @item.title %>
   <% content_for :body do %>
@@ -19,6 +20,7 @@
   <% content_for :side_body, render(:partial => 'recent_posts') %>
 
   <%= render "/refinery/content_page" %>
+  
 <% else %>
   <h2><%= @page.title %></h2>
   <p><%= t('refinery.news.items.index.no_items_yet') %></p>
