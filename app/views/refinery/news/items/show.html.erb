@@ -17,6 +17,9 @@
     </article>
   <% end %>
   <% content_for :side_body, render(:partial => 'recent_posts') %>
-<% end %>
 
-<%= render "/refinery/content_page" %>
+  <%= render "/refinery/content_page" %>
+<% else %>
+  <h2><%= @page.title %></h2>
+  <p><%= t('refinery.news.items.index.no_items_yet') %></p>
+<% end %>
