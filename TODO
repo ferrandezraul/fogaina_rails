@@ -13,13 +13,6 @@ http://pixelhint.com/uno-html5-one-page-website-template/  (1 page/ javascript a
 
 2. Adaptar las imagenes con gimp al tamanyo necesitado
 
-3. Crear refinery view templates que sigan un template escogido para tener mas opciones en el administrador de paginas. (home, show, y alguna mas ...)
-4. Crear page parts (como side body) que macheen las partes de los templates escogidos.
-
-5. Crear varios branches con diferentes templates
-
-6. Probar las extensiones de refinery (blog, news, inquiries)
-
 ////////////////
 
 Update to foundation-rails v6?
@@ -30,7 +23,7 @@ Anyadir nav menu en el footer?
 Probar el menu de nav sticky
 Probar algun building block mas de http://zurb.com/building-blocks
 como por ejemplo el event listing
-Probar las extensiones de refinery (blog, news, inquiries) (see railscast video youtube)
+Mas extensiones de refinery (blog, inquiries) (see railscast video youtube)
 
 ////////////////
 
@@ -48,18 +41,6 @@ http://tympanus.net/codrops/2011/09/20/responsive-image-gallery/
 
 ////////
 
-Follow this to return a foundation page in breads extension.
-http://www.refinerycms.com/guides/using-custom-view-or-layout-templates
-Try out a layout template for breads extension and check this 
-https://groups.google.com/forum/#!searchin/refinery-cms/custom$20view$20template$20engine/refinery-cms/NMo4O4emPqo/gsFqmgJuHZIJ
-
-
-Fix crash selecting a news in english (frontend) if only writen in catalan(backend).
 Add attribute :weight to breads
 Fix. No se debe poder crear un pan sin traduccion en el titulo, y en la descripcion ?? 
-Anyadir 6 o 7 panes al seed data
-Customizar vista breads con foundation y css de los panes
-En el admin, la pagina panes tiene multiples traducciones que se pueden editar pero no cambian a pesar de ello. Coincide con el numero de panes?
-
-Check in another branch the news extension
 
