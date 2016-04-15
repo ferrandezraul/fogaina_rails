@@ -2,9 +2,11 @@
   <h2><%= @page.title %></h2>
   <ul id="breads">
     <% @breads.each do |bread| %>
-      <li>
-        <%= link_to bread.name, refinery.breads_bread_path(bread) %>
-      </li>
+      <% if bread.name %>
+        <li>
+          <%= link_to bread.name, refinery.breads_bread_path(bread) %>
+        </li>
+      <% end %> 
     <% end %>
   </ul>
 </section>
