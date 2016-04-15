@@ -592,3 +592,60 @@ news_page.update!( title: "Notícies" )
 news_page.translations.create!( { :locale => "en", :title => "News" } )
 news_page.translations.create!( { :locale => "es", :title => "Noticias" } )
 news_page.translations.create!( { :locale => "ca", :title => "Notícies" } )
+
+noticias = [ 
+  {
+    title: "La Fogaina-Oclot. Servei d'entrega ecològic", 
+    title_en: "La Fogaina-Oclot. Organic delivery system.",
+    title_es: "La Fogaina-Oclot. Servicio de entrega ecológico.",  
+    body: "Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
+           Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
+           A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
+           Salut, Pa i Pedals!!!", 
+    body_en: "Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
+           Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
+           A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
+           Salut, Pa i Pedals!!!",
+    body_es: "Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
+           Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
+           A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
+           Salut, Pa i Pedals!!!",
+    publish_date: DateTime.now  
+  },
+  {
+    title: "Cursos de pa a la Fogaina febrer-abril 2015",
+    title_en: "Bread Courses at la Fogaina february-april 2015",
+    title_es: "Cursos de pan en la Fogaina febrero-abril 2015", 
+    body: "Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!
+           Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
+           Mes info a la pestanya de 'cursos'.", 
+    body_en: "Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!
+           Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
+           Mes info a la pestanya de 'cursos'.", 
+    body_es: "Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!
+           Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
+           Mes info a la pestanya de 'cursos'.", 
+    publish_date: DateTime.now  
+  } 
+]
+
+noticias.each do |noticia_attr|
+
+  noticia = Refinery::News::Item.create!( 
+    locale: "ca", 
+    title: noticia_attr[:title], 
+    body: noticia_attr[:body], 
+    publish_date: noticia_attr[:publish_date] )
+
+  noticia.translations.create!( { :refinery_news_item_id => noticia.id,
+                                  :locale => "en",
+                                  :title => noticia_attr[:title_en], 
+                                  :body => noticia_attr[:body_en] } )
+
+  noticia.translations.create!( { :refinery_news_item_id => noticia.id,
+                                  :locale => "es",
+                                  :title => noticia_attr[:title_es],
+                                  :body => noticia_attr[:body_es] } )
+end
+
+
