@@ -1,0 +1,132 @@
+<section id="body">
+  <h2><%= @page.title %></h2>
+  <ul id="breads">
+    <% @breads.each do |bread| %>
+      <% if bread.name %>
+        
+        <div class="row">
+          <div class="small-4 columns">
+
+            <div class="image-wrapper overlay-fade-in">
+              <% if bread.photo %>
+                <%= image_tag bread.photo.url %>
+              <% else %>
+                <%= image_tag "logo_negro.svg" %>
+              <% end %>
+              
+              <div class="image-overlay-content">
+                <h2><%= bread.name %></h2>
+                <p><%= bread.description[0..40] + " ..." %></p>
+
+                <% if bread.price %>
+                  <p class="price"><%= raw sprintf("%.2f", bread.price ) + " €" %></p>
+                <% end %>
+
+                <%= link_to "Llegir mes ...", refinery.breads_bread_path(bread), class: "button" %>
+              </div>
+            
+            </div>
+          
+          </div>
+          <div class="small-4 columns">
+
+            <div class="image-wrapper overlay-slide-in-left">
+              <% if bread.photo %>
+                <%= image_tag bread.photo.url %>
+              <% else %>
+                <%= image_tag "logo_negro.svg" %>
+              <% end %>
+              
+              <div class="image-overlay-content">
+                <h2><%= bread.name %></h2>
+                <p><%= bread.description[0..40] + " ..." %></p>
+
+                <% if bread.price %>
+                  <p class="price"><%= raw sprintf("%.2f", bread.price ) + " €" %></p>
+                <% end %>
+
+                <%= link_to "Llegir mes ...", refinery.breads_bread_path(bread), class: "button" %>
+              </div>
+            
+            </div>
+          
+          </div> 
+          <div class="small-4 columns">
+
+            <div class="image-wrapper overlay-fade-in-new-background">
+              <% if bread.photo %>
+                <%= image_tag bread.photo.url %>
+              <% else %>
+                <%= image_tag "logo_negro.svg" %>
+              <% end %>
+              
+              <div class="image-overlay-content">
+                <h2><%= bread.name %></h2>
+                <p><%= bread.description[0..40] + " ..." %></p>
+                
+                <% if bread.price %>
+                  <p class="price"><%= raw sprintf("%.2f", bread.price ) + " €" %></p>
+                <% end %>
+
+                <%= link_to "Llegir mes ...", refinery.breads_bread_path(bread), class: "button" %>
+              </div>
+            
+            </div>
+          </div>
+            
+        </div>
+
+      <% end %> 
+    <% end %>
+  </ul>
+</section>
+
+<div class="row">
+  <div class="small-4 columns">
+
+    <div class="image-wrapper overlay-fade-in">
+      
+      <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
+      
+      <div class="image-overlay-content">
+        <h2>La Soca</h2>
+        <p class="price"><%= @breads.third.price %></p>
+        <%= link_to "Llegir mes ...", refinery.breads_bread_path(@breads.first), class: "button" %>
+      </div>
+    
+    </div>
+  
+  </div>
+  <div class="small-4 columns">
+
+    <div class="image-wrapper overlay-slide-in-left">
+      
+      <img src="https://tourneau.scene7.com/is/image/tourneau/ZEN0101011?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
+      
+      <div class="image-overlay-content">
+        <h2>La Soca</h2>
+        <p class="price"><%= @breads.third.price %></p>
+        <%= link_to "Llegir mes ...", refinery.breads_bread_path(@breads.first), class: "button" %>
+      </div>
+    
+    </div>
+  
+  </div> 
+  <div class="small-4 columns">
+
+    <div class="image-wrapper overlay-fade-in-new-background">
+      
+      <img src="https://tourneau.scene7.com/is/image/tourneau/FRK0100001?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
+      
+      <div class="image-overlay-content">
+        <h2>La Soca</h2>
+        <p class="price"><%= @breads.third.price %></p>
+        <%= link_to "Llegir mes ...", refinery.breads_bread_path(@breads.first), class: "button" %>
+      </div>
+    
+    </div>
+  
+  </div>
+    
+</div>
+
