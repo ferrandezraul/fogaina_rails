@@ -24,28 +24,34 @@
 
 <% if Refinery::News::Item.count > 0 %> 
   
-  <% @item = Refinery::News::Item.last %>
-  <% if @item && @item.body %>
+  <% @items = Refinery::News::Item.latest(1) %>
+  <% if @items.count == 1 && @items.first %>
+    <% @item = @items.first %>
 
-    <div class="row">
-      <div class="large-12 columns">
+    <%-# This is needed in order to avoid issues if the new is not available in other languages -%>
+    <% if @item.body != nil && @item.title != nil %>
 
-        <h2><%= @item.title %></h2>
-        <section>
-          <article class="news_item">
-            <p>
-              <small><%= t('refinery.news.items.show.published') %> <%= l(@item.publish_date, :format => :short) %></small>
-            </p>
-            <%= @item.body.html_safe %>
-            <p>
-              <%= link_to t('see_all_news'), refinery.news_items_path %>
-            </p>
-          </article>
-        </section>
+      <div class="row">
+        <div class="large-12 columns">
 
+          <h2><%= @item.title %></h2>
+          <section>
+            <article class="news_item">
+              <p>
+                <small><%= t('refinery.news.items.show.published') %> <%= l(@item.publish_date, :format => :short) %></small>
+              </p>
+              <%= @item.body.html_safe %>
+              <p>
+                <%= link_to t('see_all_news'), refinery.news_items_path %>
+              </p>
+            </article>
+          </section>
+
+        </div>
       </div>
-    </div>
-    <hr>
+      <hr>
+    <% end %>
+    
   <% end %>
 
 <% end %>
