@@ -43,3 +43,12 @@ http://tympanus.net/codrops/2011/09/20/responsive-image-gallery/
 
 Add attribute :weight to breads
 
+////////
+
+Localize link to all breads. And do not hardcode 'breads' on the yml. Use page title for breads.
+
+See link in /Users/raul/development/rails/fogaina_template/vendor/extensions/breads/app/views/refinery/breads/breads/show.html.erb
+
+Localize fade-in text "llegir mes ..." from breads
+
+
