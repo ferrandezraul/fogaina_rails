@@ -28,6 +28,7 @@ ca:
   pa_eco_garrotxa: "Pa artesà i ecològic a la Garrotxa"
   follow_us: "Segueix-nos"
   see_all_news: "Veure totes les notícies"
+  read_more: "Llegir més ..."
 
 # Those translations are missing from external extension refinery_image_slideshows
   refinery:

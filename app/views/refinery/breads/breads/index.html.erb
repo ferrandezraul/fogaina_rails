@@ -21,7 +21,7 @@
                   <p class="price"><%= raw sprintf("%.2f", bread.price ) + " €" %></p>
                 <% end %>
 
-                <%= link_to "Llegir mes ...", refinery.breads_bread_path(bread), class: "button" %>
+                <%= link_to I18n.t('read_more'), refinery.breads_bread_path(bread), class: "button" %>
               </div>
             
             </div>

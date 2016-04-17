@@ -28,6 +28,7 @@ es:
   pa_eco_garrotxa: "Pan artesano i ecológico en la Garrotxa"
   follow_us: Síguenos
   see_all_news: "Ver todas las noticias"
+  read_more: "Leer más ..."
 
   # Those translations are missing from external extension refinery_image_slideshows
   refinery:
