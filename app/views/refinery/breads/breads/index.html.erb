@@ -1,13 +1,14 @@
 <section id="body">
   <h2><%= @page.title %></h2>
   <ul id="breads">
-    <% @breads.each do |bread| %>
+    <% @breads.each_with_index do |bread, b_index| %>
       <% if bread.name %>
+        <% style = ["fade-in", "slide-in-left", "fade-in-new-background"] %>
         
         <div class="row">
           <div class="small-4 columns">
 
-            <div class="image-wrapper overlay-fade-in">
+            <div class="image-wrapper overlay-<%=style[b_index % style.size] %>">
               <% if bread.photo %>
                 <%= image_tag bread.photo.url %>
               <% else %>
@@ -30,7 +31,7 @@
           </div>
           <div class="small-4 columns">
 
-            <div class="image-wrapper overlay-slide-in-left">
+            <div class="image-wrapper overlay-<%=style[b_index % style.size] %>">
               <% if bread.photo %>
                 <%= image_tag bread.photo.url %>
               <% else %>
@@ -53,7 +54,7 @@
           </div> 
           <div class="small-4 columns">
 
-            <div class="image-wrapper overlay-fade-in-new-background">
+            <div class="image-wrapper overlay-<%=style[b_index % style.size] %>">
               <% if bread.photo %>
                 <%= image_tag bread.photo.url %>
               <% else %>
