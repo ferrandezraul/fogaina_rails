@@ -40,6 +40,8 @@ Add
 Add photo to news extension. As done with the breads extension. Note, that image shouldn't be mandatory. In the view, check it and show the logo_negro.svg if not present.
 Create more seed data for news in order to see how pagination works.
 
+I breads show page, add thumbnails images with style and clearing lightbox from foundation. 
+
 Continue changing layout from news (index and show). Use one of those nice foundation building blocks
 http://zurb.com/building-blocks/product-card
 http://zurb.com/building-blocks/article-card
