@@ -15,7 +15,7 @@
               
               <div class="image-overlay-content">
                 <h2><%= bread.name %></h2>
-                <p><%= bread.description[0..40] + " ..." %></p>
+                <p><%= raw bread.description[0..40] + " ..." %></p>
 
                 <% if bread.price %>
                   <p class="price"><%= raw sprintf("%.2f", bread.price ) + " €" %></p>
