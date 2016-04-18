@@ -2,9 +2,28 @@
   <h2><%= @page.title %></h2>
   <ul id="breads">
     <% style = ["fade-in", "slide-in-left", "fade-in-new-background"] %>
-    <% @breads.each_slice(3) do |slice| %>
+
+    <%-# In order to display properly all breads,  -%>
+    <%-# I need to add empty columns if the number -%>
+    <%-# of breads is not a divisor of 3           -%>
+    <% number_of_slices_of_three = (@breads.count / 3.0) %>
+    <% last_slice_of_three = number_of_slices_of_three.ceil %>
+    <% last_index_slice_of_three = last_slice_of_three -1 %>
+
+    <% extra_empty_rows = 0 %>
+    <% if last_slice_of_three - number_of_slices_of_three == 0 %>
+      <% extra_empty_rows = 0 %>
+    <% elsif last_slice_of_three - number_of_slices_of_three > 0.5 %>
+      <% extra_empty_rows = 2 %>
+    <% elsif last_slice_of_three - number_of_slices_of_three < 0.5 %>
+      <% extra_empty_rows = 1 %>
+    <% end %> 
+
+    <% @breads.each_slice(3).with_index do |slice, slice_index| %>
+
       <div class="row">
         <% slice.each_with_index do |bread, b_index| %>
+        
           <div class="small-4 columns">
             <div class="image-wrapper overlay-<%=style[b_index % style.size] %>">
               <% if bread.photo %>
@@ -15,19 +34,30 @@
               
               <div class="image-overlay-content">
                 <h2><%= bread.name %></h2>
-                <p><%= raw bread.description[0..40] + " ..." %></p>
+                <p><%= raw bread.description[0..40] + " ..." if bread.description %></p>
 
                 <% if bread.price %>
                   <p class="price"><%= raw sprintf("%.2f", bread.price ) + " €" %></p>
                 <% end %>
 
-                <%= link_to I18n.t('read_more'), refinery.breads_bread_path(bread), class: "button" %>
+                <%= link_to I18n.t('read_more'), refinery.breads_bread_path(bread), class: "button" if bread.description %>
               </div>
             
-            </div>
+            </div>    
           </div>
+        
         <% end %>
+
+        <%-# At the last slice Add the empty columns if needed -%>
+        <% if ( slice_index == last_index_slice_of_three ) && extra_empty_rows > 0 %>
+          <% extra_empty_rows.times do %>
+            <div class="small-4 columns">
+            </div>
+          <% end %>
+        <% end %>
+
       </div>
+      
     <% end %>
   </ul>
 </section>
