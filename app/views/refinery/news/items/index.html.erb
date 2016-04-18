@@ -2,7 +2,23 @@
   <%=raw @page.content_for(Refinery::Pages.default_parts.first[:slug].to_sym) unless params[:page] %>
 
   <% if @items.any? %>
-    <% @items.each_slice(3) do |slice| %>
+    <%-# In order to display properly all breads,  -%>
+    <%-# I need to add empty columns if the number -%>
+    <%-# of breads is not a divisor of 3           -%>
+    <% number_of_slices_of_three = (@items.count / 3.0) %>
+    <% last_slice_of_three = number_of_slices_of_three.ceil %>
+    <% last_index_slice_of_three = last_slice_of_three -1 %>
+
+    <% extra_empty_rows = 0 %>
+    <% if last_slice_of_three - number_of_slices_of_three == 0 %>
+      <% extra_empty_rows = 0 %>
+    <% elsif last_slice_of_three - number_of_slices_of_three > 0.5 %>
+      <% extra_empty_rows = 2 %>
+    <% elsif last_slice_of_three - number_of_slices_of_three < 0.5 %>
+      <% extra_empty_rows = 1 %>
+    <% end %> 
+
+    <% @items.each_slice(3).with_index do |slice, slice_index| %>
       <div class="row">
         <% slice.each do |item| %>
           <div class="small-4 columns">
@@ -22,6 +38,15 @@
             </div>
           </div>
         <% end %>
+
+        <%-# At the last slice, add empty columns if needed -%>
+        <% if ( slice_index == last_index_slice_of_three ) && extra_empty_rows > 0 %>
+          <% extra_empty_rows.times do %>
+            <div class="small-4 columns">
+            </div>
+          <% end %>
+        <% end %>
+
       </div>
     <% end %>
 
