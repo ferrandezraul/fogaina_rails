@@ -418,6 +418,13 @@ image_pa_de_farro = Refinery::Image.create :image => File.new(pa_de_farro_path)
 # Added by Refinery CMS Breads extension
 Refinery::Breads::Engine.load_seed
 
+breads_page = Refinery::Page.find_by(:menu_match => "^/breads.*$")
+
+raise "Error, there should be a breads page! See seeds.rb" if breads_page == nil
+
+breads_page.translations.create!( { :locale => "es", :title => "Nuestros Panes" } )
+breads_page.translations.create!( { :locale => "ca", :title => "Els nostres pans" } )
+
 panes = [ 
           { 
             :name_ca => "La Soca", 
@@ -561,22 +568,22 @@ panes = [
         ]
 
 panes.each do |pan_attr|
-  pan = Refinery::Breads::Bread.create!( :name => pan_attr[:name_ca], 
-                                         :description => pan_attr[:description_ca],
-                                         :locale => "ca",
+  pan = Refinery::Breads::Bread.create!( :name => pan_attr[:name_en], 
+                                         :description => pan_attr[:description_en],
                                          :available_days => pan_attr[:available_days],
                                          :price => pan_attr[:price],
-                                         :photo => pan_attr[:photo] )
+                                         :photo => pan_attr[:photo],
+                                         :locale => "en" )
 
-  Refinery::Breads::Bread::Translation.create!( :refinery_bread_id => pan.id,
+  pan.translations.create!( :refinery_bread_id => pan.id,
+                                                :locale => "ca",
+                                                :name => pan_attr[:name_ca],
+                                                :description => pan_attr[:description_ca] )
+
+  pan.translations.create!( :refinery_bread_id => pan.id,
                                                 :locale => "es",
                                                 :name => pan_attr[:name_es],
                                                 :description => pan_attr[:description_es] )
-
-  Refinery::Breads::Bread::Translation.create!( :refinery_bread_id => pan.id,
-                                                :locale => "en",
-                                                :name => pan_attr[:name_en],
-                                                :description => pan_attr[:description_en] )
 
 end
 # Added by Refinery CMS News engine
@@ -589,13 +596,12 @@ raise "Error, there should be a news page! See seeds.rb" if news_page == nil
 
 news_page.update!( title: "Notícies" )
 
-news_page.translations.create!( { :locale => "en", :title => "News" } )
 news_page.translations.create!( { :locale => "es", :title => "Noticias" } )
 news_page.translations.create!( { :locale => "ca", :title => "Notícies" } )
 
 noticias = [ 
   {
-    title: "La Fogaina-Oclot. Servei d'entrega ecològic", 
+    title_ca: "La Fogaina-Oclot. Servei d'entrega ecològic", 
     title_en: "La Fogaina-Oclot. Organic delivery system.",
     title_es: "La Fogaina-Oclot. Servicio de entrega ecológico.",  
     body: "Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
@@ -613,7 +619,7 @@ noticias = [
     publish_date: DateTime.now  
   },
   {
-    title: "Cursos de pa a la Fogaina febrer-abril 2015",
+    title_ca: "Cursos de pa a la Fogaina febrer-abril 2015",
     title_en: "Bread Courses at la Fogaina february-april 2015",
     title_es: "Cursos de pan en la Fogaina febrero-abril 2015", 
     body: "Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!
@@ -632,15 +638,15 @@ noticias = [
 noticias.each do |noticia_attr|
 
   noticia = Refinery::News::Item.create!( 
-    locale: "ca", 
-    title: noticia_attr[:title], 
-    body: noticia_attr[:body], 
+    locale: "en", 
+    title: noticia_attr[:title_en], 
+    body: noticia_attr[:body_en], 
     publish_date: noticia_attr[:publish_date] )
 
   noticia.translations.create!( { :refinery_news_item_id => noticia.id,
-                                  :locale => "en",
-                                  :title => noticia_attr[:title_en], 
-                                  :body => noticia_attr[:body_en] } )
+                                  :locale => "ca",
+                                  :title => noticia_attr[:title_ca], 
+                                  :body => noticia_attr[:body_ca] } )
 
   noticia.translations.create!( { :refinery_news_item_id => noticia.id,
                                   :locale => "es",
