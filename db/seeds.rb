@@ -576,14 +576,14 @@ panes.each do |pan_attr|
                                          :locale => "en" )
 
   pan.translations.create!( :refinery_bread_id => pan.id,
-                                                :locale => "ca",
-                                                :name => pan_attr[:name_ca],
-                                                :description => pan_attr[:description_ca] )
+                            :locale => "ca",
+                            :name => pan_attr[:name_ca],
+                            :description => pan_attr[:description_ca] )
 
   pan.translations.create!( :refinery_bread_id => pan.id,
-                                                :locale => "es",
-                                                :name => pan_attr[:name_es],
-                                                :description => pan_attr[:description_es] )
+                            :locale => "es",
+                            :name => pan_attr[:name_es],
+                            :description => pan_attr[:description_es] )
 
 end
 # Added by Refinery CMS News engine
