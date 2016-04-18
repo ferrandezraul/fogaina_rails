@@ -32,9 +32,7 @@ Add attribute :weight to breads
 
 ////////////
 
-Fix news extension. 2 Issues:
-With seed data, show pages only work in english. In other languages, it always shows same page (same news) 
-Broken if added new news with one lang in admin (i.e. spanish)
+Fix news extension. Broken if added new news with one lang in admin (i.e. spanish)
 
 Fix empty bread without english body. Think about missing other parts ..
 Related might be the friendlyid from:

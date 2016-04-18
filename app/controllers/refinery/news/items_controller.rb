@@ -36,7 +36,7 @@ module Refinery
 
       def find_news_item
         if !Item.published.translated.empty?
-          @item = Item.published.translated.friendly.find_by(params[:slug])
+          @item = Item.published.translated.friendly.find(params[:id])
         end
       end
 
