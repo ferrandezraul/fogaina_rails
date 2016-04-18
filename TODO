@@ -32,7 +32,16 @@ Add attribute :weight to breads
 
 ////////////
 
-Fix crash of news without english body. Think about missing other parts ..
+Fix news extension. 2 Issues:
+With seed data, show pages only work in english. In other languages, it always shows same page (same news) 
+Broken if added new news with one lang in admin (i.e. spanish)
+
+Fix empty bread without english body. Think about missing other parts ..
+Related might be the friendlyid from:
+http://railscasts.com/episodes/314-pretty-urls-with-friendlyid?language=es&view=asciicast
+Note that extension news uses friendlyid and breads extension doesn't
+See the models!!
+
 Add missing translation from news (Read more ...) etc ...
 Improve layout from news at the home page. Space on link to See all news
 Add
