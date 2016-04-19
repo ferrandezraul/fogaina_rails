@@ -594,8 +594,6 @@ news_page = Refinery::Page.find_by(:menu_match => "^/news.*$")
 
 raise "Error, there should be a news page! See seeds.rb" if news_page == nil
 
-news_page.update!( title: "Notícies" )
-
 news_page.translations.create!( { :locale => "es", :title => "Noticias" } )
 news_page.translations.create!( { :locale => "ca", :title => "Notícies" } )
 
