@@ -1495,10 +1495,11 @@ $topbar-menu-icon-color: $charcoal;
 $global-radius: 4px;
 
 
-.image-wrapper {
+.bread-image-wrapper {
   width: 100%;
   height: 100%;
   border: 1px solid rgba(0,0,0,0.04);
+  margin-top: 10%;
   overflow: hidden;
   position: relative;
   text-align: center;

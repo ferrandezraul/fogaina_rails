@@ -1,5 +1,5 @@
 <section id="body">
-  <h2><%= @page.title %></h2>
+  <h1><%= @page.title %></h1>
   <ul id="breads">
     <% style = ["fade-in", "slide-in-left", "fade-in-new-background"] %>
 
@@ -25,7 +25,7 @@
         <% slice.each_with_index do |bread, b_index| %>
         
           <div class="small-4 columns">
-            <div class="image-wrapper overlay-<%=style[b_index % style.size] %>">
+            <div class="bread-image-wrapper overlay-<%=style[b_index % style.size] %>">
               <% if bread.photo %>
                 <%= image_tag bread.photo.url %>
               <% else %>
