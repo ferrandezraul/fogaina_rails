@@ -60,9 +60,10 @@
         </div>
 
       <section>
-        <p>
-          <%= image_fu @bread.photo, nil %>
-        </p>
+        <ul class="clearing-thumbs" data-clearing>
+          <li><%= link_to( image_tag(@bread.photo.url, :data => { 
+            :caption => @bread.name }, :class => "th"), @bread.photo.url ) if @bread.photo %></li>
+        </ul>
       </section>
     </section>
   </div>
