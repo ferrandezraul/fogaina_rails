@@ -253,7 +253,7 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                 {
                     :show_in_menu => true,
                     :deletable => true,
-                    :title => "Contacte",  # default german title
+                    :title => "Contact",  # default german title
                     :title_es => "Contacto",
                     :title_ca => "Contacte",
                     :body => "<div class=\"row\">
