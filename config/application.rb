@@ -28,8 +28,16 @@ module Fogaina
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    config.i18n.default_locale = "ca"
+    
+    # In case there are not translations available, show the default 
+    # which matches config.i18n.default_locale = "ca" 
+    # defined under config/initializers/refinery/i18n.rb
     config.i18n.fallbacks = true
+
+    # This line is commented out cause it causes issues with refinery
+    # Note that the default languege is specified under 
+    # config/initializers/refinery/i18n.rb as Refinery::I18n.configure.default_locale = :ca
+    # config.i18n.default_locale = :ca
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
