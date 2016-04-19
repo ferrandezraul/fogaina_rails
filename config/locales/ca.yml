@@ -33,6 +33,8 @@ ca:
 # Those translations are missing from external extension refinery_image_slideshows
   refinery:
     plugins:
+      refinery_settings:
+        title: Ajustos
       refinery_image_slideshows:
         title: "Presentació d'imatges"
       refinerycms_news:

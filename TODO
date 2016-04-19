@@ -32,19 +32,8 @@ Add attribute :weight to breads
 
 ////////////
 
-Fix news extension. 2 issues: (Might be related to the locale switch??)
-But why the seed data works???
-- Broken if I add a new news (even with all 3 lang)
-  and then I try to switch the lang on the show page of the new created news. 
-  On the other hand, If I change the lang on news created by seed data, it does not fail!!!!
-- Broken if I add a new news (with only one lang)
-  and then I try to switch the lang on the show page of the new created news.
 
-Fix empty bread without english body. Think about missing other parts ..
-Related might be the friendlyid from:
-http://railscasts.com/episodes/314-pretty-urls-with-friendlyid?language=es&view=asciicast
-Note that extension news uses friendlyid and breads extension doesn't
-See the models!!
+Fix saved breads/news through the admin that contain html tags. i.e. body 
 
 Add missing translation from news (Read more ...) etc ...
 Improve layout from news at the home page. Space on link to See all news
