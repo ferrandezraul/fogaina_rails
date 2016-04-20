@@ -52,9 +52,9 @@ http://zurb.com/building-blocks/article-card
 
 //////
 
-Finish bread available days as an array
-  - limpiar y comentar codigo ()
-  - limpiar yml files. Borrar traducciones no necesarias.
+Finish bread available days improvements
+  - limpiar views como se ha hecho con el breads_helper
+  - limpiar otras views con mas helpers
 
 
 
