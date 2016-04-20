@@ -36,15 +36,7 @@
 
           <h2><%= @item.title %></h2>
           <section>
-            <article class="news_item">
-              <p>
-                <small><%= t('refinery.news.items.show.published') %> <%= l(@item.publish_date, :format => :short) %></small>
-              </p>
-              <%= @item.body.html_safe %>
-              <p>
-                <%= link_to t('see_all_news'), refinery.news_items_path %>
-              </p>
-            </article>
+            <%= render "refinery/news/items/item" %>
           </section>
 
         </div>

@@ -53,11 +53,8 @@ http://zurb.com/building-blocks/article-card
 //////
 
 Finish bread available days as an array
-  - add en and es localizations(see last commit)
-  - check what happen with "no mostrar"
-  - Anyadir "y" en la penultima iteracion de la vista de disponibilidad.
-  - Editar la disponibilidad varias veces y ver que funciona.
-  - comentar codigo ()
+  - limpiar y comentar codigo ()
+  - limpiar yml files. Borrar traducciones no necesarias.
 
 
 

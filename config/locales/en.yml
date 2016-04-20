@@ -29,3 +29,10 @@ en:
   follow_us: "Follow us"
   see_all_news: "See all news"
   read_more: "Read more ..."
+  refinery:
+    news:
+      items:
+        item:
+          back_to_index: "See all news"
+          published: Published
+          source: Published by

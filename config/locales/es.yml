@@ -30,8 +30,14 @@ es:
   see_all_news: "Ver todas las noticias"
   read_more: "Leer más ..."
 
-  # Those translations are missing from external extension refinery_image_slideshows
   refinery:
+    news:
+      items:
+        item:
+          back_to_index: "Ver todas las noticias"
+          published: Publicado
+          source: Publicado por
+    # Those translations are missing from external extension refinery_image_slideshows
     plugins:
       refinery_image_slideshows:
         title: "Presentación de imagenes"

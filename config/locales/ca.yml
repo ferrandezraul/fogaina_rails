@@ -58,8 +58,8 @@ ca:
           created_at: 'Creat el %{when}'
         archives: Archius
       items:
-        show:
-          back_to_index: "Tornar a totes les notícies"
+        item:
+          back_to_index: "Veure totes les notícies"
           published: Publicat
           source: Publicat per
         recent_posts:

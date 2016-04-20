@@ -34,7 +34,7 @@
 
         <div class='row'>
           <% if @bread.price %>
-            <div class='small-6 column'>
+            <div class='small-4 column'>
               <section>
                 <p>
                   <strong>
@@ -45,29 +45,33 @@
               </section>
             </div>
           <% end %>
-          <% if @bread.available_days and !@bread.available_days.empty? %>      
-            <div class='small-6 column'>
+          <% if @bread.available_days and !@bread.available_days.empty? and !@bread.available_days.include?( 'no_mostrar' )%>      
+            <div class='small-8 column'>
               <section>
                 <p>
+                  <% available_days_string = "" %>
                   <strong>
                     <%= I18n.t(".refinery.plugins.breads.available_days") + ":" %>
-                    <% available_days_string = "" %>
                     <%-# @bread.available_days es un string con forma de Array -%>
                     <%-# i.e "[:monday, :tuesday]" -%>
                     <%-# por eso aqui lo convierto de nuevo a un Array -%>
+                    <% available_days_array = @bread.available_days.gsub(/\[|\]/, '').split(", ") %>
                     <%-# e itero los elementos para despues encontrar sus traducciones -%>
-                    <% @bread.available_days.gsub(/\[|\]/, '').split(", ").each_with_index do |day, index| %>
-
-                      <% if index == 0 %>
+                    <% available_days_array.each_with_index do |day, index| %>
                       <%-# quitamos los ':' y los "" para poder encontrar la traduccion -%>
-                        <% available_days_string = available_days_string + I18n.t( day.gsub(/:/, '').gsub(/"/, '') ) %>
+                      <% clean_day = I18n.t( day.gsub(/:/, '').gsub(/"/, '') ) %>
+                      <% if index == 0 %>
+                        <% available_days_string = available_days_string + clean_day %>
+                      <% elsif ( index == ( available_days_array.length - 1 ) ) %>
+                        <% available_days_string = available_days_string + I18n.t( 'and' ) + clean_day %>
                       <% else %>
-                        <% available_days_string = available_days_string + ", " + I18n.t( day.gsub(/:/, '').gsub(/"/, '') ) %>
+                        <% available_days_string = available_days_string + ", " + clean_day %>
                       <% end %>
 
                     <% end %>
-                    <%=raw available_days_string %>
+                    
                   </strong>
+                  <%=raw available_days_string %>
                 </p>
               </section>
             </div>
