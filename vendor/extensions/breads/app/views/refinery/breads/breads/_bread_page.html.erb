@@ -1,7 +1,7 @@
 
 <div class='row'>
 
-  <div class='small-4 column'>
+  <div class='medium-4 large-4 column'>
     <section id='side_body'>
       <div class="inner">  
         <aside>
@@ -20,7 +20,7 @@
     </section>
   </div>
 
-  <div class='small-8 column'>
+  <div class='medium-8 large-8 column'>
     <section id='body'>
       <h2>
         <%= @bread.name %>
@@ -34,7 +34,7 @@
 
         <div class='row'>
           <% if @bread.price %>
-            <div class='small-4 column'>
+            <div class='medium-4 large-4 column'>
               <section>
                 <p>
                   <strong>
@@ -46,7 +46,7 @@
             </div>
           <% end %>
           <% if @bread.available_days and !@bread.available_days.empty? and !@bread.available_days.include?( 'no_mostrar' )%>      
-            <div class='small-8 column'>
+            <div class='medium-8 large-8 column'>
               <section>
                 <p>
                   <strong>
