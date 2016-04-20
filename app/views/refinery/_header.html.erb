@@ -18,15 +18,7 @@
           <section class="top-bar-section">
             <ul class="right locale-switch">
               <li class="has-dropdown">
-                <a href="#">
-                 <% if I18n.locale == :en %>
-                   <%= t('englishUK' ) %>
-                 <% elsif I18n.locale == :es %>
-                   <%= t('spanish' ) %>
-                 <% elsif I18n.locale == :ca %>
-                   <%= t('catalan' ) %>
-                 <% end %>
-               </a>
+                <a href="#"><%= current_locale_to_display %></a>
                <ul class="dropdown">
                  <% if I18n.locale == :en %>
                    <li><%= link_to t('spanish' ), refinery.url_for( :locale => "es") %></li>
