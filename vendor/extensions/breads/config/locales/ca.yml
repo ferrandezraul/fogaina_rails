@@ -1,4 +1,12 @@
 ca:
+  por_encargo: Per encàrrec
+  monday: Dilluns
+  tuesday: Dimarts
+  wednesday: Dimecres
+  thursday: Dijous
+  friday: Divendres
+  saturday: Dissabte
+  sunday: Diumenge
   refinery:
     plugins:
       breads:
@@ -6,9 +14,14 @@ ca:
         price: Preu
         available_days: "Disponibilitat"
         every_day: Tots el dies
-        not_every_day: No tots el dies
         por_encargo: Per encàrrec
-        weekend: Caps de setmana
+        monday: Dilluns
+        tuesday: Dimarts
+        wednesday: Dimecres
+        thursday: Dijous
+        friday: Divendres
+        saturday: Dissabte
+        sunday: Diumenge
     breads:
       admin:
         breads:
@@ -18,7 +31,7 @@ ca:
             every_day: Tots el dies
             not_every_day: No tots el dies
             por_encargo: Per encàrrec
-            weekend: Caps de setmana
+            weekend: Caps de setmana  
           actions:
             create_new: Afegir un pa nou
             reorder: Reordenar pans

@@ -434,7 +434,7 @@ panes = [
                                 Pa de llarga fermentació. El podriem considerar un multicereals, amb una farina de molí de pedra i de primera qualitat (blat del cor, xeixa, montcada,espelta...). Tot això fa un pa gustosíssim. Baix en gluten.",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
-            :available_days => :every_day,
+            :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => nil,
             :photo => image_soca
           },
@@ -444,7 +444,7 @@ panes = [
             :description_ca => "Pa rodó amb farina blanca ecològica. Massa mare i una mica de llevat. Es el pa de tota la vida però amb caràcter i molt de gust. Pels que no volen renunciar a fer un pa amb tomàquet o sucar a salses i ous ferrats ...",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
-            :available_days => :every_day,
+            :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => nil,
             :photo => image_pa_de_pages
           },
@@ -454,7 +454,7 @@ panes = [
             :description_ca => "Pa amb forma de batard, amb farina blanca ecològica, i una mica de farina sègol i blat integral. Massa mare. Es un pa amb una fermentació retardada i molt lenta, que fa que tingui un gust pronunciat a cereals, crosta rústica i molla cremosa.",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
-            :available_days => :every_day,
+            :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 3,
             :photo => image_pa_rustic
           },
@@ -464,7 +464,7 @@ panes = [
             :description_ca => "Mateixa massa del Rústic però amb deliciosos trocets de panses nous i albercoc. Format Motllo. Només massa mare.",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
-            :available_days => :every_day,
+            :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 4,
             :photo => nil 
           },
@@ -474,7 +474,7 @@ panes = [
             :description_ca => "Panet rodó d'espelta amb semilles de girasol i sèsam. Només farina integral i semiintegral d'espelta molta amb molí de pedra. Massa mare d'espelta.",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
-            :available_days => :every_day,
+            :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 4.30,
             :photo => image_pa_croscat_espelta 
           },
@@ -484,7 +484,7 @@ panes = [
             :description_ca => "Coca de oli d'oliva, sucre i anís. Bona alveolatura, tendra i caramelitzada a toc de foc.",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
-            :available_days => :every_day,
+            :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 3.10,
             :photo => image_coca_forner 
           },
@@ -495,7 +495,7 @@ panes = [
                                 iniigual.lables. Cuït amb flama directa.",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
-            :available_days => :every_day,
+            :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 2.60,
             :photo => image_pa_de_coca 
           },
@@ -507,7 +507,7 @@ panes = [
                                 El sègol es un cereal del qual obtenim una farina mol baixa en gluten. ",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
-            :available_days => nil,
+            :available_days => :no_mostrar,
             :price => nil,
             :photo => image_brot_negre 
           },
@@ -517,7 +517,7 @@ panes = [
             :description_ca => "Pa de motllo blanc típic per fer 'bikinis' o torrades dolces. Un pa molt tendre, suau però amb una miga més sabrosa que les industrials, gracies a l'elaboració amb massa mare. Porta sucre moré panela, mantega i llet ecològica.",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
-            :available_days => :not_every_day,
+            :available_days => [:wednesday, :thursday],
             :price => 4,
             :photo => image_pa_bembo 
           },
@@ -538,7 +538,7 @@ panes = [
                                 Acompanyat amb panses i nous en quantitat. Un pa molt aromàtic i de bona conservació. Un plaer acompanyant tant formatges i fumats com mermelades.",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
-            :available_days => :weekend,
+            :available_days => [:friday],
             :price => 3.80,
             :photo => image_pa_segol 
           },
@@ -549,7 +549,7 @@ panes = [
                                 Per fi gaudim de les barres a la Fogaina.",
             :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
             :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
-            :available_days => :not_every_day,
+            :available_days => [:wednesday, :friday, :saturday],
             :price => 1.70,
             :photo => image_pa_baguette 
           },

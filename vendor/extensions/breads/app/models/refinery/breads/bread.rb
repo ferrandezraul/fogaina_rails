@@ -7,6 +7,7 @@ module Refinery
 
       validates :name, :presence => true, :uniqueness => true
       validates :description, :presence => true
+      validates :available_days, :presence => true
 
       belongs_to :photo, :class_name => '::Refinery::Image'
 

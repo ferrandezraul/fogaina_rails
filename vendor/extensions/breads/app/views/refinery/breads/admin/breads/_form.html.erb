@@ -18,16 +18,75 @@
   </div>
 
   <div class='field'>
-    <%= f.label t('.available_days') -%>
+    <%= f.label :available_days %>
 
-    <%= f.select( :available_days, 
-        options_for_select( [ 
-          ["", ""], 
-          [ t('.every_day'), :every_day ], 
-          [ t('.not_every_day'), :not_every_day ], 
-          [ t('.por_encargo'), :por_encargo ],
-          [ t('.weekend'), :weekend ]
-        ], @bread.available_days )) %>
+    <% no_mostrar = false %>
+    <% por_encargo = false %>
+    <% monday = false %>
+    <% tuesday = false %>
+    <% wednesday = false %>
+    <% thursday = false %>
+    <% friday = false %>
+    <% saturday = false %>
+    <% sunday = false %>
+
+    <% if @bread.available_days %>
+      <% no_mostrar = @bread.available_days.include?('no_mostrar') %>
+      <% por_encargo = @bread.available_days.include?('por_encargo') %>
+      <% monday = @bread.available_days.include?('monday') %>
+      <% tuesday = @bread.available_days.include?('tuesday') %>
+      <% wednesday = @bread.available_days.include?('wednesday') %>
+      <% thursday = @bread.available_days.include?('thursday') %>
+      <% friday = @bread.available_days.include?('friday') %>
+      <% saturday = @bread.available_days.include?('saturday') %>
+      <% sunday = @bread.available_days.include?('sunday') %>
+    <% end %>
+
+    <label class="available_days-select">
+      <%= check_box_tag 'bread[available_days][]', ':no_mostrar', no_mostrar %>
+          Do not show / No mostrar / No mostrar
+    </label>
+
+    <label class="available_days-select">
+      <%= check_box_tag 'bread[available_days][]', ':por_encargo', por_encargo %>
+          By request / Por encargo / Per encarrec
+    </label>
+
+    <label class="available_days-select">
+      <%= check_box_tag 'bread[available_days][]', ':monday', monday %>
+          Monday / Lunes / Dilluns
+    </label>
+
+    <label class="available_days-select">
+      <%= check_box_tag 'bread[available_days][]', ':tuesday', tuesday %>
+          Tuesday / Martes / Dimarts
+    </label>
+
+    <label class="available_days-select">
+      <%= check_box_tag 'bread[available_days][]', ':wednesday', wednesday %>
+          Wednesday / Miercoles / Dimecres
+    </label>
+
+    <label class="available_days-select">
+      <%= check_box_tag 'bread[available_days][]', ':thursday', thursday  %> 
+        Thursday / Jueves / Dijous
+    </label>
+
+    <label class="available_days-select">
+      <%= check_box_tag 'bread[available_days][]', ':friday', friday %>
+        Friday / Viernes / Divendres
+    </label>
+
+    <label class="available_days-select">
+      <%= check_box_tag 'bread[available_days][]', ':saturday', saturday %>
+        Saturday / Sabado / Dissabte
+    </label>
+
+    <label class="available_days-select">
+      <%= check_box_tag 'bread[available_days][]', ':sunday', sunday %>
+        Sunday / Domingo / Diumenge
+    </label>
+
   </div>
 
   <div class='field'>

@@ -51,7 +51,22 @@
                 <p>
                   <strong>
                     <%= I18n.t(".refinery.plugins.breads.available_days") + ":" %>
-                    <%=raw I18n.t( ".refinery.plugins.breads." + @bread.available_days.to_s ) %>
+                    <% available_days_string = "" %>
+                    <%-# @bread.available_days es un string con forma de Array -%>
+                    <%-# i.e "[:monday, :tuesday]" -%>
+                    <%-# por eso aqui lo convierto de nuevo a un Array -%>
+                    <%-# e itero los elementos para despues encontrar sus traducciones -%>
+                    <% @bread.available_days.gsub(/\[|\]/, '').split(", ").each_with_index do |day, index| %>
+
+                      <% if index == 0 %>
+                      <%-# quitamos los ':' y los "" para poder encontrar la traduccion -%>
+                        <% available_days_string = available_days_string + I18n.t( day.gsub(/:/, '').gsub(/"/, '') ) %>
+                      <% else %>
+                        <% available_days_string = available_days_string + ", " + I18n.t( day.gsub(/:/, '').gsub(/"/, '') ) %>
+                      <% end %>
+
+                    <% end %>
+                    <%=raw available_days_string %>
                   </strong>
                 </p>
               </section>
