@@ -21,7 +21,7 @@
     <% @items.each_slice(3).with_index do |slice, slice_index| %>
       <div class="row">
         <% slice.each do |item| %>
-          <div class="small-4 columns">
+          <div class="large-4 columns">
             <div class="news-item-wrapper">
               <div class="news-img-wrapper">
                 <%= link_to "Read more", refinery.news_item_path(item), class: "button expand read-more" %>
@@ -42,7 +42,7 @@
         <%-# At the last slice, add empty columns if needed -%>
         <% if ( slice_index == last_index_slice_of_three ) && extra_empty_rows > 0 %>
           <% extra_empty_rows.times do %>
-            <div class="small-4 columns">
+            <div class="large-4 columns">
             </div>
           <% end %>
         <% end %>

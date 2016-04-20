@@ -24,7 +24,7 @@
       <div class="row">
         <% slice.each_with_index do |bread, b_index| %>
         
-          <div class="small-4 columns">
+          <div class="large-4 columns">
             <div class="bread-image-wrapper overlay-<%=style[b_index % style.size] %>">
               <% if bread.photo %>
                 <%= image_tag bread.photo.url %>
@@ -51,7 +51,7 @@
         <%-# At the last slice, add empty columns if needed -%>
         <% if ( slice_index == last_index_slice_of_three ) && extra_empty_rows > 0 %>
           <% extra_empty_rows.times do %>
-            <div class="small-4 columns">
+            <div class="large-4 columns">
             </div>
           <% end %>
         <% end %>
