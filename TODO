@@ -6,7 +6,7 @@ database user "raul", database name --> see config/database.yml
 
 ////////////////
 
-2. Update to foundation-rails v6?
+2. Update to foundation-rails v6? and start using motion-ui which is included in foundation-rails
 
 ////////////////
 
@@ -38,6 +38,12 @@ Create more seed data for news in order to see how pagination works.
 Finish bread available days improvements
   - limpiar views como se ha hecho con el breads_helper
   - limpiar otras views con mas helpers
+
+////////////////
+
+Crear apartados de la foto, y en ese orden. Usar fotos buenas y borrar las viejas.
+
+///////////////
 
 
 
