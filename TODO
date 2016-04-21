@@ -11,20 +11,14 @@ database user "raul", database name --> see config/database.yml
 ////////////////
 
 3. Anyadir nav menu en el footer?
-   Probar el menu de nav sticky
+   Add sticky to the div containing the nav top bar
+    <div class="contain-to-grid sticky>
 
 ////////////////
 
 4. Para acabar image gallery https://github.com/bisscomm/refinerycms-image-slideshows
    El nombre del image gallery que se visualiza en el home es hardcoded "Home Page Slide Show" 
    Por eso deberia impedir que se pueda borrar desde el admin.
-   Add more sliders? One with text and another with photos?
-
-////////////////
-
-Otros image gallery:
-https://github.com/blueimp/Gallery/blob/master/README.md
-http://tympanus.net/codrops/2011/09/20/responsive-image-gallery/
 
 ////////
 
@@ -32,23 +26,12 @@ Add attribute :weight to breads
 
 ////////////
 
-Fix. Now Pa i cafe, contacte, vols saber mes pages are broken?
-
 Fix saved breads/news through the admin that contain html tags. i.e. body 
 
 Add missing translation from news (Read more ...) etc ...
-Improve layout from news at the home page. Space on link to See all news
-Add
 
 Add photo to news extension. As done with the breads extension. Note, that image shouldn't be mandatory. In the view, check it and show the logo_negro.svg if not present.
 Create more seed data for news in order to see how pagination works.
-
-Set up a max size for thumbnails from clearing lightbox foundation. Or move the photo the right of the description.
-
-Continue changing layout from news (index and show). Use one of those nice foundation building blocks
-http://zurb.com/building-blocks/product-card
-http://zurb.com/building-blocks/article-card
-
 
 //////
 
