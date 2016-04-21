@@ -1,6 +1,9 @@
 module Refinery
   module Breads
     class Bread < Refinery::Core::BaseModel
+      extend FriendlyId
+      friendly_id :name, :use => [:slugged]
+
       self.table_name = 'refinery_breads'
 
       translates :name, :description

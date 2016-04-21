@@ -12,7 +12,7 @@ module Refinery
       end
 
       def show
-        @bread = Bread.find(params[:id])
+        @bread = Bread.friendly.find(params[:id])
 
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @bread in the line below:
