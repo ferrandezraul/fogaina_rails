@@ -58,6 +58,7 @@ ca:
           not_every_day: No tots el dies
           por_encargo: Per encàrrec
           weekend: Caps de setmana
+        bread_page:
           back: Tornar Enrere
   activerecord:
     attributes:

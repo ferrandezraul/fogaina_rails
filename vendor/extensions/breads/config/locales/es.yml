@@ -53,6 +53,7 @@ es:
           not_every_day: "No todos los días"
           por_encargo: "Por encargo"
           weekend: "Fin de semana"
+        bread_page:
           back: "Volver atrás"
   activerecord:
     attributes:

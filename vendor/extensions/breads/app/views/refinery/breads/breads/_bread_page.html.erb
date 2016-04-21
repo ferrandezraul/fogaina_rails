@@ -32,40 +32,60 @@
         </p>
       </section>
 
-        <div class='row'>
-          <% if @bread.price %>
-            <div class='medium-4 large-4 column'>
-              <section>
-                <p>
-                  <strong>
-                    <%= I18n.t(".refinery.plugins.breads.price") + ":" %>
-                    <%=raw sprintf("%.2f", @bread.price ) + " €"%>
-                  </strong>
-                </p>
-              </section>
-            </div>
-          <% end %>
-          <% if @bread.available_days and !@bread.available_days.empty? and !@bread.available_days.include?( 'no_mostrar' )%>      
-            <div class='medium-8 large-8 column'>
-              <section>
-                <p>
-                  <strong>
-                    <%= I18n.t(".refinery.plugins.breads.available_days") + ":" %>
-                  </strong>
-                  <%-# Function defined in app/helpers/refinery/breads/breads_helper -%>
-                  <%= translate_available_days(@bread.available_days) %>
-                </p>
-              </section>
-            </div>
-          <% end %>  
-        </div>
+      <div class='row'>
 
-      <section>
-        <ul class="clearing-thumbs" data-clearing>
-          <li><%= link_to( image_tag(@bread.photo.url, :data => { 
-            :caption => @bread.name }, :class => "th"), @bread.photo.url ) if @bread.photo %></li>
-        </ul>
-      </section>
+        <% if @bread.photo %>
+          <div class='medium-7 large-7 column'>
+            <section>
+              <ul class="clearing-thumbs" data-clearing>
+                <li><%= link_to( image_tag(@bread.photo.url, :data => { 
+                  :caption => @bread.name }, :class => "th"), @bread.photo.url )  %></li>
+              </ul>
+            </section>
+          </div>
+        <% end %>
+
+        <div class='medium-5 large-5 column'>
+
+          <div class="row">
+            <div class='medium-12 large-12 column'>
+              <% if @bread.price %>
+                <section>
+                  <p>
+                    <strong>
+                      <%= I18n.t(".refinery.plugins.breads.price") + ":" %>
+                      <%=raw sprintf("%.2f", @bread.price ) + " €"%>
+                    </strong>
+                  </p>
+                </section>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class='medium-12 large-12 column'>
+              <% if @bread.available_days and !@bread.available_days.empty? and !@bread.available_days.include?( 'no_mostrar' )%>      
+                <section>
+                  <p>
+                    <strong>
+                      <%= I18n.t(".refinery.plugins.breads.available_days") + ":" %>
+                    </strong><br>
+                    <%-# Function defined in app/helpers/refinery/breads/breads_helper -%>
+                    <%= translate_available_days(@bread.available_days) %>
+                  </p>
+                </section>
+              <% end %> 
+            </div>
+          </div>
+
+        </div>
+         
+      </div>
+      
+      <br><%= link_to t('.back'), refinery.breads_breads_path %>
+
     </section>
+
   </div>
+
 </div>
