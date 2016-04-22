@@ -8,7 +8,11 @@ module Refinery
         # defined here and used in views/refinery/breads/breads/index.html.erb           
 
         def foundation_styles
-          ["fade-in", "slide-in-left", "fade-in-new-background"]
+          [
+            "fade-in", 
+            #"slide-in-left", 
+            #"fade-in-new-background"
+          ]
         end
 
         def number_of_slices_of_three(breads)
