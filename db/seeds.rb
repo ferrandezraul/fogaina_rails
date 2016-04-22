@@ -42,23 +42,46 @@ image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_
 obrador_reposteria_path = "#{Rails.root.join('app/assets/images/obrador/reposteria1000x400.jpg')}"
 cafeteria_path = "#{Rails.root.join('app/assets/images/cafeteria/cafeteria1000x400.jpg')}"
 croi_path = "#{Rails.root.join('app/assets/images/reposteria/croi1000x400.jpg')}"
+panes_path = "#{Rails.root.join('app/assets/images/buenas/panes.jpg')}"
 
 # Images in SLIDE SHOW IN HOME PAGE
 image_obrador_reposteria= Refinery::Image.create :image => File.new(obrador_reposteria_path)
 image_cafeteria= Refinery::Image.create :image => File.new(cafeteria_path)
 image_croi= Refinery::Image.create :image => File.new(croi_path)
+image_panes= Refinery::Image.create :image => File.new(panes_path)
 
-slide_image_obrador_reposteria = Refinery::ImageSlideshows::ImageSlide.create!( :title => "Reposteria", :image_id => image_obrador_reposteria.id )
-slide_image_obrador_reposteria.translations.create!( :locale => :ca, :title => "Reposteria" )
+slide_images = [
+  {
+    :title => "Reposteria", 
+    :image_id => image_obrador_reposteria.id 
+  },
+  {
+    :title => "Cafeteria", 
+    :image_id => image_cafeteria.id 
+  },
+  {
+    :title => "Croi", 
+    :image_id => image_croi.id 
+  },
+  # {
+  #   :title => "Panes", 
+  #   :image_id => image_panes.id 
+  # }
+]
 
-slide_image_cafeteria = Refinery::ImageSlideshows::ImageSlide.create!( :title => "Cafeteria", :image_id => image_cafeteria.id )
-slide_image_cafeteria.translations.create!( :locale => :ca, :title => "Cafeteria" )
+#binding.pry
 
-slide_image_croi = Refinery::ImageSlideshows::ImageSlide.create!( :title => "Croi", :image_id => image_croi.id )
-slide_image_croi.translations.create!( :locale => :ca, :title => "Croi" )
+slide_images.each do | slide_image |
+
+  refinery_image_slide = Refinery::ImageSlideshows::ImageSlide.create!( 
+    :title => slide_image[:title], 
+    :image_id => slide_image[:image_id] )
+
+  refinery_image_slide.translations.create!( :locale => :ca, :title => slide_image[:title] )
+end
 
 slider = Refinery::ImageSlideshows::ImageSlideshow.create!( :title => "Home Page Slide Show")
-slider.image_slides = [ slide_image_obrador_reposteria, slide_image_cafeteria, slide_image_croi ]
+slider.image_slides = Refinery::ImageSlideshows::ImageSlide.all.to_a
 
 pages_array = [ {
                     :show_in_menu => true,
