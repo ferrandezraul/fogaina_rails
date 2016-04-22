@@ -1740,7 +1740,7 @@ $primary-color: #008cba;
   
   &:hover {
     .news-img-wrapper {
-      img { -webkit-filter: grayscale(0); }
+    //  img { -webkit-filter: grayscale(1); }
       
       .read-more { bottom: 0; }
     }
@@ -1780,7 +1780,7 @@ $primary-color: #008cba;
   img {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    -webkit-filter: grayscale(1);
+    //-webkit-filter: grayscale(0);
     width: 100%;
   }
 }  

@@ -6,6 +6,11 @@
     <% end %>
   </p>
   <%= @item.body.html_safe %>
+  <% if @item.photo %>
+    <%= image_tag @item.photo.url %>
+  <% else %>
+    <%= image_tag "logo_negro.svg" %>
+  <% end %>
   <p></p>
   <p>
     <%= link_to t('.back_to_index'), refinery.news_items_path %>
