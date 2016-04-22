@@ -42,7 +42,7 @@ image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_
 obrador_reposteria_path = "#{Rails.root.join('app/assets/images/obrador/reposteria1000x400.jpg')}"
 cafeteria_path = "#{Rails.root.join('app/assets/images/cafeteria/cafeteria1000x400.jpg')}"
 croi_path = "#{Rails.root.join('app/assets/images/reposteria/croi1000x400.jpg')}"
-panes_path = "#{Rails.root.join('app/assets/images/buenas/panes.jpg')}"
+panes_path = "#{Rails.root.join('app/assets/images/buenas/panes1000x400.jpg')}"
 
 # Images in SLIDE SHOW IN HOME PAGE
 image_obrador_reposteria= Refinery::Image.create :image => File.new(obrador_reposteria_path)
@@ -63,10 +63,10 @@ slide_images = [
     :title => "Croi", 
     :image_id => image_croi.id 
   },
-  # {
-  #   :title => "Panes", 
-  #   :image_id => image_panes.id 
-  # }
+  {
+    :title => "Panes", 
+    :image_id => image_panes.id 
+  }
 ]
 
 #binding.pry
