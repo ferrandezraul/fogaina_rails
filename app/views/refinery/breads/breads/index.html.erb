@@ -1,31 +1,14 @@
 <section id="body">
   <h1><%= @page.title %></h1>
   <ul id="breads">
-    <% style = ["fade-in", "slide-in-left", "fade-in-new-background"] %>
-
-    <%-# In order to display properly all breads,  -%>
-    <%-# I need to add empty columns if the number -%>
-    <%-# of breads is not a divisor of 3           -%>
-    <% number_of_slices_of_three = (@breads.count / 3.0) %>
-    <% last_slice_of_three = number_of_slices_of_three.ceil %>
-    <% last_index_slice_of_three = last_slice_of_three -1 %>
-
-    <% extra_empty_rows = 0 %>
-    <% if last_slice_of_three - number_of_slices_of_three == 0 %>
-      <% extra_empty_rows = 0 %>
-    <% elsif last_slice_of_three - number_of_slices_of_three > 0.5 %>
-      <% extra_empty_rows = 2 %>
-    <% elsif last_slice_of_three - number_of_slices_of_three < 0.5 %>
-      <% extra_empty_rows = 1 %>
-    <% end %> 
 
     <% @breads.each_slice(3).with_index do |slice, slice_index| %>
-
       <div class="row">
         <% slice.each_with_index do |bread, b_index| %>
         
           <div class="large-4 columns">
-            <div class="bread-image-wrapper overlay-<%=style[b_index % style.size] %>">
+            <%-# foundation_styles defined in helper -%>
+            <div class="bread-image-wrapper overlay-<%=foundation_styles[b_index % foundation_styles.size] %>">
               <% if bread.photo %>
                 <%= image_tag bread.photo.url %>
               <% else %>
@@ -49,8 +32,10 @@
         <% end %>
 
         <%-# At the last slice, add empty columns if needed -%>
-        <% if ( slice_index == last_index_slice_of_three ) && extra_empty_rows > 0 %>
-          <% extra_empty_rows.times do %>
+        <% rows_empty = extra_empty_rows(@breads) %>
+        <% last_index = last_index_slice_of_three(@breads) %>
+        <% if ( slice_index == last_index ) && rows_empty > 0 %>
+          <% rows_empty.times do %>
             <div class="large-4 columns">
             </div>
           <% end %>
