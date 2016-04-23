@@ -42,8 +42,6 @@ Crear tabs finales (See foto angel)
 
 ///////////////
 
-Refactor (with helpers) refinery/news/items/index.html.erb as done with refinery/breads/breads/index.html.erb
-Add missing translation from news (Read more ...) etc ...
 Create more seed data for news with images!!
 Create many news in order to see how pagination works.
 Create many breads in order to see how pagination works.

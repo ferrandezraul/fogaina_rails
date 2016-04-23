@@ -17,7 +17,14 @@
               
               <div class="image-overlay-content">
                 <h2><%= bread.name %></h2>
-                <p><%= raw bread.description[0..40] + " ..." if bread.description %></p>
+
+                <% if bread.description %>
+                  <p>
+                    <%= truncate bread.description, :length => 50, 
+                                  :omission => " ...",
+                                  :preserve_html_tags => true  %>
+                  </p>
+                <% end %>
 
                 <% if bread.price %>
                   <p class="price"><%= raw sprintf("%.2f", bread.price ) + " €" %></p>
