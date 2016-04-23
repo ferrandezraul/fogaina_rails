@@ -620,6 +620,9 @@ raise "Error, there should be a news page! See seeds.rb" if news_page == nil
 news_page.translations.create!( { :locale => "es", :title => "Noticias" } )
 news_page.translations.create!( { :locale => "ca", :title => "Notícies" } )
 
+oclot_path = "#{Rails.root.join('app/assets/images/fogaina_presentacio_600x450.jpg')}"
+image_oclot = Refinery::Image.create :image => File.new(oclot_path)
+
 noticias = [ 
   {
     title_ca: "La Fogaina-Oclot. Servei d'entrega ecològic", 
@@ -637,7 +640,8 @@ noticias = [
            Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
            A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
            Salut, Pa i Pedals!!!",
-    publish_date: DateTime.now  
+    publish_date: DateTime.now,
+    photo_id: image_oclot.id  
   },
   {
     title_ca: "Cursos de pa a la Fogaina febrer-abril 2015",
@@ -652,7 +656,8 @@ noticias = [
     body_es: "Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!
            Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
            Mes info a la pestanya de 'cursos'.", 
-    publish_date: DateTime.now  
+    publish_date: DateTime.now,
+    photo_id: image_cursos_cartell.id  
   } 
 ]
 
@@ -662,7 +667,8 @@ noticias.each do |noticia_attr|
     locale: "en", 
     title: noticia_attr[:title_en], 
     body: noticia_attr[:body_en], 
-    publish_date: noticia_attr[:publish_date] )
+    publish_date: noticia_attr[:publish_date],
+    photo_id: noticia_attr[:photo_id] )
 
   noticia.translations.create!( { :refinery_news_item_id => noticia.id,
                                   :locale => "ca",
