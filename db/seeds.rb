@@ -453,10 +453,10 @@ panes = [
             :name_ca => "La Soca", 
             :name_es => "La Soca",
             :name_en => "La Soca",  
-            :description_ca => "Pa integral de motlle amb cereals i llavors. Aquest pa és el millor per a fer torrades contundents i acompanyar qualsevol menjar.<br>
-                                Pa de llarga fermentació. El podriem considerar un multicereals, amb una farina de molí de pedra i de primera qualitat (blat del cor, xeixa, montcada,espelta...). Tot això fa un pa gustosíssim. Baix en gluten.",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>Pa integral de motlle amb cereals i llavors. Aquest pa és el millor per a fer torrades contundents i acompanyar qualsevol menjar.</p>
+                                <p>Pa de llarga fermentació. El podriem considerar un multicereals, amb una farina de molí de pedra i de primera qualitat (blat del cor, xeixa, montcada,espelta...). Tot això fa un pa gustosíssim. Baix en gluten.</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => nil,
             :photo => image_soca
@@ -464,9 +464,9 @@ panes = [
           { :name_ca => "Pa de pagés", 
             :name_es => "Pan de pagés",
             :name_en => "Pa de pagés",  
-            :description_ca => "Pa rodó amb farina blanca ecològica. Massa mare i una mica de llevat. Es el pa de tota la vida però amb caràcter i molt de gust. Pels que no volen renunciar a fer un pa amb tomàquet o sucar a salses i ous ferrats ...",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>Pa rodó amb farina blanca ecològica. Massa mare i una mica de llevat. Es el pa de tota la vida però amb caràcter i molt de gust. Pels que no volen renunciar a fer un pa amb tomàquet o sucar a salses i ous ferrats ...</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => nil,
             :photo => image_pa_de_pages
@@ -474,9 +474,9 @@ panes = [
           { :name_ca => "Rústic", 
             :name_es => "Rústico",
             :name_en => "Rustic",  
-            :description_ca => "Pa amb forma de batard, amb farina blanca ecològica, i una mica de farina sègol i blat integral. Massa mare. Es un pa amb una fermentació retardada i molt lenta, que fa que tingui un gust pronunciat a cereals, crosta rústica i molla cremosa.",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>Pa amb forma de batard, amb farina blanca ecològica, i una mica de farina sègol i blat integral. Massa mare. Es un pa amb una fermentació retardada i molt lenta, que fa que tingui un gust pronunciat a cereals, crosta rústica i molla cremosa.</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 3,
             :photo => image_pa_rustic
@@ -484,9 +484,9 @@ panes = [
           { :name_ca => "Tinosell", 
             :name_es => "Tinosell",
             :name_en => "Tinosell",  
-            :description_ca => "Mateixa massa del Rústic però amb deliciosos trocets de panses nous i albercoc. Format Motllo. Només massa mare.",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>Mateixa massa del Rústic però amb deliciosos trocets de panses nous i albercoc. Format Motllo. Només massa mare.</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 4,
             :photo => nil 
@@ -494,9 +494,9 @@ panes = [
           { :name_ca => "Croscat Espelta", 
             :name_es => "Croscat Espelta",
             :name_en => "Croscat Espelta",  
-            :description_ca => "Panet rodó d'espelta amb semilles de girasol i sèsam. Només farina integral i semiintegral d'espelta molta amb molí de pedra. Massa mare d'espelta.",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>Panet rodó d'espelta amb semilles de girasol i sèsam. Només farina integral i semiintegral d'espelta molta amb molí de pedra. Massa mare d'espelta.</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 4.30,
             :photo => image_pa_croscat_espelta 
@@ -504,9 +504,9 @@ panes = [
           { :name_ca => "Coca de forner", 
             :name_es => "Coca de forner",
             :name_en => "Coca de forner",  
-            :description_ca => "Coca de oli d'oliva, sucre i anís. Bona alveolatura, tendra i caramelitzada a toc de foc.",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>Coca de oli d'oliva, sucre i anís. Bona alveolatura, tendra i caramelitzada a toc de foc.</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 3.10,
             :photo => image_coca_forner 
@@ -514,10 +514,10 @@ panes = [
           { :name_ca => "Pa de coca", 
             :name_es => "Pa de coca",
             :name_en => "Pa de coca",  
-            :description_ca => "Aqui trobareu el millor amic per fer unes torrades amb pa amb tomàquet 
-                                iniigual.lables. Cuït amb flama directa.",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>Aqui trobareu el millor amic per fer unes torrades amb pa amb tomàquet 
+                                iniigual.lables. Cuït amb flama directa.</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 2.60,
             :photo => image_pa_de_coca 
@@ -525,11 +525,11 @@ panes = [
           { :name_ca => "Brot Negre", 
             :name_es => "Brot Negre",
             :name_en => "Brot Negre",  
-            :description_ca => "Pa de segle de motlle petit. 100%  de ségol integral. Molt molt aromàtic. 
+            :description_ca => "<p>Pa de segle de motlle petit. 100%  de ségol integral. Molt molt aromàtic. 
                                 Es pot combinar amb aliments de gustos forts i contrastats. Però si ets un amant del segle, te'l menjaràs sol!!
-                                El sègol es un cereal del qual obtenim una farina mol baixa en gluten. ",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+                                El sègol es un cereal del qual obtenim una farina mol baixa en gluten. </p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => :no_mostrar,
             :price => nil,
             :photo => image_brot_negre 
@@ -537,9 +537,9 @@ panes = [
           { :name_ca => "Bembó", 
             :name_es => "Bembó",
             :name_en => "Bembó",  
-            :description_ca => "Pa de motllo blanc típic per fer 'bikinis' o torrades dolces. Un pa molt tendre, suau però amb una miga més sabrosa que les industrials, gracies a l'elaboració amb massa mare. Porta sucre moré panela, mantega i llet ecològica.",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>Pa de motllo blanc típic per fer 'bikinis' o torrades dolces. Un pa molt tendre, suau però amb una miga més sabrosa que les industrials, gracies a l'elaboració amb massa mare. Porta sucre moré panela, mantega i llet ecològica.</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => [:wednesday, :thursday],
             :price => 4,
             :photo => image_pa_bembo 
@@ -547,9 +547,9 @@ panes = [
           { :name_ca => "Pa sense gluten", 
             :name_es => "Pan sin gluten",
             :name_en => "Bread gluten-free",  
-            :description_ca => "Davant de tanta demanda ens animem a fer aquest pa sense gluten (*pot contenir traces, no apte per celíacs), amb farines ecológiques i moltes a la pedra de Fajol (blat sarraí), Arrós Integral i Cigró. També amb midó de tapioca i Maicena Ecológica. Per donar més sabor li possem llavors de chia, llí i sésam. El format es en motllo i intentem, encara que no te gluten, aconseguir una textura i estructura suau i esponjosa. Un pa molt saludable per tothom.",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>Davant de tanta demanda ens animem a fer aquest pa sense gluten (*pot contenir traces, no apte per celíacs), amb farines ecológiques i moltes a la pedra de Fajol (blat sarraí), Arrós Integral i Cigró. També amb midó de tapioca i Maicena Ecológica. Per donar més sabor li possem llavors de chia, llí i sésam. El format es en motllo i intentem, encara que no te gluten, aconseguir una textura i estructura suau i esponjosa. Un pa molt saludable per tothom.</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => :por_encargo,
             :price => 6,
             :photo => image_pa_sense_gluten 
@@ -557,10 +557,10 @@ panes = [
           { :name_ca => "Ségol - Blat amb panses i nous", 
             :name_es => "Ségol - Blat amb panses i nous",
             :name_en => "Ségol - Blat amb panses i nous",  
-            :description_ca => "Un pa de farina semi integral de blat, amb molta molta massa mare de ségol. 
-                                Acompanyat amb panses i nous en quantitat. Un pa molt aromàtic i de bona conservació. Un plaer acompanyant tant formatges i fumats com mermelades.",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>Un pa de farina semi integral de blat, amb molta molta massa mare de ségol. </p>
+                                <p>Acompanyat amb panses i nous en quantitat. Un pa molt aromàtic i de bona conservació. Un plaer acompanyant tant formatges i fumats com mermelades.</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => [:friday],
             :price => 3.80,
             :photo => image_pa_segol 
@@ -568,10 +568,10 @@ panes = [
           { :name_ca => "Baguette", 
             :name_es => "Baguette",
             :name_en => "Baguette",  
-            :description_ca => "Baguettes amb formula de tradició francesa, amb farines de blat moltes a la pedra, massa mare i llevat. Fermentacions llargues i cuita al forn de llenya.
-                                Per fi gaudim de les barres a la Fogaina.",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>Baguettes amb formula de tradició francesa, amb farines de blat moltes a la pedra, massa mare i llevat. Fermentacions llargues i cuita al forn de llenya.</p>
+                                <p>Per fi gaudim de les barres a la Fogaina.</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => [:wednesday, :friday, :saturday],
             :price => 1.70,
             :photo => image_pa_baguette 
@@ -579,11 +579,11 @@ panes = [
           { :name_ca => "Pa de Farro", 
             :name_es => "Pa de Farro",
             :name_en => "Pa de Farro",  
-            :description_ca => "El Farro (blat de moro) es un producte típic de la Vall d'en Bas, una vall fertil pel 
-                                cultiu d'aquest cereal. Malauradament avui dia es dificil de trobar Farro de varietats locals i ecológic, per desgracia els trangénics van guanyant terreny. Ara mateix estem utilitzant Farro de la Vall de Bianya de varietat local.
-                                Es un pa suau i fi, un punt dolcet, una miga amb un color crema grogenc que fa contrast amb una crosta deliciosa de color daurat. Tasteu!!",
-            :description_es => "Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.",
-            :description_en => "Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.",
+            :description_ca => "<p>El Farro (blat de moro) es un producte típic de la Vall d'en Bas, una vall fertil pel 
+                                cultiu d'aquest cereal. Malauradament avui dia es dificil de trobar Farro de varietats locals i ecológic, per desgracia els trangénics van guanyant terreny. Ara mateix estem utilitzant Farro de la Vall de Bianya de varietat local.</p>
+                                <p>Es un pa suau i fi, un punt dolcet, una miga amb un color crema grogenc que fa contrast amb una crosta deliciosa de color daurat. Tasteu!!</p>",
+            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
+            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => :por_encargo,
             :price => 2.70,
             :photo => image_pa_de_farro 
@@ -628,18 +628,18 @@ noticias = [
     title_ca: "La Fogaina-Oclot. Servei d'entrega ecològic", 
     title_en: "La Fogaina-Oclot. Organic delivery system.",
     title_es: "La Fogaina-Oclot. Servicio de entrega ecológico.",  
-    body_ca: "Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
-           Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
+    body_ca: "<p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).</p>
+           <p>Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
            A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
-           Salut, Pa i Pedals!!!", 
-    body_en: "Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
-           Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
+           Salut, Pa i Pedals!!!</p>", 
+    body_en: "<p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).</p>
+           <p>Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
            A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
-           Salut, Pa i Pedals!!!",
-    body_es: "Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
-           Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
+           Salut, Pa i Pedals!!!</p>",
+    body_es: "<p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).</p>
+           <p>Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
            A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
-           Salut, Pa i Pedals!!!",
+           Salut, Pa i Pedals!!!</p>",
     publish_date: DateTime.now,
     photo_id: image_oclot.id  
   },
@@ -647,15 +647,15 @@ noticias = [
     title_ca: "Cursos de pa a la Fogaina febrer-abril 2015",
     title_en: "Bread Courses at la Fogaina february-april 2015",
     title_es: "Cursos de pan en la Fogaina febrero-abril 2015", 
-    body_ca: "Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!
-           Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
-           Mes info a la pestanya de 'cursos'.", 
-    body_en: "Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!
-           Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
-           Mes info a la pestanya de 'cursos'.", 
-    body_es: "Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!
-           Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
-           Mes info a la pestanya de 'cursos'.", 
+    body_ca: "<p>Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!</p>
+           <p>Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
+           Mes info a la pestanya de 'cursos'.</p>", 
+    body_en: "<p>Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!</p>
+           <p>Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
+           Mes info a la pestanya de 'cursos'.</p>", 
+    body_es: "<p>Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!</p>
+           <p>Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
+           Mes info a la pestanya de 'cursos'.</p>", 
     publish_date: DateTime.now,
     photo_id: image_cursos_cartell.id  
   } 
