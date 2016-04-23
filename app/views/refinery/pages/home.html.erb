@@ -22,30 +22,20 @@
   <hr>
 <% end %> 
 
-<% if Refinery::News::Item.count > 0 %> 
-  
-  <% @items = Refinery::News::Item.latest(1) %>
-  <% if @items.count == 1 && @items.first %>
-    <% @item = @items.first %>
+<%-# last_news_in_home_page is defined in app/helpers/refinery/views_helper.rb -%>
+<% @item = last_news_in_home_page %>
+<% if @item %>
+  <div class="row">
+    <div class="large-12 columns">
 
-    <%-# This is needed in order to avoid issues if the new is not available in other languages -%>
-    <% if @item.body != nil && @item.title != nil %>
+      <h2><%= @item.title %></h2>
+      <section>
+        <%= render "refinery/news/items/item" %>
+      </section>
 
-      <div class="row">
-        <div class="large-12 columns">
-
-          <h2><%= @item.title %></h2>
-          <section>
-            <%= render "refinery/news/items/item" %>
-          </section>
-
-        </div>
-      </div>
-      <hr>
-    <% end %>
-    
-  <% end %>
-
+    </div>
+  </div>
+  <hr>
 <% end %>
 
 <div class="row">

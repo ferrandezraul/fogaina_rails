@@ -42,6 +42,8 @@ Crear tabs finales (See foto angel)
 
 ///////////////
 
+The views for breads and new index can be simplified even more.
+Use a partial to render a slice of 3 ?
 Create more seed data for news with images!!
 Create many news in order to see how pagination works.
 Create many breads in order to see how pagination works.
