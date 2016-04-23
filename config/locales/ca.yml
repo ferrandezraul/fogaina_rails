@@ -71,6 +71,8 @@ ca:
           read_more: Llegeix més
           no_items_yet: No hi ha cap notícia.
           source: Publicat per
+          previous_label: Pàgina anterior
+          next_label: Pàgina següent
         archive:
           news_item_archive_for: 'Archive for %{date}'
           no_news_item_articles_posted: 'There are no news articles posted for %{date}. Stay tuned.'

@@ -31,7 +31,7 @@ en:
   read_more: "Read more ..."
   published: Published
   source: Published by
-  
+
   refinery:
     news:
       items:
@@ -39,3 +39,6 @@ en:
           back_to_index: "See all news"
           published: Published
           source: Published by
+        index:
+          previous_label: Previous page
+          next_label: Next page

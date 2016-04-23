@@ -40,7 +40,12 @@
       </div>
     <% end %>
 
-    <%= will_paginate @items %>
+    <p>
+      <%= will_paginate @items, 
+                        :previous_label => t('.previous_label'), 
+                        :next_label => t('.next_label') %>
+    </p>
+    
   <% else %>
     <p><em><%= t('.no_items_yet') %></em></p>
   <% end %>

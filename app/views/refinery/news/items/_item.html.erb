@@ -27,7 +27,7 @@
     </div>
 
     <div class="large-6 column">
-      
+
       <section>
         <%= @item.body.html_safe %>
       </section>
@@ -44,12 +44,9 @@
       <section>
         <%= @item.body.html_safe %>
       </section>
-    </div>
-
-    <div class="row">
-      <div class="large">
+      <section>
         <%= link_to t('see_all_news'), refinery.news_items_path %>
-      </div>
+      </section>
     </div>
 
   <% end %>

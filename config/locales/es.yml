@@ -39,6 +39,9 @@ es:
           back_to_index: "Ver todas las noticias"
           published: Publicado
           source: Publicado por
+        index:
+          previous_label: Página anterior
+          next_label: Página siguiente
     # Those translations are missing from external extension refinery_image_slideshows
     plugins:
       refinery_image_slideshows:

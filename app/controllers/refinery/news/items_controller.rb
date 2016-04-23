@@ -30,8 +30,10 @@ module Refinery
         @items = Item.latest.translated
       end
 
+      # Added pagination for the news items
       def find_published_news_items
-        @items = Item.published.translated.page(params[:page])
+           @items = Item.published.translated.paginate :page => params[:page],
+                                                       :per_page => 12
       end
 
       def find_news_item
