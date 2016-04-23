@@ -29,6 +29,8 @@ ca:
   follow_us: "Segueix-nos"
   see_all_news: "Veure totes les notícies"
   read_more: "Llegir més ..."
+  published: Publicat
+  source: Publicat per
 
 # Those translations are missing from external extension refinery_image_slideshows
   refinery:

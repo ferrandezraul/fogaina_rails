@@ -2,10 +2,10 @@
   <div class="large-12 column">
     <p>
       <small>
-        <%= t('.published') %> <%= l(@item.publish_date, :format => :short) %>
+        <%= t('published') %> <%= l(@item.publish_date, :format => :short) %>
       </small>
       <% if @item.source.present? %>
-        <small>, <%= t('.source') %> <%= @item.source %></small>
+        <small>, <%= t('source') %> <%= @item.source %></small>
       <% end %>
     </p>
   </div>
@@ -15,7 +15,7 @@
 
   <% if @item.photo %>
 
-    <div class='large-6 column'>
+    <div class='large-3 column'>
       <section>
         <ul class="clearing-thumbs" data-clearing>
           <li>
@@ -26,8 +26,7 @@
       </section>
     </div>
 
-    <div class="large-6 column">
-      
+    <div class="large-9 column">
       <section>
         <%= @item.body.html_safe %>
       </section>
@@ -35,7 +34,7 @@
       <p>
         <%= link_to t('see_all_news'), refinery.news_items_path %>
       </p>
-
+      
     </div>
 
   <% else %>

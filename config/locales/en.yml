@@ -29,6 +29,9 @@ en:
   follow_us: "Follow us"
   see_all_news: "See all news"
   read_more: "Read more ..."
+  published: Published
+  source: Published by
+  
   refinery:
     news:
       items:
