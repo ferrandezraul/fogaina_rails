@@ -1,17 +1,7 @@
-/// Postgresql database ////
-Followed http://www.tunnelsup.com/setting-up-postgres-on-mac-osx on mac osx
-database user "raul", database name --> see config/database.yml
-
 1. Adaptar las imagenes con imagemagik/gimp/preview al tamanyo necesitado
    Nunca mas de 2MB (teoricamente 5MB)
 
-////////////////
-
-2. Update to foundation-rails v6? and start using motion-ui which is included in foundation-rails
-
-////////////////
-
-3. Anyadir nav menu en el footer?
+2. Anyadir nav menu en el footer?
    Add sticky to the div containing the nav top bar
     <div class="contain-to-grid sticky>
 
@@ -23,6 +13,5 @@ Add attribute :weight to breads
 
 Crear gallery tab. Usar fotos buenas y borrar las viejas.
 Crear tabs finales (See foto angel)
-
 
 ////////////////

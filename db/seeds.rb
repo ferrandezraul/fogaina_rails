@@ -252,28 +252,15 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                 {
                     :show_in_menu => true,
                     :deletable => true,
-                    :title => "Bread and Coffee",
-                    :title_es => "Pan i Café",
-                    :title_ca => "Pa i Cafè",
-                    :body => "<p>This is the body of Bread and coffee.</p>",
-                    :body_es => "<p>Esto es el body de Pan i Cafe.</p>",
-                    :body_ca => "<p>Això es el body de pa i cafe</p>",
-                    :side_body => "<p>This is the side body of Bread and Coffee.</p>", 
-                    :side_body_es => "<p>Esto es el side body de Pan in Cafe.</p>",
-                    :side_body_ca => "<p>Això es el side body de Pa i Cafe</p>", 
-                },
-                {
-                    :show_in_menu => true,
-                    :deletable => true,
-                    :title => "Wanna know more?",
-                    :title_es => "Quieres saber mas?",
-                    :title_ca => "Vols saber més?",
-                    :body => "<p>This is the body of Wanna know more?",
-                    :body_es => "<p>Esto es el body de Quieres saber mas</p>",
-                    :body_ca => "<p>Això es el body de Vols saber mes?</p>",
-                    :side_body => "<p>This is the side body of Wanna know more?</p>", 
-                    :side_body_es => "<p>Esto es el side body de Quieres saber mas?</p>",
-                    :side_body_ca => "<p>Això es el side body de Vols saber mes?</p>",
+                    :title => "Who are we?",
+                    :title_es => "Quienes somos?",
+                    :title_ca => "Qui som",
+                    :body => "<p>This is the body of Who are we?</p>",
+                    :body_es => "<p>Esto es el body de Quienes somos?</p>",
+                    :body_ca => "<p>Això es el body de qui som?</p>",
+                    :side_body => "<p>This is the side body of Who are we?</p>", 
+                    :side_body_es => "<p>Esto es el side body de Quienes somos?</p>",
+                    :side_body_ca => "<p>Això es el side body de qui som?</p>", 
                     :children =>  {
                         :show_in_menu => true,
                         :deletable => true,
@@ -284,6 +271,33 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                         :body_es => "<p>Proximamente ...</p><p><a href='/'>Volver al inicio</a></p>",
                         :body_ca => "<p>Proximament ...</p><p><a href='/'>Tornar a l'inici</a></p>"
                     }
+
+                },
+                {
+                    :show_in_menu => true,
+                    :deletable => true,
+                    :title => "Backery",
+                    :title_es => "Horno",
+                    :title_ca => "Forn",
+                    :body => "<p>This is the body of Backery</p>",
+                    :body_es => "<p>Esto es el body de Horno</p>",
+                    :body_ca => "<p>Això es el body de Forn</p>",
+                    :side_body => "<p>This is the side body of Backery</p>", 
+                    :side_body_es => "<p>Esto es el side body de Horno</p>",
+                    :side_body_ca => "<p>Això es el side body de Forn</p>", 
+                },
+                {
+                    :show_in_menu => true,
+                    :deletable => true,
+                    :title => "Cafeteria",
+                    :title_es => "Cafetería",
+                    :title_ca => "Cafeteria",
+                    :body => "<p>This is the body of Wanna know more?",
+                    :body_es => "<p>Esto es el body de Quieres saber mas</p>",
+                    :body_ca => "<p>Això es el body de Vols saber mes?</p>",
+                    :side_body => "<p>This is the side body of Wanna know more?</p>", 
+                    :side_body_es => nil,
+                    :side_body_ca => nil
                 },
                 {
                     :show_in_menu => true,
@@ -457,8 +471,8 @@ breads_page = Refinery::Page.find_by(:menu_match => "^/breads.*$")
 
 raise "Error, there should be a breads page! See seeds.rb" if breads_page == nil
 
-breads_page.translations.create!( { :locale => "es", :title => "Nuestros Panes" } )
-breads_page.translations.create!( { :locale => "ca", :title => "Els nostres pans" } )
+breads_page.translations.create!( { :locale => "es", :title => "Panes" } )
+breads_page.translations.create!( { :locale => "ca", :title => "Pans" } )
 
 panes = [ 
           { 
@@ -629,8 +643,10 @@ news_page = Refinery::Page.find_by(:menu_match => "^/news.*$")
 
 raise "Error, there should be a news page! See seeds.rb" if news_page == nil
 
-news_page.translations.create!( { :locale => "es", :title => "Noticias" } )
-news_page.translations.create!( { :locale => "ca", :title => "Notícies" } )
+news_page.update!( :title => "Activities" )
+
+news_page.translations.create!( { :locale => "es", :title => "Actividades" } )
+news_page.translations.create!( { :locale => "ca", :title => "Activitats" } )
 
 oclot_path = "#{Rails.root.join('app/assets/images/fogaina_presentacio_600x450.jpg')}"
 image_oclot = Refinery::Image.create :image => File.new(oclot_path)

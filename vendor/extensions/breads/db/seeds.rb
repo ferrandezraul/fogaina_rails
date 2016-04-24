@@ -1,6 +1,3 @@
-page_title = { :en => 'Our breads',
-               :es => 'Nuestros panes',
-               :ca => 'Els nostres pans'}
 
 if defined?(::Refinery::User)
   ::Refinery::User.all.each do |user|
@@ -13,7 +10,7 @@ end
 if defined?(::Refinery::Page)
   unless ::Refinery::Page.where(:menu_match => "^/breads.*$").any?
     page = ::Refinery::Page.create(
-      :title => page_title[:en],
+      :title => "Breads",
       :link_url => "/breads",
       :deletable => false,
       :menu_match => "^/breads.*$"
