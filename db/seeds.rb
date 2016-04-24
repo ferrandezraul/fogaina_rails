@@ -29,7 +29,12 @@ end
 # Note that in app/views/refinery/_header.html.erb those settings are checked in order
 # to display or not the locale switch
 Refinery::Setting.find_or_set( :spanish_web, true )
+setting_es = Refinery::Setting.find_by!( name: :spanish_web )
+setting_es.update!( title: "Habilitar la web en castellà")
+
 Refinery::Setting.find_or_set( :english_web, true )
+setting_en = Refinery::Setting.find_by!( name: :english_web )
+setting_en.update!( title: "Habilitar la web en anglès")
 
 # Added by Refinery CMS Image Slides extension
 Refinery::ImageSlideshows::Engine.load_seed
