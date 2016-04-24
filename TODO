@@ -26,10 +26,3 @@ Crear tabs finales (See foto angel)
 
 
 ////////////////
-
-Image gallery https://github.com/bisscomm/refinerycms-image-slideshows
-CAmbiar El nombre del image gallery que se visualiza en el home, hardcoded "Home Page Slide Show" a "Carrousel d'imatges de la pagina d'inici"
-Quitar action create new slideshow y pon un texto que diga que el tamanyo ideal de las fotos deberia ser de 1000x600 pixels.
-
-
-

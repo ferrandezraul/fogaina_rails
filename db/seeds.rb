@@ -78,9 +78,10 @@ slide_images.each do | slide_image |
     :image_id => slide_image[:image_id] )
 
   refinery_image_slide.translations.create!( :locale => :ca, :title => slide_image[:title] )
+  refinery_image_slide.translations.create!( :locale => :es, :title => slide_image[:title] )
 end
 
-slider = Refinery::ImageSlideshows::ImageSlideshow.create!( :title => "Home Page Slide Show")
+slider = Refinery::ImageSlideshows::ImageSlideshow.create!( :title => "Carrousel d'imatges de la pagina d'inici")
 slider.image_slides = Refinery::ImageSlideshows::ImageSlide.all.to_a
 
 pages_array = [ {
