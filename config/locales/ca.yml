@@ -31,6 +31,7 @@ ca:
   read_more: "Llegir més ..."
   published: Publicat
   source: Publicat per
+  manage_image_slides: Edita les fotos que vols que surtin a la pàgina d'inici
 
 # Those translations are missing from external extension refinery_image_slideshows
   refinery:

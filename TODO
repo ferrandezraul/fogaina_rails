@@ -15,12 +15,6 @@ database user "raul", database name --> see config/database.yml
    Add sticky to the div containing the nav top bar
     <div class="contain-to-grid sticky>
 
-////////////////
-
-4. Para acabar image gallery https://github.com/bisscomm/refinerycms-image-slideshows
-   El nombre del image gallery que se visualiza en el home es hardcoded "Home Page Slide Show" 
-   Por eso deberia impedir que se pueda borrar desde el admin.
-
 ///////////////
 
 Add attribute :weight to breads
@@ -30,10 +24,12 @@ Add attribute :weight to breads
 Crear gallery tab. Usar fotos buenas y borrar las viejas.
 Crear tabs finales (See foto angel)
 
-///////////////
 
+////////////////
 
-
+Image gallery https://github.com/bisscomm/refinerycms-image-slideshows
+CAmbiar El nombre del image gallery que se visualiza en el home, hardcoded "Home Page Slide Show" a "Carrousel d'imatges de la pagina d'inici"
+Quitar action create new slideshow y pon un texto que diga que el tamanyo ideal de las fotos deberia ser de 1000x600 pixels.
 
 
 
