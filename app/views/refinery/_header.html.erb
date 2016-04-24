@@ -13,27 +13,43 @@
               <a href="#" class="logo"></a>
             </li>
             <li class="toggle-topbar menu-icon"><a href="#"><span><%=t('language')%></span></a></li>
-          </ul> 
+          </ul>
 
-          <section class="top-bar-section">
-            <ul class="right locale-switch">
-              <li class="has-dropdown">
-                <a href="#"><%= current_locale_to_display %></a>
-               <ul class="dropdown">
-                 <% if I18n.locale == :en %>
-                   <li><%= link_to t('spanish' ), refinery.url_for( :locale => "es") %></li>
-                   <li><%= link_to t('catalan' ), refinery.url_for( :locale => "ca") %></li>  
-                 <% elsif I18n.locale == :es %>
-                   <li><%= link_to t('englishUK' ), refinery.url_for( :locale => "en") %></li>
-                   <li><%= link_to t('catalan' ), refinery.url_for( :locale => "ca") %></li>
-                 <% elsif I18n.locale == :ca %>
-                   <li><%= link_to t('englishUK' ), refinery.url_for( :locale => "en") %></li>
-                   <li><%= link_to t('spanish' ), refinery.url_for( :locale => "es") %></li>
-                 <% end %>
-               </ul>
-              </li>
-            </ul>
-          </section>
+          <% if ( Refinery::Setting.get( :spanish_web ) == true ) || ( Refinery::Setting.get( :english_web ) == true ) %> 
+             <%-# ( Refinery::Setting.get( :english_web ) == true ) -%> 
+
+            <section class="top-bar-section">
+              <ul class="right locale-switch">
+                <li class="has-dropdown">
+                  <a href="#"><%= current_locale_to_display %></a>
+                 <ul class="dropdown">
+                   <% if I18n.locale == :en %>
+                    <% if Refinery::Setting.get( :spanish_web ) == true %>
+                      <li><%= link_to t('spanish' ), refinery.url_for( :locale => "es") %></li>
+                    <% end %>
+                     <li><%= link_to t('catalan' ), refinery.url_for( :locale => "ca") %></li>  
+                   <% elsif I18n.locale == :es %>
+                    <% if Refinery::Setting.get( :english_web ) == true %>
+                      <li><%= link_to t('englishUK' ), refinery.url_for( :locale => "en") %></li>
+                    <% end %>
+                     <li><%= link_to t('catalan' ), refinery.url_for( :locale => "ca") %></li>
+                   <% elsif I18n.locale == :ca %>
+                     <% if Refinery::Setting.get( :english_web ) == true %>
+                       <li>
+                         <%= link_to t('englishUK' ), refinery.url_for( :locale => "en") %>
+                       </li>
+                      <% end %>
+                      <% if Refinery::Setting.get( :spanish_web ) == true %>
+                        <li>
+                          <%= link_to t('spanish' ), refinery.url_for( :locale => "es") %>
+                        </li>
+                      <% end %>
+                   <% end %>
+                 </ul>
+                </li>
+              </ul>
+            </section>
+          <% end %>
         </nav>
       </div>
     </div>

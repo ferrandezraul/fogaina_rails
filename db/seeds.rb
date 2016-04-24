@@ -25,6 +25,12 @@ if Rails.env.development?
   admin_user.add_role :superuser
 end
 
+# Create some settings in order to enable or disable the site for other locales
+# Note that in app/views/refinery/_header.html.erb those settings are checked in order
+# to display or not the locale switch
+Refinery::Setting.find_or_set( :spanish_web, true )
+Refinery::Setting.find_or_set( :english_web, true )
+
 # Added by Refinery CMS Image Slides extension
 Refinery::ImageSlideshows::Engine.load_seed
 
