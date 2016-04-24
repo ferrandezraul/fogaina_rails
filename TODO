@@ -25,16 +25,6 @@ database user "raul", database name --> see config/database.yml
 
 Add attribute :weight to breads
 
-///////////////
-
-Fix saved breads/news through the admin that contain html tags. i.e. body 
-
-////////////////
-
-Finish bread available days improvements
-  - limpiar views como se ha hecho con el breads_helper
-  - limpiar otras views con mas helpers
-
 ////////////////
 
 Crear gallery tab. Usar fotos buenas y borrar las viejas.
