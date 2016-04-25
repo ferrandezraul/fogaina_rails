@@ -27,6 +27,9 @@ PATH
     refinerycms-breads (1.0)
       acts_as_indexed (~> 0.8.0)
       refinerycms-core (~> 3.0.2)
+    refinerycms-cafeteria_categories (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -347,6 +350,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.1)
   refinerycms-authentication-devise (~> 1.0)
   refinerycms-breads!
+  refinerycms-cafeteria_categories!
   refinerycms-image_slideshows!
   refinerycms-news!
   refinerycms-testing (~> 3.0.0)

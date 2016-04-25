@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      cafeteria_categories:
+        title: Cafeteria Categories
+    cafeteria_categories:
+      admin:
+        cafeteria_categories:
+          actions:
+            create_new: Nieuwe Cafeteria Category toevoegen
+            reorder: De volgorde van de Cafeteria Categories wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Cafeteria Category-volgorde
+          records:
+            title: Cafeteria Categories
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Cafeteria Categories. Druk op 'Nieuwe Cafeteria Category toevoegen' om de eerste toe te voegen.
+          cafeteria_category:
+            view_live_html: Deze cafeteria category op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze cafeteria category
+            delete: Deze cafeteria category definitief verwijderen
+      cafeteria_categories:
+        show:
+          other: Andere Cafeteria Categories
+  activerecord:
+    attributes:
+      'refinery/cafeteria_categories/cafeteria_category':
+        title: Title
+        description: Description
+        image: Image

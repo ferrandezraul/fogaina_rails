@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      cafeteria_categories:
+        title: Cafeteria Categories
+    cafeteria_categories:
+      admin:
+        cafeteria_categories:
+          actions:
+            create_new: Lag en ny Cafeteria Category
+            reorder: Endre rekkefølgen på Cafeteria Categories
+            reorder_done: Ferdig å endre rekkefølgen Cafeteria Categories
+          records:
+            title: Cafeteria Categories
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Cafeteria Categories enda. Klikk på "Lag en ny Cafeteria Category" for å legge til din første cafeteria category.
+          cafeteria_category:
+            view_live_html: Vis hvordan denne cafeteria category ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne cafeteria category
+            delete: Fjern denne cafeteria category permanent
+      cafeteria_categories:
+        show:
+          other: Andre Cafeteria Categories
+  activerecord:
+    attributes:
+      'refinery/cafeteria_categories/cafeteria_category':
+        title: Title
+        description: Description
+        image: Image

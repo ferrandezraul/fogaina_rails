@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      cafeteria_categories:
+        title: Cafeteria Categories
+#        article: masculino/femenino
+    cafeteria_categories:
+      admin:
+        cafeteria_categories:
+          actions:
+            create_new: Crear nuevo cafeteria category
+            reorder: Reordenar cafeteria categories
+            reorder_done: Reordenación de cafeteria categories completada
+          records:
+            title: Cafeteria Categories
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay cafeteria categories todavía. Pulsa en "Crear nuevo Cafeteria Category" para crear tu primer cafeteria category.
+          cafeteria_category:
+            view_live_html: Ver este cafeteria category como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este cafeteria category
+            delete: Borrar este cafeteria category para siempre
+      cafeteria_categories:
+        show:
+          other: Otros cafeteria categories
+  activerecord:
+    attributes:
+      'refinery/cafeteria_categories/cafeteria_category':
+        title: Title
+        description: Description
+        image: Image

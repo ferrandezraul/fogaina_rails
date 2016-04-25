@@ -73,3 +73,4 @@ gem 'foundation-rails', '~> 5.5.3.2'
 gem 'foundation-icons-sass-rails' 
 
 gem 'refinerycms-breads', path: 'vendor/extensions'
+gem 'refinerycms-cafeteria_categories', path: 'vendor/extensions'

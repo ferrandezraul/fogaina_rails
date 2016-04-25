@@ -1,0 +1,13 @@
+<% content_for :body do %>
+  <ul id="cafeteria_categories">
+    <% @cafeteria_categories.each do |cafeteria_category| %>
+      <% if cafeteria_category.title %>
+        <li>
+          <%= link_to cafeteria_category.title, refinery.cafeteria_categories_cafeteria_category_path(cafeteria_category) %>
+        </li>
+      <% end %>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

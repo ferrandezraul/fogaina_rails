@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      cafeteria_categories:
+        title: Cafeteria Categories
+    cafeteria_categories:
+      admin:
+        cafeteria_categories:
+          actions:
+            create_new: Add New Cafeteria Category
+            reorder: Reorder Cafeteria Categories
+            reorder_done: Done Reordering Cafeteria Categories
+          records:
+            title: Cafeteria Categories
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Cafeteria Categories yet. Click "Add New Cafeteria Category" to add your first cafeteria category.
+          cafeteria_category:
+            view_live_html: View this cafeteria category live <br/><em>(opens in a new window)</em>
+            edit: Edit this cafeteria category
+            delete: Remove this cafeteria category forever
+      cafeteria_categories:
+        show:
+          other: Other Cafeteria Categories
+  activerecord:
+    attributes:
+      'refinery/cafeteria_categories/cafeteria_category':
+        title: Title
+        description: Description
+        image: Image

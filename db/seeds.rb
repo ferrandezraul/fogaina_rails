@@ -289,19 +289,6 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                 {
                     :show_in_menu => true,
                     :deletable => true,
-                    :title => "Cafeteria",
-                    :title_es => "Cafetería",
-                    :title_ca => "Cafeteria",
-                    :body => "<p>This is the body of Wanna know more?",
-                    :body_es => "<p>Esto es el body de Quieres saber mas</p>",
-                    :body_ca => "<p>Això es el body de Vols saber mes?</p>",
-                    :side_body => "<p>This is the side body of Wanna know more?</p>", 
-                    :side_body_es => nil,
-                    :side_body_ca => nil
-                },
-                {
-                    :show_in_menu => true,
-                    :deletable => true,
                     :title => "Contact",  # default german title
                     :title_es => "Contacto",
                     :title_ca => "Contacte",
@@ -779,3 +766,13 @@ noticias.each do |noticia_attr|
 end
 
 
+
+# Added by Refinery CMS CafeteriaCategories extension
+Refinery::CafeteriaCategories::Engine.load_seed
+
+cafeteria_page = Refinery::Page.find_by(:title => "Cafeteria")
+
+raise "Error, there should be a cafeteria page! See seeds.rb" if cafeteria_page == nil
+
+cafeteria_page.translations.create!( { :locale => "es", :title => "Cafetería" } )
+cafeteria_page.translations.create!( { :locale => "ca", :title => "Cafeteria" } )

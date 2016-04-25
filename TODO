@@ -15,3 +15,10 @@ Crear gallery tab. Usar fotos buenas y borrar las viejas.
 Crear tabs finales (See foto angel)
 
 ////////////////
+
+To new extension cafeteria_categories:
+  - Add friendlyId 
+  - Add seed categories (Cafes, Sucs i Tees, Cervezas, ...)
+  - Add nice grid with foundation
+  - Localizations missing?
+  

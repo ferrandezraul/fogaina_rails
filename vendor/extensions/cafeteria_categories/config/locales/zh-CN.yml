@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      cafeteria_categories:
+        title: Cafeteria Categories
+    cafeteria_categories:
+      admin:
+        cafeteria_categories:
+          actions:
+            create_new: 建立新的 Cafeteria Category
+            reorder: 对 Cafeteria Categories 重新排序
+            reorder_done: 对 Cafeteria Categories 的重新排序结束
+          records:
+            title: Cafeteria Categories
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Cafeteria Categories yet. Click "Add New Cafeteria Category" to add your first cafeteria category.
+            no_items_yet: 目前没有 Cafeteria Categories . 点击 "Add New Cafeteria Category" 创建一个cafeteria category.
+          cafeteria_category:
+            view_live_html: 查看 cafeteria category 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 cafeteria category
+            delete: 永久删除 cafeteria category
+      cafeteria_categories:
+        show:
+          other: 其他 Cafeteria Categories
+  activerecord:
+    attributes:
+      'refinery/cafeteria_categories/cafeteria_category':
+        title: Title
+        description: Description
+        image: Image

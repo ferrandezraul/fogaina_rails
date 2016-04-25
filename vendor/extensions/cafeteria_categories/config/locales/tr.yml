@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      cafeteria_categories:
+        title: Cafeteria Categories
+    cafeteria_categories:
+      admin:
+        cafeteria_categories:
+          actions:
+            create_new: Yeni Ekle Cafeteria Category
+            reorder: Tekrar sirala Cafeteria Categories
+            reorder_done: Tekrar siralama tamamlandiCafeteria Categories
+          records:
+            title: Cafeteria Categories
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Cafeteria Categories yok henuz.  Tikla "Yeni Ekle Cafeteria Category" eklemek senin ilk cafeteria category.
+          cafeteria_category:
+            view_live_html: Bunu canlu cafeteria category goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle cafeteria category
+            delete: Bunu Sil cafeteria category sonsuza dek
+      cafeteria_categories:
+        show:
+          other: Diger Cafeteria Categories
+  activerecord:
+    attributes:
+      'refinery/cafeteria_categories/cafeteria_category':
+        title: Title
+        description: Description
+        image: Image

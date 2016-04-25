@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160422201401) do
+ActiveRecord::Schema.define(version: 20160425213939) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -83,6 +83,27 @@ ActiveRecord::Schema.define(version: 20160422201401) do
   end
 
   add_index "refinery_breads", ["slug"], name: "index_refinery_breads_on_slug", using: :btree
+
+  create_table "refinery_cafeteria_categories", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "image_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "refinery_cafeteria_category_translations", force: :cascade do |t|
+    t.integer  "refinery_cafeteria_category_id", null: false
+    t.string   "locale",                         null: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.string   "title"
+    t.text     "description"
+  end
+
+  add_index "refinery_cafeteria_category_translations", ["locale"], name: "index_refinery_cafeteria_category_translations_on_locale", using: :btree
+  add_index "refinery_cafeteria_category_translations", ["refinery_cafeteria_category_id"], name: "index_96a8c18fe2d7f29322ec8fe1b41ba8d4a0da0b5d", using: :btree
 
   create_table "refinery_image_slide_translations", force: :cascade do |t|
     t.integer  "refinery_image_slide_id", null: false

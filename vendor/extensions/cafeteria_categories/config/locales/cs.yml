@@ -1,0 +1,29 @@
+cs:
+  refinery:
+    plugins:
+      cafeteria_categories:
+        title: Cafeteria Categories
+    cafeteria_categories:
+      admin:
+        cafeteria_categories:
+          actions:
+            create_new: Přidat Cafeteria Category
+            reorder: Řadit Cafeteria Categories
+            reorder_done: Konec řazení Cafeteria Categories
+          records:
+            title: Cafeteria Categories
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Cafeteria Categories. Zvolte "Přidat Cafeteria Category" pro přidání prvního cafeteria category.
+          cafeteria_category:
+            view_live_html: Zobrazit náhled cafeteria category<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit cafeteria category
+            delete: Smazat cafeteria category
+      cafeteria_categories:
+        show:
+          other: Další Cafeteria Categories
+  activerecord:
+    attributes:
+      'refinery/cafeteria_categories/cafeteria_category':
+        title: Title
+        description: Description
+        image: Image
