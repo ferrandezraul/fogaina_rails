@@ -4,6 +4,16 @@ HOWTO FOR DEVS
    Followed http://www.tunnelsup.com/setting-up-postgres-on-mac-osx on mac osx
    database user "raul", database name --> see config/database.yml
 
+2. Resize your images with imagemagick on the console. See http://railscasts.com/episodes/374-image-manipulation:
+
+	- i.e. Convert IMG_1856.png to 1920x1200 pixels and save it as test.png
+
+	convert IMG_1856.png -resize '1920x1200^' -gravity center  -crop '1920x1200+0+0' test.png	
+
+	- Resize all your png images:
+
+	for i in *.png ; do convert "$i" -resize '1920x1200^' -gravity center  -crop '1920x1200+0+0' "${i%.*}.png" ; done
+
 HOWTO FOR USERS
 
 1. If they want to create nice things within the editor,
