@@ -777,6 +777,9 @@ raise "Error, there should be a cafeteria page! See seeds.rb" if cafeteria_page 
 cafeteria_page.translations.create!( { :locale => "es", :title => "Cafetería" } )
 cafeteria_page.translations.create!( { :locale => "ca", :title => "Cafeteria" } )
 
+cafe_path = "#{Rails.root.join('app/assets/images/cafe/coffee-external.jpg')}"
+image_cafe = Refinery::Image.create :image => File.new(cafe_path)
+
 categories_cafeteria = [ 
   {
     title_ca: "Cafes", 
@@ -788,7 +791,7 @@ categories_cafeteria = [
            <p></p>",
     description_es: "<p></p>
            <p></p>",
-    image: nil  
+    image: image_cafe  
   },
   {
     title_ca: "Sucs i Tees", 
@@ -800,7 +803,7 @@ categories_cafeteria = [
            <p></p>",
     description_es: "<p></p>
            <p></p>",
-    image: nil  
+    image: image_pa_sense_gluten  
   },
   {
     title_ca: "Entrepans", 
@@ -812,7 +815,7 @@ categories_cafeteria = [
            <p></p>",
     description_es: "<p></p>
            <p></p>",
-    image: nil  
+    image: image_pa_bembo  
   },
   {
     title_ca: "Cerveses", 
@@ -824,7 +827,7 @@ categories_cafeteria = [
            <p></p>",
     description_es: "<p></p>
            <p></p>",
-    image: nil  
+    image: image_pa_rustic  
   }
 ]
 

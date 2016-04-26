@@ -7,6 +7,7 @@ module Refinery
       translates :title, :description
 
       validates :title, :presence => true, :uniqueness => true
+      validates :image, :presence => true
 
       belongs_to :image, :class_name => '::Refinery::Image'
 

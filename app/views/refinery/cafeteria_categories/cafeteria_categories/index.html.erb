@@ -1,0 +1,47 @@
+<section id="body">
+  <h1><%= @page.title %></h1>
+  <ul id="breads">
+
+    <% @cafeteria_categories.each_slice(3).with_index do |slice, slice_index| %>
+      <div class="row">
+        <% slice.each_with_index do |category, b_index| %>
+        
+          <div class="large-4 columns">
+            <%-# foundation_styles defined in helper -%>
+            <div class="bread-image-wrapper overlay-<%=foundation_styles[b_index % foundation_styles.size] %>">
+              <%= image_tag(category.image.url) %>
+              
+              <div class="image-overlay-content">
+                <h2><%= category.title %></h2>
+
+                <% if category.description %>
+                  <p>
+                    <%= truncate category.description, :length => 50, 
+                                  :omission => " ...",
+                                  :preserve_html_tags => true  %>
+                  </p>
+                <% end %>
+
+                <%= link_to I18n.t('read_more'), refinery.cafeteria_categories_cafeteria_category_path(category), class: "button" if category.description %>
+              </div>
+            
+            </div>    
+          </div>
+        
+        <% end %>
+
+        <%-# At the last slice, add empty columns if needed -%>
+        <% rows_empty = extra_empty_rows(@cafeteria_categories) %>
+        <% last_index = last_index_slice_of_three(@cafeteria_categories) %>
+        <% if ( slice_index == last_index ) && rows_empty > 0 %>
+          <% rows_empty.times do %>
+            <div class="large-4 columns">
+            </div>
+          <% end %>
+        <% end %>
+
+      </div>
+      
+    <% end %>
+  </ul>
+</section>
