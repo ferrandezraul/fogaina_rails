@@ -50,33 +50,67 @@ image_cistell_pan = Refinery::Image.create :image => File.new(cistell_pan_path)
 image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_path)
 
 # Path to images in SLIDE SHOW IN HOME PAGE
-obrador_reposteria_path = "#{Rails.root.join('app/assets/images/obrador/reposteria1000x400.jpg')}"
-cafeteria_path = "#{Rails.root.join('app/assets/images/cafeteria/cafeteria1000x400.jpg')}"
-croi_path = "#{Rails.root.join('app/assets/images/reposteria/croi1000x400.jpg')}"
-panes_path = "#{Rails.root.join('app/assets/images/buenas/panes1000x400.jpg')}"
+# obrador_reposteria_path = "#{Rails.root.join('app/assets/images/obrador/reposteria1000x400.jpg')}"
+# cafeteria_path = "#{Rails.root.join('app/assets/images/cafeteria/cafeteria1000x400.jpg')}"
+# croi_path = "#{Rails.root.join('app/assets/images/reposteria/croi1000x400.jpg')}"
+# panes_path = "#{Rails.root.join('app/assets/images/buenas/panes1000x400.jpg')}"
 
 # Images in SLIDE SHOW IN HOME PAGE
-image_obrador_reposteria= Refinery::Image.create :image => File.new(obrador_reposteria_path)
-image_cafeteria= Refinery::Image.create :image => File.new(cafeteria_path)
-image_croi= Refinery::Image.create :image => File.new(croi_path)
-image_panes= Refinery::Image.create :image => File.new(panes_path)
+# image_obrador_reposteria= Refinery::Image.create :image => File.new(obrador_reposteria_path)
+# image_cafeteria= Refinery::Image.create :image => File.new(cafeteria_path)
+# image_croi= Refinery::Image.create :image => File.new(croi_path)
+# image_panes= Refinery::Image.create :image => File.new(panes_path)
+
+slideshow_img1_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_1230.jpg')}"
+slideshow_img2_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_1523.jpg')}"
+slideshow_img3_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_1724.jpg')}"
+slideshow_img4_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_2178.jpg')}"
+slideshow_img5_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_2550.jpg')}"
+slideshow_img6_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_3421.jpg')}"
+slideshow_img7_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_4151.jpg')}"
+slideshow_img8_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_4751.jpg')}"
+
+slideshow_img1 = Refinery::Image.create :image => File.new(slideshow_img1_path)
+slideshow_img2 = Refinery::Image.create :image => File.new(slideshow_img2_path)
+slideshow_img3 = Refinery::Image.create :image => File.new(slideshow_img3_path)
+slideshow_img4 = Refinery::Image.create :image => File.new(slideshow_img4_path)
+slideshow_img5 = Refinery::Image.create :image => File.new(slideshow_img5_path)
+slideshow_img6 = Refinery::Image.create :image => File.new(slideshow_img6_path)
+slideshow_img7 = Refinery::Image.create :image => File.new(slideshow_img7_path)
+slideshow_img8 = Refinery::Image.create :image => File.new(slideshow_img8_path)
 
 slide_images = [
   {
-    :title => "Reposteria", 
-    :image_id => image_obrador_reposteria.id 
+    :title => "1", 
+    :image_id => slideshow_img1.id 
   },
   {
-    :title => "Cafeteria", 
-    :image_id => image_cafeteria.id 
+    :title => "2", 
+    :image_id => slideshow_img2.id 
   },
   {
-    :title => "Croi", 
-    :image_id => image_croi.id 
+    :title => "3", 
+    :image_id => slideshow_img3.id 
   },
   {
-    :title => "Panes", 
-    :image_id => image_panes.id 
+    :title => "4", 
+    :image_id => slideshow_img4.id 
+  },
+  {
+    :title => "5", 
+    :image_id => slideshow_img5.id 
+  },
+  {
+    :title => "6", 
+    :image_id => slideshow_img6.id 
+  },
+  {
+    :title => "7", 
+    :image_id => slideshow_img7.id 
+  },
+  {
+    :title => "8", 
+    :image_id => slideshow_img8.id 
   }
 ]
 
