@@ -776,3 +776,73 @@ raise "Error, there should be a cafeteria page! See seeds.rb" if cafeteria_page 
 
 cafeteria_page.translations.create!( { :locale => "es", :title => "Cafetería" } )
 cafeteria_page.translations.create!( { :locale => "ca", :title => "Cafeteria" } )
+
+categories_cafeteria = [ 
+  {
+    title_ca: "Cafes", 
+    title_en: "Coffee",
+    title_es: "Cafes",  
+    description_ca: "<p></p>
+           <p></p>", 
+    description_en: "<p></p>
+           <p></p>",
+    description_es: "<p></p>
+           <p></p>",
+    image: nil  
+  },
+  {
+    title_ca: "Sucs i Tees", 
+    title_en: "Juices and tees",
+    title_es: "Zumos i Tees",  
+    description_ca: "<p></p>
+           <p></p>", 
+    description_en: "<p></p>
+           <p></p>",
+    description_es: "<p></p>
+           <p></p>",
+    image: nil  
+  },
+  {
+    title_ca: "Entrepans", 
+    title_en: "Sandwitches",
+    title_es: "Bocadillos",  
+    description_ca: "<p></p>
+           <p></p>", 
+    description_en: "<p></p>
+           <p></p>",
+    description_es: "<p></p>
+           <p></p>",
+    image: nil  
+  },
+  {
+    title_ca: "Cerveses", 
+    title_en: "Beers",
+    title_es: "Cervezas",  
+    description_ca: "<p></p>
+           <p></p>", 
+    description_en: "<p></p>
+           <p></p>",
+    description_es: "<p></p>
+           <p></p>",
+    image: nil  
+  }
+]
+
+categories_cafeteria.each do |category_attr|
+
+  category = Refinery::CafeteriaCategories::CafeteriaCategory.create!( 
+    locale: "en", 
+    title: category_attr[:title_en], 
+    description: category_attr[:description_en], 
+    image: category_attr[:image] )
+
+  category.translations.create!( { :refinery_cafeteria_category_id => category.id, 
+                                   :locale => "ca",
+                                   :title => category_attr[:title_ca], 
+                                   :description => category_attr[:description_ca] } )
+
+  category.translations.create!( { :refinery_cafeteria_category_id => category.id,
+                                   :locale => "es",
+                                   :title => category_attr[:title_es], 
+                                   :description => category_attr[:description_es]  } )
+end
