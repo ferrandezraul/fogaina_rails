@@ -9,11 +9,14 @@
                                            animation: 'fade';
                                            pause_on_hover: false;">                                 
         <% main_slideshow.image_slides.each do |image_slide| %>
-          <%= link_to image_slide.link_url do %>
-            <%= image_tag image_slide.image.url, :alt => image_slide.title, 
-                                                 :title => image_slide.caption,
-                                                 :style => "margin: auto" %>
-          <% end %>  
+          <% if image_slide.link_url %>
+            <%= link_to image_slide.link_url do %>
+              <%= image_tag image_slide.image.url, :alt => image_slide.title, 
+                                                   :title => image_slide.caption,
+                                                   :style => "margin: auto" %>
+            <% end %>  
+          <% end %>
+
         <% end %>
          
       </ul>
