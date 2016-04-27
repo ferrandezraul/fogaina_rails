@@ -21,6 +21,7 @@ en:
       cafeteria_categories:
         show:
           other: Other Cafeteria Categories
+          back: Go back
   activerecord:
     attributes:
       'refinery/cafeteria_categories/cafeteria_category':

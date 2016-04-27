@@ -1,39 +1,21 @@
-<% content_for :body_content_title do %>
-  <%= @cafeteria_category.title %>
-<% end %>
+<div class='row'>
 
-<% content_for :body do %>
-  <section>
-    <h1>Title</h1>
-    <p>
-      <%=raw @cafeteria_category.title %>
-    </p>
-  </section>
-  <section>
-    <h1>Description</h1>
-    <p>
-      <%=raw @cafeteria_category.description %>
-    </p>
-  </section>
-  <section>
-    <h1>Image</h1>
-    <p>
-      <%= image_fu @cafeteria_category.image, nil %>
-    </p>
-  </section>
-<% end %>
+  <div class='large-12 column'>
+    <section id='body'>
+      <h2>
+        <%= @cafeteria_category.title %>
+      </h2>
 
-<% content_for :side_body do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="cafeteria_categories">
-      <% @cafeteria_categories.each do |cafeteria_category| %>
-        <li>
-          <%= link_to cafeteria_category.title, refinery.cafeteria_categories_cafeteria_category_path(cafeteria_category) %>
-        </li>
-      <% end %>
-    </ul>
-  </aside>
-<% end %>
+      <section>
+        <p>
+          <%=raw @cafeteria_category.description %>
+        </p>
+      </section>
+      
+      <br><%= link_to t('.back'), refinery.cafeteria_categories_cafeteria_categories_path %>
 
-<%= render '/refinery/content_page' %>
+    </section>
+
+  </div>
+
+</div>
