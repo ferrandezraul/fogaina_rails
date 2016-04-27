@@ -9,6 +9,8 @@ module Refinery
       validates :title, :presence => true, :uniqueness => true
       validates :image, :presence => true
 
+      validates :description, length: { minimum: 30 }
+
       belongs_to :image, :class_name => '::Refinery::Image'
 
       # To enable admin searching, add acts_as_indexed on searchable fields, for example:

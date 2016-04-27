@@ -16,7 +16,8 @@
 
                 <% if category.description %>
                   <p>
-                    <%= truncate category.description, :length => 50, 
+                    <%-# The description is at least 30 char long as specified in its model-%>
+                    <%= truncate category.description, :length => 30, 
                                   :omission => " ...",
                                   :preserve_html_tags => true  %>
                   </p>
