@@ -39,37 +39,16 @@ setting_en.update!( title: "Habilitar la web en anglès")
 # Added by Refinery CMS Image Slides extension
 Refinery::ImageSlideshows::Engine.load_seed
 
-# Path to some images used in pages
-espai_path = "#{Rails.root.join('app/assets/images/cafeteria/espai.jpg')}"
-cistell_pan_path = "#{Rails.root.join('app/assets/images/pan/cistell.jpg')}"
-cursos_cartell_path = "#{Rails.root.join('app/assets/images/cursos/cursos_cartell.jpg')}"
-
-# Images used in pages
-image_espai= Refinery::Image.create :image => File.new(espai_path)
-image_cistell_pan = Refinery::Image.create :image => File.new(cistell_pan_path)
-image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_path)
-
 # Path to images in SLIDE SHOW IN HOME PAGE
-# obrador_reposteria_path = "#{Rails.root.join('app/assets/images/obrador/reposteria1000x400.jpg')}"
-# cafeteria_path = "#{Rails.root.join('app/assets/images/cafeteria/cafeteria1000x400.jpg')}"
-# croi_path = "#{Rails.root.join('app/assets/images/reposteria/croi1000x400.jpg')}"
-# panes_path = "#{Rails.root.join('app/assets/images/buenas/panes1000x400.jpg')}"
+slideshow_img1_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_1523.jpg')}"
+slideshow_img2_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_1724.jpg')}"
+slideshow_img3_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_2178.jpg')}"
+slideshow_img4_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_2550.jpg')}"
+slideshow_img5_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_3421.jpg')}"
+slideshow_img6_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_4151.jpg')}"
+slideshow_img7_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_4751.jpg')}"
 
 # Images in SLIDE SHOW IN HOME PAGE
-# image_obrador_reposteria= Refinery::Image.create :image => File.new(obrador_reposteria_path)
-# image_cafeteria= Refinery::Image.create :image => File.new(cafeteria_path)
-# image_croi= Refinery::Image.create :image => File.new(croi_path)
-# image_panes= Refinery::Image.create :image => File.new(panes_path)
-
-slideshow_img1_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_1230.jpg')}"
-slideshow_img2_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_1523.jpg')}"
-slideshow_img3_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_1724.jpg')}"
-slideshow_img4_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_2178.jpg')}"
-slideshow_img5_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_2550.jpg')}"
-slideshow_img6_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_3421.jpg')}"
-slideshow_img7_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_4151.jpg')}"
-slideshow_img8_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_4751.jpg')}"
-
 slideshow_img1 = Refinery::Image.create :image => File.new(slideshow_img1_path)
 slideshow_img2 = Refinery::Image.create :image => File.new(slideshow_img2_path)
 slideshow_img3 = Refinery::Image.create :image => File.new(slideshow_img3_path)
@@ -77,7 +56,6 @@ slideshow_img4 = Refinery::Image.create :image => File.new(slideshow_img4_path)
 slideshow_img5 = Refinery::Image.create :image => File.new(slideshow_img5_path)
 slideshow_img6 = Refinery::Image.create :image => File.new(slideshow_img6_path)
 slideshow_img7 = Refinery::Image.create :image => File.new(slideshow_img7_path)
-slideshow_img8 = Refinery::Image.create :image => File.new(slideshow_img8_path)
 
 slide_images = [
   {
@@ -107,10 +85,6 @@ slide_images = [
   {
     :title => "7", 
     :image_id => slideshow_img7.id 
-  },
-  {
-    :title => "8", 
-    :image_id => slideshow_img8.id 
   }
 ]
 
@@ -128,6 +102,16 @@ end
 
 slider = Refinery::ImageSlideshows::ImageSlideshow.create!( :title => "Carrousel d'imatges de la pagina d'inici")
 slider.image_slides = Refinery::ImageSlideshows::ImageSlide.all.to_a
+
+# Path to some images used in pages
+espai_path = "#{Rails.root.join('app/assets/images/cafeteria/espai.jpg')}"
+cistell_pan_path = "#{Rails.root.join('app/assets/images/pan/cistell.jpg')}"
+cursos_cartell_path = "#{Rails.root.join('app/assets/images/cursos/cursos_cartell.jpg')}"
+
+# Images used in pages
+image_espai= Refinery::Image.create :image => File.new(espai_path)
+image_cistell_pan = Refinery::Image.create :image => File.new(cistell_pan_path)
+image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_path)
 
 pages_array = [ {
                     :show_in_menu => true,
@@ -456,8 +440,7 @@ pages_array.each { | page_attr |
 
 
 # Path to images PAN
-soques_path = "#{Rails.root.join('app/assets/images/pan/soques.jpg')}"
-soca_path = "#{Rails.root.join('app/assets/images/pan/soca.jpg')}"
+soca_path = "#{Rails.root.join('app/assets/images/buenas/1920x1200/LQ_1920x1200/IMG_1523.jpg')}"
 pa_pages_path = "#{Rails.root.join('app/assets/images/pan/pa_de_pages.jpg')}"
 pa_rustic_path = "#{Rails.root.join('app/assets/images/pan/rustic.jpg')}"
 pa_croscat_espelta_path = "#{Rails.root.join('app/assets/images/pan/croscat_espelta.jpg')}"
@@ -471,7 +454,6 @@ pa_baguette_path = "#{Rails.root.join('app/assets/images/pan/baguette.jpg')}"
 pa_de_farro_path = "#{Rails.root.join('app/assets/images/pan/pa_de_farro.jpg')}"
 
 # Images PAN
-image_soques = Refinery::Image.create :image => File.new(soques_path)
 image_soca = Refinery::Image.create :image => File.new(soca_path)
 image_pa_de_pages = Refinery::Image.create :image => File.new(pa_pages_path)
 image_pa_rustic = Refinery::Image.create :image => File.new(pa_rustic_path)
