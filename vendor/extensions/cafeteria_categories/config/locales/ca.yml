@@ -1,0 +1,30 @@
+ca:
+  refinery:
+    plugins:
+      cafeteria_categories:
+        title: Categories de la Cafeteria
+    cafeteria_categories:
+      admin:
+        cafeteria_categories:
+          actions:
+            create_new: Afegir una categoria nova de cafeteria
+            reorder: Reordenar les categories de cafeteria
+            reorder_done: Fet Reordenant les categories de la cafeteria
+          records:
+            title: Categories de la Cafeteria
+            sorry_no_results: Disculpa! No s'han trobat resultats.
+            no_items_yet: Encara no hi ha categories de cafeteria. Click "Afegir una categoria nova de cafeteria" per afegir la teva primera categoria.
+          cafeteria_category:
+            view_live_html: Veure aquesta categoria live <br/><em>(obre una nova finestra)</em>
+            edit: Editar aquesta categoria
+            delete: Esborrar aquesta categoria
+      cafeteria_categories:
+        show:
+          other: Other Cafeteria Categories
+          back: Tornar enrere
+  activerecord:
+    attributes:
+      'refinery/cafeteria_categories/cafeteria_category':
+        title: Títol
+        description: Descripció
+        image: Imatge
