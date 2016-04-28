@@ -11,7 +11,7 @@ es:
   refinery:
     plugins:
       breads:
-        title: Panes
+        title: Categorias del Horno (Panes)
         price: Precio
         available_days: "Disponibilidad"
         every_day: "Todos los días"

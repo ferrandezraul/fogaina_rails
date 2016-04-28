@@ -11,7 +11,7 @@ en:
   refinery:
     plugins:
       breads:
-        title: Breads
+        title: Backery Categories (Breads)
         price: Price
         available_days: "Availability"
         every_day: Every day

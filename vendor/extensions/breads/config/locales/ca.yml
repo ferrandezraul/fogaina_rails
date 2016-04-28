@@ -11,7 +11,7 @@ ca:
   refinery:
     plugins:
       breads:
-        title: Pans
+        title: Categories del Forn (Pans)
         price: Preu
         available_days: "Disponibilitat"
         every_day: Tots el dies
