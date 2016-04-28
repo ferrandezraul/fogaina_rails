@@ -40,13 +40,13 @@ setting_en.update!( title: "Habilitar la web en anglès")
 Refinery::ImageSlideshows::Engine.load_seed
 
 # Path to images in SLIDE SHOW IN HOME PAGE
-slideshow_img1_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_1523.jpg')}"
-slideshow_img2_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_1724.jpg')}"
-slideshow_img3_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_2178.jpg')}"
-slideshow_img4_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_2550.jpg')}"
-slideshow_img5_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_3421.jpg')}"
-slideshow_img6_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_4151.jpg')}"
-slideshow_img7_path = "#{Rails.root.join('app/assets/images/buenas/1000x400/IMG_4751.jpg')}"
+slideshow_img1_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_1523.jpg')}"
+slideshow_img2_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_1724.jpg')}"
+slideshow_img3_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_2178.jpg')}"
+slideshow_img4_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_2550.jpg')}"
+slideshow_img5_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_3421.jpg')}"
+slideshow_img6_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_4151.jpg')}"
+slideshow_img7_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_4751.jpg')}"
 
 # Images in SLIDE SHOW IN HOME PAGE
 slideshow_img1 = Refinery::Image.create :image => File.new(slideshow_img1_path)
@@ -440,7 +440,7 @@ pages_array.each { | page_attr |
 
 
 # Path to images PAN
-soca_path = "#{Rails.root.join('app/assets/images/buenas/1920x1200/LQ_1920x1200/IMG_1523.jpg')}"
+soca_path = "#{Rails.root.join('app/assets/images/buenas/500x500/IMG_1523.jpg')}"
 pa_pages_path = "#{Rails.root.join('app/assets/images/pan/pa_de_pages.jpg')}"
 pa_rustic_path = "#{Rails.root.join('app/assets/images/pan/rustic.jpg')}"
 pa_croscat_espelta_path = "#{Rails.root.join('app/assets/images/pan/croscat_espelta.jpg')}"
