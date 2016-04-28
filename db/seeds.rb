@@ -440,7 +440,7 @@ pages_array.each { | page_attr |
 
 
 # Path to images PAN
-soca_path = "#{Rails.root.join('app/assets/images/buenas/500x500/IMG_1523.jpg')}"
+soca_path = "#{Rails.root.join('app/assets/images/pan/IMG_1523.jpg')}"
 pa_pages_path = "#{Rails.root.join('app/assets/images/pan/pa_de_pages.jpg')}"
 pa_rustic_path = "#{Rails.root.join('app/assets/images/pan/rustic.jpg')}"
 pa_croscat_espelta_path = "#{Rails.root.join('app/assets/images/pan/croscat_espelta.jpg')}"
@@ -651,7 +651,7 @@ news_page.update!( :title => "Activities" )
 news_page.translations.create!( { :locale => "es", :title => "Actividades" } )
 news_page.translations.create!( { :locale => "ca", :title => "Activitats" } )
 
-oclot_path = "#{Rails.root.join('app/assets/images/fogaina_presentacio_600x450.jpg')}"
+oclot_path = "#{Rails.root.join('app/assets/images/news/fogaina_presentacio_600x450.jpg')}"
 image_oclot = Refinery::Image.create :image => File.new(oclot_path)
 
 noticias = [ 
