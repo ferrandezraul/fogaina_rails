@@ -1600,7 +1600,7 @@ $global-radius: 4px;
   }
   
   .image-overlay-content {
-    background-image: image-url("pattern.jpg");
+    background-image: image-url("logos/pattern.jpg");
     background-color: rgba(0,0,0,0.3);
     transform: translateX(-110%);
     opacity: 1;
@@ -1681,7 +1681,7 @@ $global-radius: 4px;
   
   .image-overlay-content {
     opacity: 0;
-    background-image: image-url("gplaypattern.png");
+    background-image: image-url("logos/gplaypattern.png");
     background-color: rgba(255,255,255, 0.5);
     transition: all 0.4s ease-in-out;
   }
