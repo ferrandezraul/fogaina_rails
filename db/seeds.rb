@@ -294,19 +294,6 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                 {
                     :show_in_menu => true,
                     :deletable => true,
-                    :title => "Backery",
-                    :title_es => "Horno",
-                    :title_ca => "Forn",
-                    :body => "<p>This is the body of Backery</p>",
-                    :body_es => "<p>Esto es el body de Horno</p>",
-                    :body_ca => "<p>Això es el body de Forn</p>",
-                    :side_body => "<p>This is the side body of Backery</p>", 
-                    :side_body_es => "<p>Esto es el side body de Horno</p>",
-                    :side_body_ca => "<p>Això es el side body de Forn</p>", 
-                },
-                {
-                    :show_in_menu => true,
-                    :deletable => true,
                     :title => "Contact",  # default german title
                     :title_es => "Contacto",
                     :title_ca => "Contacte",
@@ -474,8 +461,9 @@ breads_page = Refinery::Page.find_by(:menu_match => "^/breads.*$")
 
 raise "Error, there should be a breads page! See seeds.rb" if breads_page == nil
 
-breads_page.translations.create!( { :locale => "es", :title => "Panes" } )
-breads_page.translations.create!( { :locale => "ca", :title => "Pans" } )
+breads_page.update!( title: "Backery" )
+breads_page.translations.create!( { :locale => "es", :title => "Horno" } )
+breads_page.translations.create!( { :locale => "ca", :title => "Forn" } )
 
 panes = [ 
           { 
