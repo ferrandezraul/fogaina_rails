@@ -793,8 +793,14 @@ raise "Error, there should be a cafeteria page! See seeds.rb" if cafeteria_page 
 cafeteria_page.translations.create!( { :locale => "es", :title => "Cafetería" } )
 cafeteria_page.translations.create!( { :locale => "ca", :title => "Cafeteria" } )
 
-cafe_path = "#{Rails.root.join('app/assets/images/cafe/coffee-external.jpg')}"
+cafe_path = "#{Rails.root.join('app/assets/images/cafe/coffee800x800.jpg')}"
+entrepans_path = "#{Rails.root.join('app/assets/images/entrepans/IMG_2872.jpg')}"
+sucs_i_tees_path = "#{Rails.root.join('app/assets/images/sucs_i_tees/IMG_2603.jpg')}"
+reposteria_path = "#{Rails.root.join('app/assets/images/reposteria/IMG_2178.jpg')}"
 image_cafe = Refinery::Image.create :image => File.new(cafe_path)
+image_entrepans = Refinery::Image.create :image => File.new(entrepans_path)
+image_sucs_i_tees = Refinery::Image.create :image => File.new(sucs_i_tees_path)
+image_reposteria = Refinery::Image.create :image => File.new(reposteria_path)
 
 categories_cafeteria = [ 
   {
@@ -813,7 +819,7 @@ categories_cafeteria = [
     description_ca: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam esse quisquam est debitis inventore, distinctio, sunt molestiae, numquam assumenda ut libero quam nisi saepe, laborum vel perspiciatis repellat aspernatur. Nihil.</p><p>Enim iste facere quo pariatur, temporibus debitis maxime id illo repellat cumque velit ea modi, sit impedit, aperiam accusantium libero quisquam explicabo, earum voluptates dolore autem. Tempora aut officiis ex?</p>", 
     description_en: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aliquid sed cupiditate perferendis eum ab optio expedita fugit error omnis suscipit laborum, aperiam, nemo nisi excepturi tempore. Repellendus provident, optio.</p>",
     description_es: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque illo nesciunt vel voluptatibus explicabo magni sit tempore eos dolore ut doloremque, repellendus. Perspiciatis a beatae voluptatum hic, eos quia.</p>",
-    image: image_pa_sense_gluten  
+    image: image_sucs_i_tees  
   },
   {
     title_ca: "Entrepans", 
@@ -822,7 +828,7 @@ categories_cafeteria = [
     description_ca: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam esse quisquam est debitis inventore, distinctio, sunt molestiae, numquam assumenda ut libero quam nisi saepe, laborum vel perspiciatis repellat aspernatur. Nihil.</p><p>Enim iste facere quo pariatur, temporibus debitis maxime id illo repellat cumque velit ea modi, sit impedit, aperiam accusantium libero quisquam explicabo, earum voluptates dolore autem. Tempora aut officiis ex?</p>", 
     description_en: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aliquid sed cupiditate perferendis eum ab optio expedita fugit error omnis suscipit laborum, aperiam, nemo nisi excepturi tempore. Repellendus provident, optio.</p>",
     description_es: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque illo nesciunt vel voluptatibus explicabo magni sit tempore eos dolore ut doloremque, repellendus. Perspiciatis a beatae voluptatum hic, eos quia.</p>",
-    image: image_pa_bembo  
+    image: image_entrepans  
   },
   {
     title_ca: "Cerveses", 
@@ -832,6 +838,15 @@ categories_cafeteria = [
     description_en: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aliquid sed cupiditate perferendis eum ab optio expedita fugit error omnis suscipit laborum, aperiam, nemo nisi excepturi tempore. Repellendus provident, optio.</p>",
     description_es: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque illo nesciunt vel voluptatibus explicabo magni sit tempore eos dolore ut doloremque, repellendus. Perspiciatis a beatae voluptatum hic, eos quia.</p>",
     image: image_pa_rustic  
+  },
+  {
+    title_ca: "Rebosteria", 
+    title_en: "Cakes",
+    title_es: "Repostería",  
+    description_ca: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam esse quisquam est debitis inventore, distinctio, sunt molestiae, numquam assumenda ut libero quam nisi saepe, laborum vel perspiciatis repellat aspernatur. Nihil.</p><p>Enim iste facere quo pariatur, temporibus debitis maxime id illo repellat cumque velit ea modi, sit impedit, aperiam accusantium libero quisquam explicabo, earum voluptates dolore autem. Tempora aut officiis ex?</p>", 
+    description_en: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aliquid sed cupiditate perferendis eum ab optio expedita fugit error omnis suscipit laborum, aperiam, nemo nisi excepturi tempore. Repellendus provident, optio.</p>",
+    description_es: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque illo nesciunt vel voluptatibus explicabo magni sit tempore eos dolore ut doloremque, repellendus. Perspiciatis a beatae voluptatum hic, eos quia.</p>",
+    image: image_reposteria  
   }
 ]
 
