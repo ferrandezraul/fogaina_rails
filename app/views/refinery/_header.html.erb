@@ -1,6 +1,6 @@
 <div class="row">
   <div class="small-3 large-2 columns">
-    <%= image_tag "logos/logo_petit.svg" %>
+    <%= image_tag "logos/logo_petit.svg", class: "animated fadeInLeftBig" %>
   </div>
 
   <div class="small-9 large-10 columns">
@@ -19,7 +19,7 @@
              <%-# ( Refinery::Setting.get( :english_web ) == true ) -%> 
 
             <section class="top-bar-section">
-              <ul class="right locale-switch">
+              <ul class="right locale-switch animated fadeInRightBig">
                 <li class="has-dropdown">
                   <a href="#"><%= current_locale_to_display %></a>
                  <ul class="dropdown">
@@ -61,7 +61,7 @@
     </div>
 
     <div class="row">
-      <div class="contain-to-grid small-12 columns">
+      <div class="contain-to-grid small-12 columns animated fadeInRightBig">
         <nav class="top-bar" data-topbar role="navigation">          
           <!--    Start Logo    -->
           <ul class="title-area">
