@@ -2,7 +2,7 @@
 <% main_slideshow = Refinery::ImageSlideshows::ImageSlideshow.includes(:image_slides).find_by_title("Carrousel d'imatges de la pagina d'inici") %>
 
 <% if main_slideshow %> 
-  <div class="row">
+  <div class="row animated zoomIn">
     <div class="large-12 columns">
       <ul class="example-orbit" data-orbit data-options=";
                                            timer_speed: 5000;
