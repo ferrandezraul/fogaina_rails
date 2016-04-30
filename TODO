@@ -32,7 +32,7 @@ Ideal seria limitar size en config a 4MB y desarrollar codigo para chequear que 
 ///////////////
 
 ANIMATIONS
-id=body_content_title is now used in all extensions. Add it and use it in jquery for animations.
+id=body_content_title is now used in all extensions. Used in jquery for animations.
 Views in local extensions and in my app folder? not needed!
 use other common id for refinery and animate them.
   

@@ -11,6 +11,15 @@ module Refinery
       ]
     end
 
+    # Animated classes from animate.css used in views/refinery/breads/breads/index.html.erb  
+    def animated_animations
+      [
+        "fadeInLeftBig", 
+        "fadeInUpBig", 
+        "fadeInRightBig"
+      ]
+    end
+
     # In order to display properly all breads/news in my view, 
     # I need to add empty columns if the number 
     # of breads/news is not a divisor of 3, therefore all of those functions
