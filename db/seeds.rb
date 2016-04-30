@@ -103,16 +103,6 @@ end
 slider = Refinery::ImageSlideshows::ImageSlideshow.create!( :title => "Carrousel d'imatges de la pagina d'inici")
 slider.image_slides = Refinery::ImageSlideshows::ImageSlide.all.to_a
 
-# Path to some images used in pages
-espai_path = "#{Rails.root.join('app/assets/images/cafeteria/espai.jpg')}"
-cistell_pan_path = "#{Rails.root.join('app/assets/images/pan/cistell.jpg')}"
-cursos_cartell_path = "#{Rails.root.join('app/assets/images/cursos/cursos_cartell.jpg')}"
-
-# Images used in pages
-image_espai= Refinery::Image.create :image => File.new(espai_path)
-image_cistell_pan = Refinery::Image.create :image => File.new(cistell_pan_path)
-image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_path)
-
 pages_array = [ {
                     :show_in_menu => true,
                     :deletable => false,
@@ -132,37 +122,12 @@ pages_array = [ {
                             <p>Come and visit our cafeteria.</p>
                           </div>
                           <div class=\"large-3 columns\">
-                            <a href=\"contacte\" class=\"radius button right\"><i class=\"fi-marker\"> We are here!</i></a>
+                            <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> We are here!</i></a>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-
-                    <p>La Fogaina is a project that .... autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
-Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.</p>
-                    <div class=\"row\">
-                    <div class=\"large-4 columns\">
-                      <img src=\"%s\">
-                      <h4>Project</h4>
-                      <p>La Fogaina és un petit projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
-Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals.</p>
-                    </div>
-                    <div class=\"large-4 columns\">
-                      <img src=\"%s\">
-                      <h4>Cafeteria</h4>
-                      <p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
-                      Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
-A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646 879 062
-</p>
-                    </div>
-                    <div class=\"large-4 columns\">
-                      <img src=\"%s\">
-                      <h4>Courses</h4>
-                      <p>Si voleu apuntar-vos a la nostra llista de mail, per estar informats dels cursos que anem programant, envieu un mail a: fornlafogaina@gmail.com , i ens expliqueu el motiu.
-Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de l'espai i de l'aprenentatge. Tots el cursos es poden pagar amb moneda social.</p>
-                    </div>
-                  </div>" % [image_cistell_pan.url, image_espai.url, image_cursos_cartell.url],
+                  </div>",
                     :body_es => "
                     <div class=\"row\">
                     <div class=\"large-12 columns\">
@@ -173,37 +138,12 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                             <p>Ven a ver nuestra cafeteria.</p>
                           </div>
                           <div class=\"large-3 columns\">
-                            <a href=\"contacte\" class=\"radius button right\"><i class=\"fi-marker\"> Estamos aquí!</i></a>
+                            <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estamos aquí!</i></a>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-
-                    <p>La Fogaina es un proyecto .... autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
-Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.</p>
-                    <div class=\"row\">
-                    <div class=\"large-4 columns\">
-                      <img src=\"%s\">
-                      <h4>Proyecto</h4>
-                      <p>La Fogaina és un petit projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
-Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals.</p>
-                    </div>
-                    <div class=\"large-4 columns\">
-                      <img src=\"%s\">
-                      <h4>Cafeteria</h4>
-                      <p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
-                      Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
-A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646 879 062
-</p>
-                    </div>
-                    <div class=\"large-4 columns\">
-                      <img src=\"%s\">
-                      <h4>Cursos</h4>
-                      <p>Si voleu apuntar-vos a la nostra llista de mail, per estar informats dels cursos que anem programant, envieu un mail a: fornlafogaina@gmail.com , i ens expliqueu el motiu.
-Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de l'espai i de l'aprenentatge. Tots el cursos es poden pagar amb moneda social.</p>
-                    </div>
-                  </div>" % [image_cistell_pan.url, image_espai.url, image_cursos_cartell.url],
+                  </div>",
                     :body_ca => "
                     <div class=\"row\">
                     <div class=\"large-12 columns\">
@@ -214,37 +154,12 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                             <p>Vine a veure la nostra cafeteria.</p>
                           </div>
                           <div class=\"large-3 columns\">
-                            <a href=\"contacte\" class=\"radius button right\"><i class=\"fi-marker\"> Estem aquí!</i></a>
+                            <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estem aquí!</i></a>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-
-                    <p>La Fogaina es un projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
-Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals. Les altres farines que utilitzem son de Moulin de Colagne, molí medieval de pedra que treballa amb farines ecològiques de gran qualitat.</p>
-                    <div class=\"row\">
-                    <div class=\"large-4 columns\">
-                      <img src=\"%s\">
-                      <h4>Projecte</h4>
-                      <p>La Fogaina és un petit projecte autogestionat, familiar i ara SI un somni fet realitat... A l'obrador tenim molta cura amb la qualitat final del producte, a la botigueta tenim molta cura de mantenir el tracte amable i sincer amb els visitants. Això ho aconseguim amb:
-Prioritzant les farines de molí de pedra de Sales de Llierca d'en Victor de Triticatum, on bàsicament es treballa amb varietats de blats indígenes, con el Xeixa, el forment, el bompany, montcada, blat del cor i d'altres, totes ecològiques i moltes d'elles locals.</p>
-                    </div>
-                    <div class=\"large-4 columns\">
-                      <img src=\"%s\">
-                      <h4>Cafeteria</h4>
-                      <p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).
-                      Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
-A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646 879 062
-</p>
-                    </div>
-                    <div class=\"large-4 columns\">
-                      <img src=\"%s\">
-                      <h4>Cursos</h4>
-                      <p>Si voleu apuntar-vos a la nostra llista de mail, per estar informats dels cursos que anem programant, envieu un mail a: fornlafogaina@gmail.com , i ens expliqueu el motiu.
-Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de l'espai i de l'aprenentatge. Tots el cursos es poden pagar amb moneda social.</p>
-                    </div>
-                  </div>" % [image_cistell_pan.url, image_espai.url, image_cursos_cartell.url],    
+                  </div>",    
                     :side_body => "", 
                     :side_body_es => "",
                     :side_body_ca => "",                  
@@ -273,12 +188,12 @@ Normalment les places pels cursos son màxim de 7 persones, per poder gaudir de 
                     :title => "Who are we?",
                     :title_es => "Quienes somos?",
                     :title_ca => "Qui som",
-                    :body => "<p>This is the body of Who are we?</p>",
-                    :body_es => "<p>Esto es el body de Quienes somos?</p>",
-                    :body_ca => "<p>Això es el body de qui som?</p>",
-                    :side_body => "<p>This is the side body of Who are we?</p>", 
-                    :side_body_es => "<p>Esto es el side body de Quienes somos?</p>",
-                    :side_body_ca => "<p>Això es el side body de qui som?</p>", 
+                    :body => "<p>Coming soon ...</p><p><a href='/'>Back to home</a></p>",
+                    :body_es => "<p>Proximamente ...</p><p><a href='/'>Volver al inicio</a></p>",
+                    :body_ca => "<p>Proximament ...</p><p><a href='/'>Tornar a l'inici</a></p>",
+                    :side_body => "", 
+                    :side_body_es => "",
+                    :side_body_ca => "", 
                     :children =>  {
                         :show_in_menu => true,
                         :deletable => true,
@@ -640,7 +555,13 @@ news_page.translations.create!( { :locale => "es", :title => "Actividades" } )
 news_page.translations.create!( { :locale => "ca", :title => "Activitats" } )
 
 oclot_path = "#{Rails.root.join('app/assets/images/news/fogaina_presentacio_600x450.jpg')}"
+espai_path = "#{Rails.root.join('app/assets/images/cafeteria/espai.jpg')}"
+cursos_cartell_path = "#{Rails.root.join('app/assets/images/cursos/cursos_cartell.jpg')}"
+
+# Images used in news
 image_oclot = Refinery::Image.create :image => File.new(oclot_path)
+image_espai= Refinery::Image.create :image => File.new(espai_path)
+image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_path)
 
 noticias = [ 
   {

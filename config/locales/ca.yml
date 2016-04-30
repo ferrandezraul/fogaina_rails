@@ -41,7 +41,7 @@ ca:
       refinery_image_slideshows:
         title: "Presentació d'imatges"
       refinerycms_news:
-        title: News
+        title: Noticies (Activitats)
         description: Provides a simple news section
     news:
       admin:
