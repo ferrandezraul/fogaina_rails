@@ -28,4 +28,10 @@ To new extension cafeteria_categories:
 LAs imagenes de cafeteria categories y de panes deberian ser CUADRADAS!!
 para una correcta visualizacion width and height deberian ser iguales.
 Ideal seria limitar size en config a 4MB y desarrollar codigo para chequear que width and height son iguales. Usar paperclip o rmagick
+
+///////////////
+
+ANIMATIONS
+
+id=body_content_title does not exist foe some extensions. Add it and use it in jquery for animations.
   
