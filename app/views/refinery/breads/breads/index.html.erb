@@ -1,5 +1,5 @@
 <section id="body">
-  <h1><%= @page.title %></h1>
+  <h1 id="body_content_title"><%= @page.title %></h1>
   <ul id="breads">
 
     <% @breads.each_slice(3).with_index do |slice, slice_index| %>
