@@ -25,24 +25,27 @@
   <hr>
 <% end %> 
 
-<%-# last_news_in_home_page is defined in app/helpers/refinery/views_helper.rb -%>
-<% @item = last_news_in_home_page %>
-<% if @item %>
+<div id="body">
+  <%-# last_news_in_home_page is defined in app/helpers/refinery/views_helper.rb -%>
+  <% @item = last_news_in_home_page %>
+  <% if @item %>
+    <div class="row">
+      <div class="large-12 columns">
+
+        <h2><%= @item.title %></h2>
+        <section>
+          <%= render "refinery/news/items/item_in_home_page" %>
+        </section>
+
+      </div>
+    </div>
+    <hr>
+  <% end %>
+
   <div class="row">
     <div class="large-12 columns">
-
-      <h2><%= @item.title %></h2>
-      <section>
-        <%= render "refinery/news/items/item_in_home_page" %>
-      </section>
-
+      <%= render '/refinery/content_page', :hide_sections => :body_content_title %>
     </div>
   </div>
-  <hr>
-<% end %>
 
-<div class="row">
-  <div class="large-12 columns">
-    <%= render '/refinery/content_page', :hide_sections => :body_content_title %>
-  </div>
 </div>

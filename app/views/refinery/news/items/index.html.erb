@@ -6,7 +6,7 @@
       <div class="row">
         <% slice.each_with_index do |item, b_index| %>
           <div class="large-4 columns">
-            <div class="news-item-wrapper animated <%=animated_animations[b_index % animated_animations.size] %>">
+            <div class="news-item-wrapper">
               <div class="news-img-wrapper">
                 <%= link_to t('read_more'), refinery.news_item_path(item), class: "button expand read-more" %>
                 <%= item.photo ? image_tag(item.photo.url) : image_tag("logos/logo_negro.svg") %>

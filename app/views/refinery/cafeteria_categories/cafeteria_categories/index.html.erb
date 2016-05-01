@@ -1,5 +1,6 @@
+
+<h1 id="body_content_title"><%= @page.title %></h1>
 <section id="body">
-  <h1 id="body_content_title"><%= @page.title %></h1>
   <ul id="breads">
 
     <% @cafeteria_categories.each_slice(3).with_index do |slice, slice_index| %>
@@ -8,7 +9,7 @@
         
           <div class="large-4 columns">
             <%-# foundation_styles defined in helper -%>
-            <div class="cafeteria-image-wrapper animated <%=animated_animations[b_index % animated_animations.size] %> overlay-<%=foundation_styles[b_index % foundation_styles.size] %>">
+            <div class="cafeteria-image-wrapper overlay-<%=foundation_styles[b_index % foundation_styles.size] %>">
               <%= image_tag(category.image.url) %>
               
               <div class="image-overlay-content">
