@@ -9,7 +9,7 @@ $(function(){
   animateSlideShowHomePage();
   animateTitlePages();
   
-  /* If body has other animations, te rsult is a bit weird */
+  // /* If body has other animations, te rsult is a bit weird */
   animateBodyPages();
   animateSideBodyPages();
 
