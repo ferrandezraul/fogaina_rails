@@ -15,6 +15,13 @@
 //= require jquery_ujs
 //= require foundation
 //= require_tree .
-$(function(){ $(document).foundation({});
+$(function(){ 
+  $(document).foundation({
+    topbar: {
+      custom_back_text: true,
+      back_text: 'Volver' 
+    }
+  });
+});
 // any other code etc
 //= require turbolinks

@@ -1,18 +1,24 @@
 
 $(function(){ 
-  $(document).foundation();
-    animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+  $(document).foundation({
+    topbar: {
+      custom_back_text: true,
+      back_text: 'Volver' 
+    }
+  });
+  
+  animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-    animateLogoHeader();
-    animateMenus();
-    animateSlideShowHomePage();
-    animateTitlePages();
-    
-    /* If body has other animations, te rsult is a bit weird */
-    animateBodyPages();
-    animateSideBodyPages();
+  animateLogoHeader();
+  animateMenus();
+  animateSlideShowHomePage();
+  animateTitlePages();
+  
+  /* If body has other animations, te rsult is a bit weird */
+  animateBodyPages();
+  animateSideBodyPages();
 
-    animateFooter();
+  animateFooter();
 } );
 
 function animateLogoHeader(){
@@ -26,7 +32,7 @@ function animateMenus(){
   // Animate the 2 top-bar-section used for the locale switch and the menu
   // When animation ends, remove it in order to avoid issues with the dropdown menus
   animationName = 'animated fadeInRight'
-  $( '.top-bar-section').addClass(animationName).one( animationEnd, function( ){
+  $( '.top-bar').addClass(animationName).one( animationEnd, function( ){
     $(this).removeClass(animationName);
   })
 }

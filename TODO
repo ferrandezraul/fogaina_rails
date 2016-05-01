@@ -11,11 +11,6 @@ Add attribute :weight to breads
 
 ////////////////
 
-Crear gallery tab. Usar fotos buenas y borrar las viejas.
-Crear tabs finales (See foto angel)
-
-////////////////
-
 To new extension cafeteria_categories:
   - Add friendlyId 
   - Add seed categories (Cafes, Sucs i Tees, Cervezas, ...)
@@ -31,5 +26,8 @@ Ideal seria limitar size en config a 4MB y desarrollar codigo para chequear que 
 
 ///////////////
 
+Improve bread show page (the list of breads)
+
+Crear gallery tab. Usar fotos buenas y borrar las viejas.
 Deploy and test
   

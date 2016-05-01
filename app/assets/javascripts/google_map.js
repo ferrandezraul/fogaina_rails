@@ -1,5 +1,10 @@
 $(function(){ 
-  $(document).foundation();
+  $(document).foundation({
+    topbar: {
+      custom_back_text: true,
+      back_text: 'Volver' 
+    }
+  });
   
   var mapCanvas = document.getElementById('map-fogaina');
 
