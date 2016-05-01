@@ -16,12 +16,18 @@
 //= require foundation
 //= require_tree .
 $(function(){ 
+  init_foundation();
+});
+
+
+// Need to call this before any other js code
+function init_foundation(){
   $(document).foundation({
     topbar: {
       custom_back_text: true,
       back_text: 'Volver' 
     }
   });
-});
+}
 // any other code etc
 //= require turbolinks
