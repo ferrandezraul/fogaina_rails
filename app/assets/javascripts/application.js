@@ -25,7 +25,7 @@ function init_foundation(){
   $(document).foundation({
     topbar: {
       custom_back_text: true,
-      back_text: 'Volver' 
+      back_text: '<-' 
     }
   });
 }
