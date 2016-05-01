@@ -24,22 +24,22 @@
                   <a href="#"><%= current_locale_to_display %></a>
                  <ul class="dropdown">
                    <% if I18n.locale == :en %>
-                    <% if Refinery::Setting.get( :spanish_web ) == true %>
+                    <% if spanish_available? %>
                       <li><%= link_to t('spanish' ), refinery.url_for( :locale => "es") %></li>
                     <% end %>
                      <li><%= link_to t('catalan' ), refinery.url_for( :locale => "ca") %></li>  
                    <% elsif I18n.locale == :es %>
-                    <% if Refinery::Setting.get( :english_web ) == true %>
+                    <% if english_available? %>
                       <li><%= link_to t('englishUK' ), refinery.url_for( :locale => "en") %></li>
                     <% end %>
                      <li><%= link_to t('catalan' ), refinery.url_for( :locale => "ca") %></li>
                    <% elsif I18n.locale == :ca %>
-                     <% if Refinery::Setting.get( :english_web ) == true %>
+                     <% if english_available? %>
                        <li>
                          <%= link_to t('englishUK' ), refinery.url_for( :locale => "en") %>
                        </li>
                       <% end %>
-                      <% if Refinery::Setting.get( :spanish_web ) == true %>
+                      <% if spanish_available? %>
                         <li>
                           <%= link_to t('spanish' ), refinery.url_for( :locale => "es") %>
                         </li>

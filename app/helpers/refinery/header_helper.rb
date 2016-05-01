@@ -1,5 +1,4 @@
 module Refinery
-
   module HeaderHelper
     
     def current_locale_to_display
@@ -14,8 +13,24 @@ module Refinery
       end
 
       result
-
     end
-  end
 
+
+    def spanish_available?
+      Refinery::Setting.get( :spanish_web ) == true
+    end
+
+    def english_available?
+      Refinery::Setting.get( :english_web ) == true
+    end
+
+    def only_default_locale_available?
+      ( Refinery::Setting.get( :spanish_web ) == false ) && ( Refinery::Setting.get( :english_web ) == false ) 
+    end
+
+    def multiple_locales_available?
+      spanish_available? || english_available?
+    end
+
+  end
 end
