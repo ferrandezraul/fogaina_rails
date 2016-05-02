@@ -1,0 +1,61 @@
+ca:
+  refinery:
+    plugins:
+      refinerycms_portfolio:
+        title: Galeria
+    portfolio:
+      admin:
+        items:
+          item:
+            gallery: Galeria
+            gallery_help: Afegir aquesta imatge a galeria
+            delete: Esborrar l'imatge d'aquesta galeria
+            edit: Editar aquesta imatge
+            view_live_html: Veure aquesta imatge a la seva galeria
+          actions:
+            back_to_galleries: Tornar a galeries
+            create_new: Afegir una imatge nova
+            reorder: Reordenar imatges
+            reorder_done: Fet reordenant imatges
+          index:
+            no_items_yet: No hi ha imatges.
+            sorry_no_results: Disculpa! No s'han trobat resultats.
+            title: Imatges
+        galleries:
+          unlink_image: Unlink aquesta imatge
+          actions:
+            add_image: Afegir una imatge
+            create_new: Afegir una Galeria nova
+            reorder: Reordenar Galeries
+            reorder_done: Fet Reordenant Galeries
+            view_root_images: Veure top-level imatges
+          records:
+            title: Galeries
+            sorry_no_results: Disculpa! No s'han trobat resultats.
+            no_items_yet: No hi ha cap galeria. Click "Afegir una galeria nova" per crear la teva primera galeria.
+          gallery:
+            add_image: Afegir una imatge a aquesta galeria
+            delete: Esborrar aquesta galeria
+            edit: Editar aquesta galeria
+            item_count:
+              zero: sense imatges
+              one: 1 imatge
+              other: '%{count} imatges'
+            new_child: Afegir una galeria filla
+            view_live_html: Veure aquesta galeria live <br/><em>(opens in a new window)</em>
+          form:
+            parent_gallery: Galeria pare
+            parent_gallery_help: You can nest a gallery inside another gallery, creating a multiple-level portfolio. Choose a gallery to make this gallery the child of the one you select, or leave it blank to keep it as a top-level gallery.
+            cover_image: Cover Image
+            cover_image_help: The image that is used as the cover of this gallery.
+            images: Imatges
+          image_fields:
+            add_new_image: Afegir una imatge
+      galleries:
+        show:
+          other: Altres galeries
+  activerecord:
+    attributes:
+      'refinery/portfolio/gallery':
+        title: Title
+        body: Body
