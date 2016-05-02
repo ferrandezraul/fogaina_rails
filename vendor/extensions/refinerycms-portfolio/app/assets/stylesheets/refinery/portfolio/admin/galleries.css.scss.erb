@@ -1,0 +1,66 @@
+<% thumb_width, thumb_height = ::Refinery::Portfolio.cover_image_thumb_size.split('x').map(&:to_i) %>
+
+#records .actions {
+  width: 150px;
+}
+
+a#add_image_link {
+  background: image-url('refinery/icons/add.png') no-repeat 0 6px;
+  margin-bottom: 10px;
+  line-height: 29px;
+  padding-left: 20px;
+  display: inline;
+}
+
+li.image_field {
+  text-align: center;
+  position: relative;
+  margin: 5px;
+  width: <%= thumb_width %>px;
+  float: left;
+
+  .thumb {
+    height: 350px;
+    max-height: 300px;
+    img {
+      max-width: 300px;
+    }
+  }
+  .attributes {
+    display: none;
+  }
+
+  &:hover div.image_actions {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    overflow: visible;
+    text-align: center;
+
+    div.floater {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 0;
+      margin: 0 auto;
+
+      button {
+        cursor: pointer;
+      }
+    }
+  }
+
+  div.image_actions {
+    display: none;
+  }
+
+  &.blank {
+    display: none;
+  }
+}
+
+div.wym_skin_refinery {
+  opacity: 1 !important;
+}

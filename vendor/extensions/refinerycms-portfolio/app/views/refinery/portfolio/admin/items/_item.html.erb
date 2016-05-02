@@ -1,0 +1,42 @@
+<% # setup params for various action links
+  preview_url = gallery_path_for(item)
+  edit_url = refinery.edit_portfolio_admin_item_path(item)
+  delete_url = refinery.portfolio_admin_item_path(item)
+  delete_options = {
+    class: "cancel confirm-delete",
+    data: {confirm: t('message',  scope: 'refinery.admin.delete', title: item.title)}
+  }
+%>
+
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(item) -%>">
+  <div class='details'>
+    <span class='title'>
+      <%= item.title %>
+      <span class="preview">
+        <% if Refinery::I18n.frontend_locales.many? %>
+          <span class='locales'>
+            <% item.translations.sort_by{ |t| Refinery::I18n.frontend_locales.index(t.locale)}.each do |translation| %>
+              <% if translation.title.present? %>
+                <%= link_to refinery.edit_portfolio_admin_item_path(item, :switch_locale => translation.locale), :class => 'locale', title: translation.locale.upcase do %>
+
+                  <div class="<%=translation.locale %> locale_marker">
+                    <%= locale_text_icon(translation.locale.upcase) %>
+                  </div>
+                <% end %>
+              <% end %>
+            <% end %>
+          </span>
+        <% end %>
+      </span>
+    </span>
+
+    <span class='actions'>
+      <%= action_icon(:preview, preview_url, t('.view_live_html')) %>
+      <%= action_icon(:edit, edit_url, t('.edit' ) ) %>
+      <%= action_icon(:delete, delete_url, t('.delete' ), delete_options ) %>
+    </span>
+  </div>
+  <div class='image'>
+    <%= image_fu item.image, ::Refinery::Portfolio.cover_image_thumb_size %>
+  </div>
+</li>

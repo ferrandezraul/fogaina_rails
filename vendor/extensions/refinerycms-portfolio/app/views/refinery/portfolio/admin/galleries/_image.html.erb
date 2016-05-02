@@ -1,0 +1,15 @@
+<li id='<%= "image_#{image.id}" %>' class='image_field'>
+  <div class='thumb'><%= image_fu image, :medium %></div>
+  <div class='image_actions'>
+    <div class='floater'>
+      <button class="remove_icon">
+        <span class="visuallyhidden">
+          <%= t('unlink_image', :scope => 'refinery.portfolio.admin.galleries') %>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div class='attributes'>
+    <%= f.hidden_field :images, :name => "gallery[images][]", :id => nil, :class => 'image_id', :value => image.id %>
+  </div>
+</li>

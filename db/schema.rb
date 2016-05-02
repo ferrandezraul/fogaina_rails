@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160425213939) do
+ActiveRecord::Schema.define(version: 20160502210511) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -257,6 +257,53 @@ ActiveRecord::Schema.define(version: 20160425213939) do
   add_index "refinery_pages", ["lft"], name: "index_refinery_pages_on_lft", using: :btree
   add_index "refinery_pages", ["parent_id"], name: "index_refinery_pages_on_parent_id", using: :btree
   add_index "refinery_pages", ["rgt"], name: "index_refinery_pages_on_rgt", using: :btree
+
+  create_table "refinery_portfolio_galleries", force: :cascade do |t|
+    t.string   "title"
+    t.text     "body"
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.integer  "depth"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "refinery_portfolio_gallery_translations", force: :cascade do |t|
+    t.integer  "refinery_portfolio_gallery_id", null: false
+    t.string   "locale",                        null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.string   "title"
+    t.text     "body"
+    t.string   "slug"
+  end
+
+  add_index "refinery_portfolio_gallery_translations", ["locale"], name: "index_refinery_portfolio_gallery_translations_on_locale", using: :btree
+  add_index "refinery_portfolio_gallery_translations", ["refinery_portfolio_gallery_id"], name: "index_dacf6685c3221de568049c599f2a69d1c1f9dd25", using: :btree
+
+  create_table "refinery_portfolio_item_translations", force: :cascade do |t|
+    t.integer  "refinery_portfolio_item_id", null: false
+    t.string   "locale",                     null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "title"
+    t.text     "caption"
+  end
+
+  add_index "refinery_portfolio_item_translations", ["locale"], name: "index_refinery_portfolio_item_translations_on_locale", using: :btree
+  add_index "refinery_portfolio_item_translations", ["refinery_portfolio_item_id"], name: "index_2f72df747b84672dbcc6cb153c8031486c5de521", using: :btree
+
+  create_table "refinery_portfolio_items", force: :cascade do |t|
+    t.string   "title"
+    t.string   "caption"
+    t.integer  "image_id",   null: false
+    t.integer  "gallery_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "position"
+  end
 
   create_table "refinery_resource_translations", force: :cascade do |t|
     t.integer  "refinery_resource_id", null: false

@@ -777,3 +777,15 @@ categories_cafeteria.each do |category_attr|
                                    :title => category_attr[:title_es], 
                                    :description => category_attr[:description_es]  } )
 end
+
+# Added by Refinery CMS Portfolio Engine
+Refinery::Portfolio::Engine.load_seed
+
+portafolio_page = Refinery::Page.find_by(:title => "Portfolio")
+
+portafolio_page.update!( :title => "Gallery" )
+
+raise "Error, there should be a Portafolio page! See seeds.rb" if portafolio_page == nil
+
+portafolio_page.translations.create!( { :locale => "es", :title => "Galería" } )
+portafolio_page.translations.create!( { :locale => "ca", :title => "Galeria" } )

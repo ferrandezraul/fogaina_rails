@@ -30,6 +30,12 @@ PATH
     refinerycms-cafeteria_categories (1.0)
       acts_as_indexed (~> 0.8.0)
       refinerycms-core (~> 3.0.2)
+    refinerycms-portfolio (3.0.0)
+      friendly_id (~> 5.1.0)
+      friendly_id-globalize (>= 1.0.0.alpha2)
+      globalize (>= 4.0.0, < 5.2)
+      refinerycms-acts-as-indexed (~> 2.0.0)
+      refinerycms-core (~> 3.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -133,6 +139,8 @@ GEM
       sass (>= 3.3.0, < 3.5)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
+    friendly_id-globalize (1.0.0.alpha2)
+      friendly_id (~> 5.1.0, < 6.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     globalize (5.0.1)
@@ -357,6 +365,7 @@ DEPENDENCIES
   refinerycms-cafeteria_categories!
   refinerycms-image_slideshows!
   refinerycms-news!
+  refinerycms-portfolio!
   refinerycms-testing (~> 3.0.0)
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
