@@ -1,11 +1,36 @@
-<%- if items.present? -%>
-  <div class='slideshow' id='gallery_images'>
-    <section>
-      <ul class="clearing-thumbs" data-clearing>
-        <li>
-          <%= render items %>
-        </li>
-      </ul>
-    </section>
+
+<% items.each_slice(3).with_index do |slice, slice_index| %>
+  <div class="row">
+    <% slice.each_with_index do |item, b_index| %>
+    
+      <div class="large-4 columns">
+        <%-# foundation_styles defined in helper -%>
+        <div class="bread-image-wrapper overlay-<%=foundation_styles[b_index % foundation_styles.size] %>">
+
+          <ul class="clearing-thumbs" data-clearing>
+            <li>
+              <%= link_to( image_tag( item.image.url, 
+                                      :data => { 
+                                         :caption => item.title 
+                                      }, :class => "th" ), item.image.url )  %>
+            </li>
+          </ul>
+        
+        </div>    
+      </div>
+    
+    <% end %>
+
+    <%-# At the last slice, add empty columns if needed -%>
+    <% rows_empty = extra_empty_rows(items) %>
+    <% last_index = last_index_slice_of_three(items) %>
+    <% if ( slice_index == last_index ) && rows_empty > 0 %>
+      <% rows_empty.times do %>
+        <div class="large-4 columns">
+        </div>
+      <% end %>
+    <% end %>
+
   </div>
-<%- end -%>
+  
+<% end %>
