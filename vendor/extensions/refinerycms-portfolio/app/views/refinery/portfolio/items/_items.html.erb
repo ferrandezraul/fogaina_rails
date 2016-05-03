@@ -1,7 +1,11 @@
 <%- if items.present? -%>
   <div class='slideshow' id='gallery_images'>
-    <ul>
-      <%= render items %>
-    </ul>
+    <section>
+      <ul class="clearing-thumbs" data-clearing>
+        <li>
+          <%= render items %>
+        </li>
+      </ul>
+    </section>
   </div>
 <%- end -%>
