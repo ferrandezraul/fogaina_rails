@@ -789,3 +789,21 @@ raise "Error, there should be a Portafolio page! See seeds.rb" if portafolio_pag
 
 portafolio_page.translations.create!( { :locale => "es", :title => "Galería" } )
 portafolio_page.translations.create!( { :locale => "ca", :title => "Galeria" } )
+
+galeria = Refinery::Portfolio::Gallery.create!( title: "Galeria")
+galeria.translations.create!( :locale => "ca", :title => "Galeria ")
+galeria.translations.create!( :locale => "es", :title => "Galería ")
+
+imagenes_en_galeria = [
+  image_reposteria,
+  image_entrepans,
+  image_cafe,
+  image_espai,
+  image_pa_rustic
+]
+
+imagenes_en_galeria.each do |image| 
+  Refinery::Portfolio::Item.create!( gallery: galeria,
+                                     image: image )
+end
+

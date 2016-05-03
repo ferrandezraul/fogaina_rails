@@ -1,22 +1,27 @@
 <ul>
-  <% if ::Refinery::Portfolio::Admin::GalleriesController.searchable? %>
+  <% if false %>
+    <% if ::Refinery::Portfolio::Admin::GalleriesController.searchable? %>
+      <li>
+        <%= render :partial => "/refinery/admin/search",
+                    :locals => {
+                      :url => refinery.portfolio_admin_galleries_path
+                    } %>
+      </li>
+    <% end %>
+
     <li>
-      <%= render :partial => "/refinery/admin/search",
-                  :locals => {
-                    :url => refinery.portfolio_admin_galleries_path
-                  } %>
+      <%= link_to t('.view_root_images'), refinery.portfolio_admin_items_path(:orphaned => true), :class => "go_icon" %>
+    </li>
+  
+    <li>
+      <%= link_to t('.create_new'), refinery.new_portfolio_admin_gallery_path,
+                   :class => "add_icon" %>
+    </li>
+  
+    <li>
+      <%= link_to t('.add_image'), refinery.new_portfolio_admin_item_path, :class => "upload_icon" %>
     </li>
   <% end %>
-  <li>
-    <%= link_to t('.view_root_images'), refinery.portfolio_admin_items_path(:orphaned => true), :class => "go_icon" %>
-  </li>
-  <li>
-    <%= link_to t('.create_new'), refinery.new_portfolio_admin_gallery_path,
-                 :class => "add_icon" %>
-  </li>
-  <li>
-    <%= link_to t('.add_image'), refinery.new_portfolio_admin_item_path, :class => "upload_icon" %>
-  </li>
 <% if !searching? && @galleries.many? %>
   <li>
     <%= link_to t('.reorder', :what => "Galleries"),
