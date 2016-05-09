@@ -785,6 +785,9 @@ videos_page = Refinery::Page.find_by(:title => "Videos")
 
 raise "Error, there should be a videos page! See seeds.rb" if videos_page == nil
 
+videos_page.translations.create!( { :locale => "es", :title => "Videos" } )
+videos_page.translations.create!( { :locale => "ca", :title => "Videos" } )
+
 videos_page.update!( :show_in_menu => false )
 
 Refinery::Videos::Video.create!( :title => "Fogaina coope",

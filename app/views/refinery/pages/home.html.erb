@@ -42,26 +42,13 @@
     <hr>
   <% end %>
 
-  <% @videos = videos_in_home_page %>
-  <%= render "refinery/videos/videos_in_home" %>
-
   <div class="row">
     <div class="large-12 columns">
       <%= render '/refinery/content_page', :hide_sections => :body_content_title %>
     </div>
   </div>
 
-  <div class="row">
-    <div class="large-6 columns">
-      <div class="flex-video">
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/qC_hegFxyb4" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="large-6 columns">
-      <div class="flex-video">
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/sTon2EsQOvY" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
+  <% @videos = videos_in_home_page %>
+  <%= render "refinery/videos/videos_in_home" %>
 
 </div>

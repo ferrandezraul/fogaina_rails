@@ -24,7 +24,7 @@
         <% end %>
 
         <%-# At the last slice, add empty columns if needed -%>
-        <% empty_rows = extra_empty_rows(@items) %>
+        <% empty_rows = extra_empty_rows_of_three(@items) %>
         <% last_index = last_index_slice_of_three(@items) %>
         <% if ( slice_index == last_index ) && empty_rows > 0 %>
           <% empty_rows.times do %>

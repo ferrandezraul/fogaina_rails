@@ -1,0 +1,28 @@
+ca:
+  refinery:
+    plugins:
+      videos:
+        title: Videos
+    videos:
+      admin:
+        videos:
+          actions:
+            create_new: Afegir un Video
+            reorder: Reordenar Videos
+            reorder_done: Fet Reordenant Videos
+          records:
+            title: Videos
+            sorry_no_results: Disculpa! No s'han trobat resultats
+            no_items_yet: There are no Videos yet. Click "Add New Video" to add your first video.
+          video:
+            view_live_html: View this video live <br/><em>(opens in a new window)</em>
+            edit: Editar aquest video
+            delete: Esborrar aquest video
+      videos:
+        show:
+          other: Altres Videos
+  activerecord:
+    attributes:
+      'refinery/videos/video':
+        title: Nom
+        address: "Direcció url (La direcció url, la pots obtenir de videos de youtube pulsant amb el boto dret sobre el video i seleccinant 'Copiar codigo de insercción'. Utilitza només la direcció url que indica l'atribut 'src' del codi d'insercció copiat.)"

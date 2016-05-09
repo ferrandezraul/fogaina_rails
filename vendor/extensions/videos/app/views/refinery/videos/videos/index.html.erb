@@ -1,11 +1,31 @@
 <% content_for :body do %>
-  <ul id="videos">
-    <% @videos.each do |video| %>
-      <li>
-        <%= link_to video.title, refinery.videos_video_path(video) %>
-      </li>
-    <% end %>
-  </ul>
 <% end %>
 
 <%= render '/refinery/content_page' %>
+
+<% @videos.each_slice(2).with_index do |slice, slice_index| %>
+  <div class="row">
+    <% slice.each_with_index do |video, b_index| %>
+    
+      <div class="large-6 columns">
+        <div class="flex-video">
+          <iframe src=<%= video.address %> frameborder="0" allowfullscreen></iframe>
+        </div>   
+      </div>
+    
+    <% end %>
+
+    <%-# At the last slice, add empty columns if needed -%>
+    <% rows_empty = extra_empty_rows_of_two(@videos) %>
+    <% last_index = last_index_slice_of_two(@videos) %>
+    <% if ( slice_index == last_index ) && rows_empty > 0 %>
+      <% rows_empty.times do %>
+        <div class="large-6 columns">
+        </div>
+      <% end %>
+    <% end %>
+
+  </div>
+  
+<% end %>
+

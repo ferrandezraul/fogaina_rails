@@ -29,15 +29,27 @@ module Refinery
       elements.count / 3.0
     end
 
+    def number_of_slices_of_two(elements)
+      elements.count / 2.0
+    end
+
     def last_slice_of_three(elements)
       number_of_slices_of_three(elements).ceil
+    end
+
+    def last_slice_of_two(elements)
+      number_of_slices_of_two(elements).ceil
     end
 
     def last_index_slice_of_three(elements)
       last_slice_of_three(elements) -1
     end
 
-    def extra_empty_rows(elements)
+    def last_index_slice_of_two(elements)
+      last_slice_of_two(elements) -1
+    end
+
+    def extra_empty_rows_of_three(elements)
       empty_rows = 0
       last_slice = last_slice_of_three(elements)
       slices = number_of_slices_of_three(elements)
@@ -47,6 +59,20 @@ module Refinery
       elsif last_slice - slices > 0.5
         empty_rows = 2
       elsif last_slice - slices < 0.5
+        empty_rows = 1
+      end
+
+      empty_rows
+    end
+
+    def extra_empty_rows_of_two(elements)
+      empty_rows = 0
+      last_slice = last_slice_of_two(elements)
+      slices = number_of_slices_of_two(elements)
+
+      if last_slice - slices == 0
+        empty_rows = 0
+      else
         empty_rows = 1
       end
 

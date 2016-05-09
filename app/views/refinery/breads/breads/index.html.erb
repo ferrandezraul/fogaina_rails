@@ -36,7 +36,7 @@
         <% end %>
 
         <%-# At the last slice, add empty columns if needed -%>
-        <% rows_empty = extra_empty_rows(@breads) %>
+        <% rows_empty = extra_empty_rows_of_three(@breads) %>
         <% last_index = last_index_slice_of_three(@breads) %>
         <% if ( slice_index == last_index ) && rows_empty > 0 %>
           <% rows_empty.times do %>
