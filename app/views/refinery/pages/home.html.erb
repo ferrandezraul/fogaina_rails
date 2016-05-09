@@ -42,6 +42,9 @@
     <hr>
   <% end %>
 
+  <% @videos = videos_in_home_page %>
+  <%= render "refinery/videos/videos_in_home" %>
+
   <div class="row">
     <div class="large-12 columns">
       <%= render '/refinery/content_page', :hide_sections => :body_content_title %>

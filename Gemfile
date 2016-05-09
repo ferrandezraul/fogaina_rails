@@ -78,3 +78,4 @@ gem 'jquery-turbolinks'
 
 gem 'refinerycms-breads', path: 'vendor/extensions'
 gem 'refinerycms-cafeteria_categories', path: 'vendor/extensions'
+gem 'refinerycms-videos', path: 'vendor/extensions'

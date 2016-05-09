@@ -1,0 +1,21 @@
+<% content_for :body_content_title do %>
+  <%= @video.title %>
+<% end %>
+
+<% content_for :body do %>
+
+  <% Refinery::Videos::Video.all.each do |video| %>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="flex-video">
+          <iframe width="854" height="480" src=<%= video.address %> frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+  <% end %>
+  
+<% end %>
+
+<%= render '/refinery/content_page' %>

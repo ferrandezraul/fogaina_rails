@@ -1,0 +1,12 @@
+<% @videos.each do |video| %>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="flex-video">
+        <iframe width="854" height="480" src=<%= video.address %> frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+<% end %>
+

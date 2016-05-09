@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160425213939) do
+ActiveRecord::Schema.define(version: 20160509140421) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -293,6 +293,14 @@ ActiveRecord::Schema.define(version: 20160425213939) do
   end
 
   add_index "refinery_settings", ["name"], name: "index_refinery_settings_on_name", using: :btree
+
+  create_table "refinery_videos", force: :cascade do |t|
+    t.string   "title"
+    t.string   "address"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "seo_meta", force: :cascade do |t|
     t.integer  "seo_meta_id"

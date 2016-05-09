@@ -777,3 +777,18 @@ categories_cafeteria.each do |category_attr|
                                    :title => category_attr[:title_es], 
                                    :description => category_attr[:description_es]  } )
 end
+
+# Added by Refinery CMS Videos extension
+Refinery::Videos::Engine.load_seed
+
+videos_page = Refinery::Page.find_by(:title => "Videos")
+
+raise "Error, there should be a videos page! See seeds.rb" if videos_page == nil
+
+videos_page.update!( :show_in_menu => false )
+
+Refinery::Videos::Video.create!( :title => "Fogaina coope",
+                          :address => "https://www.youtube.com/embed/sTon2EsQOvY" )
+
+Refinery::Videos::Video.create!( :title => "Fogaina",
+                          :address => "https://www.youtube.com/embed/qC_hegFxyb4" )

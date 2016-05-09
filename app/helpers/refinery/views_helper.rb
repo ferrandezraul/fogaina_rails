@@ -70,5 +70,14 @@ module Refinery
       end
     end
 
+    # Returns videos or nil
+    # if there are no videos
+    def videos_in_home_page
+      videos = nil
+      if Refinery::Videos::Video.count > 0 
+        videos = Refinery::Videos::Video.all
+      end
+    end
+
   end # Module ViewsHelper
 end   # Module Refinery
