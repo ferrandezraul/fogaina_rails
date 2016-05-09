@@ -114,52 +114,52 @@ pages_array = [ {
                     # Image path in next line is copied from the ui when I try to add it manually
                     :body => "
                     <div class=\"row\">
-                    <div class=\"large-12 columns\">
-                      <div class=\"panel\">
-                        <h4>Organic hand made bread in la Garrotxa!</h4>
-                        <div class=\"row\">
-                          <div class=\"large-9 columns\">
-                            <p>Come and visit our cafeteria.</p>
-                          </div>
-                          <div class=\"large-3 columns\">
-                            <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> We are here!</i></a>
+                      <div class=\"large-12 columns\">
+                        <div class=\"panel\">
+                          <h4>Organic hand made bread in la Garrotxa!</h4>
+                          <div class=\"row\">
+                            <div class=\"large-9 columns\">
+                              <p>Come and visit our cafeteria.</p>
+                            </div>
+                            <div class=\"large-3 columns\">
+                              <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> We are here!</i></a>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>",
+                    </div>",
                     :body_es => "
                     <div class=\"row\">
-                    <div class=\"large-12 columns\">
-                      <div class=\"panel\">
-                        <h4>Pan artesano i ecológico en la Garrotxa!</h4>
-                        <div class=\"row\">
-                          <div class=\"large-9 columns\">
-                            <p>Ven a ver nuestra cafeteria.</p>
-                          </div>
-                          <div class=\"large-3 columns\">
-                            <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estamos aquí!</i></a>
+                      <div class=\"large-12 columns\">
+                        <div class=\"panel\">
+                          <h4>Pan artesano i ecológico en la Garrotxa!</h4>
+                          <div class=\"row\">
+                            <div class=\"large-9 columns\">
+                              <p>Ven a ver nuestra cafeteria.</p>
+                            </div>
+                            <div class=\"large-3 columns\">
+                              <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estamos aquí!</i></a>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>",
+                    </div>",
                     :body_ca => "
                     <div class=\"row\">
-                    <div class=\"large-12 columns\">
-                      <div class=\"panel\">
-                        <h4>Pa artesà i ecològic a la Garrotxa!</h4>
-                        <div class=\"row\">
-                          <div class=\"large-9 columns\">
-                            <p>Vine a veure la nostra cafeteria.</p>
-                          </div>
-                          <div class=\"large-3 columns\">
-                            <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estem aquí!</i></a>
+                      <div class=\"large-12 columns\">
+                        <div class=\"panel\">
+                          <h4>Pa artesà i ecològic a la Garrotxa!</h4>
+                          <div class=\"row\">
+                            <div class=\"large-9 columns\">
+                              <p>Vine a veure la nostra cafeteria.</p>
+                            </div>
+                            <div class=\"large-3 columns\">
+                              <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estem aquí!</i></a>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>",    
+                    </div>",    
                     :side_body => "", 
                     :side_body_es => "",
                     :side_body_ca => "",                  
