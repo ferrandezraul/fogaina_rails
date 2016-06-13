@@ -394,9 +394,39 @@ breads_page = Refinery::Page.find_by(:menu_match => "^/breads.*$")
 
 raise "Error, there should be a breads page! See seeds.rb" if breads_page == nil
 
-breads_page.update!( title: "Backery" )
+breads_page.update!( :title => "Backery" )
 breads_page.translations.create!( { :locale => "es", :title => "Horno" } )
 breads_page.translations.create!( { :locale => "ca", :title => "Forn" } )
+
+panologia_page = breads_page.children.create!( :title => 'Panologia',
+                                               :show_in_menu => true,
+                                               :deletable => true )
+
+panologia_page.translations.create!( { :locale => "es", :title => "Panologia" } )
+panologia_page.translations.create!( { :locale => "ca", :title => "Panologia" } )
+
+panologia_body_part = panologia_page.parts.create!( { :title => "Body", 
+                                                      :body => "<p>Entres a les fosques i encens..., només una mica de llum... És agradable començar la jornada amb aquest silenci i aquesta aroma de l'última fornada i del pa fermentant... són les dues de la matinada.
+                                                                El treball avança sense pressa, però sense pausa: comprovem els pans que ja estan esperant el seu torn per entrar al forn, formem les coques, encenem i controlem el foc, vigilem la rebosteria...
+                                                                A poc a poc acabem tasques, col·loquem pans en cistells i lleixes, però alhora comencem de nou la massa mare i les masses per al següent torn, l'obrador no para.</p>
+                                                               <p>Quan ens pregunten per què és diferent el nostre pa, sempre hi ha uns segons de silenci... Per on començo? El mateix em passa ara davant del paper... Fa dies em van demanar que expliqués 'el pa', el pa de la Fogaina, allò que té de diferent o d'important, del nostre treball diari ... No és que fem una cosa extraordinària, fora del que és normal, només fem pa, però potser si que cal deixar clar quin és el camí que hem decidit prendre, com treballem, perquè els que us acosteu a La Fogaina entengueu una mica millor què esteu comprant.</p>
+                                                               <p>De cada punt que tractaré d'explicar a continuació se'n podria escriure un llibre (o uns quants), però intentarem resumir cada un d'aquests 'pilars' sobre els quals se sosté la filosofia del treball a La Fogaina.</p>
+                                                               <p><a href='/'>Back to home</a></p>" } )
+
+panologia_body_part.translations.create!( { :locale => "es", 
+                                            :body => "<p>Entres a les fosques i encens..., només una mica de llum... És agradable començar la jornada amb aquest silenci i aquesta aroma de l'última fornada i del pa fermentant... són les dues de la matinada.
+                                                      El treball avança sense pressa, però sense pausa: comprovem els pans que ja estan esperant el seu torn per entrar al forn, formem les coques, encenem i controlem el foc, vigilem la rebosteria...
+                                                      A poc a poc acabem tasques, col·loquem pans en cistells i lleixes, però alhora comencem de nou la massa mare i les masses per al següent torn, l'obrador no para.</p>
+                                                     <p>Quan ens pregunten per què és diferent el nostre pa, sempre hi ha uns segons de silenci... Per on començo? El mateix em passa ara davant del paper... Fa dies em van demanar que expliqués 'el pa', el pa de la Fogaina, allò que té de diferent o d'important, del nostre treball diari ... No és que fem una cosa extraordinària, fora del que és normal, només fem pa, però potser si que cal deixar clar quin és el camí que hem decidit prendre, com treballem, perquè els que us acosteu a La Fogaina entengueu una mica millor què esteu comprant.</p>
+                                                     <p>De cada punt que tractaré d'explicar a continuació se'n podria escriure un llibre (o uns quants), però intentarem resumir cada un d'aquests 'pilars' sobre els quals se sosté la filosofia del treball a La Fogaina.</p>
+                                                     <p><a href='/'>Back to home</a></p>" } )
+panologia_body_part.translations.create!( { :locale => "ca", 
+                                            :body => "<p>Entres a les fosques i encens..., només una mica de llum... És agradable començar la jornada amb aquest silenci i aquesta aroma de l'última fornada i del pa fermentant... són les dues de la matinada.
+                                                      El treball avança sense pressa, però sense pausa: comprovem els pans que ja estan esperant el seu torn per entrar al forn, formem les coques, encenem i controlem el foc, vigilem la rebosteria...
+                                                      A poc a poc acabem tasques, col·loquem pans en cistells i lleixes, però alhora comencem de nou la massa mare i les masses per al següent torn, l'obrador no para.</p>
+                                                     <p>Quan ens pregunten per què és diferent el nostre pa, sempre hi ha uns segons de silenci... Per on començo? El mateix em passa ara davant del paper... Fa dies em van demanar que expliqués 'el pa', el pa de la Fogaina, allò que té de diferent o d'important, del nostre treball diari ... No és que fem una cosa extraordinària, fora del que és normal, només fem pa, però potser si que cal deixar clar quin és el camí que hem decidit prendre, com treballem, perquè els que us acosteu a La Fogaina entengueu una mica millor què esteu comprant.</p>
+                                                     <p>De cada punt que tractaré d'explicar a continuació se'n podria escriure un llibre (o uns quants), però intentarem resumir cada un d'aquests 'pilars' sobre els quals se sosté la filosofia del treball a La Fogaina.</p>
+                                                     <p><a href='/'>Back to home</a></p>" } )
 
 panes = [ 
           { 
