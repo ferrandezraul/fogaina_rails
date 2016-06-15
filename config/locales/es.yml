@@ -32,6 +32,7 @@ es:
   published: Publicado
   source: Publicado por
   manage_image_slides: Edita las fotos que quieres que salgan en la pagina de inicio
+  back_to_home: "Volver al inicio"
 
   refinery:
     news:

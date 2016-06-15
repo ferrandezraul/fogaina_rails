@@ -4,5 +4,11 @@
   </div>
 </div>
 
+<hr>
+
 <% @videos = videos_in_home_page %>
 <%= render "refinery/videos/videos_in_home" %>
+
+<hr>
+
+<p> <%= link_to t('back_to_home'), root_path %> </p>

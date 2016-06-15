@@ -32,6 +32,7 @@ ca:
   published: Publicat
   source: Publicat per
   manage_image_slides: Edita les fotos que vols que surtin a la pàgina d'inici
+  back_to_home: "Tornar a l'inici"
 
 # Those translations are missing from external extension refinery_image_slideshows
   refinery:

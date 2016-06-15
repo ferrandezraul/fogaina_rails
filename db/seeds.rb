@@ -217,21 +217,10 @@ pages_array = [ {
                               <p>Tanmateix i sobretot, el que més ens ha importat ha estat la qualitat del nostre producte. Sempre ens hem preocupat per aprendre i millorar, i per això hem visitat i conegut forners i fleques que ens han aportat tècniques, mètodes, il·lusió i passió per l'ofici. Com la petita fleca regentada per un sol forner, l'Stephane, un projecte preciós del sud de França del qual gairebé vam ser un mirall durant els dos primers anys: farines ecològiques, massa mare, forn de llenya i un procés molt manual. També, vam tenir la sort de visitar The loaf, un projecte de fleca efímera a Donosti, amb Dan Lepard al capdavant, un forner molt experimentat i millor persona. Ens van obrir les portes a poder treballar 3 dies braç a braç a l'obrador, va ser màgic i increïble, l'oportunitat de pastar, formar i enfornar desenes de pans, viure el ritme real d'un obrador, compartir xerrades amb autèntics cracs com el mateix Dan i els forners que treballaven allà: Iban Yarza, amb qui hem coincidit altres vegades; Pablo Conesa, de Sevilla, que estava de visita, molts panarres casolans..., un autèntic luxe.</p>
                               <p>A poc a poc, ha anat entrant gent nova al projecte, al principi per aprendre i ajudar a l'obrador, després per muntar la fleca-cafeteria al poble i de seguida, per afegir el punt dolç que ens faltava. És aquest un moment important en la nostra petita història, quan vam decidir, amb dues famílies més, convertir La Fogaina, en un projecte cooperatiu, on 5 socis decidim de manera assembleària el nostre futur, tot gestionant l'obrador i la fleca-cafeteria amb l'objectiu de mantenir i millorar la nostra qualitat i la nostra producció, i tenir una feina i sou dignes. Ens hi anem acostant. Quan decideixes convertir un projecte familiar en un projecte cooperatiu assumeixes que comences a treballar en equip, sumant i aportant idees i energia al projecte, i això dóna força i moral en els moments difícils.</p>
                               <p>Estem molt orgullosos del que hem aconseguit fins ara, treballem dur i tenim un producte honest i saludable. La Fogaina és una suma dels qui la formem, de manera que és més viva que mai. Sembla clar que, com fa cada dia la nostra massa mare, continuarem creixent, amb noves idees i encara més sorpreses.
-                              Esperem que gaudiu dels nostres productes, del nostre espai i del nostre tracte…</p>
-                              <p><a href='/'>Tornar a l'inici</a></p>",
+                              Esperem que gaudiu dels nostres productes, del nostre espai i del nostre tracte…</p>",
                     :side_body => "", 
                     :side_body_es => "",
-                    :side_body_ca => "", 
-                    :children =>  {
-                        :show_in_menu => true,
-                        :deletable => true,
-                        :title => "Courses",
-                        :title_es => "Cursos",
-                        :title_ca => "Cursos",
-                        :body => "<p>Coming soon ...</p><p><a href='/'>Back to home</a></p>",
-                        :body_es => "<p>Proximamente ...</p><p><a href='/'>Volver al inicio</a></p>",
-                        :body_ca => "<p>Proximament ...</p><p><a href='/'>Tornar a l'inici</a></p>"
-                    }
+                    :side_body_ca => ""
 
                 },
                 {

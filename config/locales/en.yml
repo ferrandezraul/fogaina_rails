@@ -32,6 +32,7 @@ en:
   published: Published
   source: Published by
   manage_image_slides: Manage image slides from home page
+  back_to_home: "Back to home"
 
   refinery:
     news:
