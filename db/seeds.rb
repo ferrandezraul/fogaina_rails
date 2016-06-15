@@ -368,10 +368,10 @@ pages_array.each { | page_attr |
 soca_path = "#{Rails.root.join('app/assets/images/pan/IMG_1523.jpg')}"
 pa_pages_path = "#{Rails.root.join('app/assets/images/pan/pa_de_pages.jpg')}"
 pa_rustic_path = "#{Rails.root.join('app/assets/images/pan/rustic.jpg')}"
-pa_croscat_espelta_path = "#{Rails.root.join('app/assets/images/pan/croscat_espelta.jpg')}"
+pa_espelta_path = "#{Rails.root.join('app/assets/images/pan/espelta3.jpg')}"
 coca_forner_path = "#{Rails.root.join('app/assets/images/pan/coca_forner.jpg')}"
 pa_de_coca_path = "#{Rails.root.join('app/assets/images/pan/pa_de_coca.jpg')}"
-pa_brot_negre_path = "#{Rails.root.join('app/assets/images/pan/brot_negre.jpg')}"
+pa_brot_negre_path = "#{Rails.root.join('app/assets/images/pan/brot3.jpg')}"
 pa_bembo_path = "#{Rails.root.join('app/assets/images/pan/bembo.jpg')}"
 pa_sense_gluten_path = "#{Rails.root.join('app/assets/images/pan/pa_sense_gluten.jpg')}"
 pa_segol_path = "#{Rails.root.join('app/assets/images/pan/segol.jpg')}"
@@ -382,7 +382,7 @@ pa_de_farro_path = "#{Rails.root.join('app/assets/images/pan/pa_de_farro.jpg')}"
 image_soca = Refinery::Image.create :image => File.new(soca_path)
 image_pa_de_pages = Refinery::Image.create :image => File.new(pa_pages_path)
 image_pa_rustic = Refinery::Image.create :image => File.new(pa_rustic_path)
-image_pa_croscat_espelta = Refinery::Image.create :image => File.new(pa_croscat_espelta_path)
+image_pa_espelta = Refinery::Image.create :image => File.new(pa_espelta_path)
 image_coca_forner = Refinery::Image.create :image => File.new(coca_forner_path)
 image_pa_de_coca = Refinery::Image.create :image => File.new(pa_de_coca_path)
 image_brot_negre = Refinery::Image.create :image => File.new(pa_brot_negre_path)
@@ -476,15 +476,15 @@ panes = [
             :price => 4,
             :photo => nil 
           },
-          { :name_ca => "Croscat Espelta", 
-            :name_es => "Croscat Espelta",
-            :name_en => "Croscat Espelta",  
+          { :name_ca => "Espelta", 
+            :name_es => "Espelta",
+            :name_en => "Espelta",  
             :description_ca => "<p>Panet rodó d'espelta amb semilles de girasol i sèsam. Només farina integral i semiintegral d'espelta molta amb molí de pedra. Massa mare d'espelta.</p>",
             :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
             :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 4.30,
-            :photo => image_pa_croscat_espelta 
+            :photo => image_pa_espelta 
           },
           { :name_ca => "Coca de forner", 
             :name_es => "Coca de forner",
