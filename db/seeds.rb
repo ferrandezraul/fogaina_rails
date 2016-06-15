@@ -188,6 +188,7 @@ pages_array = [ {
                     :title => "Who are we?",
                     :title_es => "Quienes somos?",
                     :title_ca => "Qui som",
+                    :view_template => "qui_som", # custom view template (see /app/views/refinery/pages/qui_som.html.erb)
                     :body => "<p>Avui, La Fogaina som un col·lectiu de 5 socis que treballem de forma cooperativa i assembleària. Va nèixer en un primer moment d'una necessitat econòmica familiar, la necessitat de sortir de la precarietat laboral i aconseguir una estabilitat que feia temps que no teníem. Acabàvem d'aterrar a la Garrotxa, era el 2011 i just llavors vaig descobrir una passió que no sabia que tenia, fer pa.</p>
                               <p>Recordo amb un somriure els primers dies que vaig començar a indagar en aquest món panarra, sobretot via internet, visitant fòrums, webs i vídeos; al·lucinava amb la quantitat de tècniques i mètodes que existien, que no podia evitar provar, i convertia la cuina de casa a qualsevol hora del dia o de la nit en el laboratori d'un alquimista boig. Va ser quan vaig fer la nostra primera massa mare natural, que encara avui ens acompanya cada dia a la feina.
                               No negaré que el salt de forner casolà a professional va ser una bogeria, un gran pas on hi ha massa aspectes que no controles i no els veus venir fins que te'ls trobes de cop. No vinc d'una família de forners, ni he estudiat a l'escola de flequers Allò que realment necessitava, com poder formar-me a l'estranger on sí que considerava que hi havia bon pa i bones escoles, ja se'm feia molt difícil: arrossegar a tota la família a França, o Alemanya, sense idioma, sense diners, a estudiar en escoles normalment bastant cares ...
@@ -358,10 +359,12 @@ pages_array.each { | page_attr |
                                 :deletable => page_attr[:deletable],
                                 :link_url => page_attr[:link_url],
                                 :menu_match => page_attr[:menu_match],
+                                :view_template => page_attr[:view_template],
                                 :title => page_attr[:title] } ) :
       # For the rest of pages
       Refinery::Page.create!( { :show_in_menu => page_attr[:show_in_menu],
                                 :deletable => page_attr[:deletable],
+                                :view_template => page_attr[:view_template],
                                 :title => page_attr[:title] } )
 
   finnish_page( page, page_attr )
