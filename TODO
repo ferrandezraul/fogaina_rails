@@ -1,5 +1,5 @@
 1. Adaptar las imagenes con imagemagik/gimp/preview al tamanyo necesitado
-   Nunca mas de 2MB (teoricamente 5MB)
+   Nunca mas de 3MB
 
 2. Anyadir nav menu en el footer?
    Add sticky to the div containing the nav top bar
@@ -13,16 +13,12 @@ Add attribute :weight to breads
 
 Las imagenes de cafeteria categories y de panes deberian ser CUADRADAS!!
 para una correcta visualizacion width and height deberian ser iguales.
-Ideal seria limitar size en config a 4MB y desarrollar codigo para chequear que width and height son iguales. Usar paperclip o rmagick
+Ideal seria limitar size en config a 3MB y desarrollar codigo para chequear que width and height son iguales. Usar paperclip o rmagick
 
 ///////////////
 
-Improve menu if no extra locales available.
-
-Crear gallery tab. Usar fotos buenas y borrar las viejas.
-
-///////////////
-
-Improve home view with videos ....
-Deploy and test
+Cervesses text missing
+Fotos de panes missing
+Fotos de panes y logo negro al mismo tamanyo para mejorar cuadricula
+Contacte page with 'On mes trobarnos?'
   

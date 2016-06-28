@@ -561,7 +561,7 @@ panes = [
             :description_ca => "<p>Si tenim un pa que desvetlla passions confrontades aquest és el Brot. Un panot 100% de sègol integral que no deixa indiferent. La cultura del sègol a la Mediterrània és escassa, per això li donem aquesta oportunitat, a més de tastar una cosa ben diferent i aromàtica, menjareu pura salut i tindreu a les vostres mans un pa que dura molts dies. Acompanyeu-lo de formatges forts, anxoves, patés, mantega o melmelada amarga ...</p>",
             :description_es => "<p>Si tenemos un pan que despierte pasiones encontradas este es el Brot. Un panazo 100% de centeno integral que no deja indiferente. Es cierto que la poca cultura de centeno que tenemos en el mediterráneo hace de este pan para algunos un incomprendido, pero si le das una oportunidad, además de degustar algo diferente i aromático estarás comiendo pura salud y tendrás en tus manos un pan que dura muchos días. Acompáñalo de quesos fuertes, anchoas, patés, mantequilla y mermelada amarga ...</p>",
             :description_en => "<p>Si tenemos un pan que despierte pasiones encontradas este es el Brot. Un panazo 100% de centeno integral que no deja indiferente. Es cierto que la poca cultura de centeno que tenemos en el mediterráneo hace de este pan para algunos un incomprendido, pero si le das una oportunidad, además de degustar algo diferente i aromático estarás comiendo pura salud y tendrás en tus manos un pan que dura muchos días. Acompáñalo de quesos fuertes, anchoas, patés, mantequilla y mermelada amarga ...</p>",
-            :available_days => :no_mostrar,
+            :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
             :price => 4,
             :photo => image_brot_negre 
           },
@@ -821,18 +821,81 @@ categories_cafeteria = [
     title_ca: "Cafes", 
     title_en: "Coffee",
     title_es: "Cafes",  
-    description_ca: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam esse quisquam est debitis inventore, distinctio, sunt molestiae, numquam assumenda ut libero quam nisi saepe, laborum vel perspiciatis repellat aspernatur. Nihil.</p><p>Enim iste facere quo pariatur, temporibus debitis maxime id illo repellat cumque velit ea modi, sit impedit, aperiam accusantium libero quisquam explicabo, earum voluptates dolore autem. Tempora aut officiis ex?</p>", 
-    description_en: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aliquid sed cupiditate perferendis eum ab optio expedita fugit error omnis suscipit laborum, aperiam, nemo nisi excepturi tempore. Repellendus provident, optio.</p>",
-    description_es: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque illo nesciunt vel voluptatibus explicabo magni sit tempore eos dolore ut doloremque, repellendus. Perspiciatis a beatae voluptatum hic, eos quia.</p>",
+    description_ca: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.
+                      <ul>
+                        <li>Espresso</li>
+                        <li>Cafè amb gel</li>
+                        <li>Tallat</li>
+                        <li>Cafè amb llet</li>
+                        <li>Cafè amb llet XL</li>
+                        <li>Cigaló</li>
+                        <li>Succedani de cafè eco amb llet</li>
+                        <li>Got de llet petit</li>
+                        <li>Got de llet gran</li>
+                        <li>Xocolata desfeta (Pastisseria Cacau)</li>
+                        <li>Suís</li>
+                        <li>Colacao (Amb llet vegetal d'arròs o civada)</li>
+                        <li>Cacaolat</li>
+                      </ul>
+                      </p>", 
+    description_en: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.
+                      <ul>
+                        <li>Espresso</li>
+                        <li>Cafè amb gel</li>
+                        <li>Tallat</li>
+                        <li>Cafè amb llet</li>
+                        <li>Cafè amb llet XL</li>
+                        <li>Cigaló</li>
+                        <li>Succedani de cafè eco amb llet</li>
+                        <li>Got de llet petit</li>
+                        <li>Got de llet gran</li>
+                        <li>Xocolata desfeta (Pastisseria Cacau)</li>
+                        <li>Suís</li>
+                        <li>Colacao (Amb llet vegetal d'arròs o civada)</li>
+                        <li>Cacaolat</li>
+                      </ul>
+                      </p>",
+    description_es: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.
+                      <ul>
+                        <li>Espresso</li>
+                        <li>Cafè amb gel</li>
+                        <li>Tallat</li>
+                        <li>Cafè amb llet</li>
+                        <li>Cafè amb llet XL</li>
+                        <li>Cigaló</li>
+                        <li>Succedani de cafè eco amb llet</li>
+                        <li>Got de llet petit</li>
+                        <li>Got de llet gran</li>
+                        <li>Xocolata desfeta (Pastisseria Cacau)</li>
+                        <li>Suís</li>
+                        <li>Colacao (Amb llet vegetal d'arròs o civada)</li>
+                        <li>Cacaolat</li>
+                      </ul>
+                      </p>",
     image: image_cafe  
   },
   {
     title_ca: "Te", 
     title_en: "Tee",
     title_es: "Té",  
-    description_ca: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam esse quisquam est debitis inventore, distinctio, sunt molestiae, numquam assumenda ut libero quam nisi saepe, laborum vel perspiciatis repellat aspernatur. Nihil.</p><p>Enim iste facere quo pariatur, temporibus debitis maxime id illo repellat cumque velit ea modi, sit impedit, aperiam accusantium libero quisquam explicabo, earum voluptates dolore autem. Tempora aut officiis ex?</p>", 
-    description_en: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aliquid sed cupiditate perferendis eum ab optio expedita fugit error omnis suscipit laborum, aperiam, nemo nisi excepturi tempore. Repellendus provident, optio.</p>",
-    description_es: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque illo nesciunt vel voluptatibus explicabo magni sit tempore eos dolore ut doloremque, repellendus. Perspiciatis a beatae voluptatum hic, eos quia.</p>",
+    description_ca: "<p>Els tes s'elaboren al laboratori d'Artesano Natural de Ripoll, que aposten per l'excel·lència de les matèries primeres i amb la seva imaginació i coneixements ens ofereixen propostes genuïnes i exclusives. Més que un laboratori es podria parlar d'un obrador on els gustos, les aromes i els colors són els protagonistes. Pots mirar la carta de tes.
+                      <ul>
+                        <li>Infusions</li>
+                        <li>Tes</li>
+                      </ul>
+                      </p>", 
+    description_en: "<p>Els tes s'elaboren al laboratori d'Artesano Natural de Ripoll, que aposten per l'excel·lència de les matèries primeres i amb la seva imaginació i coneixements ens ofereixen propostes genuïnes i exclusives. Més que un laboratori es podria parlar d'un obrador on els gustos, les aromes i els colors són els protagonistes. Pots mirar la carta de tes.
+                      <ul>
+                        <li>Infusions</li>
+                        <li>Tes</li>
+                      </ul>
+                      </p>", 
+    description_es: "<p>Els tes s'elaboren al laboratori d'Artesano Natural de Ripoll, que aposten per l'excel·lència de les matèries primeres i amb la seva imaginació i coneixements ens ofereixen propostes genuïnes i exclusives. Més que un laboratori es podria parlar d'un obrador on els gustos, les aromes i els colors són els protagonistes. Pots mirar la carta de tes.
+                      <ul>
+                        <li>Infusions</li>
+                        <li>Tes</li>
+                      </ul>
+                      </p>", 
     image: image_sucs_i_tees  
   },
   {
@@ -857,9 +920,48 @@ categories_cafeteria = [
     title_ca: "Entrepans", 
     title_en: "Sandwitches",
     title_es: "Bocadillos",  
-    description_ca: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam esse quisquam est debitis inventore, distinctio, sunt molestiae, numquam assumenda ut libero quam nisi saepe, laborum vel perspiciatis repellat aspernatur. Nihil.</p><p>Enim iste facere quo pariatur, temporibus debitis maxime id illo repellat cumque velit ea modi, sit impedit, aperiam accusantium libero quisquam explicabo, earum voluptates dolore autem. Tempora aut officiis ex?</p>", 
-    description_en: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aliquid sed cupiditate perferendis eum ab optio expedita fugit error omnis suscipit laborum, aperiam, nemo nisi excepturi tempore. Repellendus provident, optio.</p>",
-    description_es: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque illo nesciunt vel voluptatibus explicabo magni sit tempore eos dolore ut doloremque, repellendus. Perspiciatis a beatae voluptatum hic, eos quia.</p>",
+    description_ca: "<p>
+                      Pots triar quin és el teu entrepà, et donem diferents alternatives amb tots els nostres pans, mides i ingredients. El protagonista és el pa de coca, fred o calentó, en mida puça, mini o entrepà. Una opció molt garrotxina és la coca dolça de forner farcida de pernil, llonganissa, etc. Si t'estimes més menjar altres tipus de farines, pots provar el pa d'espelta, l'integral amb cereals o el pa de fajol. Però si el que et ve realment de gust és un biquini, no ho dubtis, el fem amb el nostre bembó, un pa de motllo blanc i molt tendre que no et deixarà indiferent. L'embotit és artesà, de Can Bailèn, del proper veïnat de Pocafarina a Sant Privat d'en Bas.
+                      Farcit: pernil salat, pernil dolç, formatge d'ovella curat, llonganissa, xoriç vermell, bull blanc, bull negre, tonyina, mantega i melmelada, vegetals i de temporada.
+                      <ul>
+                        <li>Puça</li>
+                        <li>Mini</li>
+                        <li>Entrepà</li>
+                        <li>Llesca de pa de pagès</li>
+                        <li>2 llesques de pa de pagès</li>
+                        <li>Torrada de pa especial (fajol, espelta, soca)</li>
+                        <li>2 torrades de pa especial (fajol, espelta, soca)</li>
+                        <li>Biquini</li>
+                      </ul>
+                      </p>", 
+    description_en: "<p>
+                      Pots triar quin és el teu entrepà, et donem diferents alternatives amb tots els nostres pans, mides i ingredients. El protagonista és el pa de coca, fred o calentó, en mida puça, mini o entrepà. Una opció molt garrotxina és la coca dolça de forner farcida de pernil, llonganissa, etc. Si t'estimes més menjar altres tipus de farines, pots provar el pa d'espelta, l'integral amb cereals o el pa de fajol. Però si el que et ve realment de gust és un biquini, no ho dubtis, el fem amb el nostre bembó, un pa de motllo blanc i molt tendre que no et deixarà indiferent. L'embotit és artesà, de Can Bailèn, del proper veïnat de Pocafarina a Sant Privat d'en Bas.
+                      Farcit: pernil salat, pernil dolç, formatge d'ovella curat, llonganissa, xoriç vermell, bull blanc, bull negre, tonyina, mantega i melmelada, vegetals i de temporada.
+                      <ul>
+                        <li>Puça</li>
+                        <li>Mini</li>
+                        <li>Entrepà</li>
+                        <li>Llesca de pa de pagès</li>
+                        <li>2 llesques de pa de pagès</li>
+                        <li>Torrada de pa especial (fajol, espelta, soca)</li>
+                        <li>2 torrades de pa especial (fajol, espelta, soca)</li>
+                        <li>Biquini</li>
+                      </ul>
+                      </p>", 
+    description_es: "<p>
+                      Pots triar quin és el teu entrepà, et donem diferents alternatives amb tots els nostres pans, mides i ingredients. El protagonista és el pa de coca, fred o calentó, en mida puça, mini o entrepà. Una opció molt garrotxina és la coca dolça de forner farcida de pernil, llonganissa, etc. Si t'estimes més menjar altres tipus de farines, pots provar el pa d'espelta, l'integral amb cereals o el pa de fajol. Però si el que et ve realment de gust és un biquini, no ho dubtis, el fem amb el nostre bembó, un pa de motllo blanc i molt tendre que no et deixarà indiferent. L'embotit és artesà, de Can Bailèn, del proper veïnat de Pocafarina a Sant Privat d'en Bas.
+                      Farcit: pernil salat, pernil dolç, formatge d'ovella curat, llonganissa, xoriç vermell, bull blanc, bull negre, tonyina, mantega i melmelada, vegetals i de temporada.
+                      <ul>
+                        <li>Puça</li>
+                        <li>Mini</li>
+                        <li>Entrepà</li>
+                        <li>Llesca de pa de pagès</li>
+                        <li>2 llesques de pa de pagès</li>
+                        <li>Torrada de pa especial (fajol, espelta, soca)</li>
+                        <li>2 torrades de pa especial (fajol, espelta, soca)</li>
+                        <li>Biquini</li>
+                      </ul>
+                      </p>", 
     image: image_entrepans  
   },
   {
