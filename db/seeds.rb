@@ -839,9 +839,18 @@ categories_cafeteria = [
     title_ca: "Suc Verd", 
     title_en: "Green juice",
     title_es: "Zumo verde",  
-    description_ca: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam esse quisquam est debitis inventore, distinctio, sunt molestiae, numquam assumenda ut libero quam nisi saepe, laborum vel perspiciatis repellat aspernatur. Nihil.</p><p>Enim iste facere quo pariatur, temporibus debitis maxime id illo repellat cumque velit ea modi, sit impedit, aperiam accusantium libero quisquam explicabo, earum voluptates dolore autem. Tempora aut officiis ex?</p>", 
-    description_en: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aliquid sed cupiditate perferendis eum ab optio expedita fugit error omnis suscipit laborum, aperiam, nemo nisi excepturi tempore. Repellendus provident, optio.</p>",
-    description_es: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque illo nesciunt vel voluptatibus explicabo magni sit tempore eos dolore ut doloremque, repellendus. Perspiciatis a beatae voluptatum hic, eos quia.</p>",
+    description_ca: "<p>Amb l'extractor de sucs en fred o cold pressed que treballa a 43 revolucions per minut (RPM) s'aconsegueix extreure el millor suc, sense escalfar, oxidar, ni perdre vitamines. No és tendència, és la salut com a prioritat.
+                      Us agradaria tenir a casa vostra l'extractor Juissen 2? Parleu amb nosaltres!
+                      Suc verd de: poma verda, espinacs, llimona, gingebre, api-rave, bròquil.
+                      Suc vermell de: remolatxa, pastanaga, poma, llimona.</p>", 
+    description_en: "<p>Amb l'extractor de sucs en fred o cold pressed que treballa a 43 revolucions per minut (RPM) s'aconsegueix extreure el millor suc, sense escalfar, oxidar, ni perdre vitamines. No és tendència, és la salut com a prioritat.
+                      Us agradaria tenir a casa vostra l'extractor Juissen 2? Parleu amb nosaltres!
+                      Suc verd de: poma verda, espinacs, llimona, gingebre, api-rave, bròquil.
+                      Suc vermell de: remolatxa, pastanaga, poma, llimona.</p>",
+    description_es: "<p>Amb l'extractor de sucs en fred o cold pressed que treballa a 43 revolucions per minut (RPM) s'aconsegueix extreure el millor suc, sense escalfar, oxidar, ni perdre vitamines. No és tendència, és la salut com a prioritat.
+                      Us agradaria tenir a casa vostra l'extractor Juissen 2? Parleu amb nosaltres!
+                      Suc verd de: poma verda, espinacs, llimona, gingebre, api-rave, bròquil.
+                      Suc vermell de: remolatxa, pastanaga, poma, llimona.</p>",
     image: image_suc_verd
   },
   {
@@ -866,9 +875,75 @@ categories_cafeteria = [
     title_ca: "Dolços", 
     title_en: "Sweets",
     title_es: "Dulces",  
-    description_ca: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam esse quisquam est debitis inventore, distinctio, sunt molestiae, numquam assumenda ut libero quam nisi saepe, laborum vel perspiciatis repellat aspernatur. Nihil.</p><p>Enim iste facere quo pariatur, temporibus debitis maxime id illo repellat cumque velit ea modi, sit impedit, aperiam accusantium libero quisquam explicabo, earum voluptates dolore autem. Tempora aut officiis ex?</p>", 
-    description_en: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aliquid sed cupiditate perferendis eum ab optio expedita fugit error omnis suscipit laborum, aperiam, nemo nisi excepturi tempore. Repellendus provident, optio.</p>",
-    description_es: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque illo nesciunt vel voluptatibus explicabo magni sit tempore eos dolore ut doloremque, repellendus. Perspiciatis a beatae voluptatum hic, eos quia.</p>",
+    description_ca: "<p>
+                      L'opció que triem quan elaborem els dolços és qualitat. No dubtem quan escollim els millors ingredients. Les pastes fullades i els croissants separen les seves fulles en el marc d'una bona mantega. El  (pastís de pastanaga) és un viatge de dolços i d'aromes que ens porta als límits entre Orient i Occident. Això sí, som artesans!
+                      <ul>
+                        <li>Coca de sucre</li>
+                        <li>Croissant mantega</li>
+                        <li>Napolitana xocolata (pain au chocolat)</li>
+                        <li>Croissant pernil i formatge</li>
+                        <li>Espiral (sneken)</li>
+                        <li>Ulleres</li>
+                        <li>Pasta fullada de poma</li>
+                        <li>Magdalena d'espelta</li>
+                        <ul>
+                          <li>Amb panses i anous o amb xocolata</li>
+                          <li>Sense gluten (pot contenir traces)</li>
+                        </ul>
+                        <li>Carrot cake (pastís de pastanaga)</li>
+                        <li>Coca de llardons</li>
+                        <li>Pasta fullada farcida de xocolata</li>
+                        <li>Pasta fullada farcida de cabell d'angel</li>
+                        <li>Rajola de xocolata del Cacau</li>
+                        <li>Xocolatina</li>
+                       </ul>
+                      </p>", 
+    description_en: "<p>
+                      L'opció que triem quan elaborem els dolços és qualitat. No dubtem quan escollim els millors ingredients. Les pastes fullades i els croissants separen les seves fulles en el marc d'una bona mantega. El  (pastís de pastanaga) és un viatge de dolços i d'aromes que ens porta als límits entre Orient i Occident. Això sí, som artesans!
+                      <ul>
+                        <li>Coca de sucre</li>
+                        <li>Croissant mantega</li>
+                        <li>Napolitana xocolata (pain au chocolat)</li>
+                        <li>Croissant pernil i formatge</li>
+                        <li>Espiral (sneken)</li>
+                        <li>Ulleres</li>
+                        <li>Pasta fullada de poma</li>
+                        <li>Magdalena d'espelta</li>
+                        <ul>
+                          <li>Amb panses i anous o amb xocolata</li>
+                          <li>Sense gluten (pot contenir traces)</li>
+                        </ul>
+                        <li>Carrot cake (pastís de pastanaga)</li>
+                        <li>Coca de llardons</li>
+                        <li>Pasta fullada farcida de xocolata</li>
+                        <li>Pasta fullada farcida de cabell d'angel</li>
+                        <li>Rajola de xocolata del Cacau</li>
+                        <li>Xocolatina</li>
+                       </ul>
+                      </p>", 
+    description_es: "<p>
+                      L'opció que triem quan elaborem els dolços és qualitat. No dubtem quan escollim els millors ingredients. Les pastes fullades i els croissants separen les seves fulles en el marc d'una bona mantega. El  (pastís de pastanaga) és un viatge de dolços i d'aromes que ens porta als límits entre Orient i Occident. Això sí, som artesans!
+                      <ul>
+                        <li>Coca de sucre</li>
+                        <li>Croissant mantega</li>
+                        <li>Napolitana xocolata (pain au chocolat)</li>
+                        <li>Croissant pernil i formatge</li>
+                        <li>Espiral (sneken)</li>
+                        <li>Ulleres</li>
+                        <li>Pasta fullada de poma</li>
+                        <li>Magdalena d'espelta</li>
+                        <ul>
+                          <li>Amb panses i anous o amb xocolata</li>
+                          <li>Sense gluten (pot contenir traces)</li>
+                        </ul>
+                        <li>Carrot cake (pastís de pastanaga)</li>
+                        <li>Coca de llardons</li>
+                        <li>Pasta fullada farcida de xocolata</li>
+                        <li>Pasta fullada farcida de cabell d'angel</li>
+                        <li>Rajola de xocolata del Cacau</li>
+                        <li>Xocolatina</li>
+                       </ul>
+                      </p>", 
     image: image_reposteria  
   }
 ]
