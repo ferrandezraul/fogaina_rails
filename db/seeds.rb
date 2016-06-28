@@ -32,7 +32,7 @@ Refinery::Setting.find_or_set( :spanish_web, true )
 setting_es = Refinery::Setting.find_by!( name: :spanish_web )
 setting_es.update!( title: "Habilitar la web en castellà")
 
-Refinery::Setting.find_or_set( :english_web, true )
+Refinery::Setting.find_or_set( :english_web, false )
 setting_en = Refinery::Setting.find_by!( name: :english_web )
 setting_en.update!( title: "Habilitar la web en anglès")
 
@@ -420,6 +420,18 @@ panologia_body_part = panologia_page.parts.create!( { :title => "Body",
                                                                 A poc a poc acabem tasques, col·loquem pans en cistells i lleixes, però alhora comencem de nou la massa mare i les masses per al següent torn, l'obrador no para.</p>
                                                                <p>Quan ens pregunten per què és diferent el nostre pa, sempre hi ha uns segons de silenci... Per on començo? El mateix em passa ara davant del paper... Fa dies em van demanar que expliqués 'el pa', el pa de la Fogaina, allò que té de diferent o d'important, del nostre treball diari ... No és que fem una cosa extraordinària, fora del que és normal, només fem pa, però potser si que cal deixar clar quin és el camí que hem decidit prendre, com treballem, perquè els que us acosteu a La Fogaina entengueu una mica millor què esteu comprant.</p>
                                                                <p>De cada punt que tractaré d'explicar a continuació se'n podria escriure un llibre (o uns quants), però intentarem resumir cada un d'aquests 'pilars' sobre els quals se sosté la filosofia del treball a La Fogaina.</p>
+                                                               <h3>Farines i mòltes</h3>
+                                                               <p>El gra del cereal es compon de tres parts: segó, midó i germen. En el midó hi ha les proteïnes: el gluten, és la part blanca. El segó és la part exterior, la fibra, i el germen és la part interior, plena de vida, on trobem vitamines i minerals. Consumit en la seva totalitat és un aliment bàsic en la nostra dieta que ens aporta importants propietats.
+                                                                La humanitat fa milers d'anys que consumim les tres parts del gra, però des de fa poc més de 50 anys el consum de farina blanca -industrial, refinada- s'ha convertit en un dels ingredients més consumits en el dia a dia de la majoria de famílies. Aquestes farines industrials blanquíssimes, que es produeixen amb els moderns molins de cilindres, no contenen ni segó ni germen. Certament, sembla que la malaltia celíaca i les intoleràncies, en són el resultat. En canvi, els molins de pedra, per la seva forma de moldre el gra, produeixen una farina amb un alt percentatge de nutrients, i per bé que, després, aquesta farina la passin per uns sedassos per aconseguir una farina menys integral, sempre contindrà part del segó i del germen. És per això que els nostres pans 'blancs' són d'un color cremós.
+                                                                Després també hi ha les diferents varietats de blats, algunes d'antigues, que s'han aconseguit conservar fins a l'actualitat, varietats com la famosa espelta, el kamut o blat del cor, o algunes més locals com la xeixa.
+                                                                Quan consumim aquestes varietats, ecològiques, i de molins de pedra, no només ens aporten salut, sinó que a més a més contribuïm a la protecció del medi ambient, a la conservació de llavors i a la riquesa de la biodiversitat i a la sobirania alimentària.</p>
+                                                               <h3>Massa mare</h3>
+                                                               <p>La massa mare natural és un cultiu salvatge i espontani de llevats i de bacteris en base a farina i aigua. És la manera ancestral de llevar les masses, amb l'afegit del valor cultural que té crear la teva pròpia massa mare i guardar-la fins i tot per a tota la teva vida (i potser deixar-la en herència als teus néts!). És l'ànima d'una fleca, una més a l'obrador, la qual cal entendre-la, cuidar-la, alimentar-la, conservar-la, gairebé podríem dir que és una especialitat dins del món del forn de pa. La massa mare ens aportarà al pa conservació, sabor, aroma, una millor digestió... i aquest punt d'acidesa tan particular. És important que no confonguem la massa mare natural amb l'anomendada massa vella, una part de la massa de pa que es conserva del dia anterior.</p> 
+                                                               <h3>Fermentació</h3>
+                                                               <p>Es tracta de treure el màxim sabor del cereal. Crec que aquesta frase la vaig escoltar per primera vegada de la boca de Dan Lepard, mestre forner, i la veritat és que em va fer pensar. Està bé afegir a un pa llavors, fruits secs i el que ens passi pel cap, per fer d'un producte quotidià un producte més especial a la taula. Però, com a gran panarra, amb el que més gaudeixo és amb el pa, pa pa com diu un molt bon amic, ja sigui de blat o de sègol. M'agrada doncs, que la massa per si sola doni com a resultat un pa amb gust a cereal i a fermentació. Per aconseguir això és fonamental no escurçar els temps de fermentació i si pot ser allargar-los el màxim possible. D'aquesta manera, a més d'extreure tot el sabor a cereal, també n'augmentem la conservació i, molt important, la bona digestió del pa.</p>
+                                                               <h3>Forn</h3>
+                                                               <p>El nostre forn és un forn de llenya de foc directe, i això vol dir que quan els troncs cremen, la llengua de foc recorre tot l'interior del forn, on després es couran: primer les coques, després el pa i, finalment, la rebosteria. Antigament (i actualment en altres països com el Marroc) el de flequer i el de forner eren oficis diferents. Encara que podria ser que una persona dominés ambdues tècniques, en principi eren treballs diferents. De fet, abans, només existien forns de llenya, i això suposava un treball afegit, basat en l'atenció i un sisè sentit: la dificultat diària de fer coincidir el moment òptim de temperatura del forn amb el del punt idoni de fermentació de les masses. En aquest sentit, el nostre forn de llenya dóna al pa un toc especial gràcies a la seva solera de peces de fang que transmet la calor de forma gradual, amb el valor afegit que utilitzem una energia més adient al lloc on vivim.</p>
+                                                               <p>Aquests quatre punts són els pilars sobre els quals es basa el treball, el mètode i la filosofia del pa de La Fogaina, els quals ens exigeixen donar el màxim cada dia per aconseguir una regularitat que acceptem com un repte diari, un procés d'aprenentatge continu. És un camí dret, sense dreceres que posin en dubte la qualitat del nostre producte. Sabem amb quina matèria primera treballem, i amb quin mètode creiem, perquè respectem el nostre ofici.</p>
                                                                <p><a href='/'>Back to home</a></p>" } )
 
 panologia_body_part.translations.create!( { :locale => "es", 
@@ -428,14 +440,38 @@ panologia_body_part.translations.create!( { :locale => "es",
                                                       A poc a poc acabem tasques, col·loquem pans en cistells i lleixes, però alhora comencem de nou la massa mare i les masses per al següent torn, l'obrador no para.</p>
                                                      <p>Quan ens pregunten per què és diferent el nostre pa, sempre hi ha uns segons de silenci... Per on començo? El mateix em passa ara davant del paper... Fa dies em van demanar que expliqués 'el pa', el pa de la Fogaina, allò que té de diferent o d'important, del nostre treball diari ... No és que fem una cosa extraordinària, fora del que és normal, només fem pa, però potser si que cal deixar clar quin és el camí que hem decidit prendre, com treballem, perquè els que us acosteu a La Fogaina entengueu una mica millor què esteu comprant.</p>
                                                      <p>De cada punt que tractaré d'explicar a continuació se'n podria escriure un llibre (o uns quants), però intentarem resumir cada un d'aquests 'pilars' sobre els quals se sosté la filosofia del treball a La Fogaina.</p>
-                                                     <p><a href='/'>Volver al inicio</a></p>" } )
+                                                     <h3>Farines i mòltes</h3>
+                                                     <p>El gra del cereal es compon de tres parts: segó, midó i germen. En el midó hi ha les proteïnes: el gluten, és la part blanca. El segó és la part exterior, la fibra, i el germen és la part interior, plena de vida, on trobem vitamines i minerals. Consumit en la seva totalitat és un aliment bàsic en la nostra dieta que ens aporta importants propietats.
+                                                      La humanitat fa milers d'anys que consumim les tres parts del gra, però des de fa poc més de 50 anys el consum de farina blanca -industrial, refinada- s'ha convertit en un dels ingredients més consumits en el dia a dia de la majoria de famílies. Aquestes farines industrials blanquíssimes, que es produeixen amb els moderns molins de cilindres, no contenen ni segó ni germen. Certament, sembla que la malaltia celíaca i les intoleràncies, en són el resultat. En canvi, els molins de pedra, per la seva forma de moldre el gra, produeixen una farina amb un alt percentatge de nutrients, i per bé que, després, aquesta farina la passin per uns sedassos per aconseguir una farina menys integral, sempre contindrà part del segó i del germen. És per això que els nostres pans 'blancs' són d'un color cremós.
+                                                      Després també hi ha les diferents varietats de blats, algunes d'antigues, que s'han aconseguit conservar fins a l'actualitat, varietats com la famosa espelta, el kamut o blat del cor, o algunes més locals com la xeixa.
+                                                      Quan consumim aquestes varietats, ecològiques, i de molins de pedra, no només ens aporten salut, sinó que a més a més contribuïm a la protecció del medi ambient, a la conservació de llavors i a la riquesa de la biodiversitat i a la sobirania alimentària.</p>
+                                                     <h3>Massa mare</h3>
+                                                     <p>La massa mare natural és un cultiu salvatge i espontani de llevats i de bacteris en base a farina i aigua. És la manera ancestral de llevar les masses, amb l'afegit del valor cultural que té crear la teva pròpia massa mare i guardar-la fins i tot per a tota la teva vida (i potser deixar-la en herència als teus néts!). És l'ànima d'una fleca, una més a l'obrador, la qual cal entendre-la, cuidar-la, alimentar-la, conservar-la, gairebé podríem dir que és una especialitat dins del món del forn de pa. La massa mare ens aportarà al pa conservació, sabor, aroma, una millor digestió... i aquest punt d'acidesa tan particular. És important que no confonguem la massa mare natural amb l'anomendada massa vella, una part de la massa de pa que es conserva del dia anterior.</p> 
+                                                     <h3>Fermentació</h3>
+                                                     <p>Es tracta de treure el màxim sabor del cereal. Crec que aquesta frase la vaig escoltar per primera vegada de la boca de Dan Lepard, mestre forner, i la veritat és que em va fer pensar. Està bé afegir a un pa llavors, fruits secs i el que ens passi pel cap, per fer d'un producte quotidià un producte més especial a la taula. Però, com a gran panarra, amb el que més gaudeixo és amb el pa, pa pa com diu un molt bon amic, ja sigui de blat o de sègol. M'agrada doncs, que la massa per si sola doni com a resultat un pa amb gust a cereal i a fermentació. Per aconseguir això és fonamental no escurçar els temps de fermentació i si pot ser allargar-los el màxim possible. D'aquesta manera, a més d'extreure tot el sabor a cereal, també n'augmentem la conservació i, molt important, la bona digestió del pa.</p>
+                                                     <h3>Forn</h3>
+                                                     <p>El nostre forn és un forn de llenya de foc directe, i això vol dir que quan els troncs cremen, la llengua de foc recorre tot l'interior del forn, on després es couran: primer les coques, després el pa i, finalment, la rebosteria. Antigament (i actualment en altres països com el Marroc) el de flequer i el de forner eren oficis diferents. Encara que podria ser que una persona dominés ambdues tècniques, en principi eren treballs diferents. De fet, abans, només existien forns de llenya, i això suposava un treball afegit, basat en l'atenció i un sisè sentit: la dificultat diària de fer coincidir el moment òptim de temperatura del forn amb el del punt idoni de fermentació de les masses. En aquest sentit, el nostre forn de llenya dóna al pa un toc especial gràcies a la seva solera de peces de fang que transmet la calor de forma gradual, amb el valor afegit que utilitzem una energia més adient al lloc on vivim.</p>
+                                                     <p>Aquests quatre punts són els pilars sobre els quals es basa el treball, el mètode i la filosofia del pa de La Fogaina, els quals ens exigeixen donar el màxim cada dia per aconseguir una regularitat que acceptem com un repte diari, un procés d'aprenentatge continu. És un camí dret, sense dreceres que posin en dubte la qualitat del nostre producte. Sabem amb quina matèria primera treballem, i amb quin mètode creiem, perquè respectem el nostre ofici.</p>
+                                                     <p><a href='/'>Back to home</a></p>" } )
 panologia_body_part.translations.create!( { :locale => "ca", 
                                             :body => "<p>Entres a les fosques i encens..., només una mica de llum... És agradable començar la jornada amb aquest silenci i aquesta aroma de l'última fornada i del pa fermentant... són les dues de la matinada.
                                                       El treball avança sense pressa, però sense pausa: comprovem els pans que ja estan esperant el seu torn per entrar al forn, formem les coques, encenem i controlem el foc, vigilem la rebosteria...
                                                       A poc a poc acabem tasques, col·loquem pans en cistells i lleixes, però alhora comencem de nou la massa mare i les masses per al següent torn, l'obrador no para.</p>
                                                      <p>Quan ens pregunten per què és diferent el nostre pa, sempre hi ha uns segons de silenci... Per on començo? El mateix em passa ara davant del paper... Fa dies em van demanar que expliqués 'el pa', el pa de la Fogaina, allò que té de diferent o d'important, del nostre treball diari ... No és que fem una cosa extraordinària, fora del que és normal, només fem pa, però potser si que cal deixar clar quin és el camí que hem decidit prendre, com treballem, perquè els que us acosteu a La Fogaina entengueu una mica millor què esteu comprant.</p>
                                                      <p>De cada punt que tractaré d'explicar a continuació se'n podria escriure un llibre (o uns quants), però intentarem resumir cada un d'aquests 'pilars' sobre els quals se sosté la filosofia del treball a La Fogaina.</p>
-                                                     <p><a href='/'>Tornar a l'inici</a></p>" } )
+                                                     <h3>Farines i mòltes</h3>
+                                                     <p>El gra del cereal es compon de tres parts: segó, midó i germen. En el midó hi ha les proteïnes: el gluten, és la part blanca. El segó és la part exterior, la fibra, i el germen és la part interior, plena de vida, on trobem vitamines i minerals. Consumit en la seva totalitat és un aliment bàsic en la nostra dieta que ens aporta importants propietats.
+                                                      La humanitat fa milers d'anys que consumim les tres parts del gra, però des de fa poc més de 50 anys el consum de farina blanca -industrial, refinada- s'ha convertit en un dels ingredients més consumits en el dia a dia de la majoria de famílies. Aquestes farines industrials blanquíssimes, que es produeixen amb els moderns molins de cilindres, no contenen ni segó ni germen. Certament, sembla que la malaltia celíaca i les intoleràncies, en són el resultat. En canvi, els molins de pedra, per la seva forma de moldre el gra, produeixen una farina amb un alt percentatge de nutrients, i per bé que, després, aquesta farina la passin per uns sedassos per aconseguir una farina menys integral, sempre contindrà part del segó i del germen. És per això que els nostres pans 'blancs' són d'un color cremós.
+                                                      Després també hi ha les diferents varietats de blats, algunes d'antigues, que s'han aconseguit conservar fins a l'actualitat, varietats com la famosa espelta, el kamut o blat del cor, o algunes més locals com la xeixa.
+                                                      Quan consumim aquestes varietats, ecològiques, i de molins de pedra, no només ens aporten salut, sinó que a més a més contribuïm a la protecció del medi ambient, a la conservació de llavors i a la riquesa de la biodiversitat i a la sobirania alimentària.</p>
+                                                     <h3>Massa mare</h3>
+                                                     <p>La massa mare natural és un cultiu salvatge i espontani de llevats i de bacteris en base a farina i aigua. És la manera ancestral de llevar les masses, amb l'afegit del valor cultural que té crear la teva pròpia massa mare i guardar-la fins i tot per a tota la teva vida (i potser deixar-la en herència als teus néts!). És l'ànima d'una fleca, una més a l'obrador, la qual cal entendre-la, cuidar-la, alimentar-la, conservar-la, gairebé podríem dir que és una especialitat dins del món del forn de pa. La massa mare ens aportarà al pa conservació, sabor, aroma, una millor digestió... i aquest punt d'acidesa tan particular. És important que no confonguem la massa mare natural amb l'anomendada massa vella, una part de la massa de pa que es conserva del dia anterior.</p> 
+                                                     <h3>Fermentació</h3>
+                                                     <p>Es tracta de treure el màxim sabor del cereal. Crec que aquesta frase la vaig escoltar per primera vegada de la boca de Dan Lepard, mestre forner, i la veritat és que em va fer pensar. Està bé afegir a un pa llavors, fruits secs i el que ens passi pel cap, per fer d'un producte quotidià un producte més especial a la taula. Però, com a gran panarra, amb el que més gaudeixo és amb el pa, pa pa com diu un molt bon amic, ja sigui de blat o de sègol. M'agrada doncs, que la massa per si sola doni com a resultat un pa amb gust a cereal i a fermentació. Per aconseguir això és fonamental no escurçar els temps de fermentació i si pot ser allargar-los el màxim possible. D'aquesta manera, a més d'extreure tot el sabor a cereal, també n'augmentem la conservació i, molt important, la bona digestió del pa.</p>
+                                                     <h3>Forn</h3>
+                                                     <p>El nostre forn és un forn de llenya de foc directe, i això vol dir que quan els troncs cremen, la llengua de foc recorre tot l'interior del forn, on després es couran: primer les coques, després el pa i, finalment, la rebosteria. Antigament (i actualment en altres països com el Marroc) el de flequer i el de forner eren oficis diferents. Encara que podria ser que una persona dominés ambdues tècniques, en principi eren treballs diferents. De fet, abans, només existien forns de llenya, i això suposava un treball afegit, basat en l'atenció i un sisè sentit: la dificultat diària de fer coincidir el moment òptim de temperatura del forn amb el del punt idoni de fermentació de les masses. En aquest sentit, el nostre forn de llenya dóna al pa un toc especial gràcies a la seva solera de peces de fang que transmet la calor de forma gradual, amb el valor afegit que utilitzem una energia més adient al lloc on vivim.</p>
+                                                     <p>Aquests quatre punts són els pilars sobre els quals es basa el treball, el mètode i la filosofia del pa de La Fogaina, els quals ens exigeixen donar el màxim cada dia per aconseguir una regularitat que acceptem com un repte diari, un procés d'aprenentatge continu. És un camí dret, sense dreceres que posin en dubte la qualitat del nostre producte. Sabem amb quina matèria primera treballem, i amb quin mètode creiem, perquè respectem el nostre ofici.</p>
+                                                     <p><a href='/'>Back to home</a></p>" } )
 
 panes = [ 
           { 
@@ -617,142 +653,146 @@ news_page.update!( :title => "Activities" )
 news_page.translations.create!( { :locale => "es", :title => "Actividades" } )
 news_page.translations.create!( { :locale => "ca", :title => "Activitats" } )
 
-oclot_path = "#{Rails.root.join('app/assets/images/news/fogaina_presentacio_600x450.jpg')}"
-espai_path = "#{Rails.root.join('app/assets/images/cafeteria/espai.jpg')}"
-cursos_cartell_path = "#{Rails.root.join('app/assets/images/cursos/cursos_cartell.jpg')}"
+# Commented out news
+if false
 
-# Images used in news
-image_oclot = Refinery::Image.create :image => File.new(oclot_path)
-image_espai= Refinery::Image.create :image => File.new(espai_path)
-image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_path)
+  oclot_path = "#{Rails.root.join('app/assets/images/news/fogaina_presentacio_600x450.jpg')}"
+  espai_path = "#{Rails.root.join('app/assets/images/cafeteria/espai.jpg')}"
+  cursos_cartell_path = "#{Rails.root.join('app/assets/images/cursos/cursos_cartell.jpg')}"
 
-noticias = [ 
-  {
-    title_ca: "La Fogaina-Oclot. Servei d'entrega ecològic", 
-    title_en: "La Fogaina-Oclot. Organic delivery system.",
-    title_es: "La Fogaina-Oclot. Servicio de entrega ecológico.",  
-    body_ca: "<p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).</p>
-           <p>Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
-           A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
-           Salut, Pa i Pedals!!!</p>", 
-    body_en: "<p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).</p>
-           <p>Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
-           A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
-           Salut, Pa i Pedals!!!</p>",
-    body_es: "<p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).</p>
-           <p>Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
-           A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
-           Salut, Pa i Pedals!!!</p>",
-    publish_date: DateTime.now,
-    photo_id: image_oclot.id  
-  },
-  {
-    title_ca: "Cursos de pa a la Fogaina febrer-abril 2015",
-    title_en: "Bread Courses at la Fogaina february-april 2015",
-    title_es: "Cursos de pan en la Fogaina febrero-abril 2015", 
-    body_ca: "<p>Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!</p>
-           <p>Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
-           Mes info a la pestanya de 'cursos'.</p>", 
-    body_en: "<p>Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!</p>
-           <p>Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
-           Mes info a la pestanya de 'cursos'.</p>", 
-    body_es: "<p>Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!</p>
-           <p>Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
-           Mes info a la pestanya de 'cursos'.</p>", 
-    publish_date: DateTime.now,
-    photo_id: image_cursos_cartell.id  
-  },
-  {
-    title_ca: "La Fogaina Pa i Cafe obre les portes",
-    title_en: "La Fogaina Pa i Cafe opens its doors",
-    title_es: "La Fogaina Pa i Cafe abre sus puertas", 
-    body_ca: "<p>Ja hem inaugurat el nou espai de la Fogaina, es diu La Fogaina Pa i Cafè. Hem estat un parell de mesos superestresats i molt liats per poder tirar endavant aquest nou projecte, i aquesta vegada ens hem buscat uns socis lamardemacus, l'Emili i la Joana, i compartim de manera cooperativa, el funcionament del nou espai.</p>
-           <p>La Fogaina, Pa i Cafè, l'hem obert a un petit local a Les Preses, a la Vall d'en Bas, només a 3 km de distancia d'on tenim l'obrador, així que cada dia de dimarts a dissabte (8:00 a 13:30, i 16:00 a 20:00) tenim productes recent fets al nostre forn de llenya, per que els acompanyeu amb un bon cafè o una cervesseta artesana i local.
-           També hem ampliat la nostra oferta panarra, fem mes varietat mes dies a la setmana, i sobretot hem començat a fer mes dolços: Magdalenes, galetes, croissants, briox, coques etc.
-           Si voleu mes info, cliqueu a la pestanyeta que posa Pa i Cafè mes amunt.
-           I el pròxim dia 11 d'octubre fem una festeta d'apertura coincidint amb les festes del poble!!</p>", 
-    body_en: "<p>Ja hem inaugurat el nou espai de la Fogaina, es diu La Fogaina Pa i Cafè. Hem estat un parell de mesos superestresats i molt liats per poder tirar endavant aquest nou projecte, i aquesta vegada ens hem buscat uns socis lamardemacus, l'Emili i la Joana, i compartim de manera cooperativa, el funcionament del nou espai.</p>
-           <p>La Fogaina, Pa i Cafè, l'hem obert a un petit local a Les Preses, a la Vall d'en Bas, només a 3 km de distancia d'on tenim l'obrador, així que cada dia de dimarts a dissabte (8:00 a 13:30, i 16:00 a 20:00) tenim productes recent fets al nostre forn de llenya, per que els acompanyeu amb un bon cafè o una cervesseta artesana i local.
-           També hem ampliat la nostra oferta panarra, fem mes varietat mes dies a la setmana, i sobretot hem començat a fer mes dolços: Magdalenes, galetes, croissants, briox, coques etc.
-           Si voleu mes info, cliqueu a la pestanyeta que posa Pa i Cafè mes amunt.
-           I el pròxim dia 11 d'octubre fem una festeta d'apertura coincidint amb les festes del poble!!</p>", 
-    body_es: "<p>Ja hem inaugurat el nou espai de la Fogaina, es diu La Fogaina Pa i Cafè. Hem estat un parell de mesos superestresats i molt liats per poder tirar endavant aquest nou projecte, i aquesta vegada ens hem buscat uns socis lamardemacus, l'Emili i la Joana, i compartim de manera cooperativa, el funcionament del nou espai.</p>
-           <p>La Fogaina, Pa i Cafè, l'hem obert a un petit local a Les Preses, a la Vall d'en Bas, només a 3 km de distancia d'on tenim l'obrador, així que cada dia de dimarts a dissabte (8:00 a 13:30, i 16:00 a 20:00) tenim productes recent fets al nostre forn de llenya, per que els acompanyeu amb un bon cafè o una cervesseta artesana i local.
-           També hem ampliat la nostra oferta panarra, fem mes varietat mes dies a la setmana, i sobretot hem començat a fer mes dolços: Magdalenes, galetes, croissants, briox, coques etc.
-           Si voleu mes info, cliqueu a la pestanyeta que posa Pa i Cafè mes amunt.
-           I el pròxim dia 11 d'octubre fem una festeta d'apertura coincidint amb les festes del poble!!</p>", 
-    publish_date: DateTime.now,
-    photo_id: image_espai.id  
-  },
-  # {
-  #   title_ca: "Festa panarra final de curs",
-  #   title_en: "Panarra party end of the course",
-  #   title_es: "Fiesta panarra final de curso", 
-  #   body_ca: "<p>Ja queden pocs dies per la cel.lebració de la Festa Panarra que tindrà lloc al nostre Forn. Després d'un estiu molt mogut amb diferents cursos de pa, toca fer una mica de gresca.
-  #             El dia senyalat: Diumenge 29 de septembre
-  #             Hora: A partir de les 11:00h (mes o menys) i fins les 20:00 (mes o menys també)
-  #             Qui pot venir: Tothom que li agradi el bon pa, la bona cervessa, la bona música... sempre amb respecte i \"saber estar\".
-  #             Que s'ha de portar?: No es obligatori però podeu portar algo per compartir tipus menjar de primer plat (cosetes bones per vacil.lar jeje), o alguna beguda chupi, o algun postre requetechupi. I per descomptat bon humor i ganes de ballar si cal!!!.
-  #             I pels panarras tindrem preparada una taula exclusiva només per pans. Així que podeu portar un pa fet a casa perque fem una bona degustació tothom (no serà concurs).
-  #             Els músics podeu portar el vostre instrument (si es acústic) per acompanyar l'acordió la flauta travessera i el banjo que segur que estaràn.
-  #             Que us trobareu?: Tindrem un parell de barrils de cervessa artesana de la bona. Una taula amb pica pica i menjars que portarem entre tots. Una barbacoa amb carn de la garrotxa. Música en directe folk... i bon pa!!</p>", 
-  #   body_en: "<p>Ja queden pocs dies per la cel.lebració de la Festa Panarra que tindrà lloc al nostre Forn. Després d'un estiu molt mogut amb diferents cursos de pa, toca fer una mica de gresca.
-  #             El dia senyalat: Diumenge 29 de septembre
-  #             Hora: A partir de les 11:00h (mes o menys) i fins les 20:00 (mes o menys també)
-  #             Qui pot venir: Tothom que li agradi el bon pa, la bona cervessa, la bona música... sempre amb respecte i \"saber estar\".
-  #             Que s'ha de portar?: No es obligatori però podeu portar algo per compartir tipus menjar de primer plat (cosetes bones per vacil.lar jeje), o alguna beguda chupi, o algun postre requetechupi. I per descomptat bon humor i ganes de ballar si cal!!!.
-  #             I pels panarras tindrem preparada una taula exclusiva només per pans. Així que podeu portar un pa fet a casa perque fem una bona degustació tothom (no serà concurs).
-  #             Els músics podeu portar el vostre instrument (si es acústic) per acompanyar l'acordió la flauta travessera i el banjo que segur que estaràn.
-  #             Que us trobareu?: Tindrem un parell de barrils de cervessa artesana de la bona. Una taula amb pica pica i menjars que portarem entre tots. Una barbacoa amb carn de la garrotxa. Música en directe folk... i bon pa!!</p>", 
-  #   body_es: "<p>Ja queden pocs dies per la cel.lebració de la Festa Panarra que tindrà lloc al nostre Forn. Després d'un estiu molt mogut amb diferents cursos de pa, toca fer una mica de gresca.
-  #             El dia senyalat: Diumenge 29 de septembre
-  #             Hora: A partir de les 11:00h (mes o menys) i fins les 20:00 (mes o menys també)
-  #             Qui pot venir: Tothom que li agradi el bon pa, la bona cervessa, la bona música... sempre amb respecte i \"saber estar\".
-  #             Que s'ha de portar?: No es obligatori però podeu portar algo per compartir tipus menjar de primer plat (cosetes bones per vacil.lar jeje), o alguna beguda chupi, o algun postre requetechupi. I per descomptat bon humor i ganes de ballar si cal!!!.
-  #             I pels panarras tindrem preparada una taula exclusiva només per pans. Així que podeu portar un pa fet a casa perque fem una bona degustació tothom (no serà concurs).
-  #             Els músics podeu portar el vostre instrument (si es acústic) per acompanyar l'acordió la flauta travessera i el banjo que segur que estaràn.
-  #             Que us trobareu?: Tindrem un parell de barrils de cervessa artesana de la bona. Una taula amb pica pica i menjars que portarem entre tots. Una barbacoa amb carn de la garrotxa. Música en directe folk... i bon pa!!</p>", 
-  #   publish_date: DateTime.now,
-  #   photo_id: nil 
-  # },
-  # {
-  #   title_ca: "Curs rebosteria panadera",
-  #   title_en: "Pastry course",
-  #   title_es: "Curso reposteria panadera", 
-  #   body_ca: "<p>Aún de calentón y ya con ganas de contaros como ha ido el curso de Reposteria Panadera con Chema de Forn Pedreres.
-  #             Ha sido un curso intenso de todo el dia laborando en el obrador, lxs chicxs apuntadxs al curso se han aplicado pero bien bien.
-  #             Chema nos tenia preparados una buena tanda de recetas a elaborar: Croissants (pequeños, grandes, xocolate, xoricillo...), magdalenas, coca de forner y coca de vidre.</p>", 
-  #   body_en: "<p>Aún de calentón y ya con ganas de contaros como ha ido el curso de Reposteria Panadera con Chema de Forn Pedreres.
-  #             Ha sido un curso intenso de todo el dia laborando en el obrador, lxs chicxs apuntadxs al curso se han aplicado pero bien bien.
-  #             Chema nos tenia preparados una buena tanda de recetas a elaborar: Croissants (pequeños, grandes, xocolate, xoricillo...), magdalenas, coca de forner y coca de vidre.</p>", 
-  #   body_es: "<p>Aún de calentón y ya con ganas de contaros como ha ido el curso de Reposteria Panadera con Chema de Forn Pedreres.
-  #             Ha sido un curso intenso de todo el dia laborando en el obrador, lxs chicxs apuntadxs al curso se han aplicado pero bien bien.
-  #             Chema nos tenia preparados una buena tanda de recetas a elaborar: Croissants (pequeños, grandes, xocolate, xoricillo...), magdalenas, coca de forner y coca de vidre.</p>", 
-  #   publish_date: DateTime.now,
-  #   photo_id: nil 
-  # }
-]
+  # Images used in news
+  image_oclot = Refinery::Image.create :image => File.new(oclot_path)
+  image_espai= Refinery::Image.create :image => File.new(espai_path)
+  image_cursos_cartell = Refinery::Image.create :image => File.new(cursos_cartell_path)
 
-noticias.each do |noticia_attr|
+  noticias = [ 
+    {
+      title_ca: "La Fogaina-Oclot. Servei d'entrega ecològic", 
+      title_en: "La Fogaina-Oclot. Organic delivery system.",
+      title_es: "La Fogaina-Oclot. Servicio de entrega ecológico.",  
+      body_ca: "<p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).</p>
+             <p>Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
+             A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
+             Salut, Pa i Pedals!!!</p>", 
+      body_en: "<p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).</p>
+             <p>Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
+             A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
+             Salut, Pa i Pedals!!!</p>",
+      body_es: "<p>Desde la Fogaina voliem oferir un servei d'entrega dels nostres productes pels nostres clients de la vall d'en bas i olot, i finalment hem trobat la manera més acord amb la nostra filosofia de sostenibilitat i manera de fer, i és treballar al costat d' Oclot un servei de missatgeria a domicili ecològic (en bicicleta!!).</p>
+             <p>Volem donar la millor qualitat dels nostres productes des d'el forn fins a la porta de casa.
+             A partir d'ara ja podeu fer les vostres comandes a la pàgina web de OCLOT o trucant directament al telèfon de la nostra botiga: 646.879.062
+             Salut, Pa i Pedals!!!</p>",
+      publish_date: DateTime.now,
+      photo_id: image_oclot.id  
+    },
+    {
+      title_ca: "Cursos de pa a la Fogaina febrer-abril 2015",
+      title_en: "Bread Courses at la Fogaina february-april 2015",
+      title_es: "Cursos de pan en la Fogaina febrero-abril 2015", 
+      body_ca: "<p>Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!</p>
+             <p>Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
+             Mes info a la pestanya de 'cursos'.</p>", 
+      body_en: "<p>Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!</p>
+             <p>Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
+             Mes info a la pestanya de 'cursos'.</p>", 
+      body_es: "<p>Aquí teniu els cursos per aquests primers mesos del 2015. Ja feia temps que no preparàvem una de grossa, i ara ja amb forces després de les minivacances tornem amb moltes ganes!!</p>
+             <p>Hem preparat 3 tipus de cursos d'un matí i 1 experiència de tot el dia, per apendre i gaudir del mon panarra i de la fantàstica ubicació de La Fogaina, al bell mig de la Vall d'en Bas.
+             Mes info a la pestanya de 'cursos'.</p>", 
+      publish_date: DateTime.now,
+      photo_id: image_cursos_cartell.id  
+    },
+    {
+      title_ca: "La Fogaina Pa i Cafe obre les portes",
+      title_en: "La Fogaina Pa i Cafe opens its doors",
+      title_es: "La Fogaina Pa i Cafe abre sus puertas", 
+      body_ca: "<p>Ja hem inaugurat el nou espai de la Fogaina, es diu La Fogaina Pa i Cafè. Hem estat un parell de mesos superestresats i molt liats per poder tirar endavant aquest nou projecte, i aquesta vegada ens hem buscat uns socis lamardemacus, l'Emili i la Joana, i compartim de manera cooperativa, el funcionament del nou espai.</p>
+             <p>La Fogaina, Pa i Cafè, l'hem obert a un petit local a Les Preses, a la Vall d'en Bas, només a 3 km de distancia d'on tenim l'obrador, així que cada dia de dimarts a dissabte (8:00 a 13:30, i 16:00 a 20:00) tenim productes recent fets al nostre forn de llenya, per que els acompanyeu amb un bon cafè o una cervesseta artesana i local.
+             També hem ampliat la nostra oferta panarra, fem mes varietat mes dies a la setmana, i sobretot hem començat a fer mes dolços: Magdalenes, galetes, croissants, briox, coques etc.
+             Si voleu mes info, cliqueu a la pestanyeta que posa Pa i Cafè mes amunt.
+             I el pròxim dia 11 d'octubre fem una festeta d'apertura coincidint amb les festes del poble!!</p>", 
+      body_en: "<p>Ja hem inaugurat el nou espai de la Fogaina, es diu La Fogaina Pa i Cafè. Hem estat un parell de mesos superestresats i molt liats per poder tirar endavant aquest nou projecte, i aquesta vegada ens hem buscat uns socis lamardemacus, l'Emili i la Joana, i compartim de manera cooperativa, el funcionament del nou espai.</p>
+             <p>La Fogaina, Pa i Cafè, l'hem obert a un petit local a Les Preses, a la Vall d'en Bas, només a 3 km de distancia d'on tenim l'obrador, així que cada dia de dimarts a dissabte (8:00 a 13:30, i 16:00 a 20:00) tenim productes recent fets al nostre forn de llenya, per que els acompanyeu amb un bon cafè o una cervesseta artesana i local.
+             També hem ampliat la nostra oferta panarra, fem mes varietat mes dies a la setmana, i sobretot hem començat a fer mes dolços: Magdalenes, galetes, croissants, briox, coques etc.
+             Si voleu mes info, cliqueu a la pestanyeta que posa Pa i Cafè mes amunt.
+             I el pròxim dia 11 d'octubre fem una festeta d'apertura coincidint amb les festes del poble!!</p>", 
+      body_es: "<p>Ja hem inaugurat el nou espai de la Fogaina, es diu La Fogaina Pa i Cafè. Hem estat un parell de mesos superestresats i molt liats per poder tirar endavant aquest nou projecte, i aquesta vegada ens hem buscat uns socis lamardemacus, l'Emili i la Joana, i compartim de manera cooperativa, el funcionament del nou espai.</p>
+             <p>La Fogaina, Pa i Cafè, l'hem obert a un petit local a Les Preses, a la Vall d'en Bas, només a 3 km de distancia d'on tenim l'obrador, així que cada dia de dimarts a dissabte (8:00 a 13:30, i 16:00 a 20:00) tenim productes recent fets al nostre forn de llenya, per que els acompanyeu amb un bon cafè o una cervesseta artesana i local.
+             També hem ampliat la nostra oferta panarra, fem mes varietat mes dies a la setmana, i sobretot hem començat a fer mes dolços: Magdalenes, galetes, croissants, briox, coques etc.
+             Si voleu mes info, cliqueu a la pestanyeta que posa Pa i Cafè mes amunt.
+             I el pròxim dia 11 d'octubre fem una festeta d'apertura coincidint amb les festes del poble!!</p>", 
+      publish_date: DateTime.now,
+      photo_id: image_espai.id  
+    },
+    # {
+    #   title_ca: "Festa panarra final de curs",
+    #   title_en: "Panarra party end of the course",
+    #   title_es: "Fiesta panarra final de curso", 
+    #   body_ca: "<p>Ja queden pocs dies per la cel.lebració de la Festa Panarra que tindrà lloc al nostre Forn. Després d'un estiu molt mogut amb diferents cursos de pa, toca fer una mica de gresca.
+    #             El dia senyalat: Diumenge 29 de septembre
+    #             Hora: A partir de les 11:00h (mes o menys) i fins les 20:00 (mes o menys també)
+    #             Qui pot venir: Tothom que li agradi el bon pa, la bona cervessa, la bona música... sempre amb respecte i \"saber estar\".
+    #             Que s'ha de portar?: No es obligatori però podeu portar algo per compartir tipus menjar de primer plat (cosetes bones per vacil.lar jeje), o alguna beguda chupi, o algun postre requetechupi. I per descomptat bon humor i ganes de ballar si cal!!!.
+    #             I pels panarras tindrem preparada una taula exclusiva només per pans. Així que podeu portar un pa fet a casa perque fem una bona degustació tothom (no serà concurs).
+    #             Els músics podeu portar el vostre instrument (si es acústic) per acompanyar l'acordió la flauta travessera i el banjo que segur que estaràn.
+    #             Que us trobareu?: Tindrem un parell de barrils de cervessa artesana de la bona. Una taula amb pica pica i menjars que portarem entre tots. Una barbacoa amb carn de la garrotxa. Música en directe folk... i bon pa!!</p>", 
+    #   body_en: "<p>Ja queden pocs dies per la cel.lebració de la Festa Panarra que tindrà lloc al nostre Forn. Després d'un estiu molt mogut amb diferents cursos de pa, toca fer una mica de gresca.
+    #             El dia senyalat: Diumenge 29 de septembre
+    #             Hora: A partir de les 11:00h (mes o menys) i fins les 20:00 (mes o menys també)
+    #             Qui pot venir: Tothom que li agradi el bon pa, la bona cervessa, la bona música... sempre amb respecte i \"saber estar\".
+    #             Que s'ha de portar?: No es obligatori però podeu portar algo per compartir tipus menjar de primer plat (cosetes bones per vacil.lar jeje), o alguna beguda chupi, o algun postre requetechupi. I per descomptat bon humor i ganes de ballar si cal!!!.
+    #             I pels panarras tindrem preparada una taula exclusiva només per pans. Així que podeu portar un pa fet a casa perque fem una bona degustació tothom (no serà concurs).
+    #             Els músics podeu portar el vostre instrument (si es acústic) per acompanyar l'acordió la flauta travessera i el banjo que segur que estaràn.
+    #             Que us trobareu?: Tindrem un parell de barrils de cervessa artesana de la bona. Una taula amb pica pica i menjars que portarem entre tots. Una barbacoa amb carn de la garrotxa. Música en directe folk... i bon pa!!</p>", 
+    #   body_es: "<p>Ja queden pocs dies per la cel.lebració de la Festa Panarra que tindrà lloc al nostre Forn. Després d'un estiu molt mogut amb diferents cursos de pa, toca fer una mica de gresca.
+    #             El dia senyalat: Diumenge 29 de septembre
+    #             Hora: A partir de les 11:00h (mes o menys) i fins les 20:00 (mes o menys també)
+    #             Qui pot venir: Tothom que li agradi el bon pa, la bona cervessa, la bona música... sempre amb respecte i \"saber estar\".
+    #             Que s'ha de portar?: No es obligatori però podeu portar algo per compartir tipus menjar de primer plat (cosetes bones per vacil.lar jeje), o alguna beguda chupi, o algun postre requetechupi. I per descomptat bon humor i ganes de ballar si cal!!!.
+    #             I pels panarras tindrem preparada una taula exclusiva només per pans. Així que podeu portar un pa fet a casa perque fem una bona degustació tothom (no serà concurs).
+    #             Els músics podeu portar el vostre instrument (si es acústic) per acompanyar l'acordió la flauta travessera i el banjo que segur que estaràn.
+    #             Que us trobareu?: Tindrem un parell de barrils de cervessa artesana de la bona. Una taula amb pica pica i menjars que portarem entre tots. Una barbacoa amb carn de la garrotxa. Música en directe folk... i bon pa!!</p>", 
+    #   publish_date: DateTime.now,
+    #   photo_id: nil 
+    # },
+    # {
+    #   title_ca: "Curs rebosteria panadera",
+    #   title_en: "Pastry course",
+    #   title_es: "Curso reposteria panadera", 
+    #   body_ca: "<p>Aún de calentón y ya con ganas de contaros como ha ido el curso de Reposteria Panadera con Chema de Forn Pedreres.
+    #             Ha sido un curso intenso de todo el dia laborando en el obrador, lxs chicxs apuntadxs al curso se han aplicado pero bien bien.
+    #             Chema nos tenia preparados una buena tanda de recetas a elaborar: Croissants (pequeños, grandes, xocolate, xoricillo...), magdalenas, coca de forner y coca de vidre.</p>", 
+    #   body_en: "<p>Aún de calentón y ya con ganas de contaros como ha ido el curso de Reposteria Panadera con Chema de Forn Pedreres.
+    #             Ha sido un curso intenso de todo el dia laborando en el obrador, lxs chicxs apuntadxs al curso se han aplicado pero bien bien.
+    #             Chema nos tenia preparados una buena tanda de recetas a elaborar: Croissants (pequeños, grandes, xocolate, xoricillo...), magdalenas, coca de forner y coca de vidre.</p>", 
+    #   body_es: "<p>Aún de calentón y ya con ganas de contaros como ha ido el curso de Reposteria Panadera con Chema de Forn Pedreres.
+    #             Ha sido un curso intenso de todo el dia laborando en el obrador, lxs chicxs apuntadxs al curso se han aplicado pero bien bien.
+    #             Chema nos tenia preparados una buena tanda de recetas a elaborar: Croissants (pequeños, grandes, xocolate, xoricillo...), magdalenas, coca de forner y coca de vidre.</p>", 
+    #   publish_date: DateTime.now,
+    #   photo_id: nil 
+    # }
+  ]
 
-  noticia = Refinery::News::Item.create!( 
-    locale: "en", 
-    title: noticia_attr[:title_en], 
-    body: noticia_attr[:body_en], 
-    publish_date: noticia_attr[:publish_date],
-    photo_id: noticia_attr[:photo_id] )
+  noticias.each do |noticia_attr|
 
-  noticia.translations.create!( { :refinery_news_item_id => noticia.id,
-                                  :locale => "ca",
-                                  :title => noticia_attr[:title_ca], 
-                                  :body => noticia_attr[:body_ca] } )
+    noticia = Refinery::News::Item.create!( 
+      locale: "en", 
+      title: noticia_attr[:title_en], 
+      body: noticia_attr[:body_en], 
+      publish_date: noticia_attr[:publish_date],
+      photo_id: noticia_attr[:photo_id] )
 
-  noticia.translations.create!( { :refinery_news_item_id => noticia.id,
-                                  :locale => "es",
-                                  :title => noticia_attr[:title_es],
-                                  :body => noticia_attr[:body_es] } )
-end
+    noticia.translations.create!( { :refinery_news_item_id => noticia.id,
+                                    :locale => "ca",
+                                    :title => noticia_attr[:title_ca], 
+                                    :body => noticia_attr[:body_ca] } )
 
+    noticia.translations.create!( { :refinery_news_item_id => noticia.id,
+                                    :locale => "es",
+                                    :title => noticia_attr[:title_es],
+                                    :body => noticia_attr[:body_es] } )
+  end
+
+end # Commented out news
 
 
 # Added by Refinery CMS CafeteriaCategories extension
