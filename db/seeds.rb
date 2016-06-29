@@ -365,20 +365,17 @@ pages_array.each { | page_attr |
 
 
 # Path to images PAN
-soca_path = "#{Rails.root.join('app/assets/images/pan/IMG_1523.jpg')}"
+soca_path = "#{Rails.root.join('app/assets/images/pan/soca.jpg')}"
 pa_pages_path = "#{Rails.root.join('app/assets/images/pan/pa_de_pages.jpg')}"
 pa_rustic_path = "#{Rails.root.join('app/assets/images/pan/rustic.jpg')}"
 pa_pigat_path = "#{Rails.root.join('app/assets/images/pan/pigat.jpg')}"
 pa_espelta_path = "#{Rails.root.join('app/assets/images/pan/espelta3.jpg')}"
-coca_forner_path = "#{Rails.root.join('app/assets/images/pan/coca_forner.jpg')}"
+coca_forner_path = "#{Rails.root.join('app/assets/images/pan/cocaforner.jpg')}"
 pa_de_coca_path = "#{Rails.root.join('app/assets/images/pan/pa_de_coca.jpg')}"
 pa_brot_negre_path = "#{Rails.root.join('app/assets/images/pan/brot3.jpg')}"
 pa_bembo_path = "#{Rails.root.join('app/assets/images/pan/bembo.jpg')}"
 pa_tinosell_path = "#{Rails.root.join('app/assets/images/pan/tinosell.jpg')}"
-pa_sense_gluten_path = "#{Rails.root.join('app/assets/images/pan/pa_sense_gluten.jpg')}"
-pa_segol_path = "#{Rails.root.join('app/assets/images/pan/segol.jpg')}"
-pa_baguette_path = "#{Rails.root.join('app/assets/images/pan/baguette.jpg')}"
-pa_de_farro_path = "#{Rails.root.join('app/assets/images/pan/pa_de_farro.jpg')}"
+pa_fajol_path = "#{Rails.root.join('app/assets/images/pan/fajol.jpg')}"
 
 # Images PAN
 image_soca = Refinery::Image.create :image => File.new(soca_path)
@@ -391,10 +388,7 @@ image_pa_de_coca = Refinery::Image.create :image => File.new(pa_de_coca_path)
 image_brot_negre = Refinery::Image.create :image => File.new(pa_brot_negre_path)
 image_pa_bembo = Refinery::Image.create :image => File.new(pa_bembo_path)
 image_pa_tinosell = Refinery::Image.create :image => File.new(pa_tinosell_path)
-image_pa_sense_gluten = Refinery::Image.create :image => File.new(pa_sense_gluten_path)
-image_pa_segol = Refinery::Image.create :image => File.new(pa_segol_path)
-image_pa_baguette = Refinery::Image.create :image => File.new(pa_baguette_path)
-image_pa_de_farro = Refinery::Image.create :image => File.new(pa_de_farro_path)
+image_pa_fajol = Refinery::Image.create :image => File.new(pa_fajol_path)
 
 # Added by Refinery CMS Breads extension
 Refinery::Breads::Engine.load_seed
@@ -583,41 +577,7 @@ panes = [
             :description_en => "<p>Un poco obligados por la demanda, y limitados por las \“trazas\”, finalmente nos decidimos a hacer un pan \“sin gluten\” pero que por las condiciones de nuestro obrador, es imposible de certificar para celíacos. Nuestra intención desde el primer momento era conseguir un muy buen pan sin gluten. Hemos aprendido unas cuantas cosas sobre métodos y nuevos ingredientes. Así que esperamos estar a la altura y que lo disfrutéis.",
             :available_days => :por_encargo,
             :price => 6,
-            :photo => image_pa_sense_gluten 
-          },
-          { :name_ca => "Ségol - Blat amb panses i nous", 
-            :name_es => "Ségol - Blat amb panses i nous",
-            :name_en => "Ségol - Blat amb panses i nous",  
-            :description_ca => "<p>Un pa de farina semi integral de blat, amb molta molta massa mare de ségol. </p>
-                                <p>Acompanyat amb panses i nous en quantitat. Un pa molt aromàtic i de bona conservació. Un plaer acompanyant tant formatges i fumats com mermelades.</p>",
-            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
-            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
-            :available_days => [:friday],
-            :price => 3.80,
-            :photo => image_pa_segol 
-          },
-          { :name_ca => "Baguette", 
-            :name_es => "Baguette",
-            :name_en => "Baguette",  
-            :description_ca => "<p>Baguettes amb formula de tradició francesa, amb farines de blat moltes a la pedra, massa mare i llevat. Fermentacions llargues i cuita al forn de llenya.</p>
-                                <p>Per fi gaudim de les barres a la Fogaina.</p>",
-            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
-            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
-            :available_days => [:wednesday, :friday, :saturday],
-            :price => 1.70,
-            :photo => image_pa_baguette 
-          },
-          { :name_ca => "Pa de Farro", 
-            :name_es => "Pa de Farro",
-            :name_en => "Pa de Farro",  
-            :description_ca => "<p>El Farro (blat de moro) es un producte típic de la Vall d'en Bas, una vall fertil pel 
-                                cultiu d'aquest cereal. Malauradament avui dia es dificil de trobar Farro de varietats locals i ecológic, per desgracia els trangénics van guanyant terreny. Ara mateix estem utilitzant Farro de la Vall de Bianya de varietat local.</p>
-                                <p>Es un pa suau i fi, un punt dolcet, una miga amb un color crema grogenc que fa contrast amb una crosta deliciosa de color daurat. Tasteu!!</p>",
-            :description_es => "<p>Perdona, estamos traduciendo nuestro contenido. Por favor, utiliza nuestra web en catalan mientras tanto. Gracias.</p>",
-            :description_en => "<p>Sorry, we are still translating our content. Please use our catalan translations until we finnish them. Thanks.</p>",
-            :available_days => :por_encargo,
-            :price => 2.70,
-            :photo => image_pa_de_farro 
+            :photo => image_pa_fajol 
           }
         ]
 
