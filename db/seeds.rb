@@ -768,13 +768,16 @@ cafeteria_page.translations.create!( { :locale => "ca", :title => "Cafeteria" } 
 cafe_path = "#{Rails.root.join('app/assets/images/cafe/coffee800x800.jpg')}"
 entrepans_path = "#{Rails.root.join('app/assets/images/entrepans/IMG_2872.jpg')}"
 sucs_i_tees_path = "#{Rails.root.join('app/assets/images/sucs_i_tees/IMG_2603.jpg')}"
-suc_verd_path = "#{Rails.root.join('app/assets/images/not_used/500x500/IMG_2550.jpg')}"
-reposteria_path = "#{Rails.root.join('app/assets/images/reposteria/IMG_2178.jpg')}"
+suc_verd_path = "#{Rails.root.join('app/assets/images/sucs_i_tees/IMG_2550.jpg')}"
+reposteria_path = "#{Rails.root.join('app/assets/images/reposteria/reposteria.jpg')}"
+logo_path = "#{Rails.root.join('app/assets/images/logos/logo_negro.jpg')}"
+
 image_cafe = Refinery::Image.create :image => File.new(cafe_path)
 image_entrepans = Refinery::Image.create :image => File.new(entrepans_path)
 image_sucs_i_tees = Refinery::Image.create :image => File.new(sucs_i_tees_path)
 image_suc_verd = Refinery::Image.create :image => File.new(suc_verd_path)
 image_reposteria = Refinery::Image.create :image => File.new(reposteria_path)
+image_logo = Refinery::Image.create :image => File.new(logo_path)
 
 categories_cafeteria = [ 
   {
@@ -931,7 +934,7 @@ categories_cafeteria = [
     description_ca: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam esse quisquam est debitis inventore, distinctio, sunt molestiae, numquam assumenda ut libero quam nisi saepe, laborum vel perspiciatis repellat aspernatur. Nihil.</p><p>Enim iste facere quo pariatur, temporibus debitis maxime id illo repellat cumque velit ea modi, sit impedit, aperiam accusantium libero quisquam explicabo, earum voluptates dolore autem. Tempora aut officiis ex?</p>", 
     description_en: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aliquid sed cupiditate perferendis eum ab optio expedita fugit error omnis suscipit laborum, aperiam, nemo nisi excepturi tempore. Repellendus provident, optio.</p>",
     description_es: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque illo nesciunt vel voluptatibus explicabo magni sit tempore eos dolore ut doloremque, repellendus. Perspiciatis a beatae voluptatum hic, eos quia.</p>",
-    image: image_pa_rustic  
+    image: image_logo  
   },
   {
     title_ca: "Dolços", 
