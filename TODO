@@ -24,4 +24,8 @@ Contacte page with 'On mes trobarnos?' (Missing content from Angel)
 Las fotos de las categorias missing y al mismo tamanyo para mejorar cuadricula
 Crear Amazon S3 bucket para guardar las fotos
 Deploy in heroku without custom url
+
+Si los menu principales con sbmenus no estan claros, crear un link a los submenus en la pagina del menu principal.
+
+i.e. contact (link a on som? y link a on estem?)
   
