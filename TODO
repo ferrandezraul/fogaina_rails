@@ -20,7 +20,7 @@ Ideal seria limitar size en config a 3MB y desarrollar codigo para chequear que 
 Cervesses text missing
 Fotos de panes missing
 Fotos de panes y logo negro al mismo tamanyo para mejorar cuadricula (Reducir el tamanyo de algunas fotos de panes que estan a mas de 2MB)
-Contacte page with 'On mes trobarnos?'
+Contacte page with 'On mes trobarnos?' (Missing content from Angel)
 Las fotos de las categorias missing y al mismo tamanyo para mejorar cuadricula
 Crear Amazon S3 bucket para guardar las fotos
 Deploy in heroku without custom url
