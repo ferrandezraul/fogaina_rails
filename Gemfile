@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
+ruby "2.2.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
-group :development, :test do
-  gem 'pg'
-end
+gem 'pg'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -79,3 +79,8 @@ gem 'jquery-turbolinks'
 gem 'refinerycms-breads', path: 'vendor/extensions'
 gem 'refinerycms-cafeteria_categories', path: 'vendor/extensions'
 gem 'refinerycms-videos', path: 'vendor/extensions'
+
+group :production do
+  # Heroku dependency needed in rails4 (added although we use rails 3.2 and should be included)
+  gem 'rails_12factor'
+end
