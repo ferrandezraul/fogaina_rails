@@ -81,6 +81,9 @@ gem 'refinerycms-cafeteria_categories', path: 'vendor/extensions'
 gem 'refinerycms-videos', path: 'vendor/extensions'
 
 group :production do
-  # Heroku dependency needed in rails4 (added although we use rails 3.2 and should be included)
+  # Heroku dependency needed in rails4
   gem 'rails_12factor'
+  # Refinery doc
+  # If you want to use Refinery’s image and resource support, you need to add the ‘fog’ gem too.
+  gem 'fog'
 end
