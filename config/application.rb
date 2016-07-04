@@ -42,8 +42,8 @@ module Fogaina
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
-    # Needed by heroku ?
-    # config.serve_static_assets = true
+    # Needed by heroku
+    config.serve_static_assets = true
 
     # Based on Refinery doc
     config.assets.initialize_on_precompile = true
