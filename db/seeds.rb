@@ -466,7 +466,7 @@ panologia_body_part.translations.create!( { :locale => "ca",
                                                      <p><a href='/'>Tornar a l'inici</a></p>" } )
 
 
-############### Ahora la pagina hija de contacte llamad On mes trobarnos?  #################
+############### Ahora la pagina hija de contacte llamad On mes trobar-nos?  #################
 
 contact_page = Refinery::Page.find_by(:title => "Contact")
 
@@ -477,7 +477,7 @@ on_mes_trobarnos_page = contact_page.children.create!( :title => 'Where else to 
                                                :deletable => true )
 
 on_mes_trobarnos_page.translations.create!( { :locale => "es", :title => "Donde más encontrarnos?" } )
-on_mes_trobarnos_page.translations.create!( { :locale => "ca", :title => "On més trobarnos?" } )
+on_mes_trobarnos_page.translations.create!( { :locale => "ca", :title => "On més trobar-nos?" } )
 
 on_mes_trobarnos_body_part = on_mes_trobarnos_page.parts.create!( 
   { :title => "Body", 
@@ -489,7 +489,7 @@ on_mes_trobarnos_body_part.translations.create!( {
 
 on_mes_trobarnos_body_part.translations.create!( { 
   :locale => "ca", 
-  :body => "<p>Podeu trobarnos a ...</p>" } )
+  :body => "<p>Podeu trobar-nos a ...</p>" } )
 
 ############################################                                                     
 
