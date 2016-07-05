@@ -43,10 +43,9 @@ Refinery::ImageSlideshows::Engine.load_seed
 slideshow_img1_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_2178.jpg')}"
 slideshow_img2_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_2550.jpg')}"
 slideshow_img3_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_1523.jpg')}"
-slideshow_img4_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_1724.jpg')}"
-slideshow_img5_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_3421.jpg')}"
-slideshow_img6_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_4151.jpg')}"
-slideshow_img7_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_4751.jpg')}"
+slideshow_img4_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_3421.jpg')}"
+slideshow_img5_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_4151.jpg')}"
+slideshow_img6_path = "#{Rails.root.join('app/assets/images/slideshow/1000x400/IMG_4751.jpg')}"
 
 # Images in SLIDE SHOW IN HOME PAGE
 slideshow_img1 = Refinery::Image.create :image => File.new(slideshow_img1_path)
@@ -55,7 +54,6 @@ slideshow_img3 = Refinery::Image.create :image => File.new(slideshow_img3_path)
 slideshow_img4 = Refinery::Image.create :image => File.new(slideshow_img4_path)
 slideshow_img5 = Refinery::Image.create :image => File.new(slideshow_img5_path)
 slideshow_img6 = Refinery::Image.create :image => File.new(slideshow_img6_path)
-slideshow_img7 = Refinery::Image.create :image => File.new(slideshow_img7_path)
 
 slide_images = [
   {
@@ -81,10 +79,6 @@ slide_images = [
   {
     :title => "6", 
     :image_id => slideshow_img6.id 
-  },
-  {
-    :title => "7", 
-    :image_id => slideshow_img7.id 
   }
 ]
 
