@@ -6,15 +6,15 @@ default: &default
 
 development:
   <<: *default
-  database: db/development_psql_fogaina
+  database: development_fogaina
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test_psql_fogaina
+  database: test_fogaina
 
 production:
   <<: *default
-  database: db/production_psql_fogaina
+  database: production_fogaina
