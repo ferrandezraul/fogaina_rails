@@ -87,3 +87,8 @@ group :production do
   # If you want to use Refinery’s image and resource support, you need to add the ‘fog’ gem too.
   gem 'fog'
 end
+
+# Added for AWS S3 support
+# See https://devcenter.heroku.com/articles/paperclip-s3
+gem 'paperclip'
+gem 'aws-sdk', '~> 2.3'

@@ -16,6 +16,11 @@ Refinery::Resources.configure do |config|
   # config.s3_access_key_id = ENV['S3_KEY']
   # config.s3_secret_access_key = ENV['S3_SECRET']
   # config.s3_region = ENV['S3_REGION']
+  config.s3_backend = Refinery::Core.s3_backend
+  config.s3_bucket_name = ENV['S3_BUCKET_NAME']
+  config.s3_access_key_id = ENV['AWS_ACCESS_KEY_ID']
+  config.s3_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
+  config.s3_region = ENV['S3_REGION']
 
   # Configure Dragonfly
   # config.dragonfly_verify_urls = true
