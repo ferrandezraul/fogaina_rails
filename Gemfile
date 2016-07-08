@@ -86,6 +86,7 @@ group :production do
   # Refinery doc
   # If you want to use Refinery’s image and resource support, you need to add the ‘fog’ gem too.
   gem 'fog'
+  gem "dragonfly-s3_data_store"
 end
 
 # Added for AWS S3 support

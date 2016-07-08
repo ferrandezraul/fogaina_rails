@@ -14,6 +14,14 @@ HOWTO FOR DEVS
 
 	for i in *.png ; do convert "$i" -resize '1920x1200^' -gravity center  -crop '1920x1200+0+0' "${i%.*}.png" ; done
 
+###################################
+
+RESET DATABASE ON HEROKU
+
+heroku pg:reset DATABASE
+
+###################################
+
 HOWTO FOR USERS
 
 1. If they want to create nice things within the editor,
@@ -23,6 +31,7 @@ HOWTO FOR USERS
 2. Enable disable web in other languages via the settings.
 
 3. Image size never bigger than 5MB ( or even 2MB)
+
 
 
    
