@@ -221,6 +221,7 @@ pages_array = [ {
                     :title => "Contact",  # default german title
                     :title_es => "Contacto",
                     :title_ca => "Contacte",
+                    :view_template => "on_som",
                     :body => "<div class=\"row\">
                                 <div class=\"large-12 columns\">
                                   <div class=\"large-4 columns\">
@@ -236,7 +237,9 @@ pages_array = [ {
                                     </div>
                                   </div>
                                   <div class=\"large-8 columns\">
-                                    <div id=\"map-fogaina\"></div>
+                                    <div id=\"map-fogaina\">
+                                      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.192843809303!2d2.4581033154084873!3d42.14615995657543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a534c9267799b7%3A0x1ca1e342e06d6353!2sLa+Fogaina!5e0!3m2!1ses!2ses!4v1467997119084\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>
+                                    </div>
                                   </div>
                                 </div>
                               </div>",
@@ -255,7 +258,9 @@ pages_array = [ {
                                     </div>
                                   </div>
                                   <div class=\"large-8 columns\">
-                                    <div id=\"map-fogaina\"></div>
+                                    <div id=\"map-fogaina\">
+                                      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.192843809303!2d2.4581033154084873!3d42.14615995657543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a534c9267799b7%3A0x1ca1e342e06d6353!2sLa+Fogaina!5e0!3m2!1ses!2ses!4v1467997119084\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>
+                                    </div>
                                   </div>
                                 </div>
                               </div>",
@@ -274,7 +279,9 @@ pages_array = [ {
                                     </div>
                                   </div>
                                   <div class=\"large-8 columns\">
-                                    <div id=\"map-fogaina\"></div>
+                                    <div id=\"map-fogaina\">
+                                      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.192843809303!2d2.4581033154084873!3d42.14615995657543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a534c9267799b7%3A0x1ca1e342e06d6353!2sLa+Fogaina!5e0!3m2!1ses!2ses!4v1467997119084\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>
+                                    </div>
                                   </div>
                                 </div>
                               </div>"
