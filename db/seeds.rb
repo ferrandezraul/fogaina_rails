@@ -116,7 +116,7 @@ pages_array = [ {
                               <p>Come and visit our cafeteria.</p>
                             </div>
                             <div class=\"large-3 columns\">
-                              <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> We are here!</i></a>
+                              <a href=\"en/contact\" class=\"radius button right\"><i class=\"fi-marker\"> We are here!</i></a>
                             </div>
                           </div>
                         </div>
@@ -132,7 +132,7 @@ pages_array = [ {
                               <p>Ven a ver nuestra cafeteria.</p>
                             </div>
                             <div class=\"large-3 columns\">
-                              <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estamos aquí!</i></a>
+                              <a href=\"es/contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estamos aquí!</i></a>
                             </div>
                           </div>
                         </div>
@@ -148,7 +148,7 @@ pages_array = [ {
                               <p>Vine a veure la nostra cafeteria.</p>
                             </div>
                             <div class=\"large-3 columns\">
-                              <a href=\"contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estem aquí!</i></a>
+                              <a href=\"ca/contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estem aquí!</i></a>
                             </div>
                           </div>
                         </div>
@@ -171,7 +171,7 @@ pages_array = [ {
                         :title_es => "Página no encontrada",
                         :title_ca => "Pàgina no trobada",
                         :position_body => 0,
-                        :body => "<h4>Upsss! Sorry, there has been a problem ...</h4><p>The page is not available.</p><p><a href='/'>Back to home</a></p>",
+                        :body => "<h4>Upsss! Sorry, there has been a problem ...</h4><p>The page is not available.</p><p><a href='/en'>Back to home</a></p>",
                         :body_es => "<h4>Upsss! Lo sentimos, ha habido un problema ...</h4><p>La página solicitada no ha sido encontrada.</p><p><a href='/es'>Vuelva a la página de inicio</a></p>",
                         :body_ca => "<h4>Upsss! Ho sentim, hi ha hagut un problema ...</h4><p>La pàgina sol-licitada no s'ha trobat.</p><p><a href='/ca'>Tornar a la pàgina de inici</a></p>",
                     }
@@ -425,7 +425,7 @@ panologia_body_part = panologia_page.parts.create!( { :title => "Body",
                                                                <h3>Forn</h3>
                                                                <p>El nostre forn és un forn de llenya de foc directe, i això vol dir que quan els troncs cremen, la llengua de foc recorre tot l'interior del forn, on després es couran: primer les coques, després el pa i, finalment, la rebosteria. Antigament (i actualment en altres països com el Marroc) el de flequer i el de forner eren oficis diferents. Encara que podria ser que una persona dominés ambdues tècniques, en principi eren treballs diferents. De fet, abans, només existien forns de llenya, i això suposava un treball afegit, basat en l'atenció i un sisè sentit: la dificultat diària de fer coincidir el moment òptim de temperatura del forn amb el del punt idoni de fermentació de les masses. En aquest sentit, el nostre forn de llenya dóna al pa un toc especial gràcies a la seva solera de peces de fang que transmet la calor de forma gradual, amb el valor afegit que utilitzem una energia més adient al lloc on vivim.</p>
                                                                <p>Aquests quatre punts són els pilars sobre els quals es basa el treball, el mètode i la filosofia del pa de La Fogaina, els quals ens exigeixen donar el màxim cada dia per aconseguir una regularitat que acceptem com un repte diari, un procés d'aprenentatge continu. És un camí dret, sense dreceres que posin en dubte la qualitat del nostre producte. Sabem amb quina matèria primera treballem, i amb quin mètode creiem, perquè respectem el nostre ofici.</p>
-                                                               <p><a href='/'>Back to home</a></p>" } )
+                                                               <p><a href='/en'>Back to home</a></p>" } )
 
 panologia_body_part.translations.create!( { :locale => "es", 
                                             :body => "<p>Entres a les fosques i encens..., només una mica de llum... És agradable començar la jornada amb aquest silenci i aquesta aroma de l'última fornada i del pa fermentant... són les dues de la matinada.
@@ -445,7 +445,7 @@ panologia_body_part.translations.create!( { :locale => "es",
                                                      <h3>Forn</h3>
                                                      <p>El nostre forn és un forn de llenya de foc directe, i això vol dir que quan els troncs cremen, la llengua de foc recorre tot l'interior del forn, on després es couran: primer les coques, després el pa i, finalment, la rebosteria. Antigament (i actualment en altres països com el Marroc) el de flequer i el de forner eren oficis diferents. Encara que podria ser que una persona dominés ambdues tècniques, en principi eren treballs diferents. De fet, abans, només existien forns de llenya, i això suposava un treball afegit, basat en l'atenció i un sisè sentit: la dificultat diària de fer coincidir el moment òptim de temperatura del forn amb el del punt idoni de fermentació de les masses. En aquest sentit, el nostre forn de llenya dóna al pa un toc especial gràcies a la seva solera de peces de fang que transmet la calor de forma gradual, amb el valor afegit que utilitzem una energia més adient al lloc on vivim.</p>
                                                      <p>Aquests quatre punts són els pilars sobre els quals es basa el treball, el mètode i la filosofia del pa de La Fogaina, els quals ens exigeixen donar el màxim cada dia per aconseguir una regularitat que acceptem com un repte diari, un procés d'aprenentatge continu. És un camí dret, sense dreceres que posin en dubte la qualitat del nostre producte. Sabem amb quina matèria primera treballem, i amb quin mètode creiem, perquè respectem el nostre ofici.</p>
-                                                     <p><a href='/'>Volver al inicio</a></p>" } )
+                                                     <p><a href='/es'>Volver al inicio</a></p>" } )
 panologia_body_part.translations.create!( { :locale => "ca", 
                                             :body => "<p>Entres a les fosques i encens..., només una mica de llum... És agradable començar la jornada amb aquest silenci i aquesta aroma de l'última fornada i del pa fermentant... són les dues de la matinada.
                                                       El treball avança sense pressa, però sense pausa: comprovem els pans que ja estan esperant el seu torn per entrar al forn, formem les coques, encenem i controlem el foc, vigilem la rebosteria...
@@ -464,7 +464,7 @@ panologia_body_part.translations.create!( { :locale => "ca",
                                                      <h3>Forn</h3>
                                                      <p>El nostre forn és un forn de llenya de foc directe, i això vol dir que quan els troncs cremen, la llengua de foc recorre tot l'interior del forn, on després es couran: primer les coques, després el pa i, finalment, la rebosteria. Antigament (i actualment en altres països com el Marroc) el de flequer i el de forner eren oficis diferents. Encara que podria ser que una persona dominés ambdues tècniques, en principi eren treballs diferents. De fet, abans, només existien forns de llenya, i això suposava un treball afegit, basat en l'atenció i un sisè sentit: la dificultat diària de fer coincidir el moment òptim de temperatura del forn amb el del punt idoni de fermentació de les masses. En aquest sentit, el nostre forn de llenya dóna al pa un toc especial gràcies a la seva solera de peces de fang que transmet la calor de forma gradual, amb el valor afegit que utilitzem una energia més adient al lloc on vivim.</p>
                                                      <p>Aquests quatre punts són els pilars sobre els quals es basa el treball, el mètode i la filosofia del pa de La Fogaina, els quals ens exigeixen donar el màxim cada dia per aconseguir una regularitat que acceptem com un repte diari, un procés d'aprenentatge continu. És un camí dret, sense dreceres que posin en dubte la qualitat del nostre producte. Sabem amb quina matèria primera treballem, i amb quin mètode creiem, perquè respectem el nostre ofici.</p>
-                                                     <p><a href='/'>Tornar a l'inici</a></p>" } )
+                                                     <p><a href='/ca'>Tornar a l'inici</a></p>" } )
 
 
 ############### Ahora la pagina hija de contacte llamad On mes trobar-nos?  #################

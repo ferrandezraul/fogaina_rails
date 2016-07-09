@@ -1,7 +1,15 @@
+<div class="row">
+  <div class="large-12 columns">
+    <h1 id="body_content_title" class="fadeInLeftBig"><%= @page.title %></h1>
+  </div>
+</div>
+
 <div class='row'>
   <div class='large-12 column'>
     <%= raw(@page.content_for(:body)) %>
   </div>
 </div>
+
+<hr>
 
 <p> <%= link_to t('back_to_home'), root_path %> </p>
