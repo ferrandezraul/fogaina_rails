@@ -226,14 +226,13 @@ pages_array = [ {
                                 <div class=\"large-12 columns\">
                                   <div class=\"large-4 columns\">
                                     <div class=\"panel\">
-                                      <h4>La Fogaina</h4>
-                                      <p>Saturday from 9:30h until 13:30h </p>
-                                      <p><i class=\"fi-marker\"> Mas la Plana s/n, El Mallol, Carretera del Veïnat Cirera. La Vall d'en Bas, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
-                                    </div>
-                                    <div class=\"panel\">
                                       <h4>La Fogaina Pa i Cafè.</h4>
                                       <p>Tuesday to Saturday from 8:00h until 13:30h and from 16:00h until 20:00h</p>
                                       <p><i class=\"fi-marker\"> c/ Sant Sebastià nº52, Les Preses, Girona</i><br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
+                                    </div>
+                                    <div class=\"panel\">
+                                      <h4>La Fogaina Obrador</h4>
+                                      <p><i class=\"fi-marker\"> Mas la Plana s/n, El Mallol, Carretera del Veïnat Cirera. La Vall d'en Bas, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
                                     </div>
                                   </div>
                                   <div class=\"large-8 columns\">
@@ -247,14 +246,13 @@ pages_array = [ {
                                 <div class=\"large-12 columns\">
                                   <div class=\"large-4 columns\">
                                     <div class=\"panel\">
-                                      <h4>La Fogaina</h4>
-                                      <p>Sábados de 9:30h a 13:30h </p>
-                                      <p><i class=\"fi-marker\"> Mas la Plana s/n, El Mallol, Carretera del Veïnat Cirera. La Vall d'en Bas, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
-                                    </div>
-                                    <div class=\"panel\">
                                       <h4>La Fogaina Pa i Cafè.</h4>
                                       <p>De Martes a Sábado de 8:00h a 13:30h i de 16:00h a 20:00h</p>
                                       <p><i class=\"fi-marker\"> c/ Sant Sebastià nº52, Les Preses, Girona</i><br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
+                                    </div>
+                                    <div class=\"panel\">
+                                      <h4>La Fogaina Obrador</h4>
+                                      <p><i class=\"fi-marker\"> Mas la Plana s/n, El Mallol, Carretera del Veïnat Cirera. La Vall d'en Bas, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
                                     </div>
                                   </div>
                                   <div class=\"large-8 columns\">
@@ -268,14 +266,13 @@ pages_array = [ {
                                 <div class=\"large-12 columns\">
                                   <div class=\"large-4 columns\">
                                     <div class=\"panel\">
-                                      <h4>La Fogaina</h4>
-                                      <p>Dissabtes de 9:30h a 13:30h </p>
-                                      <p><i class=\"fi-marker\"> Mas la Plana s/n, El Mallol, Carretera del Veïnat Cirera. La Vall d'en Bas, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
-                                    </div>
-                                    <div class=\"panel\">
                                       <h4>La Fogaina Pa i Cafè.</h4>
                                       <p>De Dimarts a Dissabte de 8:00h a 13:30h i de 16:00h a 20:00h</p>
                                       <p><i class=\"fi-marker\"> c/ Sant Sebastià nº52, Les Preses, Girona</i><br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
+                                    </div>
+                                    <div class=\"panel\">
+                                      <h4>La Fogaina Obrador</h4>
+                                      <p><i class=\"fi-marker\"> Mas la Plana s/n, El Mallol, Carretera del Veïnat Cirera. La Vall d'en Bas, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
                                     </div>
                                   </div>
                                   <div class=\"large-8 columns\">
