@@ -14,6 +14,10 @@ HOWTO FOR DEVS
 
 	for i in *.png ; do convert "$i" -resize '1920x1200^' -gravity center  -crop '1920x1200+0+0' "${i%.*}.png" ; done
 
+  - Decrease quality: (it must be a jpg file and not a png. Use convert to convert to jpg if needed)
+
+  mogrify -quality 80% *.jpg
+
 ###################################
 
 RESET DATABASE ON HEROKU
@@ -30,7 +34,7 @@ HOWTO FOR USERS
 
 2. Enable disable web in other languages via the settings.
 
-3. Image size never bigger than 5MB ( or even 2MB)
+3. Image size never bigger than 2MB
 
 
 
