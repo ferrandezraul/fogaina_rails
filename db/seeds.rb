@@ -362,29 +362,91 @@ pages_array.each { | page_attr |
 
 # Path to images PAN
 soca_path = "#{Rails.root.join('app/assets/images/pan/soca.jpg')}"
-pa_pages_path = "#{Rails.root.join('app/assets/images/pan/pa_de_pages.jpg')}"
+soca2_path = "#{Rails.root.join('app/assets/images/pan/soca2.jpg')}"
+soca3_path = "#{Rails.root.join('app/assets/images/pan/soca3.jpg')}"
+
+pa_pages_path = "#{Rails.root.join('app/assets/images/pan/padepages.jpg')}"
+pa_pages2_path = "#{Rails.root.join('app/assets/images/pan/padepages2.jpg')}"
+pa_pages3_path = "#{Rails.root.join('app/assets/images/pan/padepages3.jpg')}"
+
 pa_rustic_path = "#{Rails.root.join('app/assets/images/pan/rustic.jpg')}"
+pa_rustic2_path = "#{Rails.root.join('app/assets/images/pan/rustic2.jpg')}"
+pa_rustic3_path = "#{Rails.root.join('app/assets/images/pan/rustic3.jpg')}"
+
 pa_pigat_path = "#{Rails.root.join('app/assets/images/pan/pigat.jpg')}"
-pa_espelta_path = "#{Rails.root.join('app/assets/images/pan/espelta3.jpg')}"
+pa_pigat2_path = "#{Rails.root.join('app/assets/images/pan/pigat2.jpg')}"
+pa_pigat3_path = "#{Rails.root.join('app/assets/images/pan/pigat3.jpg')}"
+
+pa_espelta_path = "#{Rails.root.join('app/assets/images/pan/espelta.jpg')}"
+pa_espelta2_path = "#{Rails.root.join('app/assets/images/pan/espelta2.jpg')}"
+pa_espelta3_path = "#{Rails.root.join('app/assets/images/pan/espelta3.jpg')}"
+
 coca_forner_path = "#{Rails.root.join('app/assets/images/pan/cocaforner.jpg')}"
-pa_de_coca_path = "#{Rails.root.join('app/assets/images/pan/pa_de_coca.jpg')}"
-pa_brot_negre_path = "#{Rails.root.join('app/assets/images/pan/brot3.jpg')}"
+coca_forner2_path = "#{Rails.root.join('app/assets/images/pan/cocaforner2.jpg')}"
+coca_forner3_path = "#{Rails.root.join('app/assets/images/pan/cocaforner3.jpg')}"
+
+pa_de_coca_path = "#{Rails.root.join('app/assets/images/pan/padecoca.jpg')}"
+pa_de_coca2_path = "#{Rails.root.join('app/assets/images/pan/padecoca2.jpg')}"
+pa_de_coca3_path = "#{Rails.root.join('app/assets/images/pan/padecoca3.jpg')}"
+
+pa_brot_negre_path = "#{Rails.root.join('app/assets/images/pan/brotnegre.jpg')}"
+pa_brot_negre2_path = "#{Rails.root.join('app/assets/images/pan/brotnegre2.jpg')}"
+pa_brot_negre3_path = "#{Rails.root.join('app/assets/images/pan/brotnegre3.jpg')}"
+
 pa_bembo_path = "#{Rails.root.join('app/assets/images/pan/bembo.jpg')}"
+pa_bembo2_path = "#{Rails.root.join('app/assets/images/pan/bembo2.jpg')}"
+pa_bembo3_path = "#{Rails.root.join('app/assets/images/pan/bembo3.jpg')}"
+
 pa_tinosell_path = "#{Rails.root.join('app/assets/images/pan/tinosell.jpg')}"
+pa_tinosell2_path = "#{Rails.root.join('app/assets/images/pan/tinosell2.jpg')}"
+
 pa_fajol_path = "#{Rails.root.join('app/assets/images/pan/fajol.jpg')}"
+pa_fajol2_path = "#{Rails.root.join('app/assets/images/pan/fajol2.jpg')}"
+pa_fajol3_path = "#{Rails.root.join('app/assets/images/pan/fajol3.jpg')}"
 
 # Images PAN
 image_soca = Refinery::Image.create :image => File.new(soca_path)
+image_soca2 = Refinery::Image.create :image => File.new(soca2_path)
+image_soca3 = Refinery::Image.create :image => File.new(soca3_path)
+
 image_pa_de_pages = Refinery::Image.create :image => File.new(pa_pages_path)
+image_pa_de_pages2 = Refinery::Image.create :image => File.new(pa_pages2_path)
+image_pa_de_pages3 = Refinery::Image.create :image => File.new(pa_pages3_path)
+
 image_pa_rustic = Refinery::Image.create :image => File.new(pa_rustic_path)
+image_pa_rustic2 = Refinery::Image.create :image => File.new(pa_rustic2_path)
+image_pa_rustic3 = Refinery::Image.create :image => File.new(pa_rustic3_path)
+
 image_pa_pigat = Refinery::Image.create :image => File.new(pa_pigat_path)
+image_pa_pigat2 = Refinery::Image.create :image => File.new(pa_pigat2_path)
+image_pa_pigat3 = Refinery::Image.create :image => File.new(pa_pigat3_path)
+
 image_pa_espelta = Refinery::Image.create :image => File.new(pa_espelta_path)
+image_pa_espelta2 = Refinery::Image.create :image => File.new(pa_espelta2_path)
+image_pa_espelta3 = Refinery::Image.create :image => File.new(pa_espelta3_path)
+
 image_coca_forner = Refinery::Image.create :image => File.new(coca_forner_path)
+image_coca_forner2 = Refinery::Image.create :image => File.new(coca_forner2_path)
+image_coca_forner3 = Refinery::Image.create :image => File.new(coca_forner3_path)
+
 image_pa_de_coca = Refinery::Image.create :image => File.new(pa_de_coca_path)
+image_pa_de_coca2 = Refinery::Image.create :image => File.new(pa_de_coca2_path)
+image_pa_de_coca3 = Refinery::Image.create :image => File.new(pa_de_coca3_path)
+
 image_brot_negre = Refinery::Image.create :image => File.new(pa_brot_negre_path)
+image_brot_negre2 = Refinery::Image.create :image => File.new(pa_brot_negre2_path)
+image_brot_negre3 = Refinery::Image.create :image => File.new(pa_brot_negre3_path)
+
 image_pa_bembo = Refinery::Image.create :image => File.new(pa_bembo_path)
+image_pa_bembo2 = Refinery::Image.create :image => File.new(pa_bembo2_path)
+image_pa_bembo3 = Refinery::Image.create :image => File.new(pa_bembo3_path)
+
 image_pa_tinosell = Refinery::Image.create :image => File.new(pa_tinosell_path)
+image_pa_tinosell2 = Refinery::Image.create :image => File.new(pa_tinosell2_path)
+
 image_pa_fajol = Refinery::Image.create :image => File.new(pa_fajol_path)
+image_pa_fajol2 = Refinery::Image.create :image => File.new(pa_fajol2_path)
+image_pa_fajol3 = Refinery::Image.create :image => File.new(pa_fajol3_path)
 
 # Added by Refinery CMS Breads extension
 Refinery::Breads::Engine.load_seed
@@ -501,7 +563,9 @@ panes = [
             :description_en => "<p>Un pan de mezcla de harinas integrales de variedades antiguas de trigo (espelta, kamut, xeixa...), formato de molde y hecho con Masa Madre, no tiene porque ser un pan denso y ácido. Hemos trabajado y lo conseguimos gracias a un Soaker, granos de trigo y arroz integral cocidos que aportan ese extra de esponjosidad y humedad de la miga. Estas comprando sabor y salud a un precio de escandalo!</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => nil,
-            :photo => image_soca
+            :photo => image_soca,
+            :photo2 => image_soca2,
+            :photo3 => image_soca3
           },
           { :name_ca => "Pa de pagés", 
             :name_es => "Pan de pagés",
@@ -511,7 +575,9 @@ panes = [
             :description_en => "<p>Sin duda el pan que más nos costó definir la formula. Parece mentira siendo un pan tan sencillo a simple vista, y es por ese mismo motivo, el hecho de no querer que un pan sencillo fuese vulgar. Harina semiblanca de molino de piedra y una masa madre natural le dotan de un alma láctica y suave, huyendo de lo insípido. El horno de leña de suela de barro es el compañero ideal para conseguir una buena hogaza.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => nil,
-            :photo => image_pa_de_pages
+            :photo => image_pa_de_pages,
+            :photo2 => image_pa_de_pages2,
+            :photo3 => image_pa_de_pages3
           },
           { :name_ca => "Rústic", 
             :name_es => "Rústico",
@@ -521,7 +587,9 @@ panes = [
             :description_en => "<p>Motivados por conseguir una hogaza similar al pan de payès, pero con la intención de dotar de más fibra y sabor, y una mejor alveolatura, sin ayuda de levadura, solamente con una masa madre joven, y añadiendo harinas integrales de trigo y centeno. Tuvimos que ir subiendo la hidratación de la masa, este luego se convirtió técnicamente en reto para los panaderos nuevos en la Fogaina. El horno de leña a casi 250ºC y todo lo que podemos de humedad son el último peldaño para conseguir un bonito y dorado hogazón.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 3,
-            :photo => image_pa_rustic
+            :photo => image_pa_rustic,
+            :photo2 => image_pa_rustic2,
+            :photo3 => image_pa_rustic3
           },
           { :name_ca => "Pigat", 
             :name_es => "Pigat",
@@ -531,7 +599,9 @@ panes = [
             :description_en => "<p>Cogemos la masa del Rústic y añadimos una mezcla de semillas tostadas y dejadas en remojo... Más sabor si cabe a nuestra masa rústica!</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 3.50,
-            :photo => image_pa_pigat
+            :photo => image_pa_pigat,
+            :photo2 => image_pa_pigat2,
+            :photo3 => image_pa_pigat3
           },
           { :name_ca => "Tinosell", 
             :name_es => "Tinosell",
@@ -541,7 +611,9 @@ panes = [
             :description_en => "<p>Y aún motivados por ofrecer más diversidad panarra en nuestras estanterías, nos sacamos de la manga este panazo ideal para desayunos y meriendas, o para combinar si quieres con una buena cata de quesos. A nuestra masa rústica le añadimos frutos secos y lo metemos dentro de un molde. El aceite de las nueces tiñe de un precioso morado la miga de este pan tan especial.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 4,
-            :photo => image_pa_tinosell 
+            :photo => image_pa_tinosell,
+            :photo2 => image_pa_tinosell2,
+            :photo3 => nil
           },
           { :name_ca => "Espelta", 
             :name_es => "Espelta",
@@ -551,7 +623,9 @@ panes = [
             :description_en => "<p>Para los deportistas, puristas, integristas, espeltatianos... No hay mejor placer que un pan 100% espelta integral, con su dosis de masa madre de espelta, y amenizado con unas pipas de girasol tostadas. Muy buen sabor y larga conservación.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 4.30,
-            :photo => image_pa_espelta 
+            :photo => image_pa_espelta,
+            :photo2 => image_pa_espelta2,
+            :photo3 => image_pa_espelta3
           },
           { :name_ca => "Coca de forner", 
             :name_es => "Coca de forner",
@@ -561,7 +635,9 @@ panes = [
             :description_en => "<p>Una panaderia con un buen horno de leña no se puede permitir no cocer unas Cocas de Forner. El motivo es el ritmo de cocción que nos ofrece nuestro horno. Al calentarlo, la temperatura sube tanto que antes de palear el pan podemos hornear unas cocas a casi 300ºC cuando aún estan vivas las brasas. El proceso de formado,estirado y reposo es paulatino durante la madrugada, hasta el último estirado en la misma pala, buen chorro de aceite de oliva y espolvoreo de azucar y adentro. Al salir, sin perder tiempo una rociada con anis para cristalizar el azucar... No os podeis imaginar la fragancia que llena todo el obrador.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 3.10,
-            :photo => image_coca_forner 
+            :photo => image_coca_forner,
+            :photo2 => image_coca_forner2,
+            :photo3 => image_coca_forner3
           },
           { :name_ca => "Pa de coca", 
             :name_es => "Pa de coca",
@@ -571,7 +647,9 @@ panes = [
             :description_en => "<p>Por temas de tipo de horno y organización, nos es muy difícil ofrecer unas barras. Así que este es nuestro producto que más se adapta a la hora del bocata. Viene a ser un tipo de chapata alargada, alveolada y de corteza fina. El toque de aceite de oliva y girasol, ambos de altisima calidad, le da un sabor y textura particular.</p>",
             :available_days => [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday],
             :price => 2.60,
-            :photo => image_pa_de_coca 
+            :photo => image_pa_de_coca,
+            :photo2 => image_pa_de_coca2,
+            :photo3 => image_pa_de_coca3
           },
           { :name_ca => "Brot Negre", 
             :name_es => "Brot Negre",
@@ -581,7 +659,9 @@ panes = [
             :description_en => "<p>Si tenemos un pan que despierte pasiones encontradas este es el Brot. Un panazo 100% de centeno integral que no deja indiferente. Es cierto que la poca cultura de centeno que tenemos en el mediterráneo hace de este pan para algunos un incomprendido, pero si le das una oportunidad, además de degustar algo diferente i aromático estarás comiendo pura salud y tendrás en tus manos un pan que dura muchos días. Acompáñalo de quesos fuertes, anchoas, patés, mantequilla y mermelada amarga ...</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
             :price => 4,
-            :photo => image_brot_negre 
+            :photo => image_brot_negre,
+            :photo2 => image_brot_negre2,
+            :photo3 => image_brot_negre3
           },
           { :name_ca => "Bembó", 
             :name_es => "Bembó",
@@ -591,7 +671,9 @@ panes = [
             :description_en => "<p>Porqué tenemos que renunciar a los panes de molde blancos i esponjosos que ofrecen las marcas industriales? Si además conseguimos que sean más buenos y saludables ...</p>",
             :available_days => [:wednesday, :thursday],
             :price => 4,
-            :photo => image_pa_bembo 
+            :photo => image_pa_bembo,
+            :photo2 => image_pa_bembo2,
+            :photo3 => image_pa_bembo3
           },
           { :name_ca => "Fajol", 
             :name_es => "Fajol",
@@ -601,7 +683,9 @@ panes = [
             :description_en => "<p>Un poco obligados por la demanda, y limitados por las \“trazas\”, finalmente nos decidimos a hacer un pan \“sin gluten\” pero que por las condiciones de nuestro obrador, es imposible de certificar para celíacos. Nuestra intención desde el primer momento era conseguir un muy buen pan sin gluten. Hemos aprendido unas cuantas cosas sobre métodos y nuevos ingredientes. Así que esperamos estar a la altura y que lo disfrutéis.",
             :available_days => :por_encargo,
             :price => 6,
-            :photo => image_pa_fajol 
+            :photo => image_pa_fajol,
+            :photo2 => image_pa_fajol2,
+            :photo3 => image_pa_fajol3
           }
         ]
 
@@ -611,6 +695,8 @@ panes.each do |pan_attr|
                                          :available_days => pan_attr[:available_days],
                                          :price => pan_attr[:price],
                                          :photo => pan_attr[:photo],
+                                         :photo2 => pan_attr[:photo2],
+                                         :photo3 => pan_attr[:photo3],
                                          :locale => "en" )
 
   pan.translations.create!( :refinery_bread_id => pan.id,
