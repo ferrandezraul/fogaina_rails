@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160822150144) do
+ActiveRecord::Schema.define(version: 20160822153020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -81,6 +81,7 @@ ActiveRecord::Schema.define(version: 20160822150144) do
     t.string   "available_days"
     t.string   "slug"
     t.integer  "photo2_id"
+    t.integer  "photo3_id"
   end
 
   add_index "refinery_breads", ["slug"], name: "index_refinery_breads_on_slug", using: :btree

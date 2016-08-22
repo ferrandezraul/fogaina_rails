@@ -52,6 +52,14 @@
                                             }, :class => "th" ), @bread.photo2.url )  %>
                   </li>
                 <% end %>
+                <% if @bread.photo3 %>
+                  <li>
+                    <%= link_to( image_tag( @bread.photo3.url, 
+                                            :data => { 
+                                               :caption => @bread.name 
+                                            }, :class => "th" ), @bread.photo3.url )  %>
+                  </li>
+                <% end %>
               </ul>
             </section>
           </div>

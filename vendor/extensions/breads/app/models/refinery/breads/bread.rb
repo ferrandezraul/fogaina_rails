@@ -14,6 +14,7 @@ module Refinery
 
       belongs_to :photo, :class_name => '::Refinery::Image'
       belongs_to :photo2, :class_name => '::Refinery::Image'
+      belongs_to :photo3, :class_name => '::Refinery::Image'
 
       # To enable admin searching, add acts_as_indexed on searchable fields, for example:
       #

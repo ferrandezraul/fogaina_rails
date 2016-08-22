@@ -112,6 +112,15 @@
                :toggle_image_display => false -%>
   </div>
 
+  <div class='field'>
+    <%= f.label "Foto 3" -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo3_id,
+               :image => @bread.photo3,
+               :toggle_image_display => false -%>
+  </div>
+
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,
              :delete_title => t('delete', :scope => 'refinery.breads.admin.breads.bread'),
