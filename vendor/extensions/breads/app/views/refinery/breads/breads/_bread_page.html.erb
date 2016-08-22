@@ -35,7 +35,7 @@
       <div class='row'>
 
         <% if @bread.photo %>
-          <div class='medium-7 large-7 column'>
+          <div class='medium-12 large-12 column'>
             <section>
               <ul class="clearing-thumbs" data-clearing>
                 <li>
@@ -65,39 +65,37 @@
           </div>
         <% end %>
 
-        <div class='medium-5 large-5 column'>
-
-          <div class="row">
-            <div class='medium-12 large-12 column'>
-              <% if @bread.price %>
-                <section>
-                  <p>
-                    <strong>
-                      <%= I18n.t(".refinery.plugins.breads.price") + ":" %>
-                      <%=raw sprintf("%.2f", @bread.price ) + " €"%>
-                    </strong>
-                  </p>
-                </section>
-              <% end %>
-            </div>
+        <hr>
+        
+        <div class="row">
+          <div class='medium-12 large-12 column'>
+            <% if @bread.price %>
+              <section>
+                <p>
+                  <strong>
+                    <%= I18n.t(".refinery.plugins.breads.price") + ":" %>
+                    <%=raw sprintf("%.2f", @bread.price ) + " €"%>
+                  </strong>
+                </p>
+              </section>
+            <% end %>
           </div>
+        </div>
 
-          <div class="row">
-            <div class='medium-12 large-12 column'>
-              <% if @bread.available_days and !@bread.available_days.empty? and !@bread.available_days.include?( 'no_mostrar' )%>      
-                <section>
-                  <p>
-                    <strong>
-                      <%= I18n.t(".refinery.plugins.breads.available_days") + ":" %>
-                    </strong><br>
-                    <%-# Function defined in app/helpers/refinery/breads/breads_helper -%>
-                    <%= translate_available_days(@bread.available_days) %>
-                  </p>
-                </section>
-              <% end %> 
-            </div>
+        <div class="row">
+          <div class='medium-12 large-12 column'>
+            <% if @bread.available_days and !@bread.available_days.empty? and !@bread.available_days.include?( 'no_mostrar' )%>      
+              <section>
+                <p>
+                  <strong>
+                    <%= I18n.t(".refinery.plugins.breads.available_days") + ":" %>
+                  </strong><br>
+                  <%-# Function defined in app/helpers/refinery/breads/breads_helper -%>
+                  <%= translate_available_days(@bread.available_days) %>
+                </p>
+              </section>
+            <% end %> 
           </div>
-
         </div>
          
       </div>
