@@ -30,6 +30,35 @@
           <%=raw @cafeteria_category.description %>
         </p>
       </section>
+
+      <% if @cafeteria_category.image2 %>
+
+        <ul class="clearing-thumbs" data-clearing>
+          <li>
+            <%= link_to( image_tag( @cafeteria_category.image.url, 
+                                    :data => { 
+                                       :caption => @cafeteria_category.title 
+                                    }, :class => "th" ), @cafeteria_category.image.url )  %>
+          </li>
+          <% if @cafeteria_category.image2 %>
+            <li>
+              <%= link_to( image_tag( @cafeteria_category.image2.url, 
+                                    :data => { 
+                                       :caption => @cafeteria_category.title 
+                                    }, :class => "th" ), @cafeteria_category.image2.url )  %>
+            </li>
+          <% end %>
+          <% if @cafeteria_category.image3 %>
+            <li>
+              <%= link_to( image_tag( @cafeteria_category.image3.url, 
+                                    :data => { 
+                                       :caption => @cafeteria_category.title 
+                                    }, :class => "th" ), @cafeteria_category.image3.url )  %>
+            </li>
+          <% end %>
+        </ul>
+
+      <% end %>
       
       <br><%= link_to t('.back'), refinery.cafeteria_categories_cafeteria_categories_path %>
 

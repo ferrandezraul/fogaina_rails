@@ -12,6 +12,8 @@ module Refinery
       validates :description, length: { minimum: 30 }
 
       belongs_to :image, :class_name => '::Refinery::Image'
+      belongs_to :image2, :class_name => '::Refinery::Image'
+      belongs_to :image3, :class_name => '::Refinery::Image'
 
       # To enable admin searching, add acts_as_indexed on searchable fields, for example:
       #

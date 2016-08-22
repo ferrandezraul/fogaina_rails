@@ -879,14 +879,22 @@ cafe_path = "#{Rails.root.join('app/assets/images/cafe/coffee800x800.jpg')}"
 entrepans_path = "#{Rails.root.join('app/assets/images/entrepans/IMG_2872.jpg')}"
 sucs_i_tees_path = "#{Rails.root.join('app/assets/images/sucs_i_tees/IMG_2603.jpg')}"
 suc_verd_path = "#{Rails.root.join('app/assets/images/sucs_i_tees/IMG_2550.jpg')}"
+
 reposteria_path = "#{Rails.root.join('app/assets/images/reposteria/reposteria.jpg')}"
+reposteria2_path = "#{Rails.root.join('app/assets/images/reposteria/reposteria2.jpg')}"
+reposteria3_path = "#{Rails.root.join('app/assets/images/reposteria/reposteria3.jpg')}"
+
 logo_path = "#{Rails.root.join('app/assets/images/logos/logo_negro.jpg')}"
 
 image_cafe = Refinery::Image.create :image => File.new(cafe_path)
 image_entrepans = Refinery::Image.create :image => File.new(entrepans_path)
 image_sucs_i_tees = Refinery::Image.create :image => File.new(sucs_i_tees_path)
 image_suc_verd = Refinery::Image.create :image => File.new(suc_verd_path)
+
 image_reposteria = Refinery::Image.create :image => File.new(reposteria_path)
+image_reposteria2 = Refinery::Image.create :image => File.new(reposteria2_path)
+image_reposteria3 = Refinery::Image.create :image => File.new(reposteria3_path)
+
 image_logo = Refinery::Image.create :image => File.new(logo_path)
 
 categories_cafeteria = [ 
@@ -1119,7 +1127,9 @@ categories_cafeteria = [
                         <li>Xocolatina</li>
                        </ul>
                       </p>", 
-    image: image_reposteria  
+    image: image_reposteria,
+    image2: image_reposteria2,
+    image3: image_reposteria3  
   }
 ]
 
@@ -1129,7 +1139,9 @@ categories_cafeteria.each do |category_attr|
     locale: "en", 
     title: category_attr[:title_en], 
     description: category_attr[:description_en], 
-    image: category_attr[:image] )
+    image: category_attr[:image],
+    image2: category_attr[:image2],
+    image3: category_attr[:image3] )
 
   category.translations.create!( { :refinery_cafeteria_category_id => category.id, 
                                    :locale => "ca",

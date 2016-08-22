@@ -9,7 +9,7 @@ module Refinery
 
         # Only allow a trusted parameter "white list" through.
         def cafeteria_category_params
-          params.require(:cafeteria_category).permit(:title, :description, :image_id)
+          params.require(:cafeteria_category).permit(:title, :description, :image_id, :image2_id, :image3_id)
         end
       end
     end

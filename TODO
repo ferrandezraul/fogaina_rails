@@ -33,10 +33,9 @@ decrease more the git repo
 
 ///////////
 
-En Forn, no crear submenu con panologia, sino crear un side body con un link a panologia y otro a panes. Lo mismo con Contacte, On trobar-nos? On mes trobar-nos?
+En Forn, no crear submenu con panologia, sino crear un side body con un li  nk a panologia y otro a panes. Lo mismo con Contacte, On trobar-nos? On mes trobar-nos?
 
 Crear una vista bonita para los panes con 2 o tres fotos. Usar slideshow de foundation como en la home page? --> o quedarme con el clearing box y anyadir espacios o un grid
 
-Anyadir photo2 y photo3 a refinery categories extension y
-usar las fotos de reposteria2 y reposteria3 en la categoria dolcos.
+Los nuevos attributos photo2, photo3 e image2, image3 de breads y categories extensions deberian ser con el sufijo _id porque si se hace un rake db:migrate nuevo me falla y tengo que modificar el schema manualmente.
 
