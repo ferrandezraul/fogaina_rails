@@ -10,7 +10,7 @@ module Refinery
 
         # Only allow a trusted parameter "white list" through.
         def bread_params
-          params.require(:bread).permit(:name, :description, :photo_id, :price, available_days: [])
+          params.require(:bread).permit(:name, :description, :photo_id, :photo2_id, :price, available_days: [])
         end
       end
     end
