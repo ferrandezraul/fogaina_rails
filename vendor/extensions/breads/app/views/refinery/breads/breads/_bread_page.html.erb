@@ -35,34 +35,69 @@
       <div class='row'>
 
         <% if @bread.photo %>
-          <div class='medium-12 large-12 column'>
-            <section>
-              <ul class="clearing-thumbs" data-clearing>
-                <li>
-                  <%= link_to( image_tag( @bread.photo.url, 
-                                          :data => { 
-                                             :caption => @bread.name 
-                                          }, :class => "th" ), @bread.photo.url )  %>
-                </li>
-                <% if @bread.photo2 %>
+
+          <%-# not dinamic photos -%>
+          <% if false %>
+            <div class='medium-12 large-12 column'>
+              <section>
+                <ul class="clearing-thumbs" data-clearing>
                   <li>
-                    <%= link_to( image_tag( @bread.photo2.url, 
+                    <%= link_to( image_tag( @bread.photo.url, 
                                             :data => { 
                                                :caption => @bread.name 
-                                            }, :class => "th" ), @bread.photo2.url )  %>
+                                            }, :class => "th" ), @bread.photo.url )  %>
                   </li>
-                <% end %>
-                <% if @bread.photo3 %>
-                  <li>
-                    <%= link_to( image_tag( @bread.photo3.url, 
-                                            :data => { 
-                                               :caption => @bread.name 
-                                            }, :class => "th" ), @bread.photo3.url )  %>
-                  </li>
-                <% end %>
-              </ul>
-            </section>
-          </div>
+                  <% if @bread.photo2 %>
+                    <li>
+                      <%= link_to( image_tag( @bread.photo2.url, 
+                                              :data => { 
+                                                 :caption => @bread.name 
+                                              }, :class => "th" ), @bread.photo2.url )  %>
+                    </li>
+                  <% end %>
+                  <% if @bread.photo3 %>
+                    <li>
+                      <%= link_to( image_tag( @bread.photo3.url, 
+                                              :data => { 
+                                                 :caption => @bread.name 
+                                              }, :class => "th" ), @bread.photo3.url )  %>
+                    </li>
+                  <% end %>
+                </ul>
+              </section>
+            </div>
+          <% end %>
+          
+          <%-# dinamic photos -%>
+          <ul class="example-orbit" data-orbit data-options=";
+                                               timer_speed: 5000;
+                                               animation: 'fade';
+                                               pause_on_hover: false;
+                                               slide_number: false;">
+
+            <%= link_to @bread.photo.url do %>
+
+              <%= image_tag(@bread.photo.url, :alt => @bread.name, 
+                                               :title => @bread.name,
+                                               :style => "margin: auto") if @bread.photo %>
+            <% end %>  
+
+            <%= link_to @bread.photo2.url do %>
+
+              <%= image_tag(@bread.photo2.url, :alt => @bread.name, 
+                                               :title => @bread.name,
+                                               :style => "margin: auto") if @bread.photo2 %>
+            <% end %>  
+
+            <%= link_to @bread.photo3.url do %>
+
+              <%= image_tag(@bread.photo3.url, :alt => @bread.name, 
+                                               :title => @bread.name,
+                                               :style => "margin: auto") if @bread.photo3 %>
+            <% end %>  
+             
+          </ul>
+
         <% end %>
 
         <hr>
