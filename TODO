@@ -33,6 +33,8 @@ decrease more the git repo
 
 ///////////
 
-En Forn y Contacte, ahora crear paginas vacias ya que no se va a ellas nunca debido al hack en /Users/raul/development/rails/fogaina_template/app/models/foundation_menu.rb en render_menu_item_link(menu_item) y entonces mover lo de forn y Contacte a otras paginas nuevas como "Els nostres pans i On trobar-nos?"
+En vista de movil visualizar las fotos de los panes sin el slideshow. Para ello editar el archivo vendor/extensions/breads/app/views/refinery/breads/breads/_bread_page.html.erb
+
+Fix issue with google maps API key missing in children pages. Curiosly this bug does not show up in contact page (not a children page). You can see the error within the console dev tools from chrome.
 
 
