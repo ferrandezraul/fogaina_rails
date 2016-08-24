@@ -33,5 +33,6 @@ decrease more the git repo
 
 ///////////
 
-En Forn, no crear submenu con panologia, sino crear un side body con un li  nk a panologia y otro a panes. Lo mismo con Contacte, On trobar-nos? On mes trobar-nos?
+En Forn y Contacte, ahora crear paginas vacias ya que no se va a ellas nunca debido al hack en /Users/raul/development/rails/fogaina_template/app/models/foundation_menu.rb en render_menu_item_link(menu_item) y entonces mover lo de forn y Contacte a otras paginas nuevas como "Els nostres pans i On trobar-nos?"
+
 

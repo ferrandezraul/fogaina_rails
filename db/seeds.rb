@@ -213,7 +213,19 @@ pages_array = [ {
                     :side_body => "", 
                     :side_body_es => "",
                     :side_body_ca => ""
-
+                },
+                {
+                    :show_in_menu => true,
+                    :deletable => true,
+                    :title => "Backery",
+                    :title_es => "Horno",
+                    :title_ca => "Forn",
+                    :body => "",
+                    :body_es => "",
+                    :body_ca => "",
+                    :side_body => "", 
+                    :side_body_es => "",
+                    :side_body_ca => ""
                 },
                 {
                     :show_in_menu => true,
@@ -452,16 +464,18 @@ image_pa_fajol3 = Refinery::Image.create :image => File.new(pa_fajol3_path)
 Refinery::Breads::Engine.load_seed
 
 breads_page = Refinery::Page.find_by(:menu_match => "^/breads.*$")
-
 raise "Error, there should be a breads page! See seeds.rb" if breads_page == nil
 
-breads_page.update!( :title => "Backery" )
-breads_page.translations.create!( { :locale => "es", :title => "Horno" } )
-breads_page.translations.create!( { :locale => "ca", :title => "Forn" } )
+forn_page = Refinery::Page.find_by!(:title => "Backery")
+forn_page.update!( :children => [breads_page] )
 
-panologia_page = breads_page.children.create!( :title => 'Panologia',
-                                               :show_in_menu => true,
-                                               :deletable => true )
+breads_page.update!( :title => "Breads" )
+breads_page.translations.create!( { :locale => "es", :title => "Panes" } )
+breads_page.translations.create!( { :locale => "ca", :title => "Pans" } )
+
+panologia_page = forn_page.children.create!( :title => 'Panologia',
+                                             :show_in_menu => true,
+                                             :deletable => true )
 
 panologia_page.translations.create!( { :locale => "es", :title => "Panologia" } )
 panologia_page.translations.create!( { :locale => "ca", :title => "Panologia" } )

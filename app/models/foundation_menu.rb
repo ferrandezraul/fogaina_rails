@@ -28,7 +28,15 @@ class FoundationMenu < Refinery::Pages::MenuPresenter
   end
 
   def render_menu_item_link(menu_item)
-    link_to(menu_item.title, context.refinery.url_for(menu_item.url))
+    # Create a dummy link that does not link to anything,
+    # in case it is a page with children pages and it is not the Home page.
+    # This is done in order to avoid that parent pages
+    # are clickable since it was not visible for all users (hack done in order to improve usuability)
+    if menu_item.has_children? and menu_item.menu_match != "^/$"
+      link_to(menu_item.title, "#") # Dummy link that does nothing
+    else
+      link_to(menu_item.title, context.refinery.url_for(menu_item.url))
+    end
   end
 
   def menu_item_css(menu_item, index)
