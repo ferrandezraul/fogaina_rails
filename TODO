@@ -35,6 +35,7 @@ decrease more the git repo
 
 En vista de movil visualizar las fotos de los panes sin el slideshow. Para ello editar el archivo vendor/extensions/breads/app/views/refinery/breads/breads/_bread_page.html.erb
 
-Fix issue with google maps API key missing in children pages. Curiosly this bug does not show up in contact page (not a children page). You can see the error within the console dev tools from chrome.
+Deploy again.
+
 
 

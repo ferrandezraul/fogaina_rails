@@ -570,7 +570,21 @@ on_mes_trobarnos_body_part.translations.create!( {
 
 on_mes_trobarnos_body_part.translations.create!( { 
   :locale => "ca", 
-  :body => "<p>Podeu trobar-nos a ...</p>" } )
+  :body => "<p>
+              Podeu trobar alguns dels nostres productes a: ...
+              <ul>
+                <li><a href=\"https://es-es.facebook.com/olot.topteam\" target=\"_blank\">Olot Top Team</a></li>
+                <li><a href=\"https://es-es.facebook.com/Sanum-1390855831216357/\" target=\"_blank\">Sanum</a></li>
+                <li>Bar Restaurant Ca la Tupina</li>
+                <li><a href=\"http://elrebostcooperativa.cat/\" target=\"_blank\">El rebost de Girona</a></li>
+                <li>Cooperativa El Morrot</li>
+                <li>Cooperativa La Xicoina</li>
+                <li><a href=\"http://cooperativarauta.blogspot.com.es/\" target=\"_blank\">Cooperativa La Rauta</a></li>
+                <li>Cooperativa La Trepadella</li>
+                <li>Cistelles ecològiques <a href=\"http://lasaodelagarrotxa.cat/\" target=\"_blank\">La Saó</a></li>
+                <li>Productes ecològics d'<a href=\"http://ecocity.cat/\" target=\"_blank\">Ecocity</a></li>
+              </ul>
+            </p>" } )
 
 ############################################                                                     
 
