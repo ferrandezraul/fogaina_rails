@@ -116,7 +116,7 @@ pages_array = [ {
                               <p>Come and visit our cafeteria.</p>
                             </div>
                             <div class=\"large-3 columns\">
-                              <a href=\"en/contact\" class=\"radius button right\"><i class=\"fi-marker\"> We are here!</i></a>
+                              <a href=\"contact/where-are-we\" class=\"radius button right\"><i class=\"fi-marker\"> We are here!</i></a>
                             </div>
                           </div>
                         </div>
@@ -132,7 +132,7 @@ pages_array = [ {
                               <p>Ven a ver nuestra cafeteria.</p>
                             </div>
                             <div class=\"large-3 columns\">
-                              <a href=\"es/contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estamos aquí!</i></a>
+                              <a href=\"contact/where-are-we\" class=\"radius button right\"><i class=\"fi-marker\"> Estamos aquí!</i></a>
                             </div>
                           </div>
                         </div>
@@ -148,7 +148,7 @@ pages_array = [ {
                               <p>Vine a veure la nostra cafeteria.</p>
                             </div>
                             <div class=\"large-3 columns\">
-                              <a href=\"ca/contact\" class=\"radius button right\"><i class=\"fi-marker\"> Estem aquí!</i></a>
+                              <a href=\"contact/where-are-we\" class=\"radius button right\"><i class=\"fi-marker\"> Estem aquí!</i></a>
                             </div>
                           </div>
                         </div>
