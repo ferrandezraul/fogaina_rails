@@ -75,25 +75,33 @@
                                                pause_on_hover: false;
                                                slide_number: false;">
 
-            <%= link_to @bread.photo.url do %>
+            <% if @bread.photo %>                                   
 
-              <%= image_tag(@bread.photo.url, :alt => @bread.name, 
+              <%= link_to @bread.photo.url do %>
+  
+                <%= image_tag(@bread.photo.url, :alt => @bread.name, 
                                                :title => @bread.name,
-                                               :style => "margin: auto") if @bread.photo %>
+                                               :style => "margin: auto")%>
+              <% end %>  
+            <% end %> 
+
+            <% if @bread.photo2 %> 
+
+              <%= link_to @bread.photo2.url do %>
+
+                <%= image_tag(@bread.photo2.url, :alt => @bread.name, 
+                                                 :title => @bread.name,
+                                                 :style => "margin: auto") %>
+              <% end %> 
             <% end %>  
 
-            <%= link_to @bread.photo2.url do %>
+            <% if @bread.photo3 %> 
+              <%= link_to @bread.photo3.url do %>
 
-              <%= image_tag(@bread.photo2.url, :alt => @bread.name, 
-                                               :title => @bread.name,
-                                               :style => "margin: auto") if @bread.photo2 %>
-            <% end %>  
-
-            <%= link_to @bread.photo3.url do %>
-
-              <%= image_tag(@bread.photo3.url, :alt => @bread.name, 
-                                               :title => @bread.name,
-                                               :style => "margin: auto") if @bread.photo3 %>
+                <%= image_tag(@bread.photo3.url, :alt => @bread.name, 
+                                                 :title => @bread.name,
+                                                 :style => "margin: auto") %>
+              <% end %>  
             <% end %>  
              
           </ul>
