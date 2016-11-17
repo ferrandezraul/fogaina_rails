@@ -23,6 +23,14 @@ HOWTO FOR DEVS
 RESET DATABASE ON HEROKU
 
 heroku pg:reset DATABASE
+heroku run rake db:migrate
+heroku run rake db:seed 
+
+###################################
+
+PUSH CHANGES TO PRODUCTION
+
+git push heroku master
 
 ###################################
 
