@@ -523,7 +523,9 @@ on_mes_trobarnos_body_part.translations.create!( {
   :body => "<p>
               Podeu trobar alguns dels nostres productes a: ...
               <ul>
-                <li><a href=\"https://es-es.facebook.com/olot.topteam\" target=\"_blank\">Olot Top Team</a></li>
+                <li><a href=\"https://www.sanum.cat\" target=\"_blank\">Sanum</a></li>
+                <li><a href=\"https://www.economatdegracia.com/\" target=\"_blank\">Economat de Gràcia</a></li>
+                <li><a href=\"https://www.facebook.com/cacau.olot/\" target=\"_blank\">Cacau Olot</a></li>
                 <li><a href=\"https://es-es.facebook.com/Sanum-1390855831216357/\" target=\"_blank\">Sanum</a></li>
                 <li>Bar Restaurant Ca la Tupina</li>
                 <li><a href=\"http://elrebostcooperativa.cat/\" target=\"_blank\">El rebost de Girona</a></li>
@@ -547,7 +549,7 @@ panes = [
             :description_es => "<p>Un pan de mezcla de harinas integrales de variedades antiguas de trigo (espelta, kamut, xeixa...), formato de molde y hecho con Masa Madre, no tiene porque ser un pan denso y ácido. Hemos trabajado y lo conseguimos gracias a un Soaker, granos de trigo y arroz integral cocidos que aportan ese extra de esponjosidad y humedad de la miga. Estas comprando sabor y salud a un precio de escandalo!</p>",
             :description_en => "<p>Un pan de mezcla de harinas integrales de variedades antiguas de trigo (espelta, kamut, xeixa...), formato de molde y hecho con Masa Madre, no tiene porque ser un pan denso y ácido. Hemos trabajado y lo conseguimos gracias a un Soaker, granos de trigo y arroz integral cocidos que aportan ese extra de esponjosidad y humedad de la miga. Estas comprando sabor y salud a un precio de escandalo!</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
-            :price => nil,
+            :price => 3,
             :photo => image_soca,
             :photo2 => image_soca2,
             :photo3 => image_soca3
@@ -559,7 +561,7 @@ panes = [
             :description_es => "<p>Sin duda el pan que más nos costó definir la formula. Parece mentira siendo un pan tan sencillo a simple vista, y es por ese mismo motivo, el hecho de no querer que un pan sencillo fuese vulgar. Harina semiblanca de molino de piedra y una masa madre natural le dotan de un alma láctica y suave, huyendo de lo insípido. El horno de leña de suela de barro es el compañero ideal para conseguir una buena hogaza.</p>",
             :description_en => "<p>Sin duda el pan que más nos costó definir la formula. Parece mentira siendo un pan tan sencillo a simple vista, y es por ese mismo motivo, el hecho de no querer que un pan sencillo fuese vulgar. Harina semiblanca de molino de piedra y una masa madre natural le dotan de un alma láctica y suave, huyendo de lo insípido. El horno de leña de suela de barro es el compañero ideal para conseguir una buena hogaza.</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
-            :price => nil,
+            :price => 2.10,
             :photo => image_pa_de_pages,
             :photo2 => image_pa_de_pages2,
             :photo3 => image_pa_de_pages3
@@ -666,7 +668,7 @@ panes = [
             :description_ca => "<p>Una mica obligats per la demanda, i limitats per les \"traces\", finalment ens vam decidir a fer un pa \"sense gluten\", que per les condicions del nostre obrador, ens impedeix de certificar-lo per a celíacs. La nostra intenció des del primer moment era aconseguir un molt bon pa sense gluten. Hem après unes quantes coses sobre mètodes i nous ingredients. Així que esperem estar a l'alçada i que el gaudiu.</p>",
             :description_es => "<p>Un poco obligados por la demanda, y limitados por las \“trazas\”, finalmente nos decidimos a hacer un pan \“sin gluten\” pero que por las condiciones de nuestro obrador, es imposible de certificar para celíacos. Nuestra intención desde el primer momento era conseguir un muy buen pan sin gluten. Hemos aprendido unas cuantas cosas sobre métodos y nuevos ingredientes. Así que esperamos estar a la altura y que lo disfrutéis.</p>",
             :description_en => "<p>Un poco obligados por la demanda, y limitados por las \“trazas\”, finalmente nos decidimos a hacer un pan \“sin gluten\” pero que por las condiciones de nuestro obrador, es imposible de certificar para celíacos. Nuestra intención desde el primer momento era conseguir un muy buen pan sin gluten. Hemos aprendido unas cuantas cosas sobre métodos y nuevos ingredientes. Así que esperamos estar a la altura y que lo disfrutéis.",
-            :available_days => :por_encargo,
+            :available_days => [:tuesday, :wednesday, :thursday, :friday, :por_encargo],
             :price => 6,
             :photo => image_pa_fajol,
             :photo2 => image_pa_fajol2,
@@ -861,22 +863,36 @@ cafeteria_page.translations.create!( { :locale => "es", :title => "Cafetería" }
 cafeteria_page.translations.create!( { :locale => "ca", :title => "Cafeteria" } )
 
 cafe_path = "#{Rails.root.join('app/assets/images/cafe/coffee800x800.jpg')}"
+cafe2_path = "#{Rails.root.join('app/assets/images/cafe/IMG_2667.jpg')}"
+cafe3_path = "#{Rails.root.join('app/assets/images/cafe/IMG_2885.jpg')}"
 entrepans_path = "#{Rails.root.join('app/assets/images/entrepans/IMG_2872.jpg')}"
+entrepans_path2 = "#{Rails.root.join('app/assets/images/entrepans/5405.jpg')}"
+entrepans_path3 = "#{Rails.root.join('app/assets/images/entrepans/cocapernil.jpg')}"
 sucs_i_tees_path = "#{Rails.root.join('app/assets/images/sucs_i_tees/IMG_2603.jpg')}"
+sucs_i_tees_path2 = "#{Rails.root.join('app/assets/images/sucs_i_tees/te.jpg')}"
 suc_verd_path = "#{Rails.root.join('app/assets/images/sucs_i_tees/sucsverds.jpg')}"
-cervesa_path = "#{Rails.root.join('app/assets/images/cervesa.jpg')}"
+cervesa_path = "#{Rails.root.join('app/assets/images/cerveza/5418.jpg')}"
+cervesa_path2 = "#{Rails.root.join('app/assets/images/cerveza/cervesa.jpg')}"
+cervesa_path3 = "#{Rails.root.join('app/assets/images/cerveza/4851.jpg')}"
 
 reposteria_path = "#{Rails.root.join('app/assets/images/reposteria/reposteria.jpg')}"
-reposteria2_path = "#{Rails.root.join('app/assets/images/reposteria/reposteria2.jpg')}"
+reposteria2_path = "#{Rails.root.join('app/assets/images/reposteria/IMG_1856.jpg')}"
 reposteria3_path = "#{Rails.root.join('app/assets/images/reposteria/reposteria3.jpg')}"
 
 logo_path = "#{Rails.root.join('app/assets/images/logos/logo_negro.jpg')}"
 
 image_cafe = Refinery::Image.create :image => File.new(cafe_path)
+image_cafe2 = Refinery::Image.create :image => File.new(cafe2_path)
+image_cafe3 = Refinery::Image.create :image => File.new(cafe3_path)
 image_entrepans = Refinery::Image.create :image => File.new(entrepans_path)
+image_entrepans2 = Refinery::Image.create :image => File.new(entrepans_path2)
+image_entrepans3 = Refinery::Image.create :image => File.new(entrepans_path3)
 image_sucs_i_tees = Refinery::Image.create :image => File.new(sucs_i_tees_path)
+image_sucs_i_tees2 = Refinery::Image.create :image => File.new(sucs_i_tees_path2)
 image_suc_verd = Refinery::Image.create :image => File.new(suc_verd_path)
 image_cervesa = Refinery::Image.create :image => File.new(cervesa_path)
+image_cervesa2 = Refinery::Image.create :image => File.new(cervesa_path2)
+image_cervesa3 = Refinery::Image.create :image => File.new(cervesa_path3)
 
 image_reposteria = Refinery::Image.create :image => File.new(reposteria_path)
 image_reposteria2 = Refinery::Image.create :image => File.new(reposteria2_path)
@@ -889,82 +905,28 @@ categories_cafeteria = [
     title_ca: "Cafès", 
     title_en: "Coffee",
     title_es: "Cafés",  
-    description_ca: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.
-                      <ul>
-                        <li>Espresso</li>
-                        <li>Cafè amb gel</li>
-                        <li>Tallat</li>
-                        <li>Cafè amb llet</li>
-                        <li>Cafè amb llet XL</li>
-                        <li>Cigaló</li>
-                        <li>Succedani de cafè eco amb llet</li>
-                        <li>Got de llet petit</li>
-                        <li>Got de llet gran</li>
-                        <li>Xocolata desfeta (Pastisseria Cacau)</li>
-                        <li>Suís</li>
-                        <li>Colacao (Amb llet vegetal d'arròs o civada)</li>
-                        <li>Cacaolat</li>
-                      </ul>
-                      </p>", 
-    description_en: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.
-                      <ul>
-                        <li>Espresso</li>
-                        <li>Cafè amb gel</li>
-                        <li>Tallat</li>
-                        <li>Cafè amb llet</li>
-                        <li>Cafè amb llet XL</li>
-                        <li>Cigaló</li>
-                        <li>Succedani de cafè eco amb llet</li>
-                        <li>Got de llet petit</li>
-                        <li>Got de llet gran</li>
-                        <li>Xocolata desfeta (Pastisseria Cacau)</li>
-                        <li>Suís</li>
-                        <li>Colacao (Amb llet vegetal d'arròs o civada)</li>
-                        <li>Cacaolat</li>
-                      </ul>
-                      </p>",
-    description_es: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.
-                      <ul>
-                        <li>Espresso</li>
-                        <li>Cafè amb gel</li>
-                        <li>Tallat</li>
-                        <li>Cafè amb llet</li>
-                        <li>Cafè amb llet XL</li>
-                        <li>Cigaló</li>
-                        <li>Succedani de cafè eco amb llet</li>
-                        <li>Got de llet petit</li>
-                        <li>Got de llet gran</li>
-                        <li>Xocolata desfeta (Pastisseria Cacau)</li>
-                        <li>Suís</li>
-                        <li>Colacao (Amb llet vegetal d'arròs o civada)</li>
-                        <li>Cacaolat</li>
-                      </ul>
-                      </p>",
-    image: image_cafe  
+    description_ca: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.</p>", 
+    description_en: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.</p>",
+    description_es: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.</p>",
+    image: image_cafe,
+    image2: image_cafe2,
+    image3: image_cafe3    
   },
   {
     title_ca: "Te", 
     title_en: "Tee",
     title_es: "Té",  
     description_ca: "<p>Els tes s'elaboren al laboratori d'Artesano Natural de Ripoll, que aposten per l'excel·lència de les matèries primeres i amb la seva imaginació i coneixements ens ofereixen propostes genuïnes i exclusives. Més que un laboratori es podria parlar d'un obrador on els gustos, les aromes i els colors són els protagonistes. Pots mirar la carta de tes.
-                      <ul>
-                        <li>Infusions</li>
-                        <li>Tes</li>
-                      </ul>
+                      <br><a href='http://www.art-e-sano.com' target='_blank'>www.art-e-sano.com</a>
                       </p>", 
     description_en: "<p>Els tes s'elaboren al laboratori d'Artesano Natural de Ripoll, que aposten per l'excel·lència de les matèries primeres i amb la seva imaginació i coneixements ens ofereixen propostes genuïnes i exclusives. Més que un laboratori es podria parlar d'un obrador on els gustos, les aromes i els colors són els protagonistes. Pots mirar la carta de tes.
-                      <ul>
-                        <li>Infusions</li>
-                        <li>Tes</li>
-                      </ul>
+                      <br><a href='http://www.art-e-sano.com' target='_blank'>www.art-e-sano.com</a>
                       </p>", 
     description_es: "<p>Els tes s'elaboren al laboratori d'Artesano Natural de Ripoll, que aposten per l'excel·lència de les matèries primeres i amb la seva imaginació i coneixements ens ofereixen propostes genuïnes i exclusives. Més que un laboratori es podria parlar d'un obrador on els gustos, les aromes i els colors són els protagonistes. Pots mirar la carta de tes.
-                      <ul>
-                        <li>Infusions</li>
-                        <li>Tes</li>
-                      </ul>
+                      <br><a href='http://www.art-e-sano.com' target='_blank'>www.art-e-sano.com</a>
                       </p>", 
-    image: image_sucs_i_tees  
+    image: image_sucs_i_tees,
+    image2: image_sucs_i_tees2  
   },
   {
     title_ca: "Suc Verd", 
@@ -991,55 +953,31 @@ categories_cafeteria = [
     description_ca: "<p>
                       Pots triar quin és el teu entrepà, et donem diferents alternatives amb tots els nostres pans, mides i ingredients. El protagonista és el pa de coca, fred o calentó, en mida puça, mini o entrepà. Una opció molt garrotxina és la coca dolça de forner farcida de pernil, llonganissa, etc. Si t'estimes més menjar altres tipus de farines, pots provar el pa d'espelta, l'integral amb cereals o el pa de fajol. Però si el que et ve realment de gust és un biquini, no ho dubtis, el fem amb el nostre bembó, un pa de motllo blanc i molt tendre que no et deixarà indiferent. L'embotit és artesà, de Can Bailèn, del proper veïnat de Pocafarina a Sant Privat d'en Bas.
                       Farcit: pernil salat, pernil dolç, formatge d'ovella curat, llonganissa, xoriç vermell, bull blanc, bull negre, tonyina, mantega i melmelada, vegetals i de temporada.
-                      <ul>
-                        <li>Puça</li>
-                        <li>Mini</li>
-                        <li>Entrepà</li>
-                        <li>Llesca de pa de pagès</li>
-                        <li>2 llesques de pa de pagès</li>
-                        <li>Torrada de pa especial (fajol, espelta, soca)</li>
-                        <li>2 torrades de pa especial (fajol, espelta, soca)</li>
-                        <li>Biquini</li>
-                      </ul>
                       </p>", 
     description_en: "<p>
                       Pots triar quin és el teu entrepà, et donem diferents alternatives amb tots els nostres pans, mides i ingredients. El protagonista és el pa de coca, fred o calentó, en mida puça, mini o entrepà. Una opció molt garrotxina és la coca dolça de forner farcida de pernil, llonganissa, etc. Si t'estimes més menjar altres tipus de farines, pots provar el pa d'espelta, l'integral amb cereals o el pa de fajol. Però si el que et ve realment de gust és un biquini, no ho dubtis, el fem amb el nostre bembó, un pa de motllo blanc i molt tendre que no et deixarà indiferent. L'embotit és artesà, de Can Bailèn, del proper veïnat de Pocafarina a Sant Privat d'en Bas.
                       Farcit: pernil salat, pernil dolç, formatge d'ovella curat, llonganissa, xoriç vermell, bull blanc, bull negre, tonyina, mantega i melmelada, vegetals i de temporada.
-                      <ul>
-                        <li>Puça</li>
-                        <li>Mini</li>
-                        <li>Entrepà</li>
-                        <li>Llesca de pa de pagès</li>
-                        <li>2 llesques de pa de pagès</li>
-                        <li>Torrada de pa especial (fajol, espelta, soca)</li>
-                        <li>2 torrades de pa especial (fajol, espelta, soca)</li>
-                        <li>Biquini</li>
-                      </ul>
                       </p>", 
     description_es: "<p>
                       Pots triar quin és el teu entrepà, et donem diferents alternatives amb tots els nostres pans, mides i ingredients. El protagonista és el pa de coca, fred o calentó, en mida puça, mini o entrepà. Una opció molt garrotxina és la coca dolça de forner farcida de pernil, llonganissa, etc. Si t'estimes més menjar altres tipus de farines, pots provar el pa d'espelta, l'integral amb cereals o el pa de fajol. Però si el que et ve realment de gust és un biquini, no ho dubtis, el fem amb el nostre bembó, un pa de motllo blanc i molt tendre que no et deixarà indiferent. L'embotit és artesà, de Can Bailèn, del proper veïnat de Pocafarina a Sant Privat d'en Bas.
-                      Farcit: pernil salat, pernil dolç, formatge d'ovella curat, llonganissa, xoriç vermell, bull blanc, bull negre, tonyina, mantega i melmelada, vegetals i de temporada.
-                      <ul>
-                        <li>Puça</li>
-                        <li>Mini</li>
-                        <li>Entrepà</li>
-                        <li>Llesca de pa de pagès</li>
-                        <li>2 llesques de pa de pagès</li>
-                        <li>Torrada de pa especial (fajol, espelta, soca)</li>
-                        <li>2 torrades de pa especial (fajol, espelta, soca)</li>
-                        <li>Biquini</li>
-                      </ul>
                       </p>", 
-    image: image_entrepans  
+    image: image_entrepans,
+    image2: image_entrepans2,
+    image3: image_entrepans3  
   },
   {
     title_ca: "Cerveses", 
     title_en: "Beers",
     title_es: "Cervezas",  
-    description_ca: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam esse quisquam est debitis inventore, distinctio, sunt molestiae, numquam assumenda ut libero quam nisi saepe, laborum vel perspiciatis repellat aspernatur. Nihil.</p><p>Enim iste facere quo pariatur, temporibus debitis maxime id illo repellat cumque velit ea modi, sit impedit, aperiam accusantium libero quisquam explicabo, earum voluptates dolore autem. Tempora aut officiis ex?</p>", 
-    description_en: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aliquid sed cupiditate perferendis eum ab optio expedita fugit error omnis suscipit laborum, aperiam, nemo nisi excepturi tempore. Repellendus provident, optio.</p>",
-    description_es: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cumque illo nesciunt vel voluptatibus explicabo magni sit tempore eos dolore ut doloremque, repellendus. Perspiciatis a beatae voluptatum hic, eos quia.</p>",
-    image: image_cervesa  
+    description_ca: "<p>La fermentació és la nostra passió. No hi ha res com un aliment viu que per força s'ha de tractar amb cura. Per això recolzem els artesans del món de la cervesa. Aquí a La Fogaina trobaràs cerveses de <a href='https://calaveracoop.wordpress.com/' target='_blank'>La Calabera Cooperativa</a> de Sant Joan de les Abadeses, de <a href='http://www.lesclandestines.net/' target='_blank'>Les Clandestines</a> de Montferrí a Tarragona i de <a href='https://www.facebook.com/santapauales.cervesavolcanica/' target='_blank'>Santa Pau</a>, d'aquí, de La Garrotxa.
+Deixa't sorprendre amb la proposta del tirador!</p>", 
+    description_en: "<p>La fermentació és la nostra passió. No hi ha res com un aliment viu que per força s'ha de tractar amb cura. Per això recolzem els artesans del món de la cervesa. Aquí a La Fogaina trobaràs cerveses de La Calavera de Sant Joan de les Abadeses, de <a href='http://www.lesclandestines.net/' target='_blank'>Les Clandestines</a> de Montferrí a Tarragona i de Santa Pau, d'aquí, de La Garrotxa.
+Deixa't sorprendre amb la proposta del tirador!</p>",
+    description_es: "<p>La fermentación es nuestra pasión. No hay nada como un alimento vivo que por Fuerza se debe tratar con cuidado. Por ESO apoyamos a los artesanos del mundo de la cerveza. Aquí en La Fogaina encontrarás Cervezas de <a href='https://calaveracoop.wordpress.com/' target='_blank'>La Calabera Cooperativa</a> de Sant Joan de les Abadeses, de <a href='http://www.lesclandestines.net/' target='_blank'>Les Clandestines</a> de Montferrí en Tarragona y de <a href='https://www.facebook.com/santapauales.cervesavolcanica/' target='_blank'>Santa Pau</a>, de aquí, de La Garrotxa.
+Déjate sorprender con la propuesta del tirador!</p>",
+    image: image_cervesa,
+    image2: image_cervesa2,
+    image3: image_cervesa3  
   },
   {
     title_ca: "Dolços", 

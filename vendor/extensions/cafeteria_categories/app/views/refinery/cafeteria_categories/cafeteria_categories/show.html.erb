@@ -31,15 +31,17 @@
         </p>
       </section>
 
-      <% if @cafeteria_category.image2 %>
-
+      <%-# not dinamic photos -%>
+      <% if false %>
         <ul class="clearing-thumbs" data-clearing>
-          <li>
-            <%= link_to( image_tag( @cafeteria_category.image.url, 
-                                    :data => { 
-                                       :caption => @cafeteria_category.title 
-                                    }, :class => "th" ), @cafeteria_category.image.url )  %>
-          </li>
+          <% if @cafeteria_category.image %>
+            <li>
+              <%= link_to( image_tag( @cafeteria_category.image.url, 
+                                      :data => { 
+                                         :caption => @cafeteria_category.title 
+                                      }, :class => "th" ), @cafeteria_category.image.url )  %>
+            </li>
+          <% end %>
           <% if @cafeteria_category.image2 %>
             <li>
               <%= link_to( image_tag( @cafeteria_category.image2.url, 
@@ -57,8 +59,42 @@
             </li>
           <% end %>
         </ul>
-
       <% end %>
+
+      <%-# dinamic photos -%>
+      <ul class="example-orbit" data-orbit data-options=";
+                                           timer_speed: 4000;
+                                           animation: 'fade';
+                                           pause_on_hover: false;
+                                           slide_number: false;">
+
+        <% if @cafeteria_category.image %>
+          <%= link_to @cafeteria_category.image.url do %>
+        
+            <%= image_tag(@cafeteria_category.image.url,
+                                           :title => @cafeteria_category.title,
+                                           :style => "margin: auto") %>
+          <% end %>  
+        <% end %>
+
+        <% if @cafeteria_category.image2 %>
+          <%= link_to @cafeteria_category.image2.url do %>
+
+            <%= image_tag( @cafeteria_category.image2.url, 
+                                :title => @cafeteria_category.title,
+                                :style => "margin: auto")  %>
+          <% end %>
+        <% end %>
+
+        <% if @cafeteria_category.image3 %>
+            <%= link_to @cafeteria_category.image3.url do %>
+              <%= image_tag( @cafeteria_category.image3.url, 
+                                    :title => @cafeteria_category.title,
+                                    :style => "margin: auto") %>
+          <% end %>
+        <% end %>
+
+      </ul>
       
       <br><%= link_to t('.back'), refinery.cafeteria_categories_cafeteria_categories_path %>
 
