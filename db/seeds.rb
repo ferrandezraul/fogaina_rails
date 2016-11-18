@@ -516,17 +516,30 @@ on_mes_trobarnos_body_part = on_mes_trobarnos_page.parts.create!(
 
 on_mes_trobarnos_body_part.translations.create!( { 
   :locale => "es", 
-  :body => "<p>Podéis encontrarnos en ...</p>" } )
-
-on_mes_trobarnos_body_part.translations.create!( { 
-  :locale => "ca", 
-  :body => "<p>
-              Podeu trobar alguns dels nostres productes a: ...
+  :body => "<p>Podéis encontrarnos en:
               <ul>
                 <li><a href=\"https://www.sanum.cat\" target=\"_blank\">Sanum</a></li>
                 <li><a href=\"https://www.economatdegracia.com/\" target=\"_blank\">Economat de Gràcia</a></li>
                 <li><a href=\"https://www.facebook.com/cacau.olot/\" target=\"_blank\">Cacau Olot</a></li>
-                <li><a href=\"https://es-es.facebook.com/Sanum-1390855831216357/\" target=\"_blank\">Sanum</a></li>
+                <li>Bar Restaurant Ca la Tupina</li>
+                <li><a href=\"http://elrebostcooperativa.cat/\" target=\"_blank\">El rebost de Girona</a></li>
+                <li>Cooperativa El Morrot</li>
+                <li>Cooperativa La Xicoina</li>
+                <li><a href=\"http://cooperativarauta.blogspot.com.es/\" target=\"_blank\">Cooperativa La Rauta</a></li>
+                <li>Cooperativa La Trepadella</li>
+                <li>Cestas ecológicas <a href=\"http://lasaodelagarrotxa.cat/\" target=\"_blank\">La Saó</a></li>
+                <li>Productos ecológicos d'<a href=\"http://ecocity.cat/\" target=\"_blank\">Ecocity</a></li>
+              </ul>
+            </p>" } )
+
+on_mes_trobarnos_body_part.translations.create!( { 
+  :locale => "ca", 
+  :body => "<p>
+              Podeu trobar alguns dels nostres productes a:
+              <ul>
+                <li><a href=\"https://www.sanum.cat\" target=\"_blank\">Sanum</a></li>
+                <li><a href=\"https://www.economatdegracia.com/\" target=\"_blank\">Economat de Gràcia</a></li>
+                <li><a href=\"https://www.facebook.com/cacau.olot/\" target=\"_blank\">Cacau Olot</a></li>
                 <li>Bar Restaurant Ca la Tupina</li>
                 <li><a href=\"http://elrebostcooperativa.cat/\" target=\"_blank\">El rebost de Girona</a></li>
                 <li>Cooperativa El Morrot</li>
@@ -557,11 +570,11 @@ panes = [
           { :name_ca => "Pa de pagés", 
             :name_es => "Pan de pagés",
             :name_en => "Pa de pagés",  
-            :description_ca => "<p>Sens dubte el pa que més ens va costar definir-ne la fórmula. Sembla mentida: un pa tan senzill a primera vista i, precisament, per això, ens va donar molta feina, perquè volíem fer un pa senzill que no fos vulgar. Farina semiblanca de molí de pedra i una massa mare natural, que el doten d'una ànima làctica i suau, fugint del què és insípid. El forn de llenya de solera de fang és el company ideal per aconseguir una bona fogassa.</p>",
-            :description_es => "<p>Sin duda el pan que más nos costó definir la formula. Parece mentira siendo un pan tan sencillo a simple vista, y es por ese mismo motivo, el hecho de no querer que un pan sencillo fuese vulgar. Harina semiblanca de molino de piedra y una masa madre natural le dotan de un alma láctica y suave, huyendo de lo insípido. El horno de leña de suela de barro es el compañero ideal para conseguir una buena hogaza.</p>",
-            :description_en => "<p>Sin duda el pan que más nos costó definir la formula. Parece mentira siendo un pan tan sencillo a simple vista, y es por ese mismo motivo, el hecho de no querer que un pan sencillo fuese vulgar. Harina semiblanca de molino de piedra y una masa madre natural le dotan de un alma láctica y suave, huyendo de lo insípido. El horno de leña de suela de barro es el compañero ideal para conseguir una buena hogaza.</p>",
+            :description_ca => "<p>Sens dubte el pa que més ens va costar definir-ne la fórmula. Sembla mentida: un pa tan senzill a primera vista i, precisament, per això, ens va donar molta feina, perquè volíem fer un pa senzill que no fos vulgar. Farina semiblanca de molí de pedra i una massa mare natural, que el doten d'una ànima làctica i suau, fugint del què és insípid. El forn de llenya de solera de fang és el company ideal per aconseguir una bona fogassa. Pa de pagés de 600gr - 2,10€, Pa de pagés 1Kg - 3,20€</p>",
+            :description_es => "<p>Sin duda el pan que más nos costó definir la formula. Parece mentira siendo un pan tan sencillo a simple vista, y es por ese mismo motivo, el hecho de no querer que un pan sencillo fuese vulgar. Harina semiblanca de molino de piedra y una masa madre natural le dotan de un alma láctica y suave, huyendo de lo insípido. El horno de leña de suela de barro es el compañero ideal para conseguir una buena hogaza. Pan de pagés de 600gr - 2,10€, Pan de pagés 1Kg - 3,20€</p>",
+            :description_en => "<p>Sin duda el pan que más nos costó definir la formula. Parece mentira siendo un pan tan sencillo a simple vista, y es por ese mismo motivo, el hecho de no querer que un pan sencillo fuese vulgar. Harina semiblanca de molino de piedra y una masa madre natural le dotan de un alma láctica y suave, huyendo de lo insípido. El horno de leña de suela de barro es el compañero ideal para conseguir una buena hogaza. Pan de pagés de 600gr - 2,10€, Pan de pagés 1Kg - 3,20€</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
-            :price => 2.10,
+            :price => nil,
             :photo => image_pa_de_pages,
             :photo2 => image_pa_de_pages2,
             :photo3 => image_pa_de_pages3
@@ -668,7 +681,7 @@ panes = [
             :description_ca => "<p>Una mica obligats per la demanda, i limitats per les \"traces\", finalment ens vam decidir a fer un pa \"sense gluten\", que per les condicions del nostre obrador, ens impedeix de certificar-lo per a celíacs. La nostra intenció des del primer moment era aconseguir un molt bon pa sense gluten. Hem après unes quantes coses sobre mètodes i nous ingredients. Així que esperem estar a l'alçada i que el gaudiu.</p>",
             :description_es => "<p>Un poco obligados por la demanda, y limitados por las \“trazas\”, finalmente nos decidimos a hacer un pan \“sin gluten\” pero que por las condiciones de nuestro obrador, es imposible de certificar para celíacos. Nuestra intención desde el primer momento era conseguir un muy buen pan sin gluten. Hemos aprendido unas cuantas cosas sobre métodos y nuevos ingredientes. Así que esperamos estar a la altura y que lo disfrutéis.</p>",
             :description_en => "<p>Un poco obligados por la demanda, y limitados por las \“trazas\”, finalmente nos decidimos a hacer un pan \“sin gluten\” pero que por las condiciones de nuestro obrador, es imposible de certificar para celíacos. Nuestra intención desde el primer momento era conseguir un muy buen pan sin gluten. Hemos aprendido unas cuantas cosas sobre métodos y nuevos ingredientes. Así que esperamos estar a la altura y que lo disfrutéis.",
-            :available_days => [:tuesday, :wednesday, :thursday, :friday, :por_encargo],
+            :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday, :por_encargo],
             :price => 6,
             :photo => image_pa_fajol,
             :photo2 => image_pa_fajol2,
@@ -907,7 +920,7 @@ categories_cafeteria = [
     title_es: "Cafés",  
     description_ca: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.</p>", 
     description_en: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.</p>",
-    description_es: "<p>Una de les millors experiències per als sentits és olorar un bon cafè, però encara és millor que sigui bo de gust. Per aquest motiu utilitzem cafè de gamma alta. Seguim el mètode espresso per tal d'aconseguir extreure tota l'aroma d'un cafè acabat de moldre. I seguirem aventurant-nos perquè fer el vostre cafè no sigui tan sols un joc de canell. La mólta i el gramatge exacte, el temps oportú ens donaran un cafè gustós i aromàtic. I amb la llet jugarem al cafe latte.</p>",
+    description_es: "<p>Una de las mejores experiencias para los sentidos es oler un buen café, pero aún es mejor que sea bueno de gusto. Por este motivo utilizamos café de alta gama. Seguimos el método espresso para conseguir extraer todo el aroma de un café recién molido. Y seguiremos aventurando para que hacer vuestro café no sea sólo un juego de muñeca. La molienda y el gramaje exacto, el tiempo oportuno nos daran un café sabroso y aromático. Y con la leche jugaremos al café latte.</p>",
     image: image_cafe,
     image2: image_cafe2,
     image3: image_cafe3    
@@ -919,10 +932,10 @@ categories_cafeteria = [
     description_ca: "<p>Els tes s'elaboren al laboratori d'Artesano Natural de Ripoll, que aposten per l'excel·lència de les matèries primeres i amb la seva imaginació i coneixements ens ofereixen propostes genuïnes i exclusives. Més que un laboratori es podria parlar d'un obrador on els gustos, les aromes i els colors són els protagonistes. Pots mirar la carta de tes.
                       <br><a href='http://www.art-e-sano.com' target='_blank'>www.art-e-sano.com</a>
                       </p>", 
-    description_en: "<p>Els tes s'elaboren al laboratori d'Artesano Natural de Ripoll, que aposten per l'excel·lència de les matèries primeres i amb la seva imaginació i coneixements ens ofereixen propostes genuïnes i exclusives. Més que un laboratori es podria parlar d'un obrador on els gustos, les aromes i els colors són els protagonistes. Pots mirar la carta de tes.
+    description_en: "<p>Los tés se elaboran en el laboratorio de Artesano Natural de Ripoll, que apuestan por la excelencia de las materias primas y con su imaginación y conocimientos nos ofrecen propuestas genuinas y exclusivas. Más que un laboratorio se podría hablar de un obrador donde los gustos, los aromas y los colores son los protagonistas. Puedes mirar la carta de tés.
                       <br><a href='http://www.art-e-sano.com' target='_blank'>www.art-e-sano.com</a>
                       </p>", 
-    description_es: "<p>Els tes s'elaboren al laboratori d'Artesano Natural de Ripoll, que aposten per l'excel·lència de les matèries primeres i amb la seva imaginació i coneixements ens ofereixen propostes genuïnes i exclusives. Més que un laboratori es podria parlar d'un obrador on els gustos, les aromes i els colors són els protagonistes. Pots mirar la carta de tes.
+    description_es: "<p>Los tés se elaboran en el laboratorio de Artesano Natural de Ripoll, que apuestan por la excelencia de las materias primas y con su imaginación y conocimientos nos ofrecen propuestas genuinas y exclusivas. Más que un laboratorio se podría hablar de un obrador donde los gustos, los aromas y los colores son los protagonistas. Puedes mirar la carta de tés.
                       <br><a href='http://www.art-e-sano.com' target='_blank'>www.art-e-sano.com</a>
                       </p>", 
     image: image_sucs_i_tees,
@@ -936,14 +949,8 @@ categories_cafeteria = [
                       Us agradaria tenir a casa vostra l'extractor Juissen 2? Parleu amb nosaltres!
                       Suc verd de: poma verda, espinacs, llimona, gingebre, api-rave, bròquil.
                       Suc vermell de: remolatxa, pastanaga, poma, llimona.</p>", 
-    description_en: "<p>Amb l'extractor de sucs en fred o cold pressed que treballa a 43 revolucions per minut (RPM) s'aconsegueix extreure el millor suc, sense escalfar, oxidar, ni perdre vitamines. No és tendència, és la salut com a prioritat.
-                      Us agradaria tenir a casa vostra l'extractor Juissen 2? Parleu amb nosaltres!
-                      Suc verd de: poma verda, espinacs, llimona, gingebre, api-rave, bròquil.
-                      Suc vermell de: remolatxa, pastanaga, poma, llimona.</p>",
-    description_es: "<p>Amb l'extractor de sucs en fred o cold pressed que treballa a 43 revolucions per minut (RPM) s'aconsegueix extreure el millor suc, sense escalfar, oxidar, ni perdre vitamines. No és tendència, és la salut com a prioritat.
-                      Us agradaria tenir a casa vostra l'extractor Juissen 2? Parleu amb nosaltres!
-                      Suc verd de: poma verda, espinacs, llimona, gingebre, api-rave, bròquil.
-                      Suc vermell de: remolatxa, pastanaga, poma, llimona.</p>",
+    description_en: "<p>Con el extractor de jugos en frío o cold pressed que trabaja a 43 revoluciones por minuto (RPM) se consigue extraer el mejor jugo, sin calentar, oxidar, ni perder vitaminas. No es tendencia, es la salud como prioridad. ¿Le gustaría tener en casa el extractor Juissen 2? Habla con nosotros! Jugo verde de: manzana verde, espinacas, limón, jengibre, apio nabo, brócoli. Jugo rojo de: remolacha, zanahoria, manzana, limón.</p>",
+    description_es: "<p>Con el extractor de jugos en frío o cold pressed que trabaja a 43 revoluciones por minuto (RPM) se consigue extraer el mejor jugo, sin calentar, oxidar, ni perder vitaminas. No es tendencia, es la salud como prioridad. ¿Le gustaría tener en casa el extractor Juissen 2? Habla con nosotros! Jugo verde de: manzana verde, espinacas, limón, jengibre, apio nabo, brócoli. Jugo rojo de: remolacha, zanahoria, manzana, limón.</p>",
     image: image_suc_verd
   },
   {
@@ -959,7 +966,7 @@ categories_cafeteria = [
                       Farcit: pernil salat, pernil dolç, formatge d'ovella curat, llonganissa, xoriç vermell, bull blanc, bull negre, tonyina, mantega i melmelada, vegetals i de temporada.
                       </p>", 
     description_es: "<p>
-                      Pots triar quin és el teu entrepà, et donem diferents alternatives amb tots els nostres pans, mides i ingredients. El protagonista és el pa de coca, fred o calentó, en mida puça, mini o entrepà. Una opció molt garrotxina és la coca dolça de forner farcida de pernil, llonganissa, etc. Si t'estimes més menjar altres tipus de farines, pots provar el pa d'espelta, l'integral amb cereals o el pa de fajol. Però si el que et ve realment de gust és un biquini, no ho dubtis, el fem amb el nostre bembó, un pa de motllo blanc i molt tendre que no et deixarà indiferent. L'embotit és artesà, de Can Bailèn, del proper veïnat de Pocafarina a Sant Privat d'en Bas.
+                      Puedes elegir cuál es tu bocadillo, te damos diferentes alternativas con todos nuestros panes, tamaños e ingredientes. El protagonista es el pan de coca, frío o calentito, en tamaño pulga, mini o bocadillo. Una opción muy garrotxina es la torta dulce de panadero rellena de jamón, salchichón, etc. Si prefieres comer otros tipos de harinas, puedes probar el pan de espelta, el integral con cereales o el pan de trigo sarraceno. Pero si lo que prefieres es un bikini, no lo dudes, lo hacemos con nuestro Bembó, un pan de molde blanco y muy tierno que no te dejará indiferente. El embutido es artesano, de Can Bailén, del vecindario de Pocafarina en Sant Privat d'en Bas.
                       </p>", 
     image: image_entrepans,
     image2: image_entrepans2,
@@ -1007,7 +1014,7 @@ Déjate sorprender con la propuesta del tirador!</p>",
                        </ul>
                       </p>", 
     description_en: "<p>
-                      L'opció que triem quan elaborem els dolços és qualitat. No dubtem quan escollim els millors ingredients. Les pastes fullades i els croissants separen les seves fulles en el marc d'una bona mantega. El  (pastís de pastanaga) és un viatge de dolços i d'aromes que ens porta als límits entre Orient i Occident. Això sí, som artesans!
+                      La opción que elegimos cuando elaboramos los dulces es calidad. No dudamos cuando elegimos los mejores ingredientes. Los hojaldres y los croissants separan sus hojas en el marco de una buena mantequilla. El (pastel de zanahoria) es un viaje de dulces y de aromas que nos lleva a los límites entre Oriente y Occidente. Eso sí, somos artesanos!
                       <ul>
                         <li>Coca de sucre</li>
                         <li>Croissant mantega</li>
@@ -1030,7 +1037,7 @@ Déjate sorprender con la propuesta del tirador!</p>",
                        </ul>
                       </p>", 
     description_es: "<p>
-                      L'opció que triem quan elaborem els dolços és qualitat. No dubtem quan escollim els millors ingredients. Les pastes fullades i els croissants separen les seves fulles en el marc d'una bona mantega. El  (pastís de pastanaga) és un viatge de dolços i d'aromes que ens porta als límits entre Orient i Occident. Això sí, som artesans!
+                      La opción que elegimos cuando elaboramos los dulces es calidad. No dudamos cuando elegimos los mejores ingredientes. Los hojaldres y los croissants separan sus hojas en el marco de una buena mantequilla. El (pastel de zanahoria) es un viaje de dulces y de aromas que nos lleva a los límites entre Oriente y Occidente. Eso sí, somos artesanos!
                       <ul>
                         <li>Coca de sucre</li>
                         <li>Croissant mantega</li>
