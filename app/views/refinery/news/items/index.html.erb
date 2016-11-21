@@ -1,54 +1,59 @@
-<% content_for :body do %>
-  <%=raw @page.content_for(Refinery::Pages.default_parts.first[:slug].to_sym) unless params[:page] %>
+<div class="row">
+  <div class="large-12 columns">
+    <% content_for :body do %>
+      <%=raw @page.content_for(Refinery::Pages.default_parts.first[:slug].to_sym) unless params[:page] %>
 
-  <% if @items.any? %>
-    <% @items.each_slice(3).with_index do |slice, slice_index| %>
-      <div class="row">
-        <% slice.each_with_index do |item, b_index| %>
-          <div class="large-4 columns">
-            <div class="news-item-wrapper">
-              <div class="news-img-wrapper">
-                <%= link_to t('read_more'), refinery.news_item_path(item), class: "button expand read-more" %>
-                <%= item.photo ? image_tag(item.photo.url) : image_tag("logos/logo_negro.svg") %>
+      <% if @items.any? %>
+        <% @items.each_slice(3).with_index do |slice, slice_index| %>
+          <div class="row">
+            <% slice.each_with_index do |item, b_index| %>
+              <div class="large-4 columns">
+                <div class="news-item-wrapper">
+                  <div class="news-img-wrapper">
+                    <%= link_to t('read_more'), refinery.news_item_path(item), class: "button expand read-more" %>
+                    <%= item.photo ? image_tag(item.photo.url) : image_tag("logos/logo_negro.svg") %>
+                  </div>
+                  <h3><%= link_to item.title, refinery.news_item_path(item) %></h3>  
+                  <small><%= t('.published') %> <%= l(item.publish_date, :format => :short) %></small>
+                  <p>
+                    <%= truncate  item.body, :length => 200,
+                                  :omission => " ... #{link_to t('.read_more'), refinery.news_item_path(item)}",
+                                  :preserve_html_tags => true %>
+                  </p>
+                  
+                </div>
               </div>
-              <h3><%= link_to item.title, refinery.news_item_path(item) %></h3>  
-              <small><%= t('.published') %> <%= l(item.publish_date, :format => :short) %></small>
-              <p>
-                <%= truncate  item.body, :length => 200,
-                              :omission => " ... #{link_to t('.read_more'), refinery.news_item_path(item)}",
-                              :preserve_html_tags => true %>
-              </p>
-              
-            </div>
+            <% end %>
+
+            <%-# At the last slice, add empty columns if needed -%>
+            <% empty_rows = extra_empty_rows_of_three(@items) %>
+            <% last_index = last_index_slice_of_three(@items) %>
+            <% if ( slice_index == last_index ) && empty_rows > 0 %>
+              <% empty_rows.times do %>
+                <div class="large-4 columns">
+                </div>
+              <% end %>
+            <% end %>
+
           </div>
         <% end %>
 
-        <%-# At the last slice, add empty columns if needed -%>
-        <% empty_rows = extra_empty_rows_of_three(@items) %>
-        <% last_index = last_index_slice_of_three(@items) %>
-        <% if ( slice_index == last_index ) && empty_rows > 0 %>
-          <% empty_rows.times do %>
-            <div class="large-4 columns">
-            </div>
-          <% end %>
-        <% end %>
+        <p>
+          <%= will_paginate @items, :previous_label => t('.previous_label'), 
+                                    :next_label => t('.next_label') %>
+        </p>
+        
+      <% else %>
+        <p><em><%= t('.no_items_yet') %></em></p>
+      <% end %>
+    <% end -%>
 
-      </div>
-    <% end %>
+    <% content_for :body_content_right_prepend do -%>
+      <%= raw @page.content_for(::Refinery::Pages.default_parts.second[:slug].to_sym) %>
+    <% end if ::Refinery::Pages.default_parts.many? -%>
+    <%= render '/refinery/news/shared/body_content_right' %>
 
-    <p>
-      <%= will_paginate @items, :previous_label => t('.previous_label'), 
-                                :next_label => t('.next_label') %>
-    </p>
-    
-  <% else %>
-    <p><em><%= t('.no_items_yet') %></em></p>
-  <% end %>
-<% end -%>
+    <%= render "/refinery/content_page" %>
 
-<% content_for :body_content_right_prepend do -%>
-  <%= raw @page.content_for(::Refinery::Pages.default_parts.second[:slug].to_sym) %>
-<% end if ::Refinery::Pages.default_parts.many? -%>
-<%= render '/refinery/news/shared/body_content_right' %>
-
-<%= render "/refinery/content_page" %>
+  </div>  
+</div>

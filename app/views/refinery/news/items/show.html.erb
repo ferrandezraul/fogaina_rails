@@ -1,13 +1,17 @@
+<div class="row">
+  <div class="large-12 columns">
+    <% if @item %>
+      <% content_for :body_content_title, @item.title %>
+      <% content_for :body do %>
+        <%= render "refinery/news/items/item" %>
+      <% end %>
 
-<% if @item %>
-  <% content_for :body_content_title, @item.title %>
-  <% content_for :body do %>
-    <%= render "refinery/news/items/item" %>
-  <% end %>
+      <%= render "/refinery/content_page" %>
+      
+    <% else %>
+      <h2><%= @page.title %></h2>
+      <p><%= t('refinery.news.items.index.no_items_yet') %></p>
+    <% end %>
 
-  <%= render "/refinery/content_page" %>
-  
-<% else %>
-  <h2><%= @page.title %></h2>
-  <p><%= t('refinery.news.items.index.no_items_yet') %></p>
-<% end %>
+  </div>
+</div>
