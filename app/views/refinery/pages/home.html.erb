@@ -2,26 +2,24 @@
 <% main_slideshow = Refinery::ImageSlideshows::ImageSlideshow.includes(:image_slides).find_by_title("Carrousel d'imatges de la pagina d'inici") %>
 
 <% if main_slideshow %> 
-  <div class="row">
-    <div class="large-12 columns">
-      <ul class="example-orbit" data-orbit data-options=";
-                                           timer_speed: 5000;
-                                           animation: 'fade';
-                                           pause_on_hover: false;
-                                           slide_number: false;">                                 
-        <% main_slideshow.image_slides.each do |image_slide| %>
-            <%= link_to image_slide.link_url do %>
 
-              <%= image_tag(image_slide.image.url, :alt => image_slide.title, 
-                                                   :title => image_slide.caption,
-                                                   :style => "margin: auto") if image_slide.image %>
-            <% end %>  
+  <ul class="example-orbit" data-orbit data-options=";
+                                       timer_speed: 5000;
+                                       animation: 'fade';
+                                       pause_on_hover: false;
+                                       slide_number: false;">                                 
+    <% main_slideshow.image_slides.each do |image_slide| %>
+        <%= link_to image_slide.link_url do %>
 
-        <% end %>
-         
-      </ul>
-    </div>
-  </div>
+          <%= image_tag(image_slide.image.url, :alt => image_slide.title, 
+                                               :title => image_slide.caption,
+                                               :style => "margin: auto") if image_slide.image %>
+        <% end %>  
+
+    <% end %>
+     
+  </ul>
+
 
 <% end %> 
 
