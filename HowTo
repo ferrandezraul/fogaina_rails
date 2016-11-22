@@ -2,8 +2,14 @@ HOWTO FOR DEVS
 
 ###################################
 
+I'm using the gem sitemap_generator:
+
 rake sitemap:create
 rake sitemap:refresh
+rake sitemap:create_upload_and_ping
+
+Useful info I used: Update the sitemap to AWS:
+https://www.cookieshq.co.uk/posts/creating-a-sitemap-with-ruby-on-rails-and-upload-it-to-amazon-s3/
 
 ###################################
 
