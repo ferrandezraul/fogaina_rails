@@ -1,5 +1,12 @@
 HOWTO FOR DEVS
 
+###################################
+
+rake sitemap:create
+rake sitemap:refresh
+
+###################################
+
 1. Postgresql database
    Followed http://www.tunnelsup.com/setting-up-postgres-on-mac-osx on mac osx
    database user "raul", database name --> see config/database.yml

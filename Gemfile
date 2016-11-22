@@ -93,3 +93,5 @@ end
 # See https://devcenter.heroku.com/articles/paperclip-s3
 gem 'paperclip'
 gem 'aws-sdk', '~> 2.3'
+
+gem 'sitemap_generator', '~> 5.1'
