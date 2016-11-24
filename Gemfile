@@ -95,3 +95,5 @@ gem 'paperclip'
 gem 'aws-sdk', '~> 2.3'
 
 gem 'sitemap_generator', '~> 5.1'
+
+gem 'meta-tags'

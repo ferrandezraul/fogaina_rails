@@ -1,4 +1,7 @@
 
+<% #See https://github.com/kpumuk/meta-tags %>
+<% #set_meta_tags description: "Forn La Fogaina Pa i Cafè, La Vall d'en Bas, La Garrotxa, Girona" %>
+
 <% main_slideshow = Refinery::ImageSlideshows::ImageSlideshow.includes(:image_slides).find_by_title("Carrousel d'imatges de la pagina d'inici") %>
 
 <% if main_slideshow %> 
