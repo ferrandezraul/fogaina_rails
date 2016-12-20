@@ -1537,12 +1537,16 @@ $global-radius: 4px;
     opacity: 0;
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
   }
   
   img {
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
   }
   
@@ -1551,6 +1555,8 @@ $global-radius: 4px;
     background-color: rgba(0,0,0, 0.4);
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
   }
   
@@ -1561,6 +1567,8 @@ $global-radius: 4px;
     opacity: 0;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     background: rgba(0,0,0,0.7);
   }
@@ -1578,6 +1586,8 @@ $global-radius: 4px;
     opacity: 0;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     
     &:hover {
@@ -1588,6 +1598,8 @@ $global-radius: 4px;
   &:hover img {
     transform: scale(1.2); // standard
     -webkit-transform: scale(1.2); // android, safari, chrome
+    -moz-transform: scale(1.2); // mozilla
+    -o-transform: scale(1.2); // opera
     -ms-transform: scale(1.2);     // Internet explorer
   }
   
@@ -1602,12 +1614,16 @@ $global-radius: 4px;
   &:hover p {
     transition-delay: 0.1s;
     -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
     -ms-transition-delay: 0.1s;
   }
   
   &:hover .button {
     transition-delay: 0.2s;
     -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
     -ms-transition-delay: 0.2s;
   }
 } 
@@ -1625,6 +1641,8 @@ $global-radius: 4px;
   img {
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
   }
   
@@ -1633,10 +1651,14 @@ $global-radius: 4px;
     background-color: rgba(0,0,0,0.3);
     transform: translateX(-110%);  // standard
     -webkit-transform: translateX(-110%);  // android, safari, chrome  
+    -moz-transform: translateX(-110%);  // android, safari, chrome  
+    -o-transform: translateX(-110%);  // android, safari, chrome  
     -ms-transform: translateX(-110%);      // Internet explorer
     opacity: 1;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     box-shadow: 0 0 7px #ccc;
   }
@@ -1654,6 +1676,8 @@ $global-radius: 4px;
     color: #333;
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
   }
 
@@ -1676,15 +1700,21 @@ $global-radius: 4px;
   &:hover .image-overlay-content {
     transform: translateX(0px);
     -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -o-transform: translateX(0px);
     -ms-transform: translateX(0px);
   } 
 
   &:hover img {
     transform: translateX(80%);
     -webkit-transform: translateX(80%);
+    -moz-transform: translateX(80%);
+    -o-transform: translateX(80%);
     -ms-transform: translateX(80%);
     transition-delay: 0.1s;
     -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
     -ms-transition-delay: 0.1s;
   }
 
@@ -1692,6 +1722,8 @@ $global-radius: 4px;
     opacity: 1;
     transition-delay: 0.4s;
     -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
     -ms-transition-delay: 0.4s;
   }
 }
@@ -1716,6 +1748,8 @@ $global-radius: 4px;
     opacity: 0;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     
     &:hover {
@@ -1730,6 +1764,8 @@ $global-radius: 4px;
     background-color: rgba(255,255,255, 0.5);
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
   }
   
@@ -1740,6 +1776,8 @@ $global-radius: 4px;
     opacity: 0;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
   }
   
@@ -1747,12 +1785,16 @@ $global-radius: 4px;
     opacity: 0;
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
   }
   
   img{
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
   }
   
@@ -1761,6 +1803,8 @@ $global-radius: 4px;
     filter: gray;
     -webkit-filter: grayscale(100%);
     -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
   }
   
@@ -1775,12 +1819,16 @@ $global-radius: 4px;
   &:hover p {
     transition-delay: 0.1s;
     -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
     -ms-transition-delay: 0.1s;
   }
   
   &:hover .button {
     transition-delay: 0.2s;
     -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
     -ms-transition-delay: 0.2s;
   }
 } 
@@ -1822,6 +1870,8 @@ $primary-color: #008cba;
   .read-more {
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     background-color: #333;
     padding: 16px 8px;
@@ -1839,6 +1889,8 @@ $primary-color: #008cba;
   img {
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     //-webkit-filter: grayscale(0);
     width: 100%;
