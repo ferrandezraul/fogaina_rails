@@ -1535,29 +1535,29 @@ $global-radius: 4px;
     color: #f4f4f4;
     //font-size: 28px;
     opacity: 0;
-    transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
   }
   
   img {
-    transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
   }
   
   .image-overlay-content {
     opacity: 0;
     background-color: rgba(0,0,0, 0.4);
-    transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   
   h2 {
@@ -1565,11 +1565,11 @@ $global-radius: 4px;
     font-size: 1.8rem;
     margin-top: 5%;
     opacity: 0;
-    transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     background: rgba(0,0,0,0.7);
   }
   
@@ -1584,11 +1584,11 @@ $global-radius: 4px;
     position: relative;
     border: 1px solid #999;
     opacity: 0;
-    transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     
     &:hover {
       box-shadow: 0 0 5px #000;
@@ -1596,11 +1596,11 @@ $global-radius: 4px;
   }
   
   &:hover img {
-    transform: scale(1.2); // standard
     -webkit-transform: scale(1.2); // android, safari, chrome
     -moz-transform: scale(1.2); // mozilla
     -o-transform: scale(1.2); // opera
     -ms-transform: scale(1.2);     // Internet explorer
+    transform: scale(1.2); // standard
   }
   
   &:hover .image-overlay-content {
@@ -1612,19 +1612,19 @@ $global-radius: 4px;
   }
   
   &:hover p {
-    transition-delay: 0.1s;
     -webkit-transition-delay: 0.1s;
     -moz-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     -ms-transition-delay: 0.1s;
+    transition-delay: 0.1s;
   }
   
   &:hover .button {
-    transition-delay: 0.2s;
     -webkit-transition-delay: 0.2s;
     -moz-transition-delay: 0.2s;
     -o-transition-delay: 0.2s;
     -ms-transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
 } 
 
@@ -1639,27 +1639,27 @@ $global-radius: 4px;
   }
   
   img {
-    transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   
   .image-overlay-content {
     background-image: image-url("logos/pattern.jpg");
     background-color: rgba(0,0,0,0.3);
-    transform: translateX(-110%);  // standard
     -webkit-transform: translateX(-110%);  // android, safari, chrome  
     -moz-transform: translateX(-110%);  // android, safari, chrome  
     -o-transform: translateX(-110%);  // android, safari, chrome  
     -ms-transform: translateX(-110%);      // Internet explorer
+    transform: translateX(-110%);  // standard
     opacity: 1;
-    transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     box-shadow: 0 0 7px #ccc;
   }
   
@@ -1674,11 +1674,11 @@ $global-radius: 4px;
   p {
     opacity: 0;
     color: #333;
-    transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
   }
 
   .button {
@@ -1698,33 +1698,34 @@ $global-radius: 4px;
   }
 
   &:hover .image-overlay-content {
-    transform: translateX(0px);
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
     -o-transform: translateX(0px);
     -ms-transform: translateX(0px);
+    transform: translateX(0px);
   } 
 
   &:hover img {
-    transform: translateX(80%);
     -webkit-transform: translateX(80%);
     -moz-transform: translateX(80%);
     -o-transform: translateX(80%);
     -ms-transform: translateX(80%);
-    transition-delay: 0.1s;
+    transform: translateX(80%);
+    
     -webkit-transition-delay: 0.1s;
     -moz-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     -ms-transition-delay: 0.1s;
+    transition-delay: 0.1s;
   }
 
   &:hover p{
     opacity: 1;
-    transition-delay: 0.4s;
     -webkit-transition-delay: 0.4s;
     -moz-transition-delay: 0.4s;
     -o-transition-delay: 0.4s;
     -ms-transition-delay: 0.4s;
+    transition-delay: 0.4s;
   }
 }
   
@@ -1746,11 +1747,11 @@ $global-radius: 4px;
     box-shadow: 0 0 1px #000;
     position: relative;
     opacity: 0;
-    transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     
     &:hover {
       box-shadow: 0 0 5px #fff;
@@ -1762,11 +1763,11 @@ $global-radius: 4px;
     opacity: 0;
     background-image: image-url("logos/gplaypattern.png");
     background-color: rgba(255,255,255, 0.5);
-    transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   
   h2 {
@@ -1774,28 +1775,28 @@ $global-radius: 4px;
     font-size: 1.6rem;
     margin-top: 10%;
     opacity: 0;
-    transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   
   p {
     opacity: 0;
-    transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
   }
   
   img{
-    transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   
   &:hover img {
@@ -1806,6 +1807,7 @@ $global-radius: 4px;
     -moz-transform: scale(1.5);
     -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
+    transform: scale(1.5);
   }
   
   &:hover .image-overlay-content {
@@ -1817,19 +1819,19 @@ $global-radius: 4px;
   }
   
   &:hover p {
-    transition-delay: 0.1s;
     -webkit-transition-delay: 0.1s;
     -moz-transition-delay: 0.1s;
     -o-transition-delay: 0.1s;
     -ms-transition-delay: 0.1s;
+    transition-delay: 0.1s;
   }
   
   &:hover .button {
-    transition-delay: 0.2s;
     -webkit-transition-delay: 0.2s;
     -moz-transition-delay: 0.2s;
     -o-transition-delay: 0.2s;
     -ms-transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
 } 
 
@@ -1867,12 +1869,12 @@ $primary-color: #008cba;
   position: relative;
   overflow: hidden;
 
-  .read-more {
-    transition: all 0.2s ease;
+  .read-more {    
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     background-color: #333;
     padding: 16px 8px;
     bottom: -50px;
@@ -1887,15 +1889,14 @@ $primary-color: #008cba;
   }
 
   img {
-    transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
     //-webkit-filter: grayscale(0);
     width: 100%;
   }
 }  
-
 
 
