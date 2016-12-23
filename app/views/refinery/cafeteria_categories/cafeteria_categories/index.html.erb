@@ -26,6 +26,9 @@
 
                 <%= link_to I18n.t('read_more'), refinery.cafeteria_categories_cafeteria_category_path(category), class: "button" if category.description %>
               </div>
+              <div class="show-for-small-only">
+                <%= link_to category.title, refinery.cafeteria_categories_cafeteria_category_path(category), class: "button" %>
+              </div> 
             
             </div>    
           </div>

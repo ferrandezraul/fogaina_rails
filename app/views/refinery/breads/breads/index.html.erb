@@ -28,7 +28,12 @@
                 <% end %>
 
                 <%= link_to I18n.t('read_more'), refinery.breads_bread_path(bread), class: "button" if bread.description %>
+
               </div>
+
+              <div class="show-for-small-only">
+                <%= link_to bread.name, refinery.breads_bread_path(bread), class: "button" %>
+              </div> 
             
             </div>    
           </div>
