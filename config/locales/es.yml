@@ -40,6 +40,7 @@ es:
         items:
           read_more: Leer más
           created_at: 'Creado el %{when}'
+        archives: Archivos
       items:
         archive:
           news_item_archive_for: 'Archivos de %{date}'
