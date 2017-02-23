@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160822221410) do
+ActiveRecord::Schema.define(version: 20170223165247) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -194,6 +194,7 @@ ActiveRecord::Schema.define(version: 20160822221410) do
     t.string   "source"
     t.string   "slug"
     t.integer  "photo_id"
+    t.integer  "photo2_id"
   end
 
   add_index "refinery_news_items", ["id"], name: "index_refinery_news_items_on_id", using: :btree
