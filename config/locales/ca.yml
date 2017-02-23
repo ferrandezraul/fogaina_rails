@@ -60,7 +60,7 @@ ca:
         items:
           read_more: Llegeix més
           created_at: 'Creat el %{when}'
-        archives: Archius
+        archives: Arxius
       items:
         item:
           back_to_index: "Veure totes les notícies"
