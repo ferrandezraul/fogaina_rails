@@ -36,7 +36,13 @@ es:
 
   refinery:
     news:
+      shared:
+        items:
+          read_more: Leer más
+          created_at: 'Creado el %{when}'
       items:
+        archive:
+          news_item_archive_for: 'Archivos de %{date}'
         item:
           back_to_index: "Ver todas las noticias"
           published: Publicado
