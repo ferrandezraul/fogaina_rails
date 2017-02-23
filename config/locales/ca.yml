@@ -76,7 +76,7 @@ ca:
           previous_label: Pàgina anterior
           next_label: Pàgina següent
         archive:
-          news_item_archive_for: 'Archive for %{date}'
+          news_item_archive_for: 'Arxius de %{date}'
           no_news_item_articles_posted: 'There are no news articles posted for %{date}. Stay tuned.'
   activerecord:
     attributes:
