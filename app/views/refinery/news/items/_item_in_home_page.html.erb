@@ -28,7 +28,10 @@
 
     <div class="large-9 column">
       <section>
-        <%= @item.body.html_safe %>
+        
+        <%= truncate  @item.body, :length => 600,
+                      :omission => " ... #{link_to t('refinery.news.shared.items.read_more'), refinery.news_item_path(@item)}",
+                      :preserve_html_tags => true %>
       </section>
 
       <p>
