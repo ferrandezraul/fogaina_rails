@@ -519,16 +519,16 @@ on_mes_trobarnos_body_part.translations.create!( {
   :body => "<p>Podéis encontrarnos en:
               <ul>
                 <li><a href=\"https://www.sanum.cat\" target=\"_blank\">Sanum</a></li>
-                <li><a href=\"https://www.economatdegracia.com/\" target=\"_blank\">Economat de Gràcia</a></li>
+                <li><a href=\"https://ecovianda.cat/\" target=\"_blank\">Ecovianda</a></li>
                 <li><a href=\"https://www.facebook.com/cacau.olot/\" target=\"_blank\">Cacau Olot</a></li>
-                <li>Bar Restaurant Ca la Tupina</li>
+                <li>Escola Bressol El Rial</li>
                 <li><a href=\"http://elrebostcooperativa.cat/\" target=\"_blank\">El rebost de Girona</a></li>
                 <li>Cooperativa El Morrot</li>
                 <li>Cooperativa La Xicoina</li>
                 <li><a href=\"http://cooperativarauta.blogspot.com.es/\" target=\"_blank\">Cooperativa La Rauta</a></li>
                 <li>Cooperativa La Trepadella</li>
                 <li>Cestas ecológicas <a href=\"http://lasaodelagarrotxa.cat/\" target=\"_blank\">La Saó</a></li>
-                <li>Productos ecológicos d'<a href=\"http://ecocity.cat/\" target=\"_blank\">Ecocity</a></li>
+                <li><a href=\"https://www.nuriasocial.org\" target=\"_blank\">Cantina Núria Social</a></li>    
               </ul>
             </p>" } )
 
@@ -538,16 +538,16 @@ on_mes_trobarnos_body_part.translations.create!( {
               Podeu trobar alguns dels nostres productes a:
               <ul>
                 <li><a href=\"https://www.sanum.cat\" target=\"_blank\">Sanum</a></li>
-                <li><a href=\"https://www.economatdegracia.com/\" target=\"_blank\">Economat de Gràcia</a></li>
+                <li><a href=\"https://ecovianda.cat/\" target=\"_blank\">Ecovianda</a></li>
                 <li><a href=\"https://www.facebook.com/cacau.olot/\" target=\"_blank\">Cacau Olot</a></li>
-                <li>Bar Restaurant Ca la Tupina</li>
+                <li>Escola Bressol El Rial</li>
                 <li><a href=\"http://elrebostcooperativa.cat/\" target=\"_blank\">El rebost de Girona</a></li>
                 <li>Cooperativa El Morrot</li>
                 <li>Cooperativa La Xicoina</li>
                 <li><a href=\"http://cooperativarauta.blogspot.com.es/\" target=\"_blank\">Cooperativa La Rauta</a></li>
                 <li>Cooperativa La Trepadella</li>
                 <li>Cistelles ecològiques <a href=\"http://lasaodelagarrotxa.cat/\" target=\"_blank\">La Saó</a></li>
-                <li>Productes ecològics d'<a href=\"http://ecocity.cat/\" target=\"_blank\">Ecocity</a></li>
+                <li><a href=\"https://www.nuriasocial.org\" target=\"_blank\">Cantina Núria Social</a></li> 
               </ul>
             </p>" } )
 
@@ -562,7 +562,8 @@ panes = [
             :description_es => "<p>Un pan de mezcla de harinas integrales de variedades antiguas de trigo (espelta, kamut, xeixa...), formato de molde y hecho con Masa Madre, no tiene porque ser un pan denso y ácido. Hemos trabajado y lo conseguimos gracias a un Soaker, granos de trigo y arroz integral cocidos que aportan ese extra de esponjosidad y humedad de la miga. Estas comprando sabor y salud a un precio de escandalo!</p>",
             :description_en => "<p>Un pan de mezcla de harinas integrales de variedades antiguas de trigo (espelta, kamut, xeixa...), formato de molde y hecho con Masa Madre, no tiene porque ser un pan denso y ácido. Hemos trabajado y lo conseguimos gracias a un Soaker, granos de trigo y arroz integral cocidos que aportan ese extra de esponjosidad y humedad de la miga. Estas comprando sabor y salud a un precio de escandalo!</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
-            :price => 3,
+            #:price => 3,
+            :price => nil,
             :photo => image_soca,
             :photo2 => image_soca2,
             :photo3 => image_soca3
@@ -586,7 +587,8 @@ panes = [
             :description_es => "<p>Motivados por conseguir una hogaza similar al pan de payès, pero con la intención de dotar de más fibra y sabor, y una mejor alveolatura, sin ayuda de levadura, solamente con una masa madre joven, y añadiendo harinas integrales de trigo y centeno. Tuvimos que ir subiendo la hidratación de la masa, este luego se convirtió técnicamente en reto para los panaderos nuevos en la Fogaina. El horno de leña a casi 250ºC y todo lo que podemos de humedad son el último peldaño para conseguir un bonito y dorado hogazón.</p>",
             :description_en => "<p>Motivados por conseguir una hogaza similar al pan de payès, pero con la intención de dotar de más fibra y sabor, y una mejor alveolatura, sin ayuda de levadura, solamente con una masa madre joven, y añadiendo harinas integrales de trigo y centeno. Tuvimos que ir subiendo la hidratación de la masa, este luego se convirtió técnicamente en reto para los panaderos nuevos en la Fogaina. El horno de leña a casi 250ºC y todo lo que podemos de humedad son el último peldaño para conseguir un bonito y dorado hogazón.</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
-            :price => 3,
+            #:price => 3,
+            :price => nil,
             :photo => image_pa_rustic,
             :photo2 => image_pa_rustic2,
             :photo3 => image_pa_rustic3
@@ -598,7 +600,8 @@ panes = [
             :description_es => "<p>Cogemos la masa del Rústic y añadimos una mezcla de semillas tostadas y dejadas en remojo... Más sabor si cabe a nuestra masa rústica!</p>",
             :description_en => "<p>Cogemos la masa del Rústic y añadimos una mezcla de semillas tostadas y dejadas en remojo... Más sabor si cabe a nuestra masa rústica!</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
-            :price => 3.50,
+            #:price => 3.50,
+            :price => nil,
             :photo => image_pa_pigat,
             :photo2 => image_pa_pigat2,
             :photo3 => image_pa_pigat3
@@ -610,7 +613,8 @@ panes = [
             :description_es => "<p>Y aún motivados por ofrecer más diversidad panarra en nuestras estanterías, nos sacamos de la manga este panazo ideal para desayunos y meriendas, o para combinar si quieres con una buena cata de quesos. A nuestra masa rústica le añadimos frutos secos y lo metemos dentro de un molde. El aceite de las nueces tiñe de un precioso morado la miga de este pan tan especial.</p>",
             :description_en => "<p>Y aún motivados por ofrecer más diversidad panarra en nuestras estanterías, nos sacamos de la manga este panazo ideal para desayunos y meriendas, o para combinar si quieres con una buena cata de quesos. A nuestra masa rústica le añadimos frutos secos y lo metemos dentro de un molde. El aceite de las nueces tiñe de un precioso morado la miga de este pan tan especial.</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
-            :price => 4,
+            #:price => 4,
+            :price => nil,
             :photo => image_pa_tinosell,
             :photo2 => image_pa_tinosell2,
             :photo3 => nil
@@ -622,7 +626,8 @@ panes = [
             :description_es => "<p>Para los deportistas, puristas, integristas, espeltatianos... No hay mejor placer que un pan 100% espelta integral, con su dosis de masa madre de espelta, y amenizado con unas pipas de girasol tostadas. Muy buen sabor y larga conservación.</p>",
             :description_en => "<p>Para los deportistas, puristas, integristas, espeltatianos... No hay mejor placer que un pan 100% espelta integral, con su dosis de masa madre de espelta, y amenizado con unas pipas de girasol tostadas. Muy buen sabor y larga conservación.</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
-            :price => 4.30,
+            #:price => 4.30,
+            :price => nil,
             :photo => image_pa_espelta,
             :photo2 => image_pa_espelta2,
             :photo3 => image_pa_espelta3
@@ -634,7 +639,8 @@ panes = [
             :description_es => "<p>Una panaderia con un buen horno de leña no se puede permitir no cocer unas Cocas de Forner. El motivo es el ritmo de cocción que nos ofrece nuestro horno. Al calentarlo, la temperatura sube tanto que antes de palear el pan podemos hornear unas cocas a casi 300ºC cuando aún estan vivas las brasas. El proceso de formado,estirado y reposo es paulatino durante la madrugada, hasta el último estirado en la misma pala, buen chorro de aceite de oliva y espolvoreo de azucar y adentro. Al salir, sin perder tiempo una rociada con anis para cristalizar el azucar... No os podeis imaginar la fragancia que llena todo el obrador.</p>",
             :description_en => "<p>Una panaderia con un buen horno de leña no se puede permitir no cocer unas Cocas de Forner. El motivo es el ritmo de cocción que nos ofrece nuestro horno. Al calentarlo, la temperatura sube tanto que antes de palear el pan podemos hornear unas cocas a casi 300ºC cuando aún estan vivas las brasas. El proceso de formado,estirado y reposo es paulatino durante la madrugada, hasta el último estirado en la misma pala, buen chorro de aceite de oliva y espolvoreo de azucar y adentro. Al salir, sin perder tiempo una rociada con anis para cristalizar el azucar... No os podeis imaginar la fragancia que llena todo el obrador.</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
-            :price => 3.10,
+            #:price => 3.10,
+            :price => nil,
             :photo => image_coca_forner,
             :photo2 => image_coca_forner2,
             :photo3 => image_coca_forner3
@@ -646,7 +652,8 @@ panes = [
             :description_es => "<p>Por temas de tipo de horno y organización, nos es muy difícil ofrecer unas barras. Así que este es nuestro producto que más se adapta a la hora del bocata. Viene a ser un tipo de chapata alargada, alveolada y de corteza fina. El toque de aceite de oliva y girasol, ambos de altisima calidad, le da un sabor y textura particular.</p>",
             :description_en => "<p>Por temas de tipo de horno y organización, nos es muy difícil ofrecer unas barras. Así que este es nuestro producto que más se adapta a la hora del bocata. Viene a ser un tipo de chapata alargada, alveolada y de corteza fina. El toque de aceite de oliva y girasol, ambos de altisima calidad, le da un sabor y textura particular.</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
-            :price => 2.60,
+            #:price => 2.60,
+            :price => nil,
             :photo => image_pa_de_coca,
             :photo2 => image_pa_de_coca2,
             :photo3 => image_pa_de_coca3
@@ -658,7 +665,8 @@ panes = [
             :description_es => "<p>Si tenemos un pan que despierte pasiones encontradas este es el Brot. Un panazo 100% de centeno integral que no deja indiferente. Es cierto que la poca cultura de centeno que tenemos en el mediterráneo hace de este pan para algunos un incomprendido, pero si le das una oportunidad, además de degustar algo diferente i aromático estarás comiendo pura salud y tendrás en tus manos un pan que dura muchos días. Acompáñalo de quesos fuertes, anchoas, patés, mantequilla y mermelada amarga ...</p>",
             :description_en => "<p>Si tenemos un pan que despierte pasiones encontradas este es el Brot. Un panazo 100% de centeno integral que no deja indiferente. Es cierto que la poca cultura de centeno que tenemos en el mediterráneo hace de este pan para algunos un incomprendido, pero si le das una oportunidad, además de degustar algo diferente i aromático estarás comiendo pura salud y tendrás en tus manos un pan que dura muchos días. Acompáñalo de quesos fuertes, anchoas, patés, mantequilla y mermelada amarga ...</p>",
             :available_days => [:thursday, :friday, :saturday],
-            :price => 4,
+            #:price => 4,
+            :price => nil,
             :photo => image_brot_negre,
             :photo2 => image_brot_negre2,
             :photo3 => image_brot_negre3
@@ -670,7 +678,8 @@ panes = [
             :description_es => "<p>Porqué tenemos que renunciar a los panes de molde blancos i esponjosos que ofrecen las marcas industriales? Si además conseguimos que sean más buenos y saludables ...</p>",
             :description_en => "<p>Porqué tenemos que renunciar a los panes de molde blancos i esponjosos que ofrecen las marcas industriales? Si además conseguimos que sean más buenos y saludables ...</p>",
             :available_days => [:wednesday, :thursday],
-            :price => 4,
+            #:price => 4,
+            :price => nil,
             :photo => image_pa_bembo,
             :photo2 => image_pa_bembo2,
             :photo3 => image_pa_bembo3
@@ -682,7 +691,8 @@ panes = [
             :description_es => "<p>Un poco obligados por la demanda, y limitados por las \“trazas\”, finalmente nos decidimos a hacer un pan \“sin gluten\” pero que por las condiciones de nuestro obrador, es imposible de certificar para celíacos. Nuestra intención desde el primer momento era conseguir un muy buen pan sin gluten. Hemos aprendido unas cuantas cosas sobre métodos y nuevos ingredientes. Así que esperamos estar a la altura y que lo disfrutéis.</p>",
             :description_en => "<p>Un poco obligados por la demanda, y limitados por las \“trazas\”, finalmente nos decidimos a hacer un pan \“sin gluten\” pero que por las condiciones de nuestro obrador, es imposible de certificar para celíacos. Nuestra intención desde el primer momento era conseguir un muy buen pan sin gluten. Hemos aprendido unas cuantas cosas sobre métodos y nuevos ingredientes. Así que esperamos estar a la altura y que lo disfrutéis.",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday, :por_encargo],
-            :price => 6,
+            #:price => 6,
+            :price => nil,
             :photo => image_pa_fajol,
             :photo2 => image_pa_fajol2,
             :photo3 => image_pa_fajol3
