@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.2.1"
+ruby "2.3.8"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -85,7 +85,7 @@ group :production do
   gem 'rails_12factor'
   # Refinery doc
   # If you want to use Refinery’s image and resource support, you need to add the ‘fog’ gem too.
-  gem 'fog'
+  gem 'fog-aws'
   gem "dragonfly-s3_data_store"
 end
 
