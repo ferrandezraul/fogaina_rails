@@ -17,7 +17,7 @@
 //       '</div>'+
 //       '<h4 id="firstHeading" class="firstHeading">Obrador La Fogaina</h4>'+
 //       '<div id="bodyContent">'+      
-//       'Mas la Plana s/n, El Mallol - Carretera del Veïnat Cirera.' +
+//       'c/ Verge del Carme nº13, Olot, Girona' +
 //       '</div>'+
 //       '</div>'
 //   });

@@ -43,13 +43,13 @@ If you want to delete the database and create a new one, run the following comma
 ```
 $ rake db:drop
 $ rake db:create
-```
-Afterwards, you will need to run the migrations:
-```
 $ rake db:migrate
 ```
-
-Then, you will be able to start the application with the command:
+Then you can fill the database with data from db/seeds.rb with the command:
+```
+$ rake db:seed
+```
+Afterwards, you will be able to start the application with the command:
 ```
 $ rails s
 ```
@@ -57,16 +57,16 @@ and open your browser with the following URL:
 ```
 http://localhost:3000/
 ```
-However, the content will be empty. If you seed the database with data:
-```
-$ rake db:seed
-```
-the file db/seeds.rb will be loaded and the content of the application will be in place.
 Run again the command:
 ```
 $ rails s
 ```
 and you should see the default content for the web application.
+
+Tip: You can create, migrate and seed the database with a single command:
+```
+$ rake db:setup
+```
 
 ### Configuring and running the unit tests
 
