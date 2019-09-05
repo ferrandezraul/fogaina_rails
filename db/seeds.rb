@@ -193,7 +193,7 @@ pages_array = [ {
                                       <p><i class=\"fi-marker\"> c/ Sant Sebastià nº52, Les Preses, Girona</i><br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
                                     </div>
                                     <div class=\"panel\">
-                                      <h4>La Fogaina Obrador</h4>
+                                      <h4>La Fogaina Pa i Obrador</h4>
                                       <p>Monday y Saturday from 9:30h till 14h
                                       <br>Tuesday to Friday from 9:30h till 13h and from 16h till 20h</p>
                                       <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
@@ -206,6 +206,8 @@ pages_array = [ {
                                   </div>
                                 </div>
                               </div>",
+                              # iframe from google maps with both addresses
+                              # <iframe src=\"https://www.google.com/maps/d/embed?mid=1u3uXVLo7fFatVt75Qx2thOGiTNOPAdOa\" width=\"640\" height=\"480\"></iframe>
                     :body_es => "<div class=\"row\">
                                 <div class=\"large-12 columns\">
                                   <div class=\"large-4 columns\">
@@ -215,7 +217,7 @@ pages_array = [ {
                                       <p><i class=\"fi-marker\"> c/ Sant Sebastià nº52, Les Preses, Girona</i><br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
                                     </div>
                                     <div class=\"panel\">
-                                      <h4>La Fogaina Obrador</h4>
+                                      <h4>La Fogaina Pa i Obrador</h4>
                                       <p>Lunes y Sábado de 9:30h a 14h
                                       <br>De Martes a Viernes de 9:30h a 13h y de 16h a 20h</p>
                                       <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
@@ -228,6 +230,8 @@ pages_array = [ {
                                   </div>
                                 </div>
                               </div>",
+                              # iframe from google maps with both addresses
+                              # <iframe src=\"https://www.google.com/maps/d/embed?mid=1u3uXVLo7fFatVt75Qx2thOGiTNOPAdOa\" width=\"640\" height=\"480\"></iframe>
                     :body_ca => "<div class=\"row\">
                                 <div class=\"large-12 columns\">
                                   <div class=\"large-4 columns\">
@@ -237,7 +241,7 @@ pages_array = [ {
                                       <p><i class=\"fi-marker\"> c/ Sant Sebastià nº52, Les Preses, Girona</i><br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
                                     </div>
                                     <div class=\"panel\">
-                                      <h4>La Fogaina Obrador</h4>
+                                      <h4>La Fogaina Pa i Obrador</h4>
                                       <p>Dilluns i Dissabte de 9:30h a 14h
                                       <br>De Dimarts a Divendres de 9:30h a 13h i de 16h a 20h</p>
                                       <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
@@ -250,6 +254,8 @@ pages_array = [ {
                                   </div>
                                 </div>
                               </div>"
+                              # iframe from google maps with both addresses
+                              # <iframe src=\"https://www.google.com/maps/d/embed?mid=1u3uXVLo7fFatVt75Qx2thOGiTNOPAdOa\" width=\"640\" height=\"480\"></iframe>
                 }
 
 ]
