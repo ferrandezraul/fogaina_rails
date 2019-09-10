@@ -185,167 +185,351 @@ pages_array = [ {
                     :title_ca => "On trobar-nos?",
                     :view_template => "on_som",
                     :body => "<div class=\"row\">
-                                <div class=\"large-12 columns\">
                                   <div class=\"large-4 columns\">
                                     <div class=\"panel\">
-                                      <h4>La Fogaina Pa i Cafè.</h4>
-                                      <p>Tuesday to Saturday from 8:00h until 13:30h and from 16:00h until 20:00h</p>
+                                      <h4>La Fogaina Pa i Cafè</h4>
                                       <p><i class=\"fi-marker\"> c/ Sant Sebastià nº52, Les Preses, Girona</i><br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
-                                    </div>
-                                    <div class=\"panel\">
-                                      <h4>La Fogaina Pa i Obrador</h4>
-                                      <p>Monday y Saturday from 9:30h till 14h
-                                      <br>Tuesday to Friday from 9:30h till 13h and from 16h till 20h</p>
-                                      <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
+                                      <table>
+                                        <tr>
+                                          <th>Timatable</th>
+                                          <th>Morning</th> 
+                                          <th>Afternoon</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Monday</td>
+                                          <td>Closed</td> 
+                                          <td>Closed</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Tuesday</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Wednesday</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Thursday</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Friday</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Saturday</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Sunday</td>
+                                          <td>Closed</td> 
+                                          <td>Closed</td>
+                                        </tr>
+                                      </table>
                                     </div>
                                   </div>
+
                                   <div class=\"large-8 columns\">
                                     <div id=\"map-fogaina\">
                                       <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.192843809303!2d2.4581033154084873!3d42.14615995657543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a534c9267799b7%3A0x1ca1e342e06d6353!2sLa+Fogaina!5e0!3m2!1ses!2ses!4v1467997119084\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>
                                     </div>
                                   </div>
+
                                 </div>
-                              </div>",
+                                <div class=\"row\">
+                                  <div class=\"large-4 columns\">
+                                    <div class=\"panel\">
+                                      <h4>La Fogaina Pa i Obrador</h4>
+                                      <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
+                                      <table>
+                                        <tr>
+                                          <th>Timetable</th>
+                                          <th>Morning</th> 
+                                          <th>Afternoon</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Monday</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>Closed</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Tuesady</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>Closed</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Wednesday</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Thursday</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Friday</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Saturday</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>Closed</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Sunday</td>
+                                          <td>Closed</td> 
+                                          <td>Closed</td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                  </div>
+
+                                  <div class=\"large-8 columns\">
+                                    <div id=\"map-fogaina\">
+                                      <iframe src=\"https://maps.google.com/maps?width=100%&height=600&hl=es&coord=42.183413, 2.491903&q=Verge%20del%20Carme%2C%2013%20Olot%2C%20Girona%2C%20Spain+(La%20Fogaina%20Pa%20i%20Obrador)&ie=UTF8&t=&z=15&iwloc=B&output=embed\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+
+                                </div>",
                               # iframe from google maps with both addresses
                               # <iframe src=\"https://www.google.com/maps/d/embed?mid=1u3uXVLo7fFatVt75Qx2thOGiTNOPAdOa\" width=\"640\" height=\"480\"></iframe>
                     :body_es => "<div class=\"row\">
-                                <div class=\"large-12 columns\">
                                   <div class=\"large-4 columns\">
                                     <div class=\"panel\">
-                                      <h4>La Fogaina Pa i Cafè.</h4>
-                                      <p>De Martes a Sábado de 8:00h a 13:30h i de 16:00h a 20:00h</p>
+                                      <h4>La Fogaina Pa i Cafè</h4>
                                       <p><i class=\"fi-marker\"> c/ Sant Sebastià nº52, Les Preses, Girona</i><br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
-                                    </div>
-                                    <div class=\"panel\">
-                                      <h4>La Fogaina Pa i Obrador</h4>
-                                      <p>Lunes y Sábado de 9:30h a 14h
-                                      <br>De Martes a Viernes de 9:30h a 13h y de 16h a 20h</p>
-                                      <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
+                                      <table>
+                                        <tr>
+                                          <th>Horario</th>
+                                          <th>Mañana</th> 
+                                          <th>Tarde</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Lunes</td>
+                                          <td>Cerrado</td> 
+                                          <td>Cerrado</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Martes</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Miércoles</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Jueves</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Viernes</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Sábado</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Domingo</td>
+                                          <td>Cerrado</td> 
+                                          <td>Cerrado</td>
+                                        </tr>
+                                      </table>
                                     </div>
                                   </div>
+
                                   <div class=\"large-8 columns\">
                                     <div id=\"map-fogaina\">
                                       <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.192843809303!2d2.4581033154084873!3d42.14615995657543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a534c9267799b7%3A0x1ca1e342e06d6353!2sLa+Fogaina!5e0!3m2!1ses!2ses!4v1467997119084\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>
                                     </div>
                                   </div>
+
                                 </div>
-                              </div>",
+                                <div class=\"row\">
+                                  <div class=\"large-4 columns\">
+                                    <div class=\"panel\">
+                                      <h4>La Fogaina Pa i Obrador</h4>
+                                      <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
+                                      <table>
+                                        <tr>
+                                          <th>Horario</th>
+                                          <th>Mañana</th> 
+                                          <th>Tarde</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Lunes</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>Cerrado</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Martes</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>Cerrado</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Miércoles</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Jueves</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Viernes</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Sábado</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>Cerrado</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Domingo</td>
+                                          <td>Cerrado</td> 
+                                          <td>Cerrado</td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                  </div>
+
+                                  <div class=\"large-8 columns\">
+                                    <div id=\"map-fogaina\">
+                                      <iframe src=\"https://maps.google.com/maps?width=100%&height=600&hl=es&coord=42.183413, 2.491903&q=Verge%20del%20Carme%2C%2013%20Olot%2C%20Girona%2C%20Spain+(La%20Fogaina%20Pa%20i%20Obrador)&ie=UTF8&t=&z=15&iwloc=B&output=embed\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+
+                                </div>",
                               # iframe from google maps with both addresses
                               # <iframe src=\"https://www.google.com/maps/d/embed?mid=1u3uXVLo7fFatVt75Qx2thOGiTNOPAdOa\" width=\"640\" height=\"480\"></iframe>
                     :body_ca => "<div class=\"row\">
-                                  <div class=\"large-12 columns\">
-                                    <div class=\"row\">
-                                      <div class=\"large-4 columns\">
-                                        <div class=\"panel\">
-                                          <h4>La Fogaina Pa i Cafè</h4>
-                                          <p><i class=\"fi-marker\"> c/ Sant Sebastià nº52, Les Preses, Girona</i><br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
-                                          <table>
-                                            <tr>
-                                              <th>Horari</th>
-                                              <th>Matí</th> 
-                                              <th>Tarda</th>
-                                            </tr>
-                                            <tr>
-                                              <td>Dilluns</td>
-                                              <td>Tancat</td> 
-                                              <td>Tancat</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Dimarts</td>
-                                              <td>9:30h-14h</td> 
-                                              <td>16h-20h</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Dimecres</td>
-                                              <td>9:30h-14h</td> 
-                                              <td>16h-20h</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Dijous</td>
-                                              <td>9:30h-14h</td> 
-                                              <td>16h-20h</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Divendres</td>
-                                              <td>9:30h-14h</td> 
-                                              <td>16h-20h</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Dissabte</td>
-                                              <td>9:30h-14h</td> 
-                                              <td>16h-20h</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Diumenge</td>
-                                              <td>Tancat</td> 
-                                              <td>Tancat</td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                      </div>
-                                      <div class=\"large-8 columns\">
-                                        <div id=\"map-fogaina\">
-                                          <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.192843809303!2d2.4581033154084873!3d42.14615995657543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a534c9267799b7%3A0x1ca1e342e06d6353!2sLa+Fogaina!5e0!3m2!1ses!2ses!4v1467997119084\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class=\"row\">
-                                      <div class=\"large-4 columns\">
-                                        <div class=\"panel\">
-                                          <h4>La Fogaina Pa i Obrador</h4>
-                                          <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
-                                          <table>
-                                            <tr>
-                                              <th>Horari</th>
-                                              <th>Matí</th> 
-                                              <th>Tarda</th>
-                                            </tr>
-                                            <tr>
-                                              <td>Dilluns</td>
-                                              <td>9:30h-14h</td> 
-                                              <td>Tancat</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Dimarts</td>
-                                              <td>9:30h-13h</td> 
-                                              <td>Tancat</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Dimecres</td>
-                                              <td>9:30h-13h</td> 
-                                              <td>16h-20h</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Dijous</td>
-                                              <td>9:30h-13h</td> 
-                                              <td>16h-20h</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Divendres</td>
-                                              <td>9:30h-13h</td> 
-                                              <td>16h-20h</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Dissabte</td>
-                                              <td>9:30h-14h</td> 
-                                              <td>Tancat</td>
-                                            </tr>
-                                            <tr>
-                                              <td>Diumenge</td>
-                                              <td>Tancat</td> 
-                                              <td>Tancat</td>
-                                            </tr>
-                                          </table>
-                                        </div>
-                                      </div>
-                                      <div class=\"large-8 columns\">
-                                        <div id=\"map-fogaina\">
-                                          <iframe src=\"https://maps.google.com/maps?width=100%&height=600&hl=es&coord=42.183413, 2.491903&q=Verge%20del%20Carme%2C%2013%20Olot%2C%20Girona%2C%20Spain+(La%20Fogaina%20Pa%20i%20Obrador)&ie=UTF8&t=&z=15&iwloc=B&output=embed\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>
-                                        </div>
-                                      </div>
+                                  <div class=\"large-4 columns\">
+                                    <div class=\"panel\">
+                                      <h4>La Fogaina Pa i Cafè</h4>
+                                      <p><i class=\"fi-marker\"> c/ Sant Sebastià nº52, Les Preses, Girona</i><br><i class=\"fi-telephone\"> 646 87 90 62</i></p>
+                                      <table>
+                                        <tr>
+                                          <th>Horari</th>
+                                          <th>Matí</th> 
+                                          <th>Tarda</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Dilluns</td>
+                                          <td>Tancat</td> 
+                                          <td>Tancat</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Dimarts</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Dimecres</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Dijous</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Divendres</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Dissabte</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Diumenge</td>
+                                          <td>Tancat</td> 
+                                          <td>Tancat</td>
+                                        </tr>
+                                      </table>
                                     </div>
                                   </div>
-                              </div>"
+
+                                  <div class=\"large-8 columns\">
+                                    <div id=\"map-fogaina\">
+                                      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.192843809303!2d2.4581033154084873!3d42.14615995657543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a534c9267799b7%3A0x1ca1e342e06d6353!2sLa+Fogaina!5e0!3m2!1ses!2ses!4v1467997119084\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <div class=\"row\">
+                                  <div class=\"large-4 columns\">
+                                    <div class=\"panel\">
+                                      <h4>La Fogaina Pa i Obrador</h4>
+                                      <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
+                                      <table>
+                                        <tr>
+                                          <th>Horari</th>
+                                          <th>Matí</th> 
+                                          <th>Tarda</th>
+                                        </tr>
+                                        <tr>
+                                          <td>Dilluns</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>Tancat</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Dimarts</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>Tancat</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Dimecres</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Dijous</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Divendres</td>
+                                          <td>9:30h-13h</td> 
+                                          <td>16h-20h</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Dissabte</td>
+                                          <td>9:30h-14h</td> 
+                                          <td>Tancat</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Diumenge</td>
+                                          <td>Tancat</td> 
+                                          <td>Tancat</td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                  </div>
+
+                                  <div class=\"large-8 columns\">
+                                    <div id=\"map-fogaina\">
+                                      <iframe src=\"https://maps.google.com/maps?width=100%&height=600&hl=es&coord=42.183413, 2.491903&q=Verge%20del%20Carme%2C%2013%20Olot%2C%20Girona%2C%20Spain+(La%20Fogaina%20Pa%20i%20Obrador)&ie=UTF8&t=&z=15&iwloc=B&output=embed\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+
+                                </div>"
                               # iframe for the new address:
                               # <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&height=600&hl=es&coord=42.183413, 2.491903&q=Verge%20del%20Carme%2C%2013%20Olot%2C%20Girona%2C%20Spain+(La%20Fogaina%20Pa%20i%20Obrador)&ie=UTF8&t=&z=15&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.mapsdirections.info/calcular-ruta.html">mapas y direcciones</a></iframe></div><br />
                               # iframe from google maps with both addresses
