@@ -202,27 +202,27 @@ pages_array = [ {
                                         </tr>
                                         <tr>
                                           <td>Tuesday</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Wednesday</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Thursday</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Friday</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Saturday</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
@@ -259,22 +259,22 @@ pages_array = [ {
                                         </tr>
                                         <tr>
                                           <td>Tuesady</td>
-                                          <td>9:30h-13h</td> 
-                                          <td>Closed</td>
+                                          <td>9:30h-13:30h</td> 
+                                          <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Wednesday</td>
-                                          <td>9:30h-13h</td> 
+                                          <td>9:30h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Thursday</td>
-                                          <td>9:30h-13h</td> 
+                                          <td>9:30h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Friday</td>
-                                          <td>9:30h-13h</td> 
+                                          <td>9:30h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
@@ -318,22 +318,22 @@ pages_array = [ {
                                         </tr>
                                         <tr>
                                           <td>Martes</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Miércoles</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Jueves</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Viernes</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
@@ -375,22 +375,22 @@ pages_array = [ {
                                         </tr>
                                         <tr>
                                           <td>Martes</td>
-                                          <td>9:30h-13h</td> 
-                                          <td>Cerrado</td>
+                                          <td>9:30h-13:30h</td> 
+                                          <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Miércoles</td>
-                                          <td>9:30h-13h</td> 
+                                          <td>9:30h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Jueves</td>
-                                          <td>9:30h-13h</td> 
+                                          <td>9:30h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Viernes</td>
-                                          <td>9:30h-13h</td> 
+                                          <td>9:30h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
@@ -434,22 +434,22 @@ pages_array = [ {
                                         </tr>
                                         <tr>
                                           <td>Dimarts</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Dimecres</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Dijous</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Divendres</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>8h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
@@ -491,22 +491,22 @@ pages_array = [ {
                                         </tr>
                                         <tr>
                                           <td>Dimarts</td>
-                                          <td>9:30h-13h</td> 
-                                          <td>Tancat</td>
+                                          <td>9:30h-13:30h</td> 
+                                          <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Dimecres</td>
-                                          <td>9:30h-13h</td> 
+                                          <td>9:30h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Dijous</td>
-                                          <td>9:30h-13h</td> 
+                                          <td>9:30h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Divendres</td>
-                                          <td>9:30h-13h</td> 
+                                          <td>9:30h-13:30h</td> 
                                           <td>16h-20h</td>
                                         </tr>
                                         <tr>
