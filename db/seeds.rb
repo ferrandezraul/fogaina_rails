@@ -245,7 +245,7 @@ pages_array = [ {
                                   <div class=\"large-4 columns\">
                                     <div class=\"panel\">
                                       <h4>La Fogaina Pa i Obrador</h4>
-                                      <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
+                                      <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 621 20 58 06</i> / <i class=\"fi-telephone\"> 872 20 29 15</i></p>
                                       <table>
                                         <tr>
                                           <th>Timetable</th>
@@ -361,7 +361,7 @@ pages_array = [ {
                                   <div class=\"large-4 columns\">
                                     <div class=\"panel\">
                                       <h4>La Fogaina Pa i Obrador</h4>
-                                      <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
+                                      <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 621 20 58 06</i> / <i class=\"fi-telephone\"> 872 20 29 15</i></p>
                                       <table>
                                         <tr>
                                           <th>Horario</th>
@@ -477,7 +477,7 @@ pages_array = [ {
                                   <div class=\"large-4 columns\">
                                     <div class=\"panel\">
                                       <h4>La Fogaina Pa i Obrador</h4>
-                                      <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 661 38 09 55</i> / <i class=\"fi-telephone\"> 639 26 48 63</i></p>
+                                      <p><i class=\"fi-marker\"> c/ Verge del Carme nº13, Olot, Girona</i><br><i class=\"fi-telephone\"> 621 20 58 06</i> / <i class=\"fi-telephone\"> 872 20 29 15</i></p>
                                       <table>
                                         <tr>
                                           <th>Horari</th>
