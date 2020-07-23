@@ -23,3 +23,7 @@
 .row .row {
   margin: 0 0; // Remove negative margin from foundation i.e. was showing up in breads view
 }
+
+table tr td {
+	padding: 0.525rem 0.425rem 0.525rem 0.425rem;  // To keep range of hours in a single line, I decrease here the default padding
+}
