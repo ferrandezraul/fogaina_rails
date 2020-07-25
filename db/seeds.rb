@@ -25,6 +25,10 @@ if Rails.env.development?
   admin_user.add_role :superuser
 end
 
+# Meta Data used to show in google both locations
+META_DESCRIPTION = String.new("La Fogaina Pa i Cafè\n\nC/ Sant Sebastià nº52, Les Preses, La Garrotxa, Girona\n\nLa Fogaina Pa i Obrador\n\nC/ Verge del Carme nº13, Olot, La Garrotxa, Girona") 
+BROWSER_TITLE = String.new("La Fogaina Pa i Obrador")
+
 # Create some settings in order to enable or disable the site for other locales
 # Note that in app/views/refinery/_header.html.erb those settings are checked in order
 # to display or not the locale switch
@@ -111,7 +115,9 @@ pages_array = [ {
                     :body_ca => "",    
                     :side_body => "", 
                     :side_body_es => "",
-                    :side_body_ca => "",                  
+                    :side_body_ca => "", 
+                    :meta_description => META_DESCRIPTION,
+                    :browser_title => BROWSER_TITLE,                 
                     #:position_side_body => 0,
                     #:banner => banner_html[:default],
                     #:banner_es => banner_html[:es],
@@ -162,7 +168,9 @@ pages_array = [ {
                               Esperem que gaudiu dels nostres productes, del nostre espai i del nostre tracte…</p>",
                     :side_body => "", 
                     :side_body_es => "",
-                    :side_body_ca => ""
+                    :side_body_ca => "",
+                    :meta_description => META_DESCRIPTION, 
+                    :browser_title => BROWSER_TITLE,
                 },
                 {
                     :show_in_menu => true,
@@ -175,7 +183,9 @@ pages_array = [ {
                     :body_ca => "",
                     :side_body => "", 
                     :side_body_es => "",
-                    :side_body_ca => ""
+                    :side_body_ca => "",
+                    :meta_description => META_DESCRIPTION, 
+                    :browser_title => BROWSER_TITLE,
                 },
                 {
                     :show_in_menu => true,
@@ -184,6 +194,8 @@ pages_array = [ {
                     :title_es => "Dónde encontrarnos?",
                     :title_ca => "On trobar-nos?",
                     :view_template => "on_som",
+                    :meta_description => META_DESCRIPTION, 
+                    :browser_title => BROWSER_TITLE,
                     :body => "<div class=\"row\">
                                   <div class=\"large-4 columns\">
                                     <div class=\"panel\">
@@ -539,8 +551,14 @@ pages_array = [ {
 ]
 
 def finnish_page( page, page_attr )
-  page.translations.create!( { :locale => 'es', :title => page_attr[:title_es] } )
-  page.translations.create!( { :locale => 'ca', :title => page_attr[:title_ca] } )
+  page.translations.create!( { :locale => 'es', 
+                               :title => page_attr[:title_es],
+                               :meta_description => META_DESCRIPTION, 
+                                :browser_title => BROWSER_TITLE } )
+  page.translations.create!( { :locale => 'ca', 
+                               :title => page_attr[:title_ca],
+                               :meta_description => META_DESCRIPTION, 
+                                :browser_title => BROWSER_TITLE } )
 
   page_body_part = page.parts.create!( { :title => "Body", :body => page_attr[:body], :position => page_attr[:position_body] } )
 
@@ -574,8 +592,14 @@ def finnish_page( page, page_attr )
                                            :show_in_menu => children_attr[:show_in_menu],
                                            :deletable => children_attr[:deletable] )
 
-    page_children.translations.create!( { :locale => "es", :title => children_attr[:title_es] } )
-    page_children.translations.create!( { :locale => "ca", :title => children_attr[:title_ca] } )
+    page_children.translations.create!( { :locale => "es", 
+                                          :title => children_attr[:title_es],
+                                          :meta_description => META_DESCRIPTION, 
+                                          :browser_title => BROWSER_TITLE }  )
+    page_children.translations.create!( { :locale => "ca", 
+                                          :title => children_attr[:title_ca],
+                                          :meta_description => META_DESCRIPTION, 
+                                          :browser_title => BROWSER_TITLE } )
 
     page_children_body_part = page_children.parts.create!( { :title => "Body", :body => children_attr[:body], :position => children_attr[:position_body] } )
 
@@ -598,12 +622,16 @@ pages_array.each { | page_attr |
                                 :link_url => page_attr[:link_url],
                                 :menu_match => page_attr[:menu_match],
                                 :view_template => page_attr[:view_template],
-                                :title => page_attr[:title] } ) :
+                                :title => page_attr[:title],
+                                :meta_description => page_attr[:meta_description],
+                                :browser_title => page_attr[:browser_title] } ) :
       # For the rest of pages
       Refinery::Page.create!( { :show_in_menu => page_attr[:show_in_menu],
                                 :deletable => page_attr[:deletable],
                                 :view_template => page_attr[:view_template],
-                                :title => page_attr[:title] } )
+                                :title => page_attr[:title],
+                                :meta_description => page_attr[:meta_description],
+                                :browser_title => page_attr[:browser_title] } )
 
   finnish_page( page, page_attr )
 }
@@ -704,17 +732,37 @@ raise "Error, there should be a breads page! See seeds.rb" if breads_page == nil
 
 forn_page = Refinery::Page.find_by!(:title => "Backery")
 forn_page.update!( :children => [breads_page] )
+forn_page.translations.create!( { :locale => "es", 
+                                  :title => "Panes", 
+                                  :meta_description => META_DESCRIPTION,
+:browser_title => BROWSER_TITLE } )
+forn_page.translations.create!( { :locale => "ca", 
+                                  :title => "Pans", 
+                                  :meta_description => META_DESCRIPTION,
+:browser_title => BROWSER_TITLE } )
 
 breads_page.update!( :title => "Breads" )
-breads_page.translations.create!( { :locale => "es", :title => "Panes" } )
-breads_page.translations.create!( { :locale => "ca", :title => "Pans" } )
+breads_page.translations.create!( { :locale => "es", 
+                                    :title => "Panes", 
+                                    :meta_description => META_DESCRIPTION, 
+                                    :browser_title => BROWSER_TITLE } )
+breads_page.translations.create!( { :locale => "ca", 
+                                    :title => "Pans",
+                                    :meta_description => META_DESCRIPTION, 
+                                    :browser_title => BROWSER_TITLE } )
 
 panologia_page = forn_page.children.create!( :title => 'Panologia',
                                              :show_in_menu => true,
                                              :deletable => true )
 
-panologia_page.translations.create!( { :locale => "es", :title => "Panologia" } )
-panologia_page.translations.create!( { :locale => "ca", :title => "Panologia" } )
+panologia_page.translations.create!( { :locale => "es", 
+                                       :title => "Panologia",
+                                       :meta_description => META_DESCRIPTION, 
+                                       :browser_title => BROWSER_TITLE } )
+panologia_page.translations.create!( { :locale => "ca", 
+                                       :title => "Panologia",
+                                       :meta_description => META_DESCRIPTION, 
+                                       :browser_title => BROWSER_TITLE } )
 
 panologia_body_part = panologia_page.parts.create!( { :title => "Body", 
                                                       :body => "<p>Entres a les fosques i encens..., només una mica de llum... És agradable començar la jornada amb aquest silenci i aquesta aroma de l'última fornada i del pa fermentant... són les dues de la matinada.
@@ -787,8 +835,14 @@ contact_page = Refinery::Page.create!( { :show_in_menu => true,
                           :view_template => "on_som",
                           :title => "Contact" } )
 
-contact_page.translations.create!( { :locale => "es", :title => "Contacto" } )
-contact_page.translations.create!( { :locale => "ca", :title => "Contacte" } )
+contact_page.translations.create!( { :locale => "es", 
+                                     :title => "Contacto",
+                                     :meta_description => META_DESCRIPTION, 
+                                    :browser_title => BROWSER_TITLE } )
+contact_page.translations.create!( { :locale => "ca", 
+                                     :title => "Contacte",
+                                     :meta_description => META_DESCRIPTION, 
+                                    :browser_title => BROWSER_TITLE } )
 
 
 contact_page.update!( :children => [on_trobarnos_page] )
@@ -797,8 +851,14 @@ on_mes_trobarnos_page = contact_page.children.create!( :title => 'Where else to 
                                                :show_in_menu => true,
                                                :deletable => true )
 
-on_mes_trobarnos_page.translations.create!( { :locale => "es", :title => "Dónde más encontrarnos?" } )
-on_mes_trobarnos_page.translations.create!( { :locale => "ca", :title => "On més trobar-nos?" } )
+on_mes_trobarnos_page.translations.create!( { :locale => "es", 
+                                              :title => "Dónde más encontrarnos?",
+                                              :meta_description => META_DESCRIPTION, 
+                                              :browser_title => BROWSER_TITLE } )
+on_mes_trobarnos_page.translations.create!( { :locale => "ca", 
+                                              :title => "On més trobar-nos?",
+                                              :meta_description => META_DESCRIPTION, 
+                                              :browser_title => BROWSER_TITLE } )
 
 on_mes_trobarnos_body_part = on_mes_trobarnos_page.parts.create!( 
   { :title => "Body", 
@@ -1020,8 +1080,14 @@ raise "Error, there should be a news page! See seeds.rb" if news_page == nil
 
 news_page.update!( :title => "Activities" )
 
-news_page.translations.create!( { :locale => "es", :title => "Actividades" } )
-news_page.translations.create!( { :locale => "ca", :title => "Activitats" } )
+news_page.translations.create!( { :locale => "es", 
+                                  :title => "Actividades",
+                                  :meta_description => META_DESCRIPTION, 
+                                  :browser_title => BROWSER_TITLE } )
+news_page.translations.create!( { :locale => "ca", 
+                                  :title => "Activitats",
+                                  :meta_description => META_DESCRIPTION, 
+                                  :browser_title => BROWSER_TITLE } )
 
 # Commented out news
 if false
@@ -1172,8 +1238,14 @@ cafeteria_page = Refinery::Page.find_by(:title => "Cafeteria")
 
 raise "Error, there should be a cafeteria page! See seeds.rb" if cafeteria_page == nil
 
-cafeteria_page.translations.create!( { :locale => "es", :title => "Cafetería" } )
-cafeteria_page.translations.create!( { :locale => "ca", :title => "Cafeteria" } )
+cafeteria_page.translations.create!( { :locale => "es", 
+                                       :title => "Cafetería",
+                                       :meta_description => META_DESCRIPTION, 
+                                        :browser_title => BROWSER_TITLE } )
+cafeteria_page.translations.create!( { :locale => "ca", 
+                                       :title => "Cafeteria",
+                                       :meta_description => META_DESCRIPTION, 
+                                        :browser_title => BROWSER_TITLE } )
 
 cafe_path = "#{Rails.root.join('app/assets/images/cafe/coffee800x800.jpg')}"
 cafe2_path = "#{Rails.root.join('app/assets/images/cafe/IMG_2667.jpg')}"
@@ -1393,8 +1465,14 @@ videos_page = Refinery::Page.find_by(:title => "Videos")
 
 raise "Error, there should be a videos page! See seeds.rb" if videos_page == nil
 
-videos_page.translations.create!( { :locale => "es", :title => "Videos" } )
-videos_page.translations.create!( { :locale => "ca", :title => "Videos" } )
+videos_page.translations.create!( { :locale => "es", 
+                                    :title => "Videos",
+                                    :meta_description => META_DESCRIPTION, 
+                                    :browser_title => BROWSER_TITLE } )
+videos_page.translations.create!( { :locale => "ca", 
+                                    :title => "Videos",
+                                    :meta_description => META_DESCRIPTION, 
+                                    :browser_title => BROWSER_TITLE} )
 
 videos_page.update!( :show_in_menu => false )
 
