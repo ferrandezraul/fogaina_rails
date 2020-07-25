@@ -26,7 +26,7 @@ if Rails.env.development?
 end
 
 # Meta Data used to show in google both locations
-META_DESCRIPTION = String.new("La Fogaina Pa i Cafè\n\nC/ Sant Sebastià nº52, Les Preses, La Garrotxa, Girona\n\nLa Fogaina Pa i Obrador\n\nC/ Verge del Carme nº13, Olot, La Garrotxa, Girona") 
+META_DESCRIPTION = String.new("La Fogaina Pa i Cafè\nC/ Sant Sebastià nº52, Les Preses, La Garrotxa, Girona\n\nLa Fogaina Pa i Obrador\nC/ Verge del Carme nº13, Olot, La Garrotxa, Girona") 
 BROWSER_TITLE = String.new("La Fogaina Pa i Obrador")
 
 # Create some settings in order to enable or disable the site for other locales
