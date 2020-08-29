@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
     def prepare_meta_tags(options={})
       site_name   = "La Fogaina Pa i Obrador"
-      title       = "La Fogaina"
+      title       = "La Fogaina Pa i Obrador"
       description = "La Fogaina Pa i Cafè\nC/ Sant Sebastià nº52, Les Preses, La Garrotxa, Girona\n\nLa Fogaina Pa i Obrador\nC/ Verge del Carme nº13, Olot, La Garrotxa, Girona" 
 
       current_url = request.url
