@@ -6,9 +6,10 @@ class ApplicationController < ActionController::Base
   before_action :prepare_meta_tags, if: "request.get?"
 
     def prepare_meta_tags(options={})
-      site_name   = "Forn La Fogaina"
-      title       = [controller_name, action_name].join(" ")
-      description = "Pa artesà a la Garrotxa, c/ Sant Sebastià nº52, 17178 Les Preses,"
+      site_name   = "La Fogaina Pa i Obrador"
+      title       = "La Fogaina"
+      description = "La Fogaina Pa i Cafè\nC/ Sant Sebastià nº52, Les Preses, La Garrotxa, Girona\n\nLa Fogaina Pa i Obrador\nC/ Verge del Carme nº13, Olot, La Garrotxa, Girona" 
+
       current_url = request.url
 
       # Let's prepare a nice set of defaults
@@ -16,7 +17,7 @@ class ApplicationController < ActionController::Base
         site:        site_name,
         title:       title,
         description: description,
-        keywords:    ["pa", "artesà", "Garrotxa", "Forn", "Vall d'en Bas"],
+        keywords:    ["pa", "obrador", "fogaina", "artesà", "Garrotxa", "Forn", "Vall d'en Bas", "Olot", "Les Preses"],
         twitter: {
           site_name: site_name,
           site: '@Fogaina',
