@@ -14,16 +14,16 @@
 #image_moneda_social= Refinery::Image.create :image => File.new(moneda_social_path)
 
 # Create one single user in order to avoid entering a user in development mode
-if Rails.env.development?
-  admin_user = Refinery::Authentication::Devise::User.create!( :username => 'test',
-                                                :email => "test@test.com", 
-                                                :password => 'test')
-
-  # Add necessary roles
-  # https://groups.google.com/d/msg/refinery-cms/akI74wnviFs/j613apqJdvgJ
-  admin_user.add_role :refinery
-  admin_user.add_role :superuser
-end
+#if Rails.env.development?
+#  admin_user = Refinery::Authentication::Devise::User.create!( :username => 'test',
+#                                                :email => "test@test.com", 
+#                                                :password => 'test')
+#
+#  # Add necessary roles
+#  # https://groups.google.com/d/msg/refinery-cms/akI74wnviFs/j613apqJdvgJ
+#  admin_user.add_role :refinery
+#  admin_user.add_role :superuser
+#end
 
 # Meta Data used to show in google both locations
 META_DESCRIPTION = String.new("La Fogaina Pa i Cafè\nC/ Sant Sebastià nº52, Les Preses, La Garrotxa, Girona\n\nLa Fogaina Pa i Obrador\nC/ Verge del Carme nº13, Olot, La Garrotxa, Girona") 

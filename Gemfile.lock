@@ -11,13 +11,13 @@ GIT
 
 GIT
   remote: https://github.com/refinery/refinerycms-news
-  revision: 9a211abe6bc7e9593f304a608b474676fcc91b0b
-  branch: master
+  revision: 68ed333a53772b008a8504367c111e7e55900408
+  branch: 3-0-stable
   specs:
     refinerycms-news (3.0.0)
       acts_as_indexed (~> 0.8.0)
       friendly_id (~> 5.1, < 5.3)
-      globalize (>= 4.0.0, < 5.2)
+      globalize (>= 4.0.0, < 5.4)
       refinerycms-core (~> 3.0.0)
       refinerycms-settings (~> 3.0.0)
 
@@ -89,7 +89,6 @@ GEM
     aws-sigv4 (1.1.0)
       aws-eventstream (~> 1.0, >= 1.0.2)
     babosa (1.0.2)
-    bcrypt (3.1.12)
     better_errors (2.5.1)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
@@ -119,13 +118,6 @@ GEM
     debug_inspector (0.0.3)
     decorators (2.0.4)
       railties (>= 4.0.0, < 6)
-    devise (3.5.10)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      responders
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
     diff-lcs (1.3)
     diffy (3.1.0)
     dragonfly (1.1.5)
@@ -214,7 +206,6 @@ GEM
     multi_json (1.13.1)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
-    orm_adapter (0.5.0)
     paperclip (6.1.0)
       activemodel (>= 4.2.0)
       activesupport (>= 4.2.0)
@@ -272,11 +263,6 @@ GEM
       acts_as_indexed (~> 0.8.0)
       decorators (~> 2.0.0)
       refinerycms-core (~> 3.0.0)
-    refinerycms-authentication-devise (1.0.4)
-      actionmailer (~> 4.2, >= 4.2.0)
-      devise (~> 3.0, >= 3.2.4)
-      friendly_id (~> 5.1.0)
-      refinerycms-core (~> 3.0, >= 3.0.0)
     refinerycms-core (3.0.6)
       actionpack (>= 4.2.3, < 5.0)
       activerecord (>= 4.2.3, < 5.0)
@@ -326,9 +312,6 @@ GEM
       refinerycms-core (>= 3.0.0, < 5.0)
     request_store (1.4.1)
       rack (>= 1.4)
-    responders (2.4.1)
-      actionpack (>= 4.2.0, < 6.0)
-      railties (>= 4.2.0, < 6.0)
     routing-filter (0.6.2)
       actionpack (>= 4.2, < 6)
       activesupport (>= 4.2, < 6)
@@ -387,8 +370,6 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.20)
       execjs (>= 0.3.0, < 3)
-    warden (1.2.7)
-      rack (>= 1.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -424,7 +405,6 @@ DEPENDENCIES
   rails_12factor
   refinerycms (~> 3.0)
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.1)
-  refinerycms-authentication-devise (~> 1.0)
   refinerycms-breads!
   refinerycms-cafeteria_categories!
   refinerycms-image_slideshows!
