@@ -399,7 +399,7 @@ DEPENDENCIES
   launchy
   meta-tags
   paperclip
-  pg (~> 0.18)
+  pg (~> 0.20)
   pry
   rails (= 4.2.8)
   rails_12factor

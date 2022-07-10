@@ -266,7 +266,7 @@ pages_array = [ {
                                         </tr>
                                         <tr>
                                           <td>Monday</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>9:30h-13:30h</td> 
                                           <td>Closed</td>
                                         </tr>
                                         <tr>
@@ -277,21 +277,21 @@ pages_array = [ {
                                         <tr>
                                           <td>Wednesday</td>
                                           <td>9:30h-13:30h</td> 
-                                          <td>16h-20h</td>
+                                          <td>17h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Thursday</td>
                                           <td>9:30h-13:30h</td> 
-                                          <td>16h-20h</td>
+                                          <td>17h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Friday</td>
                                           <td>9:30h-13:30h</td> 
-                                          <td>16h-20h</td>
+                                          <td>17h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Saturday</td>
-                                          <td>9:30h-14h</td> 
+                                          <td>9:30h-13:30h</td> 
                                           <td>Closed</td>
                                         </tr>
                                         <tr>
@@ -382,32 +382,32 @@ pages_array = [ {
                                         </tr>
                                         <tr>
                                           <td>Lunes</td>
-                                          <td>8:30h-14h</td> 
+                                          <td>8:30h-13:30h</td> 
                                           <td>Cerrado</td>
                                         </tr>
                                         <tr>
                                           <td>Martes</td>
                                           <td>8:30h-13:30h</td> 
-                                          <td>16h-20h</td>
+                                          <td>17h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Miércoles</td>
                                           <td>8:30h-13:30h</td> 
-                                          <td>16h-20h</td>
+                                          <td>17h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Jueves</td>
                                           <td>8:30h-13:30h</td> 
-                                          <td>16h-20h</td>
+                                          <td>17h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Viernes</td>
                                           <td>8:30h-13:30h</td> 
-                                          <td>16h-20h</td>
+                                          <td>17h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Sábado</td>
-                                          <td>8:30h-14h</td> 
+                                          <td>8:30h-13:30h</td> 
                                           <td>Cerrado</td>
                                         </tr>
                                         <tr>
@@ -498,32 +498,32 @@ pages_array = [ {
                                         </tr>
                                         <tr>
                                           <td>Dilluns</td>
-                                          <td>8:30h-14h</td> 
+                                          <td>8:30h-13:30h</td> 
                                           <td>Tancat</td>
                                         </tr>
                                         <tr>
                                           <td>Dimarts</td>
                                           <td>8:30h-13:30h</td> 
-                                          <td>16h-20h</td>
+                                          <td>17h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Dimecres</td>
                                           <td>8:30h-13:30h</td> 
-                                          <td>16h-20h</td>
+                                          <td>17h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Dijous</td>
                                           <td>8:30h-13:30h</td> 
-                                          <td>16h-20h</td>
+                                          <td>17h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Divendres</td>
                                           <td>8:30h-13:30h</td> 
-                                          <td>16h-20h</td>
+                                          <td>17h-20h</td>
                                         </tr>
                                         <tr>
                                           <td>Dissabte</td>
-                                          <td>8:30h-14h</td> 
+                                          <td>8:30h-13:30h</td> 
                                           <td>Tancat</td>
                                         </tr>
                                         <tr>
@@ -868,17 +868,10 @@ on_mes_trobarnos_body_part.translations.create!( {
   :locale => "es", 
   :body => "<p>Podéis encontrarnos en:
               <ul>
-                <li><a href=\"https://www.sanum.cat\" target=\"_blank\">Sanum</a></li>
-                <li><a href=\"https://ecovianda.cat/\" target=\"_blank\">Ecovianda</a></li>
-                <li><a href=\"https://www.facebook.com/cacau.olot/\" target=\"_blank\">Cacau Olot</a></li>
-                <li>Escola Bressol El Rial</li>
-                <li><a href=\"http://elrebostcooperativa.cat/\" target=\"_blank\">El rebost de Girona</a></li>
-                <li>Cooperativa El Morrot</li>
                 <li>Cooperativa La Xicoina</li>
                 <li><a href=\"http://cooperativarauta.blogspot.com.es/\" target=\"_blank\">Cooperativa La Rauta</a></li>
-                <li>Cooperativa La Trepadella</li>
-                <li>Cestas ecológicas <a href=\"http://lasaodelagarrotxa.cat/\" target=\"_blank\">La Saó</a></li>
-                <li><a href=\"https://www.nuriasocial.org\" target=\"_blank\">Cantina Núria Social</a></li>    
+                <li><a href=\"https://www.nuriasocial.org\" target=\"_blank\">Cantina Núria Social</a></li>   
+                <li>Aliança RESTAURANT</li> 
               </ul>
             </p>" } )
 
@@ -887,17 +880,10 @@ on_mes_trobarnos_body_part.translations.create!( {
   :body => "<p>
               Podeu trobar alguns dels nostres productes a:
               <ul>
-                <li><a href=\"https://www.sanum.cat\" target=\"_blank\">Sanum</a></li>
-                <li><a href=\"https://ecovianda.cat/\" target=\"_blank\">Ecovianda</a></li>
-                <li><a href=\"https://www.facebook.com/cacau.olot/\" target=\"_blank\">Cacau Olot</a></li>
-                <li>Escola Bressol El Rial</li>
-                <li><a href=\"http://elrebostcooperativa.cat/\" target=\"_blank\">El rebost de Girona</a></li>
-                <li>Cooperativa El Morrot</li>
                 <li>Cooperativa La Xicoina</li>
                 <li><a href=\"http://cooperativarauta.blogspot.com.es/\" target=\"_blank\">Cooperativa La Rauta</a></li>
-                <li>Cooperativa La Trepadella</li>
-                <li>Cistelles ecològiques <a href=\"http://lasaodelagarrotxa.cat/\" target=\"_blank\">La Saó</a></li>
-                <li><a href=\"https://www.nuriasocial.org\" target=\"_blank\">Cantina Núria Social</a></li> 
+                <li><a href=\"https://www.nuriasocial.org\" target=\"_blank\">Cantina Núria Social</a></li>   
+                <li>Aliança RESTAURANT</li> 
               </ul>
             </p>" } )
 
@@ -1476,8 +1462,6 @@ videos_page.translations.create!( { :locale => "ca",
 
 videos_page.update!( :show_in_menu => false )
 
-Refinery::Videos::Video.create!( :title => "Fogaina coope",
-                          :address => "https://www.youtube.com/embed/sTon2EsQOvY" )
 
 Refinery::Videos::Video.create!( :title => "Fogaina",
                           :address => "https://www.youtube.com/embed/qC_hegFxyb4" )
