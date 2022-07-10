@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/bisscomm/refinerycms-image-slideshows.git
+  remote: https://github.com/bisscomm/refinerycms-image-slideshows.git
   revision: 51a5584cd920c33a5884052f5e5b638658c9af43
   branch: 3-0-stable
   specs:
@@ -254,7 +254,7 @@ GEM
       activesupport (= 4.2.8)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (12.3.2)
+    rake (13.0.6)
     rdoc (4.3.0)
     refinerycms (3.0.6)
       refinerycms-core (= 3.0.6)
