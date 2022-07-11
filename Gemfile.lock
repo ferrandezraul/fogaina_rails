@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/bisscomm/refinerycms-image-slideshows.git
+  remote: git://github.com/bisscomm/refinerycms-image-slideshows.git
   revision: 51a5584cd920c33a5884052f5e5b638658c9af43
   branch: 3-0-stable
   specs:
