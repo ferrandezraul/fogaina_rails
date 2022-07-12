@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-ruby "2.4.5"
+ruby "2.7.6"
+
+gem 'bundler', '1.17.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.8'
