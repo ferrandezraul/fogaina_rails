@@ -31,6 +31,10 @@ Run the following command to have the gems listed in Gemfile:
 ```
 $ bundle install
 ```
+Run this to change to https in case of issues with the git protocol:
+```
+$ bundle config github.https true 
+```
 Then, you need to configure the database.
 The application expects to have a postgresql user called "raul" and a database named "development_fogaina"
 

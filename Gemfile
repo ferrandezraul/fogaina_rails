@@ -4,6 +4,8 @@ ruby "2.7.6"
 
 gem 'bundler', '1.17.1'
 
+gem 'bigdecimal', '1.3.5'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.8'
 # Use sqlite3 as the database for Active Record
