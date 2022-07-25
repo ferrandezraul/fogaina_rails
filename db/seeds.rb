@@ -728,6 +728,21 @@ pa_croscat2_path = "#{Rails.root.join('app/assets/images/pan/croscat2.jpg')}"
 pa_fogassa_integral_path = "#{Rails.root.join('app/assets/images/pan/fogassa_integral.jpg')}"
 pa_fogassa_integral2_path = "#{Rails.root.join('app/assets/images/pan/fogassa_integral2.jpg')}"
 
+pa_rugbrot_path = "#{Rails.root.join('app/assets/images/pan/rougbrot.jpg')}"
+pa_rugbrot2_path = "#{Rails.root.join('app/assets/images/pan/rougbrot2.jpg')}"
+
+pa_monococum_path = "#{Rails.root.join('app/assets/images/pan/monococum.jpg')}"
+# pa_monococum2_path = "#{Rails.root.join('app/assets/images/pan/monococum2.jpg')}"
+
+pa_olivas_path = "#{Rails.root.join('app/assets/images/pan/olives.jpg')}"
+pa_olivas2_path = "#{Rails.root.join('app/assets/images/pan/olives2.jpg')}"
+
+pa_nous_path = "#{Rails.root.join('app/assets/images/pan/nous.jpg')}"
+pa_nous2_path = "#{Rails.root.join('app/assets/images/pan/nous2.jpg')}"
+
+pa_semi_integral_espelta_path = "#{Rails.root.join('app/assets/images/pan/semi-integral-espelta.jpg')}"
+# pa_semi_integral_espelta2_path = "#{Rails.root.join('app/assets/images/pan/semi-integral-espelta2.jpg')}"
+
 # Images PAN
 image_soca = Refinery::Image.create :image => File.new(soca_path)
 image_soca2 = Refinery::Image.create :image => File.new(soca2_path)
@@ -777,6 +792,21 @@ image_pa_croscat2 = Refinery::Image.create :image => File.new(pa_croscat2_path)
 
 image_pa_fogassa_integral = Refinery::Image.create :image => File.new(pa_fogassa_integral_path)
 image_pa_fogassa_integral2 = Refinery::Image.create :image => File.new(pa_fogassa_integral2_path)
+
+image_pa_rugbrot = Refinery::Image.create :image => File.new(pa_rugbrot_path)
+image_pa_rugbrot2 = Refinery::Image.create :image => File.new(pa_rugbrot2_path)
+
+image_pa_monococum = Refinery::Image.create :image => File.new(pa_monococum_path)
+# image_pa_monococum2 = Refinery::Image.create :image => File.new(pa_monococum2_path)
+
+image_pa_olivas = Refinery::Image.create :image => File.new(pa_olivas_path)
+image_pa_olivas2 = Refinery::Image.create :image => File.new(pa_olivas2_path)
+
+image_pa_nous = Refinery::Image.create :image => File.new(pa_nous_path)
+image_pa_nous2 = Refinery::Image.create :image => File.new(pa_nous2_path)
+
+image_pa_semi_integral_espelta = Refinery::Image.create :image => File.new(pa_semi_integral_espelta_path)
+# image_pa_semi_integral_espelta2 = Refinery::Image.create :image => File.new(pa_semi_integral_espelta2_path)
 
 # Added by Refinery CMS Breads extension
 Refinery::Breads::Engine.load_seed
@@ -953,8 +983,9 @@ panes = [
             :name_es => "La Soca",
             :name_en => "La Soca",  
             :description_ca => "<p>Un pa fet amb una barreja de farines integrals de varietats antigues de blat (espelta, kamut, xeixa ...) cultivats per petits productors, format de motlle i fet amb massa mare. Hem aconseguit aquest pa gràcies a la tècnica del Soaker: grans de blat i d'arròs integral cuits que aporten un extra d'esponjositat i humitat a la molla. Adquiriu sabor i salut a un preu d'escàndol!</p>",
-            :description_es => "<p>Un pan de mezcla de harinas integrales de variedades antiguas de trigo (espelta, kamut, xeixa...), formato de molde y hecho con Masa Madre, no tiene porque ser un pan denso y ácido. Hemos trabajado y lo conseguimos gracias a un Soaker, granos de trigo y arroz integral cocidos que aportan ese extra de esponjosidad y humedad de la miga. Estas comprando sabor y salud a un precio de escandalo!</p>",
-            :description_en => "<p>Un pan de mezcla de harinas integrales de variedades antiguas de trigo (espelta, kamut, xeixa...), formato de molde y hecho con Masa Madre, no tiene porque ser un pan denso y ácido. Hemos trabajado y lo conseguimos gracias a un Soaker, granos de trigo y arroz integral cocidos que aportan ese extra de esponjosidad y humedad de la miga. Estas comprando sabor y salud a un precio de escandalo!</p>",
+            :description_es => "<p>Un pan hecho con una mezcla de harinas integrales de variedades antiguas de trigo (espelta, kamut, chaja...) cultivados por pequeños productores, formato de molde y hecho con masa madre. 
+            Hemos conseguido este pan gracias a la técnica del Soaker: granos de trigo y de arroz integral cocidos que aportan un extra de esponjosidad y humedad en la miga. Adquiera sabor y salud a un precio de escándalo!</p>",
+            :description_en => "<p>Un pa fet amb una barreja de farines integrals de varietats antigues de blat (espelta, kamut, xeixa ...) cultivats per petits productors, format de motlle i fet amb massa mare. Hem aconseguit aquest pa gràcies a la tècnica del Soaker: grans de blat i d'arròs integral cuits que aporten un extra d'esponjositat i humitat a la molla. Adquiriu sabor i salut a un preu d'escàndol!</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
             #:price => 3,
             :price => nil,
@@ -966,8 +997,8 @@ panes = [
             :name_es => "Pan de pagés",
             :name_en => "Pa de pagés",  
             :description_ca => "<p>Sens dubte el pa que més ens va costar definir-ne la fórmula. Sembla mentida: un pa tan senzill a primera vista i, precisament, per això, ens va donar molta feina, perquè volíem fer un pa senzill que no fos vulgar. Farina semiblanca de molí de pedra i una massa mare natural, que el doten d'una ànima làctica i suau, fugint del què és insípid. El forn amb solera de pedra és el company ideal per aconseguir una bona fogassa. Pa de pagés de 600gr i de 1Kg.</p>",
-            :description_es => "<p>Sin duda el pan que más nos costó definir la formula. Parece mentira siendo un pan tan sencillo a simple vista, y es por ese mismo motivo, el hecho de no querer que un pan sencillo fuese vulgar. Harina semiblanca de molino de piedra y una masa madre natural le dotan de un alma láctica y suave, huyendo de lo insípido. El horno de leña de suela de barro es el compañero ideal para conseguir una buena hogaza. Pan de pagés de 600gr - 2,10€, Pan de pagés 1Kg - 3,20€</p>",
-            :description_en => "<p>Sin duda el pan que más nos costó definir la formula. Parece mentira siendo un pan tan sencillo a simple vista, y es por ese mismo motivo, el hecho de no querer que un pan sencillo fuese vulgar. Harina semiblanca de molino de piedra y una masa madre natural le dotan de un alma láctica y suave, huyendo de lo insípido. El horno de leña de suela de barro es el compañero ideal para conseguir una buena hogaza. Pan de pagés de 600gr - 2,10€, Pan de pagés 1Kg - 3,20€</p>",
+            :description_es => "<p>Sin duda el pan que más nos costó definir su fórmula. Parece mentira: un pan tan sencillo a simple vista y, precisamente, por eso, nos dio mucho trabajo, porque queríamos hacer un pan sencillo que no fuera vulgar. Harina semiblanca de molino de piedra y una masa madre natural, que le dotan de un alma láctica y suave, huyendo de lo insípido. El horno con solera de piedra es el compañero ideal para conseguir una buena hogaza. Pan de payés de 600gr y de 1Kg.</p>",
+            :description_en => "<p>Sens dubte el pa que més ens va costar definir-ne la fórmula. Sembla mentida: un pa tan senzill a primera vista i, precisament, per això, ens va donar molta feina, perquè volíem fer un pa senzill que no fos vulgar. Farina semiblanca de molí de pedra i una massa mare natural, que el doten d'una ànima làctica i suau, fugint del què és insípid. El forn amb solera de pedra és el company ideal per aconseguir una bona fogassa. Pa de pagés de 600gr i de 1Kg.</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
             :price => nil,
             :photo => image_pa_de_pages,
@@ -978,8 +1009,8 @@ panes = [
             :name_es => "Rústico",
             :name_en => "Rustic",  
             :description_ca => "<p>Motivats per aconseguir una fogassa similar al pa de pagès, però amb la intenció de proveir-lo de més fibra i sabor, i un millor alveolat, sense ajuda de llevat, només amb una massa mare jove, i afegint-t'hi farines integrals de blat i de sègol. Vam haver d'anar pujant la hidratació de la massa, que després es va convertir tècnicament en el repte per als nous forners  de la Fogaina. El forn a  265 ºC i molta humitat són l'últim esglaó per aconseguir una bonica i daurada fogassa.</p>",
-            :description_es => "<p>Motivados por conseguir una hogaza similar al pan de payès, pero con la intención de dotar de más fibra y sabor, y una mejor alveolatura, sin ayuda de levadura, solamente con una masa madre joven, y añadiendo harinas integrales de trigo y centeno. Tuvimos que ir subiendo la hidratación de la masa, este luego se convirtió técnicamente en reto para los panaderos nuevos en la Fogaina. El horno de leña a casi 250ºC y todo lo que podemos de humedad son el último peldaño para conseguir un bonito y dorado hogazón.</p>",
-            :description_en => "<p>Motivados por conseguir una hogaza similar al pan de payès, pero con la intención de dotar de más fibra y sabor, y una mejor alveolatura, sin ayuda de levadura, solamente con una masa madre joven, y añadiendo harinas integrales de trigo y centeno. Tuvimos que ir subiendo la hidratación de la masa, este luego se convirtió técnicamente en reto para los panaderos nuevos en la Fogaina. El horno de leña a casi 250ºC y todo lo que podemos de humedad son el último peldaño para conseguir un bonito y dorado hogazón.</p>",
+            :description_es => "<p>Motivados para conseguir una hogaza similar al pan de payés, pero con la intención de proveerlo de más fibra y sabor, y un mejor alveolado, sin ayuda de levadura, sólo con una masa madre joven, y añadiéndote harinas integrales de trigo y de centeno. Tuvimos que ir subiendo la hidratación de la masa, que después se convirtió técnicamente en el reto para los nuevos panaderos de la Fogaina. El horno a 265 ºC y mucha humedad son el último escalón para conseguir una bonita y dorada hogaza.</p>",
+            :description_en => "<p>Motivats per aconseguir una fogassa similar al pa de pagès, però amb la intenció de proveir-lo de més fibra i sabor, i un millor alveolat, sense ajuda de llevat, només amb una massa mare jove, i afegint-t'hi farines integrals de blat i de sègol. Vam haver d'anar pujant la hidratació de la massa, que després es va convertir tècnicament en el repte per als nous forners  de la Fogaina. El forn a  265 ºC i molta humitat són l'últim esglaó per aconseguir una bonica i daurada fogassa.</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
             #:price => 3,
             :price => nil,
@@ -991,8 +1022,8 @@ panes = [
             :name_es => "Pigat",
             :name_en => "Pigat",  
             :description_ca => "<p>Agafem la massa del Rústic i hi afegim una barreja de llavors torrades (lli, sèsam, flocs de civada, pipes de gira-sol )i deixades en remull... Més gust, si és possible, a la nostra massa rústica!</p>",
-            :description_es => "<p>Cogemos la masa del Rústic y añadimos una mezcla de semillas tostadas y dejadas en remojo... Más sabor si cabe a nuestra masa rústica!</p>",
-            :description_en => "<p>Cogemos la masa del Rústic y añadimos una mezcla de semillas tostadas y dejadas en remojo... Más sabor si cabe a nuestra masa rústica!</p>",
+            :description_es => "<p>Cogemos la masa del Rústic y añadimos una mezcla de semillas tostadas (lino, sésamo, copos de avena, pipas de girasol) y dejadas en remojo... ¡Más gusto, si es posible, a nuestra masa rústica!</p>",
+            :description_en => "<p>Agafem la massa del Rústic i hi afegim una barreja de llavors torrades (lli, sèsam, flocs de civada, pipes de gira-sol )i deixades en remull... Més gust, si és possible, a la nostra massa rústica!</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
             #:price => 3.50,
             :price => nil,
@@ -1004,8 +1035,8 @@ panes = [
             :name_es => "Tinosell",
             :name_en => "Tinosell",  
             :description_ca => "<p>I encara motivats per oferir més diversitat panarra a les nostres lleixes, ens vam treure de la màniga aquest panot ideal per a esmorzars i berenars, o per combinar si vols amb un bon tast de formatges. A la nostra massa rústica li afegim fruita seca (panses, nous i orellanes ) i la fiquem dins d'un motlle. L'oli de les anous tenyeix d'un preciós morat la molla d'aquest pa tan especial.</p>",
-            :description_es => "<p>Y aún motivados por ofrecer más diversidad panarra en nuestras estanterías, nos sacamos de la manga este panazo ideal para desayunos y meriendas, o para combinar si quieres con una buena cata de quesos. A nuestra masa rústica le añadimos frutos secos y lo metemos dentro de un molde. El aceite de las nueces tiñe de un precioso morado la miga de este pan tan especial.</p>",
-            :description_en => "<p>Y aún motivados por ofrecer más diversidad panarra en nuestras estanterías, nos sacamos de la manga este panazo ideal para desayunos y meriendas, o para combinar si quieres con una buena cata de quesos. A nuestra masa rústica le añadimos frutos secos y lo metemos dentro de un molde. El aceite de las nueces tiñe de un precioso morado la miga de este pan tan especial.</p>",
+            :description_es => "<p>Y aún motivados por ofrecer más diversidad panarra en nuestras tiendas, nos sacamos de la manga este pan ideal para desayunos y meriendas, o para combinar si quieres con una buena cata de quesos. A nuestra masa rústica le añadimos frutos secos (pasas, nueces y orejones) y la metemos dentro de un molde. El aceite de las nueces tiñe de un precioso morado la miga de este pan tan especial.</p>",
+            :description_en => "<p>I encara motivats per oferir més diversitat panarra a les nostres lleixes, ens vam treure de la màniga aquest panot ideal per a esmorzars i berenars, o per combinar si vols amb un bon tast de formatges. A la nostra massa rústica li afegim fruita seca (panses, nous i orellanes ) i la fiquem dins d'un motlle. L'oli de les anous tenyeix d'un preciós morat la molla d'aquest pa tan especial.</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
             #:price => 4,
             :price => nil,
@@ -1017,8 +1048,8 @@ panes = [
             :name_es => "Espelta",
             :name_en => "Espelta",  
             :description_ca => "<p>Per als esportistes, puristes, integristes, espeltatians... No hi ha millor plaer que un pa 100 % espelta i quasi integral, amb la seva dosi de massa mare d'espelta, i amenitzat amb unes pipes de gira-sol torrades. Molt bon gust i llarga conservació.</p>",
-            :description_es => "<p>Para los deportistas, puristas, integristas, espeltatianos... No hay mejor placer que un pan 100% espelta integral, con su dosis de masa madre de espelta, y amenizado con unas pipas de girasol tostadas. Muy buen sabor y larga conservación.</p>",
-            :description_en => "<p>Para los deportistas, puristas, integristas, espeltatianos... No hay mejor placer que un pan 100% espelta integral, con su dosis de masa madre de espelta, y amenizado con unas pipas de girasol tostadas. Muy buen sabor y larga conservación.</p>",
+            :description_es => "<p>Para los deportistas, puristas, integristas, espeltatianos... No hay mejor placer que un pan 100% espelta y casi integral, con su dosis de masa madre de espelta, y amenizado con unas pipas de girasol tostadas. Muy buen gusto y larga conservación.</p>",
+            :description_en => "<p>Per als esportistes, puristes, integristes, espeltatians... No hi ha millor plaer que un pa 100 % espelta i quasi integral, amb la seva dosi de massa mare d'espelta, i amenitzat amb unes pipes de gira-sol torrades. Molt bon gust i llarga conservació.</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
             #:price => 4.30,
             :price => nil,
@@ -1030,8 +1061,8 @@ panes = [
             :name_es => "Coca de forner",
             :name_en => "Coca de forner",  
             :description_ca => "<p>Una fleca amb un bon forn no es pot permetre no coure unes coques de forner. El motiu és el ritme de cocció que ens ofereix el nostre forn. Pugem el forn fins a quasi 300 ºC . El procés de format, estirat i repòs és gradual començant pel pre-format i fins a l'últim estirat a la mateixa pala, un bon raig d'oli d'oliva, empolsinada de sucre i cap a dins! Quan surt, una ruixada amb anís per cristal·litzar el sucre... No us podeu imaginar la fragància que omple tot l'obrador.</p>",
-            :description_es => "<p>Una panaderia con un buen horno de leña no se puede permitir no cocer unas Cocas de Forner. El motivo es el ritmo de cocción que nos ofrece nuestro horno. Al calentarlo, la temperatura sube tanto que antes de palear el pan podemos hornear unas cocas a casi 300ºC cuando aún estan vivas las brasas. El proceso de formado,estirado y reposo es paulatino durante la madrugada, hasta el último estirado en la misma pala, buen chorro de aceite de oliva y espolvoreo de azucar y adentro. Al salir, sin perder tiempo una rociada con anis para cristalizar el azucar... No os podeis imaginar la fragancia que llena todo el obrador.</p>",
-            :description_en => "<p>Una panaderia con un buen horno de leña no se puede permitir no cocer unas Cocas de Forner. El motivo es el ritmo de cocción que nos ofrece nuestro horno. Al calentarlo, la temperatura sube tanto que antes de palear el pan podemos hornear unas cocas a casi 300ºC cuando aún estan vivas las brasas. El proceso de formado,estirado y reposo es paulatino durante la madrugada, hasta el último estirado en la misma pala, buen chorro de aceite de oliva y espolvoreo de azucar y adentro. Al salir, sin perder tiempo una rociada con anis para cristalizar el azucar... No os podeis imaginar la fragancia que llena todo el obrador.</p>",
+            :description_es => "<p>Una panadería con un buen horno no puede permitirse no cocer unas cocas de panadero. El motivo es el ritmo de cocción que nos ofrece nuestro horno. Subimos el horno hasta casi 300 ºC. El proceso de formado, estirado y reposo es gradual empezando por el pre-formado y hasta el último estirado en la misma pala, un buen chorro de aceite de oliva, empolvada de azúcar y ¡hacia dentro! Cuando sale, una rociada con anís para cristalizar el azúcar... No podéis imaginar la fragancia que llena todo el obrador.</p>",
+            :description_en => "<p>Una fleca amb un bon forn no es pot permetre no coure unes coques de forner. El motiu és el ritme de cocció que ens ofereix el nostre forn. Pugem el forn fins a quasi 300 ºC . El procés de format, estirat i repòs és gradual començant pel pre-format i fins a l'últim estirat a la mateixa pala, un bon raig d'oli d'oliva, empolsinada de sucre i cap a dins! Quan surt, una ruixada amb anís per cristal·litzar el sucre... No us podeu imaginar la fragància que omple tot l'obrador.</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
             #:price => 3.10,
             :price => nil,
@@ -1043,8 +1074,8 @@ panes = [
             :name_es => "Pa de coca",
             :name_en => "Pa de coca",  
             :description_ca => "<p>Pel tipus de forn que teníem ens era difícil oferir barres tradicionals. Així que aquest és el nostre producte que més s'adaptava a l'hora de l'entrepà. És una mena de xapata allargada, alveolada i de crosta fina. El toc d'oli d'oliva i el de gira-sol, tots dos d'altíssima qualitat, li donen un sabor i una textura particulars. Ara, ja fem barres, però qualsevol deixa de fer el pa de coca amb la d’aficionats que té!</p>",
-            :description_es => "<p>Por temas de tipo de horno y organización, nos es muy difícil ofrecer unas barras. Así que este es nuestro producto que más se adapta a la hora del bocata. Viene a ser un tipo de chapata alargada, alveolada y de corteza fina. El toque de aceite de oliva y girasol, ambos de altisima calidad, le da un sabor y textura particular.</p>",
-            :description_en => "<p>Por temas de tipo de horno y organización, nos es muy difícil ofrecer unas barras. Así que este es nuestro producto que más se adapta a la hora del bocata. Viene a ser un tipo de chapata alargada, alveolada y de corteza fina. El toque de aceite de oliva y girasol, ambos de altisima calidad, le da un sabor y textura particular.</p>",
+            :description_es => "<p>Por el tipo de horno que teníamos nos era difícil ofrecer barras tradicionales. Así que éste es nuestro producto que más se adaptaba a la hora del bocadillo. Es una especie de chapata alargada, alveolada y de corteza fina. El toque de aceite de oliva y el de girasol, ambos de altísima calidad, le dan un sabor y textura particulares. Ahora, ya hacemos barras, ¡pero cualquiera deja de hacer el pan de coca con la de aficionados que tiene!</p>",
+            :description_en => "<p>Pel tipus de forn que teníem ens era difícil oferir barres tradicionals. Així que aquest és el nostre producte que més s'adaptava a l'hora de l'entrepà. És una mena de xapata allargada, alveolada i de crosta fina. El toc d'oli d'oliva i el de gira-sol, tots dos d'altíssima qualitat, li donen un sabor i una textura particulars. Ara, ja fem barres, però qualsevol deixa de fer el pa de coca amb la d’aficionats que té!</p>",
             :available_days => [:tuesday, :wednesday, :thursday, :friday, :saturday],
             #:price => 2.60,
             :price => nil,
@@ -1056,8 +1087,8 @@ panes = [
             :name_es => "Brot Negre",
             :name_en => "Brot Negre",  
             :description_ca => "<p>Si tenim un pa que desvetlla passions confrontades aquest és el Brot. Un panot  de sègol integral, una mica de blat integral i massa mare de sègol. La cultura del sègol a la Mediterrània és escassa, per això li donem aquesta oportunitat, a més de tastar una cosa ben diferent i aromàtica, menjareu pura salut i tindreu a les vostres mans un pa que dura molts dies. Acompanyeu-lo de formatges forts, anxoves, patés, mantega o melmelada amarga ...</p>",
-            :description_es => "<p>Si tenemos un pan que despierte pasiones encontradas este es el Brot. Un panazo 100% de centeno integral que no deja indiferente. Es cierto que la poca cultura de centeno que tenemos en el mediterráneo hace de este pan para algunos un incomprendido, pero si le das una oportunidad, además de degustar algo diferente i aromático estarás comiendo pura salud y tendrás en tus manos un pan que dura muchos días. Acompáñalo de quesos fuertes, anchoas, patés, mantequilla y mermelada amarga ...</p>",
-            :description_en => "<p>Si tenemos un pan que despierte pasiones encontradas este es el Brot. Un panazo 100% de centeno integral que no deja indiferente. Es cierto que la poca cultura de centeno que tenemos en el mediterráneo hace de este pan para algunos un incomprendido, pero si le das una oportunidad, además de degustar algo diferente i aromático estarás comiendo pura salud y tendrás en tus manos un pan que dura muchos días. Acompáñalo de quesos fuertes, anchoas, patés, mantequilla y mermelada amarga ...</p>",
+            :description_es => "<p>Si tenemos un pan que desvela pasiones confrontadas éste es el Brot. Un pan de centeno integral, un poco de trigo integral y masa madre de centeno. La cultura del centeno en el Mediterráneo es escasa, por eso le damos esta oportunidad, además de probar algo bien diferente y aromático, comerá pura salud y tendrá en sus manos un pan que dura muchos días. Acompáñelo de quesos fuertes, anchoas, patés, mantequilla o mermelada amarga…</p>",
+            :description_en => "<p>Si tenim un pa que desvetlla passions confrontades aquest és el Brot. Un panot  de sègol integral, una mica de blat integral i massa mare de sègol. La cultura del sègol a la Mediterrània és escassa, per això li donem aquesta oportunitat, a més de tastar una cosa ben diferent i aromàtica, menjareu pura salut i tindreu a les vostres mans un pa que dura molts dies. Acompanyeu-lo de formatges forts, anxoves, patés, mantega o melmelada amarga ...</p>",
             :available_days => [:thursday],
             #:price => 4,
             :price => nil,
@@ -1070,8 +1101,9 @@ panes = [
             :name_en => "Bembó",  
             :description_ca => "<p>Per què hem de renunciar als pans de motllo blancs i esponjosos que ofereixen les marques industrials? Si a més aconseguim que siguin més bons i saludables ... motllo blanc i tendre, fet amb llet vegetal. Farina de blat T80. Massa
             mare i preferment. I a sobre, vegà!! Ja que me substituit la mantega pel tang Zhong, una tècnica coreana que li dona aquesta amorositat i també el gust dolcet.</p>",
-            :description_es => "<p>Porqué tenemos que renunciar a los panes de molde blancos i esponjosos que ofrecen las marcas industriales? Si además conseguimos que sean más buenos y saludables ...</p>",
-            :description_en => "<p>Porqué tenemos que renunciar a los panes de molde blancos i esponjosos que ofrecen las marcas industriales? Si además conseguimos que sean más buenos y saludables ...</p>",
+            :description_es => "<p>¿Por qué renunciar a los panes de molde blancos y esponjosos que ofrecen las marcas industriales? Si además conseguimos que sean mejores y saludables... molde blanco y tierno, hecho con leche vegetal. Harina de trigo T80. Masa madre y prefermento. Y además vegano!! Ya que hemos sustituido la mantequilla por el Tang Zhong, una técnica coreana que le da esa amorosidad y también el sabor dulce.</p>",
+            :description_en => "<p>Per què hem de renunciar als pans de motllo blancs i esponjosos que ofereixen les marques industrials? Si a més aconseguim que siguin més bons i saludables ... motllo blanc i tendre, fet amb llet vegetal. Farina de blat T80. Massa
+            mare i preferment. I a sobre, vegà!! Ja que me substituit la mantega pel tang Zhong, una tècnica coreana que li dona aquesta amorositat i també el gust dolcet.</p>",
             :available_days => [:wednesday, :friday],
             #:price => 4,
             :price => nil,
@@ -1079,7 +1111,8 @@ panes = [
             :photo2 => image_pa_bembo2,
             :photo3 => image_pa_bembo3
           },
-          { :name_ca => "Fajol", 
+          { 
+            :name_ca => "Fajol", 
             :name_es => "Fajol",
             :name_en => "Fajol",  
             :description_ca => "<p>Una mica obligats per la demanda, i limitats per les 'traces', finalment ens vam decidir a fer un pa 'sense gluten', que per les condicions del nostre obrador, ens impedeix de certificar-lo per a celíacs. La nostra intenció des del primer moment era aconseguir un molt bon pa sense gluten. Hem après unes quantes coses sobre mètodes i nous ingredients. Així que esperem estar a l'alçada i que el gaudiu.</p>",
@@ -1092,11 +1125,12 @@ panes = [
             :photo2 => image_pa_fajol2,
             :photo3 => image_pa_fajol3
           },
-          { :name_ca => "Croscat", 
+          { 
+            :name_ca => "Croscat", 
             :name_es => "Croscat",
             :name_en => "Croscat",  
             :description_ca => "<p>Fogassa petita de farina d'espelta. Per als puristes, que cuiden la salut però volen fogasses. Un pa 100 % espelta i quasi integral, amb la seva dosi de massa mare d'espelta, i amenitzat amb unes pipes de gira-sol torrades. Molt bon gust i llarga conservació.</p>",
-            :description_es => "<p>Fogassa petita de farina d'espelta. Per als puristes, que cuiden la salut però volen fogasses. Un pa 100 % espelta i quasi integral, amb la seva dosi de massa mare d'espelta, i amenitzat amb unes pipes de gira-sol torrades. Molt bon gust i llarga conservació.</p>",
+            :description_es => "<p>Hogaza pequeña de harina de espelta. Para los puristas, que cuidan la salud pero quieren hogazas. Un pan 100% espelta y casi integral, con su dosis de masa madre de espelta, y amenizado con unas pipas de girasol tostadas. Muy buen gusto y larga conservación.</p>",
             :description_en => "<p>Fogassa petita de farina d'espelta. Per als puristes, que cuiden la salut però volen fogasses. Un pa 100 % espelta i quasi integral, amb la seva dosi de massa mare d'espelta, i amenitzat amb unes pipes de gira-sol torrades. Molt bon gust i llarga conservació.</p>",
             :available_days => [:wednesday],
             #:price => 6,
@@ -1104,17 +1138,87 @@ panes = [
             :photo => image_pa_croscat,
             :photo2 => image_pa_croscat2
           },
-          { :name_ca => "Fogassa Integral", 
-            :name_es => "Fogassa Integral",
+          { 
+            :name_ca => "Fogassa Integral", 
+            :name_es => "Hogaza Integral",
             :name_en => "Fogassa Integral",  
             :description_ca => "<p>Farina de blat 100% integral y farina de blat antic fermentat només amb massa mare.</p>",
-            :description_es => "<p>Farina de blat 100% integral y farina de blat antic fermentat només amb massa mare.</p>",
+            :description_es => "<p>Harina de trigo 100% integral y harina de trigo antiguo fermentado sólo con masa madre.</p>",
             :description_en => "<p>Farina de blat 100% integral y farina de blat antic fermentat només amb massa mare.</p>",
             :available_days => [:thursday],
             #:price => 6,
             :price => nil,
             :photo => image_pa_fogassa_integral,
             :photo2 => image_pa_fogassa_integral2
+          },
+          { 
+            :name_ca => "Rugbrot", 
+            :name_es => "Rugbrot",
+            :name_en => "Rugbrot",  
+            :description_ca => "<p>El rugbrød o pa de sègol danès és el més comunament consumit a Dinamarca. Mescla de farines de blat integral, farina de sègol integral, massa mare de sègol i llavors. Espectacular, una explosió de sabors, i a més, gràcies a les llavors dura molts dies fresc.
+            El rugbrød amb mantega és la base essencial d'un dels més famosos sandvitxos oberts danesos, el smørrebrød.</p>",
+            :description_es => "<p>El rugbrød o pan de centeno danés es el más comúnmente consumido en Dinamarca. Mezcla de harinas de trigo integral, harina de centeno integral, masa madre de centeno y semillas. Espectacular, una explosión de sabores, y además, gracias a las semillas dura muchos días fresco.
+            El rugbrød con mantequilla es la base esencial de uno de los más famosos sándwiches abiertos daneses, el smørrebrød.</p>",
+            :description_en => "<p>El rugbrød o pa de sègol danès és el més comunament consumit a Dinamarca. Mescla de farines de blat integral, farina de sègol integral, massa mare de sègol i llavors. Espectacular, una explosió de sabors, i a més, gràcies a les llavors dura molts dies fresc.
+            El rugbrød amb mantega és la base essencial d'un dels més famosos sandvitxos oberts danesos, el smørrebrød.</p>",
+            :available_days => [:thursday],
+            #:price => 6,
+            :price => nil,
+            :photo => image_pa_rugbrot,
+            :photo2 => image_pa_rugbrot2
+          },
+          { 
+            :name_ca => "Monococum", 
+            :name_es => "Monococum",
+            :name_en => "Monococum",  
+            :description_ca => "<p>Pa semiintegral fermentat només amb massa mare, amb poca acidesa i sabor que recorda a llegums, té molt poc contingut de gluten i alt contingut de fibra cosa que el fa molt més digerible. Fet amb Blat monococcum, que é la primera varietat de blat domesticada per l'ésser humà fa més de 10.000 anys i que donaria origen als blats moderns. </p>",
+            :description_es => "<p>Pan semiintegral fermentado sólo con masa madre, con poca acidez y sabor que recuerda a legumbres, tiene muy poco contenido de gluten y alto contenido de fibra lo que le hace mucho más digerible. Hecho con Trigo monococcum, que es la primera variedad de trigo domesticada por el ser humano hace más de 10.000 años y que daría origen a los trigos modernos.</p>",
+            :description_en => "<p>Pa semiintegral fermentat només amb massa mare, amb poca acidesa i sabor que recorda a llegums, té molt poc contingut de gluten i alt contingut de fibra cosa que el fa molt més digerible. Fet amb Blat monococcum, que é la primera varietat de blat domesticada per l'ésser humà fa més de 10.000 anys i que donaria origen als blats moderns. </p>",
+            :available_days => [:friday],
+            #:price => 6,
+            :price => nil,
+            :photo => image_pa_monococum,
+            # :photo2 => image_pa_monococum2
+          },
+          { 
+            :name_ca => "Pa d’Olives", 
+            :name_es => "Pan de Olivas",
+            :name_en => "Pa d’Olives",  
+            :description_ca => "<p>Un dels especials de dissabte, Fet amb massa de farina semi integral, farina de sègol i Olives  de kalamata, que li donen un sabor espectacular. </p>",
+            :description_es => "<p>Uno de los panes especiales del sábado. Hecho con masa de harina semi integral, harina de centeno y Olivas de kalamata, que le dan un sabor espectacular.</p>",
+            :description_en => "<p>Un dels especials de dissabte, Fet amb massa de farina semi integral, farina de sègol i Olives  de kalamata, que li donen un sabor espectacular. </p>",
+            :available_days => [:saturday],
+            #:price => 6,
+            :price => nil,
+            :photo => image_pa_olivas,
+            :photo2 => image_pa_olivas2
+          },
+          { 
+            :name_ca => "Pa de Nous", 
+            :name_es => "Pan de Nueces",
+            :name_en => "Pa de Nous",  
+            :description_ca => "<p>Un dels especials de dissabte, fet amb massa de farina semi integral, farina de sègol i  nous torrades.</p>",
+            :description_es => "<p>Uno de los panes especiales del sábado.
+            Hecho con masa de harina semi integral, harina de centeno y nueces tostadas.</p>",
+            :description_en => "<p>Un dels especials de dissabte, fet amb massa de farina semi integral, farina de sègol i  nous torrades.</p>",
+            :available_days => [:saturday],
+            #:price => 6,
+            :price => nil,
+            :photo => image_pa_nous,
+            :photo2 => image_pa_nous2
+          },
+          { 
+            :name_ca => "Semi integral d’espelta", 
+            :name_es => "Semi integral de espelta",
+            :name_en => "Semi integral d’espelta",  
+            :description_ca => "<p>Per aquells que voleu menjar sa, però no us tiran els pans integrals. Fogassa 100% de farina d’espelta. Pel tipus de gra que és l’espelta no es pot aconseguir mai una farina blanca, però aquesta és la d’extracció més blanca possible i de proximitat, quasi Km 0. Farina del pla de l’estany.</p>",
+            :description_es => "<p>Para aquellos que desea comer sano, pero no les gustan los panes integrales. Hogaza 100% de harina de espelta. Por el tipo de grano que es la espelta no se puede conseguir nunca una harina blanca, pero ésta es la de extracción más blanca posible y de proximidad, casi Km 0. Harina del Pla de l’estany.</p>",
+            :description_en => "<p>Per aquells que voleu menjar sa, però no us tiran els pans integrals. Fogassa 100% de farina d’espelta. Pel tipus de gra que és l’espelta no es pot aconseguir mai una farina blanca, però aquesta és la d’extracció més blanca possible i de proximitat, quasi Km 0. Farina del pla de l’estany.</p>",
+            :available_days => [:friday],
+            #:price => 6,
+            :price => nil,
+            :photo => image_pa_semi_integral_espelta,
+            # :photo2 => image_pa_semi_integral_espelta2
           }
         ]
 
