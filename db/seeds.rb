@@ -743,6 +743,15 @@ pa_nous2_path = "#{Rails.root.join('app/assets/images/pan/nous2.jpg')}"
 pa_semi_integral_espelta_path = "#{Rails.root.join('app/assets/images/pan/semi-integral-espelta.jpg')}"
 # pa_semi_integral_espelta2_path = "#{Rails.root.join('app/assets/images/pan/semi-integral-espelta2.jpg')}"
 
+pa_koulouri_path = "#{Rails.root.join('app/assets/images/logos/new_logo.png')}"
+pa_koulouri2_path = "#{Rails.root.join('app/assets/images/logos/new_logo.png')}"
+
+pa_tano_path = "#{Rails.root.join('app/assets/images/logos/new_logo.png')}"
+pa_tano2_path = "#{Rails.root.join('app/assets/images/logos/new_logo.png')}"
+
+pa_llonguet_path = "#{Rails.root.join('app/assets/images/logos/new_logo.png')}"
+pa_llonguet2_path = "#{Rails.root.join('app/assets/images/logos/new_logo.png')}"
+
 # Images PAN
 image_soca = Refinery::Image.create :image => File.new(soca_path)
 image_soca2 = Refinery::Image.create :image => File.new(soca2_path)
@@ -807,6 +816,15 @@ image_pa_nous2 = Refinery::Image.create :image => File.new(pa_nous2_path)
 
 image_pa_semi_integral_espelta = Refinery::Image.create :image => File.new(pa_semi_integral_espelta_path)
 # image_pa_semi_integral_espelta2 = Refinery::Image.create :image => File.new(pa_semi_integral_espelta2_path)
+
+image_pa_koulouri = Refinery::Image.create :image => File.new(pa_koulouri_path)
+image_pa_koulouri2 = Refinery::Image.create :image => File.new(pa_koulouri2_path)
+
+image_pa_tano = Refinery::Image.create :image => File.new(pa_tano_path)
+image_pa_tano2 = Refinery::Image.create :image => File.new(pa_tano2_path)
+
+image_pa_llonguet = Refinery::Image.create :image => File.new(pa_llonguet_path)
+image_pa_llonguet2 = Refinery::Image.create :image => File.new(pa_llonguet2_path)
 
 # Added by Refinery CMS Breads extension
 Refinery::Breads::Engine.load_seed
@@ -1113,12 +1131,12 @@ panes = [
           },
           { 
             :name_ca => "Fajol", 
-            :name_es => "Fajol",
+            :name_es => "Trigo Sarraceno",
             :name_en => "Fajol",  
             :description_ca => "<p>Una mica obligats per la demanda, i limitats per les 'traces', finalment ens vam decidir a fer un pa 'sense gluten', que per les condicions del nostre obrador, ens impedeix de certificar-lo per a celíacs. La nostra intenció des del primer moment era aconseguir un molt bon pa sense gluten. Hem après unes quantes coses sobre mètodes i nous ingredients. Així que esperem estar a l'alçada i que el gaudiu.</p>",
             :description_es => "<p>Un poco obligados por la demanda, y limitados por las \“trazas\”, finalmente nos decidimos a hacer un pan \“sin gluten\” pero que por las condiciones de nuestro obrador, es imposible de certificar para celíacos. Nuestra intención desde el primer momento era conseguir un muy buen pan sin gluten. Hemos aprendido unas cuantas cosas sobre métodos y nuevos ingredientes. Así que esperamos estar a la altura y que lo disfrutéis.</p>",
             :description_en => "<p>Un poco obligados por la demanda, y limitados por las \“trazas\”, finalmente nos decidimos a hacer un pan \“sin gluten\” pero que por las condiciones de nuestro obrador, es imposible de certificar para celíacos. Nuestra intención desde el primer momento era conseguir un muy buen pan sin gluten. Hemos aprendido unas cuantas cosas sobre métodos y nuevos ingredientes. Así que esperamos estar a la altura y que lo disfrutéis.",
-            :available_days => [:tuesday, :wednesday, :thursday, :saturday, :por_encargo],
+            :available_days => [:monday, :tuesday, :wednesday, :thursday, :saturday, :por_encargo],
             #:price => 6,
             :price => nil,
             :photo => image_pa_fajol,
@@ -1219,6 +1237,48 @@ panes = [
             :price => nil,
             :photo => image_pa_semi_integral_espelta,
             # :photo2 => image_pa_semi_integral_espelta2
+          },
+          { 
+            :name_ca => "Koulouri", 
+            :name_es => "Koulouri",
+            :name_en => "Koulouri",  
+            :description_ca => "<p>Pa tradicional grec, de farina blanca, i semi integral, amb tahina, mel i llavors de sèsam. Aquests panets són una delícia... s'assemblen als Bagels... són bonics i aromàtics</p>",
+            :description_es => "<p>Pan tradicional griego, de harina blanca, y semi integral, con tahin, miel y semillas de sésamo. Estos panecillos son una delicia... se asemejan a los Bagels... son bonitos y aromáticos.</p>",
+            :description_en => "<p>Pa tradicional grec, de farina blanca, i semi integral, amb tahina, mel i llavors de sèsam. Aquests panets són una delícia... s'assemblen als Bagels... són bonics i aromàtics</p>",
+            :available_days => [:friday],
+            #:price => 6,
+            :price => nil,
+            :photo => image_pa_koulouri,
+            :photo2 => image_pa_koulouri2
+          },
+          { 
+            :name_ca => "Tano", 
+            :name_es => "Tano",
+            :name_en => "Tano",  
+            :description_ca => "<p>Panet blanc i tendre, fet amb llet vegetal. Farina de blat T80. Massa
+            mare i preferment. Ideal per als entrepans de la mainada.</p>",
+            :description_es => "<p>Panecillo blanco y tierno, hecho con leche vegetal. Harina de trigo T80. Masa
+            madre y prefermentos. Ideal para los bocadillos de los niños.</p>",
+            :description_en => "<p>Panet blanc i tendre, fet amb llet vegetal. Farina de blat T80. Massa
+            mare i preferment. Ideal per als entrepans de la mainada.</p>",
+            :available_days => [:wednesday],
+            #:price => 6,
+            :price => nil,
+            :photo => image_pa_tano,
+            :photo2 => image_pa_tano2
+          },
+          { 
+            :name_ca => "Llonguet", 
+            :name_es => "Llonguet",
+            :name_en => "Llonguet",  
+            :description_ca => "<p>Pa tradicional català, fet amb farina blanca, massa mare, una mica de llevat i fermentació llarga. és un panet allargat amb una única grenya transversal a la part superior. És típic de les Illes Balears i de Catalunya. fruit d'un llarg treball de pastat. Això fa que sigui una peça de pa delicada, però molt apreciada.</p>",
+            :description_es => "<p>Pan tradicional catalán, hecho con harina blanca, masa madre, algo de levadura y fermentación larga. es un panecillo alargado con una única greña transversal en la parte superior. Es típico de las Islas Baleares y de Cataluña. fruto de un largo trabajo de amasado. Esto hace que sea una pieza de pan delicada, pero muy apreciada.</p>",
+            :description_en => "<p>Pa tradicional català, fet amb farina blanca, massa mare, una mica de llevat i fermentació llarga. és un panet allargat amb una única grenya transversal a la part superior. És típic de les Illes Balears i de Catalunya. fruit d'un llarg treball de pastat. Això fa que sigui una peça de pa delicada, però molt apreciada.</p>",
+            :available_days => [:tuesday],
+            #:price => 6,
+            :price => nil,
+            :photo => image_pa_llonguet,
+            :photo2 => image_pa_llonguet2
           }
         ]
 
