@@ -18,9 +18,8 @@
 //= require_tree .
 $(function(){ 
   init_foundation();
-  $("div.bread-image-wrapper").lazyload();
+  $('.bread-image-wrapper').children('img').lazyload();
 });
-
 
 // Need to call this before any other js code
 function init_foundation(){
