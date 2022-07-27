@@ -1,7 +1,6 @@
 
 $(function(){ 
-  //init_foundation();
-  
+
   animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
   animateLogoHeader();

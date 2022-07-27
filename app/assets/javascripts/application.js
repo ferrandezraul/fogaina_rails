@@ -16,30 +16,13 @@
 //= require foundation
 //= require turbolinks
 //= require_tree .
-$(function(){ 
-  init_foundation();
-  $('.bread-image-wrapper').children('img').lazyload();
+
+
+$(document).foundation();
+document.addEventListener("page:load", function(){
+  Foundation.libs.dropdown.events(); 
 });
 
-// Need to call this before any other js code
-function init_foundation(){
-  // $(document).foundation({
-  //   topbar: {
-  //     custom_back_text: true,
-  //     back_text: '<-' 
-  //   }
-  // });
+$('.bread-image-wrapper').children('img').lazyload();
 
-  $(document).on('turbolinks:load', function() {
-    $(document).foundation(
-      {
-        topbar: {
-          custom_back_text: true,
-          back_text: '<-' 
-        }
-      }
-    );
-  });
-
-}
 
