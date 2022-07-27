@@ -16,7 +16,8 @@
 
           <%= image_tag(image_slide.image.url, :alt => image_slide.title, 
                                                :title => image_slide.caption,
-                                               :style => "margin: auto") if image_slide.image %>
+                                               :style => "margin: auto",
+                                               :class => "slidehome" ) if image_slide.image %>
         <% end %>  
 
     <% end %>

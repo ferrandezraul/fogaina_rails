@@ -23,6 +23,12 @@ document.addEventListener("page:load", function(){
   Foundation.libs.dropdown.events(); 
 });
 
+$(document).on('turbolinks:load', function() {
+  $(document).foundation();
+});
+
+
 $('.bread-image-wrapper').children('img').lazyload();
+$('.slidehome').children('img').lazyload();
 
 
