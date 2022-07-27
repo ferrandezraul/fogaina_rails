@@ -78,6 +78,10 @@ This is an issue with foundation 5 and turbolinks.
 Turbolinks can not be removed cause otherwise the submenus do not work.
 https://stackoverflow.com/questions/21293051/foundation-5-topbar-not-working-consistently-in-rails-4
 
+
+## Pictures
+Do not use images bigger than 3MB. (limited by the system)
+
 ### Configuring and running the unit tests
 
 TODO
