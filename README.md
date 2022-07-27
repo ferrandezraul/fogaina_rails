@@ -72,6 +72,12 @@ Tip: You can create, migrate and seed the database with a single command:
 $ rake db:setup
 ```
 
+### Turbolinks and foundation issues
+Page seems to refresh twice after page load in mobie view.
+This is an issue with foundation 5 and turbolinks.
+Turbolinks can not be removed cause otherwise the submenus do not work.
+https://stackoverflow.com/questions/21293051/foundation-5-topbar-not-working-consistently-in-rails-4
+
 ### Configuring and running the unit tests
 
 TODO
