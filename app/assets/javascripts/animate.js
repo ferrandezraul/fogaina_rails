@@ -1,6 +1,6 @@
 
 $(function(){ 
-  init_foundation();
+  //init_foundation();
   
   animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 

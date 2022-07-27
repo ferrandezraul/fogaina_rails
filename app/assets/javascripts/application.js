@@ -24,10 +24,23 @@ $(function(){
 
 // Need to call this before any other js code
 function init_foundation(){
-  $(document).foundation({
-    topbar: {
-      custom_back_text: true,
-      back_text: '<-' 
-    }
+  // $(document).foundation({
+  //   topbar: {
+  //     custom_back_text: true,
+  //     back_text: '<-' 
+  //   }
+  // });
+
+  $(document).on('turbolinks:load', function() {
+    $(document).foundation(
+      {
+        topbar: {
+          custom_back_text: true,
+          back_text: '<-' 
+        }
+      }
+    );
   });
+
 }
+
