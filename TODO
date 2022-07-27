@@ -40,6 +40,10 @@ Deploy again.
 
 /////////////
 
+Fix foundation-rails effects loading between pages is not smooth (refreshes whole page instead of ...).
+
+aplicar lazy loading a las imagenes del banner del principio y ver si carga mejor.
+
 
 
 

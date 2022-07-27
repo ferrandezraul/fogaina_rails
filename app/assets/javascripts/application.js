@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require jquery.lazyload
 //= require foundation
+//= require turbolinks
 //= require_tree .
 $(function(){ 
   init_foundation();
@@ -30,5 +31,3 @@ function init_foundation(){
     }
   });
 }
-// any other code etc
-//= require turbolinks
