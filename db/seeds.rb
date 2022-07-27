@@ -930,6 +930,308 @@ panologia_body_part.translations.create!( { :locale => "ca",
                                                       <p><a href='/ca'>Tornar a la pàgina de inici</a></p>" } )
 
 
+
+########
+
+
+disponibilidad_page = forn_page.children.create!( :title => 'Disponibilitat',
+                                             :show_in_menu => true,
+                                             :deletable => true )
+
+disponibilidad_page.translations.create!( { :locale => "es", 
+                                       :title => "Disponibilidad",
+                                       :meta_description => META_DESCRIPTION, 
+                                       :browser_title => BROWSER_TITLE } )
+disponibilidad_page.translations.create!( { :locale => "ca", 
+                                       :title => "Disponibilitat",
+                                       :meta_description => META_DESCRIPTION, 
+                                       :browser_title => BROWSER_TITLE } )
+
+disponibilidad_body_part = disponibilidad_page.parts.create!( { :title => "Body", 
+                                                      :body => "
+                                                      
+
+                                                      <table class='default'>
+                                                      <tr> <!-- CABECERAS -->
+                                                        <th>Dilluns</th>
+                                                        <th>Dimarts</th>
+                                                        <th>Dimecres</th>
+                                                        <th>Dijous</th>
+                                                        <th>Divendres</th>
+                                                        <th>Dissabte</th>
+                                                      </tr>
+                                                      <tr>
+                                                        <!-- SEGUNDA FILE -->
+                                                        <td>
+                                                          <!-- LUNES -->
+                                                          <ul>
+                                                            <li>Soca</li>
+                                                            <li>Pagès</li>
+                                                            <li>Pa de coca</li>
+                                                            <li>Coca de sucre</li>
+                                                            <li>Baguette</li>
+                                                            <li>Pigat</li>
+                                                            <li>Rústic</li>
+                                                            <li>Tinosell</li>
+                                                          </ul>
+                                                        </td>
+                                                        <td>
+                                                          <ul>
+                                                            <li>Soca</li>
+                                                            <li>Pagès</li>
+                                                            <li>Pa de coca</li>
+                                                            <li>Coca de sucre</li>
+                                                            <li>Baguette</li>
+                                                            <li>Pigat</li>
+                                                            <li>Rústic</li>
+                                                            <li>Tinosell</li>
+                                                          </ul>
+                                                        </td>  <!-- MARTES -->
+                                                        <td>
+                                                          <ul>
+                                                            <li>Soca</li>
+                                                            <li>Pagès</li>
+                                                            <li>Pa de coca</li>
+                                                            <li>Coca de sucre</li>
+                                                            <li>Baguette</li>
+                                                            <li>Pigat</li>
+                                                            <li>Rústic</li>
+                                                            <li>Tinosell</li>
+                                                          </ul>
+                                                        </td>  <!-- MIERCOLES -->
+                                                        <td>
+                                                          <ul>
+                                                            <li>Soca</li>
+                                                            <li>Pagès</li>
+                                                            <li>Pa de coca</li>
+                                                            <li>Coca de sucre</li>
+                                                            <li>Baguette</li>
+                                                            <li>Pigat</li>
+                                                            <li>Rústic</li>
+                                                            <li>Tinosell</li>
+                                                          </ul>
+                                                        </td>  <!-- JUEVES -->
+                                                        <td>
+                                                          <ul>
+                                                            <li>Soca</li>
+                                                            <li>Pagès</li>
+                                                            <li>Pa de coca</li>
+                                                            <li>Coca de sucre</li>
+                                                            <li>Baguette</li>
+                                                            <li>Pigat</li>
+                                                            <li>Rústic</li>
+                                                            <li>Tinosell</li>
+                                                          </ul>
+                                                        </td>  <!-- VIERNES -->
+                                                        <td>
+                                                          <ul>
+                                                            <li>Soca</li>
+                                                            <li>Pagès</li>
+                                                            <li>Pa de coca</li>
+                                                            <li>Coca de sucre</li>
+                                                            <li>Baguette</li>
+                                                            <li>Pigat</li>
+                                                            <li>Rústic</li>
+                                                            <li>Tinosell</li>
+                                                          </ul>
+                                                        </td>  <!-- SABADO -->
+                                                      </tr>
+                                                      <tr>
+                                                        <!-- TERCERA FILA -->
+                                                        <td><ul><li>Fajol</li></ul></td><!-- LUNES -->
+                                                        <td><ul><li>Fajol</li></ul></td>  <!-- MARTES -->
+                                                        <td><ul><li>Fajol</li></ul></td>  <!-- MIERCOLES -->
+                                                        <td><ul><li>Fajol</li></ul></td>  <!-- JUEVES -->
+                                                        <td><ul><li>Fajol</li></ul></td>  <!-- VIERNES -->
+                                                        <td><ul><li>Fajol</li></ul></td>  <!-- SABADO -->
+                                                      </tr>
+                                                      <tr>
+                                                        <!-- CUARTA FILA -->
+                                                        <td></td><!-- LUNES -->
+                                                        <td><ul><li>Espelta</li></ul></td>  <!-- MARTES -->
+                                                        <td><ul><li>Espelta</li><li>Croscat</li></ul></td>  <!-- MIERCOLES -->
+                                                        <td><ul><li>Espelta</li></ul></td>  <!-- JUEVES -->
+                                                        <td><ul><li>Espelta</li></ul></td>  <!-- VIERNES -->
+                                                        <td><ul><li>Espelta</li></ul></td>  <!-- SABADO -->
+                                                      </tr>
+                                                    
+                                                      <tr> <!-- QUINTA FILA -->
+                                                        <td></td><!-- LUNES -->
+                                                        <td><ul><li>Llonguet</li></ul></td>  <!-- MARTES -->
+                                                        <td><ul><li>Tanos</li></ul></td>  <!-- MIERCOLES -->
+                                                        <td><ul><li>Fogassa Integral</li></ul></td>  <!-- JUEVES -->
+                                                        <td><ul><li>Kouluris</li></ul></td> <!-- VIERNES -->
+                                                        <td><ul><li>Focaccies</li></ul></td> <!-- SABADO -->
+                                                      </tr>
+                                                    
+                                                      <tr> <!-- SEXTA FILA -->
+                                                        <td></td><!-- LUNES -->
+                                                        <td></td>  <!-- MARTES -->
+                                                        <td></td>  <!-- MIERCOLES -->
+                                                        <td><ul><li>Roughbrot</li></ul></td>  <!-- JUEVES -->
+                                                        <td><ul><li>Semi integral d'espelta</li></ul></td> <!-- VIERNES -->
+                                                        <td><ul><li>Olives</li></ul></td> <!-- SABADO -->
+                                                      </tr>
+                                                    
+                                                      <tr> <!-- SEPTIMA FILA -->
+                                                        <td></td><!-- LUNES -->
+                                                        <td></td>  <!-- MARTES -->
+                                                        <td></td>  <!-- MIERCOLES -->
+                                                        <td></td>  <!-- JUEVES -->
+                                                        <td><ul><li>Monococcum</li></ul></td> <!-- VIERNES -->
+                                                        <td></td> <!-- SABADO -->
+                                                      </tr>
+                                                    
+                                                    </table>
+                                                    
+                                                    <br>
+                                                    
+                                                    <!-- WARNING -->
+                                                    <p><span>&#9888;</span> Poden haver petits canvis segons temporada.</p>
+                                                    " } )
+
+disponibilidad_body_part.translations.create!( { :locale => "es", 
+                                            :body => "
+                                            
+<table class='default'>
+<tr> <!-- CABECERAS -->
+  <th>Dilluns</th>
+  <th>Dimarts</th>
+  <th>Dimecres</th>
+  <th>Dijous</th>
+  <th>Divendres</th>
+  <th>Dissabte</th>
+</tr>
+<tr>
+  <!-- SEGUNDA FILE -->
+  <td>
+    <!-- LUNES -->
+    <ul>
+      <li>Soca</li>
+      <li>Pagès</li>
+      <li>Pa de coca</li>
+      <li>Coca de sucre</li>
+      <li>Baguette</li>
+      <li>Pigat</li>
+      <li>Rústic</li>
+      <li>Tinosell</li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li>Soca</li>
+      <li>Pagès</li>
+      <li>Pa de coca</li>
+      <li>Coca de sucre</li>
+      <li>Baguette</li>
+      <li>Pigat</li>
+      <li>Rústic</li>
+      <li>Tinosell</li>
+    </ul>
+  </td>  <!-- MARTES -->
+  <td>
+    <ul>
+      <li>Soca</li>
+      <li>Pagès</li>
+      <li>Pa de coca</li>
+      <li>Coca de sucre</li>
+      <li>Baguette</li>
+      <li>Pigat</li>
+      <li>Rústic</li>
+      <li>Tinosell</li>
+    </ul>
+  </td>  <!-- MIERCOLES -->
+  <td>
+    <ul>
+      <li>Soca</li>
+      <li>Pagès</li>
+      <li>Pa de coca</li>
+      <li>Coca de sucre</li>
+      <li>Baguette</li>
+      <li>Pigat</li>
+      <li>Rústic</li>
+      <li>Tinosell</li>
+    </ul>
+  </td>  <!-- JUEVES -->
+  <td>
+    <ul>
+      <li>Soca</li>
+      <li>Pagès</li>
+      <li>Pa de coca</li>
+      <li>Coca de sucre</li>
+      <li>Baguette</li>
+      <li>Pigat</li>
+      <li>Rústic</li>
+      <li>Tinosell</li>
+    </ul>
+  </td>  <!-- VIERNES -->
+  <td>
+    <ul>
+      <li>Soca</li>
+      <li>Pagès</li>
+      <li>Pa de coca</li>
+      <li>Coca de sucre</li>
+      <li>Baguette</li>
+      <li>Pigat</li>
+      <li>Rústic</li>
+      <li>Tinosell</li>
+    </ul>
+  </td>  <!-- SABADO -->
+</tr>
+<tr>
+  <!-- TERCERA FILA -->
+  <td><ul><li>Fajol</li></ul></td><!-- LUNES -->
+  <td><ul><li>Fajol</li></ul></td>  <!-- MARTES -->
+  <td><ul><li>Fajol</li></ul></td>  <!-- MIERCOLES -->
+  <td><ul><li>Fajol</li></ul></td>  <!-- JUEVES -->
+  <td><ul><li>Fajol</li></ul></td>  <!-- VIERNES -->
+  <td><ul><li>Fajol</li></ul></td>  <!-- SABADO -->
+</tr>
+<tr>
+  <!-- CUARTA FILA -->
+  <td></td><!-- LUNES -->
+  <td><ul><li>Espelta</li></ul></td>  <!-- MARTES -->
+  <td><ul><li>Espelta</li><li>Croscat</li></ul></td>  <!-- MIERCOLES -->
+  <td><ul><li>Espelta</li></ul></td>  <!-- JUEVES -->
+  <td><ul><li>Espelta</li></ul></td>  <!-- VIERNES -->
+  <td><ul><li>Espelta</li></ul></td>  <!-- SABADO -->
+</tr>
+
+<tr> <!-- QUINTA FILA -->
+  <td></td><!-- LUNES -->
+  <td><ul><li>Llonguet</li></ul></td>  <!-- MARTES -->
+  <td><ul><li>Tanos</li></ul></td>  <!-- MIERCOLES -->
+  <td><ul><li>Fogassa Integral</li></ul></td>  <!-- JUEVES -->
+  <td><ul><li>Kouluris</li></ul></td> <!-- VIERNES -->
+  <td><ul><li>Focaccies</li></ul></td> <!-- SABADO -->
+</tr>
+
+<tr> <!-- SEXTA FILA -->
+  <td></td><!-- LUNES -->
+  <td></td>  <!-- MARTES -->
+  <td></td>  <!-- MIERCOLES -->
+  <td><ul><li>Roughbrot</li></ul></td>  <!-- JUEVES -->
+  <td><ul><li>Semi integral d'espelta</li></ul></td> <!-- VIERNES -->
+  <td><ul><li>Olives</li></ul></td> <!-- SABADO -->
+</tr>
+
+<tr> <!-- SEPTIMA FILA -->
+  <td></td><!-- LUNES -->
+  <td></td>  <!-- MARTES -->
+  <td></td>  <!-- MIERCOLES -->
+  <td></td>  <!-- JUEVES -->
+  <td><ul><li>Monococcum</li></ul></td> <!-- VIERNES -->
+  <td></td> <!-- SABADO -->
+</tr>
+
+</table>
+
+<br>
+
+<!-- WARNING -->
+<p><span>&#9888;</span> Poden haver petits canvis segons temporada.</p>
+" } )
+
 ############### Ahora la pagina hija de contacte llamada "On mes trobar-nos?"  #################
 
 on_trobarnos_page = Refinery::Page.find_by(:title => "Where are we?")
