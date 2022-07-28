@@ -61,27 +61,33 @@ slideshow_img6 = Refinery::Image.create :image => File.new(slideshow_img6_path)
 
 slide_images = [
   {
-    :title => "1", 
+    :title => "home1", 
+    :slideshow => "home",
     :image_id => slideshow_img1.id 
   },
   {
-    :title => "2", 
+    :title => "home2", 
+    :slideshow => "home",
     :image_id => slideshow_img2.id 
   },
   {
-    :title => "3", 
+    :title => "home3", 
+    :slideshow => "home",
     :image_id => slideshow_img3.id 
   },
   {
-    :title => "4", 
+    :title => "home4", 
+    :slideshow => "home",
     :image_id => slideshow_img4.id 
   },
   {
-    :title => "5", 
+    :title => "home5", 
+    :slideshow => "home",
     :image_id => slideshow_img5.id 
   },
   {
-    :title => "6", 
+    :title => "home6", 
+    :slideshow => "home",
     :image_id => slideshow_img6.id 
   }
 ]
@@ -98,8 +104,104 @@ slide_images.each do | slide_image |
   refinery_image_slide.translations.create!( :locale => :es, :title => slide_image[:title] )
 end
 
+####
+
+# Path to images in WORKERS SLIDE (Qui som page)
+workers_img1_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/colla_guay.jpg')}"
+workers_img2_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/diana.jpg')}"
+workers_img3_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/joana.jpg')}"
+workers_img4_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/emma.jpg')}"
+workers_img5_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/chica.jpg')}"
+workers_img6_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/chico.jpg')}"
+workers_img7_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/emili.jpg')}"
+workers_img8_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/angelillo.jpg')}"
+workers_img9_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/panaderos.jpg')}"
+workers_img10_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/divertida.jpg')}"
+
+# Images in SLIDE SHOW IN HOME PAGE
+workers_img1 = Refinery::Image.create :image => File.new(workers_img1_path)
+workers_img2 = Refinery::Image.create :image => File.new(workers_img2_path)
+workers_img3 = Refinery::Image.create :image => File.new(workers_img3_path)
+workers_img4 = Refinery::Image.create :image => File.new(workers_img4_path)
+workers_img5 = Refinery::Image.create :image => File.new(workers_img5_path)
+workers_img6 = Refinery::Image.create :image => File.new(workers_img6_path)
+workers_img7 = Refinery::Image.create :image => File.new(workers_img7_path)
+workers_img8 = Refinery::Image.create :image => File.new(workers_img8_path)
+workers_img9 = Refinery::Image.create :image => File.new(workers_img9_path)
+workers_img10 = Refinery::Image.create :image => File.new(workers_img10_path)
+
+workers_images = [
+  {
+    :title => "workers1", 
+    :slideshow => "workers",
+    :image_id => workers_img1.id 
+  },
+  {
+    :title => "workers2", 
+    :slideshow => "workers",
+    :image_id => workers_img2.id 
+  },
+  {
+    :title => "workers3", 
+    :slideshow => "workers",
+    :image_id => workers_img3.id 
+  },
+  {
+    :title => "workers4", 
+    :slideshow => "workers",
+    :image_id => workers_img4.id 
+  },
+  {
+    :title => "workers5", 
+    :slideshow => "workers",
+    :image_id => workers_img5.id 
+  },
+  {
+    :title => "workers6", 
+    :slideshow => "workers",
+    :image_id => workers_img6.id 
+  },
+  {
+    :title => "workers7", 
+    :slideshow => "workers",
+    :image_id => workers_img7.id 
+  },
+  {
+    :title => "workers8", 
+    :slideshow => "workers",
+    :image_id => workers_img8.id 
+  },
+  {
+    :title => "workers9", 
+    :slideshow => "workers",
+    :image_id => workers_img9.id 
+  },
+  {
+    :title => "workers10", 
+    :slideshow => "workers",
+    :image_id => workers_img10.id 
+  }
+]
+
+#binding.pry
+
+workers_images.each do | slide_image |
+
+  refinery_image_slide = Refinery::ImageSlideshows::ImageSlide.create!( 
+    :title => slide_image[:title], 
+    :image_id => slide_image[:image_id] )
+
+  refinery_image_slide.translations.create!( :locale => :ca, :title => slide_image[:title] )
+  refinery_image_slide.translations.create!( :locale => :es, :title => slide_image[:title] )
+end
+
+
+###
 slider = Refinery::ImageSlideshows::ImageSlideshow.create!( :title => "Carrousel d'imatges de la pagina d'inici")
-slider.image_slides = Refinery::ImageSlideshows::ImageSlide.all.to_a
+slider.image_slides = Refinery::ImageSlideshows::ImageSlide.find(:all, :conditions => { :slideshow => 'home' }).to_a
+
+worker_slider = Refinery::ImageSlideshows::ImageSlideshow.create!( :title => "Workers Carrousel")
+worker_slider.image_slides = Refinery::ImageSlideshows::ImageSlide.find(:all, :conditions => { :slideshow => 'workers' }).to_a
 
 pages_array = [ {
                     :show_in_menu => true,

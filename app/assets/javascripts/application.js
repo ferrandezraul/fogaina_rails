@@ -30,5 +30,6 @@ $(document).on('turbolinks:load', function() {
 
 $('.bread-image-wrapper').children('img').lazyload();
 $('.slidehome').children('img').lazyload();
+$('.slideworkers').children('img').lazyload();
 
 
