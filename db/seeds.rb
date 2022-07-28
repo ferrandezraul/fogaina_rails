@@ -134,7 +134,7 @@ pages_array = [ {
                         :position_body => 0,
                         :body => "<h4>Upsss! Sorry, there has been a problem ...</h4><p>The page is not available.</p><p><a href='/en'>Back to home</a></p>",
                         :body_es => "<h4>Upsss! Lo sentimos, ha habido un problema ...</h4><p>La página solicitada no ha sido encontrada.</p><p><a href='/es'>Vuelva a la página de inicio</a></p>",
-                        :body_ca => "<h4>Upsss! Ho sentim, hi ha hagut un problema ...</h4><p>La pàgina sol-licitada no s'ha trobat.</p><p><a href='/ca'>Tornar a la pàgina de inici</a></p>",
+                        :body_ca => "<h4>Upsss! Ho sentim, hi ha hagut un problema ...</h4><p>La pàgina sol-licitada no s'ha trobat.</p><p><a href='/ca'>Tornar a la pàgina d'inici</a></p>",
                     }
                 },
                 {
@@ -885,7 +885,7 @@ panologia_body_part = panologia_page.parts.create!( { :title => "Body",
                                                                
                                                                Aquests quatre punts són els pilars sobre els quals es basa el treball, el mètode i la filosofia del pa de La Fogaina, els quals ens exigeixen donar el màxim cada dia per aconseguir una regularitat que acceptem com un repte diari, un procés d'aprenentatge continu. És un camí dret, sense dreceres que posin en dubte la qualitat del nostre producte. Sabem amb quina matèria primera treballem, i amb quin mètode creiem, perquè respectem el nostre ofici.
                                                                </p>
-                                                               <p><a href='/ca'>Tornar a la pàgina de inici</a></p>" } )
+                                                               <p><a href='/ca'>Tornar a la pàgina d'inici</a></p>" } )
 
 panologia_body_part.translations.create!( { :locale => "es", 
                                             :body => "<p>Cuando nos preguntan por qué es diferente nuestro pan, siempre hay unos segundos de silencio... ¿Por dónde empiezo? Lo mismo me ocurre ahora ante el papel... Hace días me pidieron que contara 'el pan', el pan de la Fogaina, lo que tiene de diferente o de importante, de nuestro trabajo diario... No es que hagamos algo extraordinario, fuera de lo normal, sólo hacemos pan, pero quizás sí que hay que dejar claro cuál es el camino que hemos decidido tomar, cómo trabajamos, para que los que se acerquen a La Fogaina entienda un poco mejor qué está comprando.
@@ -927,7 +927,7 @@ panologia_body_part.translations.create!( { :locale => "ca",
                                                       
                                                       Aquests quatre punts són els pilars sobre els quals es basa el treball, el mètode i la filosofia del pa de La Fogaina, els quals ens exigeixen donar el màxim cada dia per aconseguir una regularitat que acceptem com un repte diari, un procés d'aprenentatge continu. És un camí dret, sense dreceres que posin en dubte la qualitat del nostre producte. Sabem amb quina matèria primera treballem, i amb quin mètode creiem, perquè respectem el nostre ofici.
                                                       </p>
-                                                      <p><a href='/ca'>Tornar a la pàgina de inici</a></p>" } )
+                                                      <p><a href='/ca'>Tornar a la pàgina d'inici</a></p>" } )
 
 
 

@@ -54,9 +54,9 @@ heroku run rake db:migrate
 heroku run rake db:seed
 
 In development and test:
-heroku pg:reset DATABASE -r https://git.heroku.com/lafogainaheroku18.git
-heroku run -r https://lafogainatest18.herokuapp.com/ rake db:migrate
-heroku run -r https://lafogainatest18.herokuapp.com/ rake db:seed
+heroku pg:reset DATABASE -r heroku-20  (heroku-20 is the name of your remote)
+heroku run -r heroku-20 rake db:migrate   (heroku-20 is the name of your remote)
+heroku run -r heroku-20 rake db:seed
 
 ###################################
 
