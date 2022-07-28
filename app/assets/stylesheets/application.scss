@@ -28,3 +28,23 @@
 table tr td {
 	padding: 0.525rem 0.425rem 0.525rem 0.425rem;  // To keep range of hours in a single line, I decrease here the default padding
 }
+
+/** Removes black background on menu bar **/
+// .top-bar-section .dropdown ul li > a {
+//   color: white;
+// }
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  #header > div > div.small-6.large-8.columns > div:nth-child(3) > div > nav > section > ul > li > a {
+    color: white;
+  }
+
+  #header > div > div.small-6.large-8.columns > div:nth-child(3) > div > nav > section > ul > li > ul > li > a {
+    color: white;
+  }
+
+  #header > div > div.small-6.large-8.columns > div:nth-child(3) > div > nav > section > ul > li > ul > li > h5 > a {
+    color: rgb(202, 198, 198);
+  }
+}
