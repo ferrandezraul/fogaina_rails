@@ -61,33 +61,27 @@ slideshow_img6 = Refinery::Image.create :image => File.new(slideshow_img6_path)
 
 slide_images = [
   {
-    :title => "home1", 
-    :slideshow => "home",
+    :title => "home", 
     :image_id => slideshow_img1.id 
   },
   {
-    :title => "home2", 
-    :slideshow => "home",
+    :title => "home", 
     :image_id => slideshow_img2.id 
   },
   {
-    :title => "home3", 
-    :slideshow => "home",
+    :title => "home", 
     :image_id => slideshow_img3.id 
   },
   {
-    :title => "home4", 
-    :slideshow => "home",
+    :title => "home", 
     :image_id => slideshow_img4.id 
   },
   {
-    :title => "home5", 
-    :slideshow => "home",
+    :title => "home", 
     :image_id => slideshow_img5.id 
   },
   {
-    :title => "home6", 
-    :slideshow => "home",
+    :title => "home", 
     :image_id => slideshow_img6.id 
   }
 ]
@@ -132,53 +126,43 @@ workers_img10 = Refinery::Image.create :image => File.new(workers_img10_path)
 
 workers_images = [
   {
-    :title => "workers1", 
-    :slideshow => "workers",
+    :title => "workers", 
     :image_id => workers_img1.id 
   },
   {
-    :title => "workers2", 
-    :slideshow => "workers",
+    :title => "workers", 
     :image_id => workers_img2.id 
   },
   {
-    :title => "workers3", 
-    :slideshow => "workers",
+    :title => "workers", 
     :image_id => workers_img3.id 
   },
   {
-    :title => "workers4", 
-    :slideshow => "workers",
+    :title => "workers", 
     :image_id => workers_img4.id 
   },
   {
-    :title => "workers5", 
-    :slideshow => "workers",
+    :title => "workers", 
     :image_id => workers_img5.id 
   },
   {
-    :title => "workers6", 
-    :slideshow => "workers",
+    :title => "workers", 
     :image_id => workers_img6.id 
   },
   {
-    :title => "workers7", 
-    :slideshow => "workers",
+    :title => "workers", 
     :image_id => workers_img7.id 
   },
   {
-    :title => "workers8", 
-    :slideshow => "workers",
+    :title => "workers", 
     :image_id => workers_img8.id 
   },
   {
-    :title => "workers9", 
-    :slideshow => "workers",
+    :title => "workers", 
     :image_id => workers_img9.id 
   },
   {
-    :title => "workers10", 
-    :slideshow => "workers",
+    :title => "workers", 
     :image_id => workers_img10.id 
   }
 ]
@@ -198,10 +182,10 @@ end
 
 ###
 slider = Refinery::ImageSlideshows::ImageSlideshow.create!( :title => "Carrousel d'imatges de la pagina d'inici")
-slider.image_slides = Refinery::ImageSlideshows::ImageSlide.find(:all, :conditions => { :slideshow => 'home' }).to_a
+slider.image_slides = Refinery::ImageSlideshows::ImageSlide.where(title: "home").to_a
 
 worker_slider = Refinery::ImageSlideshows::ImageSlideshow.create!( :title => "Workers Carrousel")
-worker_slider.image_slides = Refinery::ImageSlideshows::ImageSlide.find(:all, :conditions => { :slideshow => 'workers' }).to_a
+worker_slider.image_slides = Refinery::ImageSlideshows::ImageSlide.where(title: "workers").to_a
 
 pages_array = [ {
                     :show_in_menu => true,
