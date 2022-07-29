@@ -110,7 +110,7 @@ workers_img6_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600work
 workers_img7_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/emili.jpg')}"
 workers_img8_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/angelillo.jpg')}"
 workers_img9_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/panaderos.jpg')}"
-workers_img10_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/divertida.jpg')}"
+# workers_img10_path = "#{Rails.root.join('app/assets/images/slideshow/1000x600workers/divertida.jpg')}"
 
 # Images in SLIDE SHOW IN HOME PAGE
 workers_img1 = Refinery::Image.create :image => File.new(workers_img1_path)
@@ -122,7 +122,7 @@ workers_img6 = Refinery::Image.create :image => File.new(workers_img6_path)
 workers_img7 = Refinery::Image.create :image => File.new(workers_img7_path)
 workers_img8 = Refinery::Image.create :image => File.new(workers_img8_path)
 workers_img9 = Refinery::Image.create :image => File.new(workers_img9_path)
-workers_img10 = Refinery::Image.create :image => File.new(workers_img10_path)
+# workers_img10 = Refinery::Image.create :image => File.new(workers_img10_path)
 
 workers_images = [
   {
@@ -161,10 +161,10 @@ workers_images = [
     :title => "workers", 
     :image_id => workers_img9.id 
   },
-  {
-    :title => "workers", 
-    :image_id => workers_img10.id 
-  }
+  # {
+  #   :title => "workers", 
+  #   :image_id => workers_img10.id 
+  # }
 ]
 
 #binding.pry

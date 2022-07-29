@@ -2,6 +2,32 @@
 <% #set_meta_tags description: "Pa artesa i ecologic Cooperativa La Fogaina" %>
 
 <div class='row'>
+  <div class='large12 column'>
+    <% workers_slideshow = Refinery::ImageSlideshows::ImageSlideshow.includes(:image_slides).find_by_title("Workers Carrousel") %>
+    <% if workers_slideshow %> 
+    
+      <ul class="example-orbit" data-orbit data-options=";
+                                          timer_speed: 4000;
+                                          animation: 'fade';
+                                          pause_on_hover: false;
+                                          slide_number: false;">                                 
+        <% workers_slideshow.image_slides.each do |image_slide| %>
+            <%= link_to image_slide.link_url do %>
+    
+              <%= image_tag(image_slide.image.url, :alt => image_slide.title, 
+                                                  :title => image_slide.caption,
+                                                  :style => "margin: auto",
+                                                  :class => "slideworkers" ) if image_slide.image %>
+            <% end %>  
+        <% end %>
+        
+      </ul>
+    
+    <% end %>
+  </div>
+</div>
+
+<div class='row'>
   <div class='large-12 column'>
     <%= render '/refinery/content_page' %>
   </div>
@@ -9,33 +35,18 @@
 
 <hr>
 
-<% @videos = videos_in_home_page %>
-<%= render "refinery/videos/videos_in_home" %>
+<div class='row'>
+  <div class='large-6 column'>
+    <p>Video La Fogaina Cooperativa</p>
+  </div>
+</div>  
 
-<hr>
-
-<% workers_slideshow = Refinery::ImageSlideshows::ImageSlideshow.includes(:image_slides).find_by_title("Workers Carrousel") %>
-<% if workers_slideshow %> 
-
-  <ul class="example-orbit" data-orbit data-options=";
-                                       timer_speed: 4000;
-                                       animation: 'fade';
-                                       pause_on_hover: false;
-                                       slide_number: false;">                                 
-    <% workers_slideshow.image_slides.each do |image_slide| %>
-        <%= link_to image_slide.link_url do %>
-
-          <%= image_tag(image_slide.image.url, :alt => image_slide.title, 
-                                               :title => image_slide.caption,
-                                               :style => "margin: auto",
-                                               :class => "slideworkers" ) if image_slide.image %>
-        <% end %>  
-    <% end %>
-     
-  </ul>
-
-<% end %>
-
+<div class='row'>
+  <div class='large-12 column'>
+    <% @videos = videos_in_home_page %>
+    <%= render "refinery/videos/videos_in_home" %>
+  </div>
+</div>
 
 <hr>
 
