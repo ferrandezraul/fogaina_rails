@@ -11,11 +11,12 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require jquery.lazyload
+//= require_tree .
 //= require foundation
 //= require turbolinks
-//= require_tree .
 
 
 $(document).foundation();

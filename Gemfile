@@ -77,6 +77,10 @@ gem 'refinerycms-news', git: 'https://github.com/refinery/refinerycms-news', bra
 gem 'foundation-rails', '~> 5.5.3.2'
 gem 'foundation-icons-sass-rails' 
 
+# Needed due to issues with foundation 5 and turbolinks
+# See http://foundation.zurb.com/forum/posts/2348-foundation-5-topbar-menu-not-responding-on-rails4
+gem 'jquery-turbolinks'
+
 gem 'refinerycms-breads', path: 'vendor/extensions'
 gem 'refinerycms-cafeteria_categories', path: 'vendor/extensions'
 gem 'refinerycms-videos', path: 'vendor/extensions'
