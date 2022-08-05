@@ -1,6 +1,5 @@
 
 $(function(){ 
-
   animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
   animateLogoHeader();

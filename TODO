@@ -1,8 +1,16 @@
 - Upgrade heroku stack (15 a 17? Ruby 2.7 ...)
 
-- Add slider with fotos from workers
-
 - Test mobile with an eye on foundation and turbolink
+
+- Add instagram feed instead of activities
+
+- Add missing fotos panes
+
+- Desplegar y crear admin
+
+- Check https heroku
+
+- mergear bumps pendientes de github
 
 
 

@@ -19,11 +19,12 @@
 
 
 $(document).foundation();
-document.addEventListener("page:load", function(){
-  Foundation.libs.dropdown.events(); 
-});
 
 $(document).on('turbolinks:load', function() {
+  $(document).foundation();
+});
+
+$(document).on('page:load', function() {
   $(document).foundation();
 });
 
